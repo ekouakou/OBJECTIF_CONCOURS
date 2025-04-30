@@ -68,3 +68,29 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+
+######  GITHUB PAGER ########################
+
+
+# 1 - Installer les dependence de github pagger
+npm install gh-pages --save-dev
+
+# 2 - Ajouter ce code dans le fichier package.json au dessus des dependences
+
+"homepage": "https://ekouakou.github.io/npm-du-repertoire/",
+
+# 3 - Ajouter ce code dans la section script dans le fichier package.json
+
+"predeploy": "npm run build",
+"deploy": "gh-pages -d build"
+
+## 4 - Aller dans reglage du depot pour configurer github pager
+
+## 5 - deployer votre projet sur github pager avec cette commande
+
+npm run deploy 
+
+

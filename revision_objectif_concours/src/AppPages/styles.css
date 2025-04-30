@@ -88,6 +88,14 @@
   .global-controls .rs-btn:hover {
     background-color: rgba(52, 152, 219, 0.1) !important;
   }
+
+  .rs-panel-btn:active, .rs-panel-btn:focus, .rs-panel-btn:hover {
+    background-color: transparent !important;
+    /* background-color: var(--rs-btn-subtle-hover-bg); */
+    color: #343434 !important;
+    color: var(--rs-btn-subtle-hover-text) !important;
+    outline: 2px solid transparent !important;
+}
   
   .qcm-content {
     flex: 1;
@@ -114,14 +122,14 @@
     margin-bottom: 15px !important;
     border-radius: 8px !important;
     overflow: hidden;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
-    border: 1px solid var(--panel-border) !important;
+    /* box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08); */
+    border: 0px solid var(--panel-border) !important;
     transition: all 0.3s ease;
     page-break-inside: avoid;
   }
   
   .question-panel:hover {
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.005);
   }
   
   .rs-panel-header {
@@ -316,6 +324,9 @@
     width: 100% !important;
   }
 
+  .question-header-content span{
+    font-size: 12px !important;
+  }
 
 
 
