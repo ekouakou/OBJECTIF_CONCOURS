@@ -1,5 +1,7 @@
 Domaines administratifs et institutionnels
 
+QCM sur organisation internationnal
+
 Organisation politique et administrative de la Côte d'Ivoire
 Histoire politique de la Côte d'Ivoire (indépendance, périodes importantes)
 Institutions ivoiriennes (Présidence, Assemblée Nationale, Sénat, etc.)
@@ -94,3 +96,244 @@ Grands projets nationaux en cours
 Défis contemporains de la Côte d'Ivoire
 Personnalités influentes
 Culture générale sur la Côte d'Ivoire
+
+
+
+
+
+/////////////////
+
+
+
+
+🗺️ Cartographie et repères géopolitiques
+Frontières contestées (Palestine, Sahara occidental…)
+
+Cartes des conflits, des langues, des religions
+
+Fuseaux horaires, lignes de changement de date
+
+👑 Monarchies et dynasties
+Familles royales encore existantes (Royaume-Uni, Maroc, Japon…)
+
+Dynasties historiques (Ming, Habsbourg, Mérovingiens…)
+
+Symboles et protocoles royaux
+
+🕌 Religions et spiritualité
+Religions majeures (islam, christianisme, hindouisme, bouddhisme, judaïsme…)
+
+Fêtes religieuses et rituels
+
+Lieux saints et pèlerinages
+
+Courants spirituels non religieux (stoïcisme, spiritualités africaines…)
+
+🧬 Génétique et biologie humaine
+ADN, hérédité, génome
+
+Maladies génétiques célèbres
+
+Vaccination et thérapie génique
+
+🚀 Exploration et conquêtes
+Grandes expéditions (Marco Polo, Magellan, Livingstone…)
+
+Course à l’espace (Apollo, ISS, SpaceX…)
+
+Exploration sous-marine
+
+🧳 Langues et civilisations
+Langues les plus parlées
+
+Alphabets et écritures (cyrillique, arabe, chinois, etc.)
+
+Civilisations disparues (Mayas, Aztèques, Mésopotamie…)
+
+📱 Culture numérique et internet
+Histoire d’internet
+
+Mèmes, influenceurs, tendances digitales
+
+Vie privée et données personnelles
+
+🍽️ Alimentation et gastronomie
+Plats typiques par pays (sushi, couscous, tacos…)
+
+Grands chefs et restaurants étoilés
+
+Agriculture, circuits courts, alimentation durable
+
+🏆 Records et classements
+Pays les plus riches/pauvres
+
+Villes les plus peuplées
+
+Record du monde insolites ou sportifs
+
+✈️ Tourisme mondial
+Sites classés UNESCO
+
+Capitales touristiques
+
+Curiosités géographiques (triangle des Bermudes, geysers…)
+
+⚔️ Armées et stratégies militaires
+Grandes batailles (Waterloo, Verdun, Pearl Harbor…)
+
+Technologies militaires (drone, cyberdéfense…)
+
+Services secrets et espionnage (CIA, KGB…)
+
+🏛️ Mythologies
+Mythologies grecque, romaine, nordique, africaine, asiatique
+
+Dieux, héros et légendes
+
+Symboles et animaux mythologiques
+
+📦 Commerce, routes et échanges
+Routes de la soie, traite négrière, routes maritimes
+
+Zones franches, accords de libre-échange
+
+Marchandises célèbres (épices, or, pétrole…)
+
+🧨 Crises et catastrophes
+Catastrophes naturelles (tsunamis, séismes…)
+
+Catastrophes humaines (Tchernobyl, Titanic…)
+
+Pandémies historiques
+
+🎭 Théâtre et arts de la scène
+Tragédie, comédie, drame, théâtre d’ombres…
+
+Auteurs majeurs (Molière, Shakespeare…)
+
+Festivals (Avignon, Carthage, etc.)
+
+
+
+Littérature
+Auteurs classiques et contemporains (Victor Hugo, Camus, Senghor…)
+
+Œuvres majeures (Le Cid, Les Misérables, L’Étranger…)
+
+Prix littéraires (Goncourt, Renaudot, Nobel…)
+
+Mouvements littéraires (romantisme, surréalisme…)
+
+🎨 Art et patrimoine
+Peintres et artistes (Picasso, Van Gogh, Basquiat…)
+
+Musées célèbres (Louvre, Prado, MoMA…)
+
+Architecture et monuments (Notre-Dame, pyramides, Taj Mahal…)
+
+🎥 Cinéma et télévision
+Réalisateurs connus (Tarantino, Spielberg, Ousmane Sembène…)
+
+Acteurs/actrices iconiques
+
+Palmarès (Cannes, Oscars…)
+
+Séries et cinéma populaire
+
+🎵 Musique
+Genres musicaux (jazz, rock, reggae, rap…)
+
+Compositeurs célèbres (Mozart, Beethoven…)
+
+Musique africaine, caribéenne, asiatique, etc.
+
+Influence musicale mondiale (K-pop, afrobeats…)
+
+📐 Sciences et découvertes
+Mathématiques, physique, chimie, biologie
+
+Inventions majeures (électricité, vaccin, avion…)
+
+Prix scientifiques (Nobel, Fields, Breakthrough…)
+
+Vulgarisation scientifique (climat, intelligence artificielle…)
+
+🧪 Santé et médecine
+Pandémies majeures (COVID-19, grippe espagnole…)
+
+Vaccins et progrès médicaux
+
+Médecins célèbres (Pasteur, Semmelweis…)
+
+Systèmes de santé dans le monde
+
+👨‍💻 Technologie et numérique
+Révolutions numériques (internet, IA, blockchain…)
+
+GAFAM, réseaux sociaux, cybersécurité
+
+Applications mobiles célèbres
+
+Technologies futures (quantique, 5G, robotique…)
+
+🏛️ Philosophie et pensée
+Philosophes (Platon, Descartes, Kant, Confucius…)
+
+Concepts (liberté, morale, justice…)
+
+Courants (existentialisme, stoïcisme, marxisme…)
+
+⚖️ Droit et institutions
+Droits de l’homme
+
+Droit constitutionnel
+
+Droit international
+
+Institutions judiciaires
+
+🌍 Écologie et développement durable
+Réchauffement climatique
+
+Énergies renouvelables
+
+Conférences internationales (COP21, COP26…)
+
+Biodiversité
+
+🤝 Société et vie citoyenne
+Laïcité, démocratie, égalité
+
+Éducation, travail, inclusion
+
+Luttes sociales, discriminations
+
+Mouvements sociaux et ONG
+
+💼 Économie et finance
+Concepts clés (inflation, PIB, chômage…)
+
+Marchés financiers, banques, crypto-monnaies
+
+Entreprises multinationales
+
+Économie solidaire
+
+📰 Actualité et médias
+Liberté de la presse
+
+Médias influents
+
+Désinformation, fake news
+
+Journalistes célèbres
+
+🧭 Culture générale insolite
+Records (Guinness, exploits…)
+
+Anecdotes historiques
+
+Quiz de logique ou devinettes
+
+Objets emblématiques (Tour Eiffel, Mona Lisa…)
+

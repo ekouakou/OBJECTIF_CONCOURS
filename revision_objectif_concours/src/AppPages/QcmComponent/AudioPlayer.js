@@ -1,58 +1,64 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Button, Whisper, Tooltip } from 'rsuite';
 import { Speaker, PauseOutline } from '@rsuite/icons';
 import 'rsuite/dist/rsuite.min.css';
 
 const AudioPlayer = ({ id, text, isPlaying, setIsPlaying, speechSynthRef, buttonText }) => {
   const [isSupported, setIsSupported] = useState(true);
-  const [voices, setVoices] = useState([]);
-  
+  const [availableVoices, setAvailableVoices] = useState([]);
+  const selectedVoiceRef = useRef(null);
+
+  // Vérification du support et chargement initial des voix
   useEffect(() => {
-    // Vérifier si la synthèse vocale est prise en charge
-    setIsSupported('speechSynthesis' in window);
-    
-    // Fonction pour charger les voix disponibles
-    const loadVoices = () => {
-      const availableVoices = window.speechSynthesis.getVoices();
-      setVoices(availableVoices);
-    };
-    
-    // Charger les voix initiales
-    loadVoices();
-    
-    // Certains navigateurs chargent les voix de manière asynchrone
-    if (window.speechSynthesis) {
-      window.speechSynthesis.onvoiceschanged = loadVoices;
+    if (!('speechSynthesis' in window)) {
+      setIsSupported(false);
+      return;
     }
-    
+
+    // Fonction pour initialiser et charger les voix
+    const initVoices = () => {
+      try {
+        const voices = window.speechSynthesis.getVoices();
+        setAvailableVoices(voices);
+        
+        // Log toutes les voix disponibles
+        if (voices.length > 0) {
+          console.log('Voix disponibles:', voices.map(v => `${v.name} (${v.lang})`));
+          
+          // Présélection de la voix pour accélérer la lecture
+          selectedVoiceRef.current = findBestFrenchFemaleVoice(voices);
+          if (selectedVoiceRef.current) {
+            console.log('Voix présélectionnée:', selectedVoiceRef.current.name);
+          }
+        }
+      } catch (error) {
+        console.error("Erreur lors du chargement des voix:", error);
+      }
+    };
+
+    // Chargement initial
+    initVoices();
+
+    // Configuration de l'événement pour les navigateurs qui chargent les voix de manière asynchrone
+    window.speechSynthesis.onvoiceschanged = initVoices;
+
+    // Nettoyage au démontage du composant
     return () => {
+      window.speechSynthesis.onvoiceschanged = null;
+      
+      // S'assurer que toute lecture en cours est arrêtée
       if (window.speechSynthesis) {
-        window.speechSynthesis.onvoiceschanged = null;
+        window.speechSynthesis.cancel();
       }
     };
   }, []);
 
-  // Fonction pour trouver la meilleure voix féminine française de Google
-  const getBestFrenchFemaleVoice = () => {
-    // Si les voix n'ont pas été chargées, essayez de les récupérer directement
-    if (!voices.length && window.speechSynthesis) {
-      const directVoices = window.speechSynthesis.getVoices();
-      if (directVoices.length > 0) {
-        return findBestVoice(directVoices);
-      }
-      return null;
-    }
+  // Fonction pour trouver la meilleure voix féminine française
+  const findBestFrenchFemaleVoice = (voices) => {
+    if (!voices || !voices.length) return null;
     
-    return findBestVoice(voices);
-  };
-  
-  // Fonction séparée pour la logique de recherche de voix
-  const findBestVoice = (voicesList) => {
-    if (!voicesList || !voicesList.length) return null;
-    
-    // Priorités pour la sélection de voix
     // 1. Voix Google féminine française
-    const googleFrenchFemaleVoices = voicesList.filter(voice => 
+    const googleFrenchFemaleVoice = voices.find(voice => 
       voice.lang.includes('fr') && 
       voice.name.includes('Google') && 
       (voice.name.toLowerCase().includes('female') || 
@@ -60,145 +66,150 @@ const AudioPlayer = ({ id, text, isPlaying, setIsPlaying, speechSynthRef, button
        voice.name.toLowerCase().includes('femme'))
     );
     
-    if (googleFrenchFemaleVoices.length > 0) {
-      console.log("Utilisation d'une voix Google féminine française:", googleFrenchFemaleVoices[0].name);
-      return googleFrenchFemaleVoices[0];
+    if (googleFrenchFemaleVoice) {
+      return googleFrenchFemaleVoice;
     }
     
     // 2. N'importe quelle voix Google française
-    const googleFrenchVoices = voicesList.filter(voice => 
+    const googleFrenchVoice = voices.find(voice => 
       voice.lang.includes('fr') && 
       voice.name.includes('Google')
     );
     
-    if (googleFrenchVoices.length > 0) {
-      console.log("Utilisation d'une voix Google française:", googleFrenchVoices[0].name);
-      return googleFrenchVoices[0];
+    if (googleFrenchVoice) {
+      return googleFrenchVoice;
     }
     
     // 3. N'importe quelle voix féminine française
-    const femaleFrenchVoices = voicesList.filter(voice => 
+    const femaleFrenchVoice = voices.find(voice => 
       voice.lang.includes('fr') && 
       (voice.name.toLowerCase().includes('female') || 
        voice.name.toLowerCase().includes('féminin') ||
        voice.name.toLowerCase().includes('femme'))
     );
     
-    if (femaleFrenchVoices.length > 0) {
-      console.log("Utilisation d'une voix féminine française (non-Google):", femaleFrenchVoices[0].name);
-      return femaleFrenchVoices[0];
+    if (femaleFrenchVoice) {
+      return femaleFrenchVoice;
     }
     
     // 4. N'importe quelle voix française
-    const frenchVoices = voicesList.filter(voice => voice.lang.includes('fr'));
+    const frenchVoice = voices.find(voice => voice.lang.includes('fr'));
     
-    if (frenchVoices.length > 0) {
-      console.log("Utilisation d'une voix française:", frenchVoices[0].name);
-      return frenchVoices[0];
+    if (frenchVoice) {
+      return frenchVoice;
     }
     
-    // Si aucune voix française n'est disponible, utiliser la voix par défaut
-    console.log("Aucune voix française trouvée. Utilisation de la voix par défaut.");
     return null;
   };
 
-  // Fonction pour gérer la lecture audio avec gestion améliorée des erreurs
+  // Fonction principale pour gérer la lecture audio
   const toggleSpeech = () => {
+    // Vérifier que la synthèse vocale est disponible
+    if (!window.speechSynthesis) {
+      console.error("La synthèse vocale n'est pas disponible");
+      return;
+    }
+    
     // Si la lecture est déjà en cours pour cet élément, l'arrêter
     if (isPlaying[id]) {
-      if (speechSynthRef.current) {
-        try {
-          speechSynthRef.current.cancel();
-        } catch (error) {
-          console.warn("Erreur lors de l'annulation de la synthèse vocale:", error);
-        }
-      }
-      setIsPlaying((prev) => ({
+      window.speechSynthesis.cancel();
+      
+      setIsPlaying(prev => ({
         ...prev,
         [id]: false
       }));
       return;
     }
     
-    // Pause pour éviter les conflits avec des annulations précédentes
+    // ÉTAPE CRUCIALE: Réinitialiser complètement l'état de la synthèse vocale
+    window.speechSynthesis.cancel();
+    
+    // Attendre un court instant pour s'assurer que la synthèse est bien réinitialisée
     setTimeout(() => {
-      // Arrêter toute lecture en cours
-      if (speechSynthRef.current) {
-        try {
-          speechSynthRef.current.cancel();
-        } catch (error) {
-          console.warn("Erreur lors de l'annulation de la synthèse vocale:", error);
-        }
+      // Vérifier que nous avons du texte à lire
+      if (!text || text.trim() === '') {
+        console.warn("Aucun texte à lire");
+        return;
       }
-    
-    // Réinitialiser tous les états de lecture
-    const newIsPlaying = {};
-    Object.keys(isPlaying).forEach(key => {
-      newIsPlaying[key] = false;
-    });
-    
-    // Configurer la nouvelle lecture
-    if (speechSynthRef.current && text) {
+      
+      // Créer un nouvel objet d'énonciation
       const utterance = new SpeechSynthesisUtterance(text);
       
-      // Configurer les paramètres de base de la voix
+      // Configuration des paramètres de base
       utterance.lang = 'fr-FR';
       utterance.rate = 1.0;
       utterance.pitch = 1.1; // Légèrement plus aigu pour une voix plus féminine
       utterance.volume = 1.0;
       
-      // Sélectionner la meilleure voix féminine française disponible
-      const bestVoice = getBestFrenchFemaleVoice();
-      if (bestVoice) {
-        utterance.voice = bestVoice;
-        console.log('Voix sélectionnée:', bestVoice.name);
+      // Sélectionner la voix
+      try {
+        // Utiliser la voix présélectionnée si disponible
+        if (selectedVoiceRef.current) {
+          utterance.voice = selectedVoiceRef.current;
+          console.log('Utilisation de la voix présélectionnée:', selectedVoiceRef.current.name);
+        } 
+        // Sinon essayer de trouver une voix en direct
+        else {
+          const voices = window.speechSynthesis.getVoices();
+          const bestVoice = findBestFrenchFemaleVoice(voices);
+          
+          if (bestVoice) {
+            utterance.voice = bestVoice;
+            console.log('Voix sélectionnée en direct:', bestVoice.name);
+          } else {
+            console.log('Aucune voix française trouvée. Utilisation de la voix par défaut.');
+          }
+        }
+      } catch (error) {
+        console.error("Erreur lors de la sélection de la voix:", error);
       }
       
-      // Événement de fin de lecture
-      utterance.onend = () => {
-        setIsPlaying(prev => ({
-          ...prev,
-          [id]: false
-        }));
-      };
-      
-      // Événement d'erreur - gestion améliorée des erreurs
-      utterance.onerror = (event) => {
-        // Ne pas afficher d'erreur pour les interruptions intentionnelles
-        if (event.error !== 'interrupted' || !isPlaying[id]) {
-          console.error(`Erreur de synthèse vocale (${event.error}):`, event);
-        }
+      // Gestion des événements
+      utterance.onstart = () => {
+        console.log('Début de la lecture vocale');
         
-        // Dans tous les cas, réinitialiser l'état de lecture
-        setIsPlaying(prev => ({
-          ...prev,
-          [id]: false
-        }));
-      };
-      
-      try {
-        // Démarrer la lecture avec gestion d'erreur
-        speechSynthRef.current.speak(utterance);
+        // Réinitialiser toutes les lectures en cours
+        const newIsPlaying = {};
+        Object.keys(isPlaying).forEach(key => {
+          newIsPlaying[key] = false;
+        });
         
-        // Mettre à jour l'état pour cet élément
+        // Activer uniquement la lecture actuelle
         setIsPlaying({
           ...newIsPlaying,
           [id]: true
         });
+      };
+      
+      utterance.onend = () => {
+        console.log('Fin de la lecture vocale');
+        setIsPlaying(prev => ({
+          ...prev,
+          [id]: false
+        }));
+      };
+      
+      utterance.onerror = (event) => {
+        console.error(`Erreur de synthèse vocale (${event.error}):`, event);
+        setIsPlaying(prev => ({
+          ...prev,
+          [id]: false
+        }));
+      };
+      
+      // Démarrer la lecture vocale
+      try {
+        window.speechSynthesis.speak(utterance);
       } catch (error) {
         console.error("Erreur lors du démarrage de la lecture:", error);
+        setIsPlaying(prev => ({
+          ...prev,
+          [id]: false
+        }));
       }
-    }
-  }, 50); // Petit délai pour éviter les conflits
+    }, 100); // Délai de sécurité
   };
 
-  // Afficher un petit message de débogage avec la liste des voix disponibles
-  useEffect(() => {
-    if (voices.length > 0) {
-      console.log('Voix disponibles:', voices.map(v => `${v.name} (${v.lang})`).join(', '));
-    }
-  }, [voices]);
-  
   // Si la synthèse vocale n'est pas prise en charge, ne pas rendre le bouton
   if (!isSupported) {
     return null;

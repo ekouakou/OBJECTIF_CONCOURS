@@ -20,11 +20,9 @@ import {
 } from 'rsuite';
 import { Speaker, CheckOutline, CloseOutline, PlayOutline, PauseOutline } from '@rsuite/icons';
 import 'rsuite/dist/rsuite.min.css';
-// import QCMQuestions from './QCMQuestions';
-import QCMQuestions from '../CoteDivoire/QCMSportQuestion';
-import Pagination from '../QcmComponent/Pagination';
+import Pagination from './Pagination';
 import PageSizeSelector from './PageSizeSelector';
-import SearchBar from './SearchBar';
+import SearchBar from '../UML/SearchBar';
 import {
     generatePDF,
     getOptionLetters,
@@ -36,10 +34,14 @@ import {
     startCountdown,
     stopCountdown,
     clearAllTimers
-} from './utils';
+} from '../UML/utils';
+// Import des nouveaux composants externalisés
+import AudioPlayer from './AudioPlayer';
+import ConfigButtons from './ConfigButtons';
 import '../styles.css';
 
-const UMLQcm = () => {
+const UMLQcm = ({questionSerie, Title}) => {
+
     const [activeKey, setActiveKey] = useState(null);
     const [showAnswers, setShowAnswers] = useState({});
     const [showExplanation, setShowExplanation] = useState({});
@@ -61,7 +63,7 @@ const UMLQcm = () => {
 
     // Recherche
     const [searchTerm, setSearchTerm] = useState('');
-    const [filteredQuestions, setFilteredQuestions] = useState(QCMQuestions);
+    const [filteredQuestions, setFilteredQuestions] = useState(questionSerie);
 
     // Pagination
     const [itemsPerPage, setItemsPerPage] = useState(5);
@@ -108,7 +110,7 @@ const UMLQcm = () => {
 
     // Effectuer la recherche lorsque le terme de recherche change
     useEffect(() => {
-        const results = searchQuestions(QCMQuestions, searchTerm);
+        const results = searchQuestions(questionSerie, searchTerm);
         setFilteredQuestions(results);
         setActivePage(1); // Retour à la première page après une recherche
     }, [searchTerm]);
@@ -159,12 +161,12 @@ const UMLQcm = () => {
 
     // Afficher/masquer toutes les réponses
     const handleToggleAllAnswers = (show) => {
-        setShowAnswers(toggleAllItems(QCMQuestions, show));
+        setShowAnswers(toggleAllItems(questionSerie, show));
     };
 
     // Afficher/masquer toutes les explications
     const handleToggleAllExplanations = (show) => {
-        setShowExplanation(toggleAllItems(QCMQuestions, show));
+        setShowExplanation(toggleAllItems(questionSerie, show));
     };
 
     // Changer le nombre d'éléments par page
@@ -224,7 +226,9 @@ const UMLQcm = () => {
     // Déterminer si on doit afficher la pagination
     const showPagination = itemsPerPage !== 999 && totalPages > 1;
 
-    // *** FONCTIONS POUR LE TEXT-TO-SPEECH ***
+    // *** FONCTIONS POUR LE TEXT-TO-SPEECH EXTERNALISÉ ***
+    // Cette fonction est maintenant déplacée dans AudioPlayer.js 
+    // Mais nous gardons ces méthodes d'aide pour préparer le texte
 
     // Préparer le texte complet pour la lecture audio
     const prepareQuestionTextForSpeech = (question) => {
@@ -254,58 +258,33 @@ const UMLQcm = () => {
         return text;
     };
 
-    // Fonction pour lire le texte à voix haute
-    const speakText = (id, text) => {
-        // Arrêter toute lecture en cours
-        if (speechSynthRef.current) {
-            speechSynthRef.current.cancel();
+    // Préparer le texte de l'explication uniquement pour la lecture audio
+    const prepareExplanationTextForSpeech = (question) => {
+        let text = `Explication pour la question ${question.id}: ${question.explanation} `;
+
+        // Ajouter les détails
+        if (question.detailedExplanation) {
+            text += `Plus de détails: ${question.detailedExplanation} `;
         }
 
-        // Créer une nouvelle instance de synthèse vocale
-        const utterance = new SpeechSynthesisUtterance(text);
-
-        // Configurer la voix en français
-        utterance.lang = 'fr-FR';
-
-        // Chercher une voix française
-        const voices = speechSynthRef.current.getVoices();
-        const frenchVoice = voices.find(voice => voice.lang.includes('fr'));
-        if (frenchVoice) {
-            utterance.voice = frenchVoice;
+        // Ajouter les exemples s'ils existent
+        if (question.examples) {
+            text += `Exemples: ${question.examples} `;
         }
 
-        // Événements pour suivre l'état de la lecture
-        utterance.onstart = () => {
-            setIsPlaying(prev => ({ ...prev, [id]: true }));
-        };
-
-        utterance.onend = () => {
-            setIsPlaying(prev => ({ ...prev, [id]: false }));
-        };
-
-        utterance.onerror = () => {
-            setIsPlaying(prev => ({ ...prev, [id]: false }));
-        };
-
-        // Lancer la lecture
-        speechSynthRef.current.speak(utterance);
-    };
-
-    // Fonction pour télécharger l'audio
-    const downloadAudio = (id, text) => {
-        alert("La fonctionnalité de téléchargement audio nécessite une API backend. Cette démonstration montre uniquement l'interface utilisateur.");
+        return text;
     };
 
     // Fonction pour lire une question à voix haute
     const handleSpeak = (question) => {
         const text = prepareQuestionTextForSpeech(question);
-        speakText(question.id, text);
+        return text;
     };
 
-    // Fonction pour télécharger l'audio d'une question
-    const handleDownloadAudio = (question) => {
-        const text = prepareQuestionTextForSpeech(question);
-        downloadAudio(question.id, text);
+    // Fonction pour lire une explication à voix haute
+    const handleSpeakExplanation = (question) => {
+        const text = prepareExplanationTextForSpeech(question);
+        return text;
     };
 
     // *** NOUVELLES FONCTIONS POUR L'ÉVALUATION ***
@@ -517,53 +496,17 @@ const UMLQcm = () => {
             )}
 
             {!evaluationMode && (
-                <div className="global-controls">
-                    <ButtonToolbar>
-                        <ButtonGroup>
-                            <Button
-                                appearance="ghost"
-                                onClick={toggleExpandAll}
-                            >
-                                {expandAll ? 'Masquer toutes les questions' : 'Afficher toutes les questions'}
-                            </Button>
-                        </ButtonGroup>
-
-                        <ButtonGroup>
-                            <Button
-                                appearance="ghost"
-                                onClick={() => handleToggleAllAnswers(true)}
-                            >
-                                Afficher toutes les réponses
-                            </Button>
-                            <Button
-                                appearance="ghost"
-                                onClick={() => handleToggleAllAnswers(false)}
-                            >
-                                Masquer toutes les réponses
-                            </Button>
-                        </ButtonGroup>
-
-                        <ButtonGroup>
-                            <Button
-                                appearance="ghost"
-                                onClick={() => handleToggleAllExplanations(true)}
-                            >
-                                Afficher toutes les explications
-                            </Button>
-                            <Button
-                                appearance="ghost"
-                                onClick={() => handleToggleAllExplanations(false)}
-                            >
-                                Masquer toutes les explications
-                            </Button>
-                        </ButtonGroup>
-                    </ButtonToolbar>
-                </div>
+                <ConfigButtons
+                    expandAll={expandAll}
+                    toggleExpandAll={toggleExpandAll}
+                    handleToggleAllAnswers={handleToggleAllAnswers}
+                    handleToggleAllExplanations={handleToggleAllExplanations}
+                />
             )}
 
             <Content className="qcm-content" id="qcm-content">
                 <div className="qcm-intro">
-                    <h2>Test de connaissances en informatique</h2>
+                    <h2>{Title}</h2>
                     <p>Ce QCM couvre divers sujets liés à l'informatique, du développement web aux concepts avancés.</p>
                 </div>
 
@@ -637,27 +580,14 @@ const UMLQcm = () => {
                                     <span>{`Question ${item.id}: ${item.question}`}</span>
                                     {!evaluationMode && (
                                         <div className="audio-controls">
-                                            <Button
-                                                appearance="subtle"
-                                                onClick={(e) => {
-                                                    e.stopPropagation();
-                                                    handleSpeak(item);
-                                                }}
-                                                disabled={isPlaying[item.id]}
-                                                className="audio-button"
-                                            >
-                                                <Speaker /> {isPlaying[item.id] ? 'Lecture en cours...' : 'Écouter'}
-                                            </Button>
-                                            <Button
-                                                appearance="subtle"
-                                                onClick={(e) => {
-                                                    e.stopPropagation();
-                                                    handleDownloadAudio(item);
-                                                }}
-                                                className="download-button"
-                                            >
-                                                Télécharger l'audio
-                                            </Button>
+                                            <AudioPlayer
+                                                id={item.id}
+                                                text={handleSpeak(item)}
+                                                isPlaying={isPlaying}
+                                                setIsPlaying={setIsPlaying}
+                                                speechSynthRef={speechSynthRef}
+                                                buttonText="Écouter la question"
+                                            />
                                         </div>
                                     )}
                                     {evaluationMode && (
@@ -776,7 +706,17 @@ const UMLQcm = () => {
 
                             {(showExplanation[item.id] && showAnswers[item.id]) && (
                                 <div className="explanation-box">
-                                    <h4>Explication:</h4>
+                                    <div className="explanation-header">
+                                        <h4>Explication:</h4>
+                                        <AudioPlayer
+                                            id={`explanation-${item.id}`}
+                                            text={handleSpeakExplanation(item)}
+                                            isPlaying={isPlaying}
+                                            setIsPlaying={setIsPlaying}
+                                            speechSynthRef={speechSynthRef}
+                                            buttonText="Écouter l'explication"
+                                        />
+                                    </div>
                                     <p>{item.explanation}</p>
                                     <br />
                                     <h4>Plus de détail:</h4>
@@ -833,8 +773,7 @@ const UMLQcm = () => {
                 <p>© 2025 - QCM d'Informatique</p>
             </Footer>
 
-            {/* Modal des résultats */}
-            <Modal
+            {/* Modal des résultats */}<Modal
                 open={evaluationResults.showResults}
                 onClose={closeResults}
                 size="md"

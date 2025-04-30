@@ -4,139 +4,136 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BudgetPro EPN - Gestion de la masse salariale</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Fashion - Special Discount Today</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
-        :root {
-            --primary: #e67e22;
-            /* Orange */
-            --secondary: #e67e22;
-            /* Orange clair */
-            --success: #27ae60;
-            /* Vert */
-            --info: #2ecc71;
-            /* Vert clair */
-            --light-bg: #f8f9fa;
-            /* Blanc cassé */
-            --dark-text: #2c3e50;
-        }
-
         body {
-            font-family: 'Poppins', sans-serif;
-            background-color: var(--light-bg);
-            color: var(--dark-text);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            overflow-x: hidden;
+            background-color: #f8f9fa;
+            color: #2c3e50;
         }
 
-        .navbar {
-            background-color: white;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-        }
-
-        .navbar-brand {
-            font-weight: 700;
-            color: var(--primary);
-        }
-
-        .hero-section {
-            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
-            color: white;
-            padding: 4rem 0;
+        .fashion-bg {
+            background-color: #ffffff;
+            min-height: 100vh;
             position: relative;
-            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .header-nav {
+            font-weight: 600;
         }
 
-        .feature-card {
-            border-radius: 12px;
-            padding: 1.2rem;
-            height: 100%;
-            transition: all 0.3s ease;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-            border-left: 4px solid transparent;
+        .header-nav .nav-link {
+            color: #000;
+            padding: 0.5rem 1rem;
+            font-size: 18px;
         }
 
-        .feature-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        .header-nav .nav-link.active {
+            color: #d88236;
         }
 
-        .card-orange {
-            background-color: rgba(230, 126, 34, 0.07);
-            border-left: 4px solid var(--primary);
-        }
-
-        .card-orange:hover {
-            border-left: 4px solid var(--primary);
-            background-color: rgba(230, 126, 34, 0.12);
-        }
-
-        .card-white {
-            background-color: white;
-            border-left: 4px solid #bdc3c7;
-        }
-
-        .card-white:hover {
-            border-left: 4px solid #bdc3c7;
-            background-color: #f9f9f9;
-        }
-
-        .card-green {
-            background-color: rgba(39, 174, 96, 0.07);
-            border-left: 4px solid var(--success);
-        }
-
-        .card-green:hover {
-            border-left: 4px solid var(--success);
-            background-color: rgba(39, 174, 96, 0.12);
-        }
-
-        .card-light-green {
-            background-color: rgba(46, 204, 113, 0.07);
-            border-left: 4px solid var(--info);
-        }
-
-        .card-light-green:hover {
-            border-left: 4px solid var(--info);
-            background-color: rgba(46, 204, 113, 0.12);
-        }
-
-        .icon-box {
-            width: 50px;
-            height: 50px;
-            border-radius: 10px;
+        .main-container {
+            flex: 1;
             display: flex;
             align-items: center;
-            justify-content: center;
-            font-size: 20px;
-            margin-bottom: 0.8rem;
         }
 
-        .primary-icon {
-            background-color: rgba(230, 126, 34, 0.2);
-            color: var(--primary);
+        .special-discount {
+            font-size: 4rem;
+            font-weight: 800;
+            line-height: 1.1;
         }
 
-        .success-icon {
-            background-color: rgba(39, 174, 96, 0.2);
-            color: var(--success);
+        .model-section {
+            position: relative;
         }
 
-        .info-icon {
-            background-color: rgba(46, 204, 113, 0.2);
-            color: var(--info);
+        .orange-accent {
+            color: #d88236;
         }
 
-        .warning-icon {
-            background-color: rgba(243, 156, 18, 0.2);
-            color: var(--secondary);
+        .triangle-pattern {
+            position: absolute;
+            right: 10%;
+            bottom: 10%;
         }
 
-        .btn-primary {
-            background-color: var(--primary);
-            border-color: var(--primary);
-            padding: 0.5rem 1.2rem;
-            border-radius: 8px;
+        .plus-icon {
+            position: absolute;
+            right: 15%;
+            top: 30%;
+            color: #d88236;
+            font-size: 2rem;
+            transform: rotate(45deg);
+        }
+
+        .plus-icon-bottom {
+            position: absolute;
+            right: 20%;
+            bottom: 10%;
+            color: #d88236;
+            font-size: 2rem;
+            transform: rotate(45deg);
+        }
+
+        .social-icons a {
+            color: #000;
+            font-size: 1.5rem;
+            margin-right: 1rem;
+        }
+
+        .order-btn {
+            background-color: #d88236;
+            color: white;
+            border: none;
+            padding: 10px 30px;
             font-weight: 600;
+            border-radius: 4px;
+        }
+
+        .city-select {
+            padding: 10px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            width: 100%;
+        }
+
+        .side-dots {
+            position: absolute;
+            right: 0;
+            top: 0;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            padding-right: 20px;
+        }
+
+        .side-dot {
+            width: 8px;
+            height: 8px;
+            background-color: #d88236;
+            border-radius: 50%;
+            margin: 5px 0;
+        }
+
+        .content-placeholder {
+            color: #666;
+            max-width: 400px;
+        }
+
+        :root {
+            --primary: #e67e22;
+            --secondary: #e67e22;
+            --success: #27ae60;
+            --info: #2ecc71;
+            --light-bg: #f8f9fa;
+            --dark-text: #2c3e50;
         }
 
         .section-heading {
@@ -154,21 +151,6 @@
             bottom: -8px;
             left: 0;
             border-radius: 2px;
-        }
-
-        .stats-card {
-            background: white;
-            border-radius: 12px;
-            padding: 1.2rem;
-            text-align: center;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-        }
-
-        .stats-number {
-            font-size: 2rem;
-            font-weight: 700;
-            color: var(--primary);
-            margin-bottom: 0.3rem;
         }
 
         .feature-list {
@@ -190,126 +172,135 @@
             position: absolute;
             left: 0;
         }
-
-        .bg-light-custom {
-            background-color: #fafafa;
-        }
-
-        .bg-secondary-light {
-            background-color: rgba(230, 126, 34, 0.03);
-        }
+        
     </style>
 </head>
 
 <body>
-    <!-- Features Section -->
-    <section class="py-5 mt-4 bg-light-custom">
-        <div class="container my-3">
-            <div class="row mb-4 align-items-center">
-                <!-- Colonne gauche avec texte -->
-                <div class="col-lg-12">
-                    <h2 class="section-heading">Fonctionnalités spécifiques pour les EPN</h2>
-                    <p class="lead">Simplifiez la gestion de votre masse salariale en respectant le cadre réglementaire.
-                    </p>
+    <div class="fashion-bg">
 
-                    <div class="row g-3 mt-4">
-                        <div class="col-md-4">
-                            <div class="feature-card card-orange">
-                                <div class="icon-box primary-icon">
-                                    <i class="fas fa-calculator"></i>
-                                </div>
-                                <h5>Prévision budgétaire</h5>
-                                <p>Simulez l'impact budgétaire des différents scénarios RH.</p>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="feature-card card-white">
-                                <div class="icon-box success-icon">
-                                    <i class="fas fa-chart-line"></i>
-                                </div>
-                                <h5>Suivi d'exécution</h5>
-                                <p>Contrôlez en temps réel l'exécution de votre budget.</p>
-                            </div>
-                        </div>
-                        <div class="col-md-4 mt-3">
-                            <div class="feature-card card-green">
-                                <div class="icon-box info-icon">
-                                    <i class="fas fa-file-contract"></i>
-                                </div>
-                                <h5>Conformité légale</h5>
-                                <p>Respectez les exigences réglementaires des EPN.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Main Features Section -->
-    <section class="py-5 bg-white">
-        <div class="container  my-3">
-            <div class="row align-items-center mb-4">
-                <div class="col-lg-6">
-                    <h2 class="section-heading fs-5">Planification budgétaire intelligente</h2>
-                    <p class="mb-3">Anticipez précisément l'évolution de votre masse salariale.</p>
-                    <ul class="feature-list">
-                        <li>Projections pluriannuelles automatisées</li>
-                        <li>Intégration des évolutions statutaires</li>
-                        <li>Simulation d'impact des recrutements</li>
-                    </ul>
-                </div>
-                <div class="col-lg-6">
-                    <h2 class="section-heading fs-5">Suivi budgétaire en temps réel</h2>
-                    <p class="mb-3">Maîtrisez l'exécution de votre budget masse salariale.</p>
-                    <ul class="feature-list">
-                        <li>Alertes de dépassement automatiques</li>
-                        <li>Analyse des écarts prévu/réalisé</li>
-                        <li>Export de rapports pour la gouvernance</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Statistics Section -->
-    <section class="py-5 bg-secondary-light">
-        <div class="container my-3">
+        <div class="container-fluid">
             <div class="row">
-                <div class="col-lg-6 mx-auto text-center mb-4">
-                    <h2 class="fw-bold">Résultats pour les EPN</h2>
-                    <p>Des performances mesurables pour votre établissement</p>
+                <!-- Navigation -->
+                <div class="col-12">
+                    <nav class="navbar navbar-expand-lg navbar-light py-3">
+                        <div class="container-fluid">
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarNav">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                        </div>
+                    </nav>
                 </div>
             </div>
-            <div class="row g-3">
-                <div class="col-6 col-md-3">
-                    <div class="stats-card">
-                        <div class="stats-number">AABB %</div>
-                        <p class="mb-0">Précision des prévisions</p>
+        </div>
+
+        <!-- Main container for vertical centering -->
+        <div class="main-container">
+            <div class="container">
+                <!-- Main Content -->
+                <div class="row" id="main-containt">
+                    <!-- Model Image -->
+                    <div class="col-md-6 model-section position-relative">
+                        <img src="img.svg" alt="Model in orange turtleneck" class="img-fluid">
                     </div>
-                </div>
-                <div class="col-6 col-md-3">
-                    <div class="stats-card">
-                        <div class="stats-number">AABB %</div>
-                        <p class="mb-0">Temps gagné</p>
-                    </div>
-                </div>
-                <div class="col-6 col-md-3">
-                    <div class="stats-card">
-                        <div class="stats-number">AABB +</div>
-                        <p class="mb-0">Établissements</p>
-                    </div>
-                </div>
-                <div class="col-6 col-md-3">
-                    <div class="stats-card">
-                        <div class="stats-number">AABB %</div>
-                        <p class="mb-0">Satisfaction client</p>
+
+                    <!-- Text Content -->
+                    <div class="col-md-6 position-relative d-flex flex-column justify-content-center">
+                        <div class="plus-icon">+</div>
+                        <h1 class="special-discount mb-4">Budgetisation<br>des EPN<span
+                                class="orange-accent">.</span></h1>
+
+                        <p class="content-placeholder mb-4">
+                            * EPN :  Etablissement Publique National
+                        </p>
+
+                        <div class="row align-items-center mb-4">
+                            <div class="col-lg-6">
+                                <h2 class="section-heading fs-5">Planification budgétaire intelligente</h2>
+                                <p class="mb-3">Anticipez précisément l'évolution de votre masse salariale.</p>
+                                <ul class="feature-list">
+                                    <li>Projections pluriannuelles automatisées</li>
+                                    <li>Intégration des évolutions statutaires</li>
+                                    <li>Simulation d'impact des recrutements</li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-6">
+                                <h2 class="section-heading fs-5">Suivi budgétaire en temps réel</h2>
+                                <p class="mb-3">Maîtrisez l'exécution de votre budget masse salariale.</p>
+                                <ul class="feature-list">
+                                    <li>Alertes de dépassement automatiques</li>
+                                    <li>Analyse des écarts prévu/réalisé</li>
+                                    <li>Export de rapports pour la gouvernance</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="row mb-4">
+                            <div class="col-md-6">
+                                <button class="order-btn w-100">Commencer</button>
+                            </div>
+                        </div>
+
+                        
+
+                        <!-- Triangle pattern -->
+                        <div class="triangle-pattern">
+                            <div class="d-flex justify-content-end">
+                                <span>▲ ▲ ▲</span>
+                            </div>
+                            <div class="d-flex justify-content-end">
+                                <span>▲ ▲ ▲</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+        <!-- Side dots -->
+        <div class="side-dots">
+            <div class="side-dot"></div>
+            <div class="side-dot"></div>
+            <div class="side-dot"></div>
+            <div class="side-dot"></div>
+            <div class="side-dot"></div>
+            <div class="side-dot"></div>
+            <div class="side-dot"></div>
+            <div class="side-dot"></div>
+        </div>
+
+        <!-- Dot pattern on right -->
+        <div class="position-absolute end-0 top-50" style="transform: translateY(-50%);">
+            <div class="d-flex flex-column">
+                <div class="d-flex mb-2">
+                    <span class="mx-1">·</span>
+                    <span class="mx-1">·</span>
+                    <span class="mx-1">·</span>
+                    <span class="mx-1">·</span>
+                    <span class="mx-1">·</span>
+                </div>
+                <div class="d-flex mb-2">
+                    <span class="mx-1">·</span>
+                    <span class="mx-1">·</span>
+                    <span class="mx-1">·</span>
+                    <span class="mx-1">·</span>
+                    <span class="mx-1">·</span>
+                </div>
+                <div class="d-flex">
+                    <span class="mx-1">·</span>
+                    <span class="mx-1">·</span>
+                    <span class="mx-1">·</span>
+                    <span class="mx-1">·</span>
+                    <span class="mx-1">·</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="plus-icon-bottom">+</div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

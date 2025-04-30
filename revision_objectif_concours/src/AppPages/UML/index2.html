@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BudgetPro EPN - Gestion de la masse salariale</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #e67e22;
+            /* Orange */
+            --secondary: #e67e22;
+            /* Orange clair */
+            --success: #27ae60;
+            /* Vert */
+            --info: #2ecc71;
+            /* Vert clair */
+            --light-bg: #f8f9fa;
+            /* Blanc cassé */
+            --dark-text: #2c3e50;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--light-bg);
+            color: var(--dark-text);
+        }
+
+        .navbar {
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        .navbar-brand {
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        .hero-section {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            color: white;
+            padding: 4rem 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .feature-card {
+            border-radius: 12px;
+            padding: 1.2rem;
+            height: 100%;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            border-left: 4px solid transparent;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .card-orange {
+            background-color: rgba(230, 126, 34, 0.07);
+            border-left: 4px solid var(--primary);
+        }
+
+        .card-orange:hover {
+            border-left: 4px solid var(--primary);
+            background-color: rgba(230, 126, 34, 0.12);
+        }
+
+        .card-white {
+            background-color: white;
+            border-left: 4px solid #bdc3c7;
+        }
+
+        .card-white:hover {
+            border-left: 4px solid #bdc3c7;
+            background-color: #f9f9f9;
+        }
+
+        .card-green {
+            background-color: rgba(39, 174, 96, 0.07);
+            border-left: 4px solid var(--success);
+        }
+
+        .card-green:hover {
+            border-left: 4px solid var(--success);
+            background-color: rgba(39, 174, 96, 0.12);
+        }
+
+        .card-light-green {
+            background-color: rgba(46, 204, 113, 0.07);
+            border-left: 4px solid var(--info);
+        }
+
+        .card-light-green:hover {
+            border-left: 4px solid var(--info);
+            background-color: rgba(46, 204, 113, 0.12);
+        }
+
+        .icon-box {
+            width: 50px;
+            height: 50px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            margin-bottom: 0.8rem;
+        }
+
+        .primary-icon {
+            background-color: rgba(230, 126, 34, 0.2);
+            color: var(--primary);
+        }
+
+        .success-icon {
+            background-color: rgba(39, 174, 96, 0.2);
+            color: var(--success);
+        }
+
+        .info-icon {
+            background-color: rgba(46, 204, 113, 0.2);
+            color: var(--info);
+        }
+
+        .warning-icon {
+            background-color: rgba(243, 156, 18, 0.2);
+            color: var(--secondary);
+        }
+
+        .btn-primary {
+            background-color: var(--primary);
+            border-color: var(--primary);
+            padding: 0.5rem 1.2rem;
+            border-radius: 8px;
+            font-weight: 600;
+        }
+
+        .section-heading {
+            position: relative;
+            margin-bottom: 1.5rem;
+            font-size: 1.75rem;
+        }
+
+        .section-heading::after {
+            content: '';
+            position: absolute;
+            width: 40px;
+            height: 3px;
+            background-color: var(--primary);
+            bottom: -8px;
+            left: 0;
+            border-radius: 2px;
+        }
+
+        .stats-card {
+            background: white;
+            border-radius: 12px;
+            padding: 1.2rem;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        .stats-number {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 0.3rem;
+        }
+
+        .feature-list {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .feature-list li {
+            padding: 0.4rem 0;
+            position: relative;
+            padding-left: 1.8rem;
+        }
+
+        .feature-list li::before {
+            content: "\f058";
+            font-family: "Font Awesome 6 Free";
+            font-weight: 900;
+            color: var(--success);
+            position: absolute;
+            left: 0;
+        }
+
+        .bg-light-custom {
+            background-color: #fafafa;
+        }
+
+        .bg-secondary-light {
+            background-color: rgba(230, 126, 34, 0.03);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Features Section -->
+    <section class="py-5 mt-4 bg-light-custom">
+        <div class="container my-3">
+            <div class="row mb-4 align-items-center">
+                <!-- Colonne gauche avec texte -->
+                <div class="col-lg-12">
+                    <h2 class="section-heading">Fonctionnalités spécifiques pour les EPN</h2>
+                    <p class="lead">Simplifiez la gestion de votre masse salariale en respectant le cadre réglementaire.
+                    </p>
+
+                    <div class="row g-3 mt-4">
+                        <div class="col-md-4">
+                            <div class="feature-card card-orange">
+                                <div class="icon-box primary-icon">
+                                    <i class="fas fa-calculator"></i>
+                                </div>
+                                <h5>Prévision budgétaire</h5>
+                                <p>Simulez l'impact budgétaire des différents scénarios RH.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="feature-card card-white">
+                                <div class="icon-box success-icon">
+                                    <i class="fas fa-chart-line"></i>
+                                </div>
+                                <h5>Suivi d'exécution</h5>
+                                <p>Contrôlez en temps réel l'exécution de votre budget.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mt-3">
+                            <div class="feature-card card-green">
+                                <div class="icon-box info-icon">
+                                    <i class="fas fa-file-contract"></i>
+                                </div>
+                                <h5>Conformité légale</h5>
+                                <p>Respectez les exigences réglementaires des EPN.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Features Section -->
+    <section class="py-5 bg-white">
+        <div class="container  my-3">
+            <div class="row align-items-center mb-4">
+                <div class="col-lg-6">
+                    <h2 class="section-heading fs-5">Planification budgétaire intelligente</h2>
+                    <p class="mb-3">Anticipez précisément l'évolution de votre masse salariale.</p>
+                    <ul class="feature-list">
+                        <li>Projections pluriannuelles automatisées</li>
+                        <li>Intégration des évolutions statutaires</li>
+                        <li>Simulation d'impact des recrutements</li>
+                    </ul>
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="section-heading fs-5">Suivi budgétaire en temps réel</h2>
+                    <p class="mb-3">Maîtrisez l'exécution de votre budget masse salariale.</p>
+                    <ul class="feature-list">
+                        <li>Alertes de dépassement automatiques</li>
+                        <li>Analyse des écarts prévu/réalisé</li>
+                        <li>Export de rapports pour la gouvernance</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="py-5 bg-secondary-light">
+        <div class="container my-3">
+            <div class="row">
+                <div class="col-lg-6 mx-auto text-center mb-4">
+                    <h2 class="fw-bold">Résultats pour les EPN</h2>
+                    <p>Des performances mesurables pour votre établissement</p>
+                </div>
+            </div>
+            <div class="row g-3">
+                <div class="col-6 col-md-3">
+                    <div class="stats-card">
+                        <div class="stats-number">AABB %</div>
+                        <p class="mb-0">Précision des prévisions</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="stats-card">
+                        <div class="stats-number">AABB %</div>
+                        <p class="mb-0">Temps gagné</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="stats-card">
+                        <div class="stats-number">AABB +</div>
+                        <p class="mb-0">Établissements</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="stats-card">
+                        <div class="stats-number">AABB %</div>
+                        <p class="mb-0">Satisfaction client</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

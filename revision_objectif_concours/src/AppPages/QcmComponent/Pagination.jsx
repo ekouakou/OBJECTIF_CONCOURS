@@ -1,25 +1,26 @@
+// Pagination.js
 import React from 'react';
 import { Pagination as RSuitePagination } from 'rsuite';
-import 'rsuite/dist/rsuite.min.css';
+import '../styles.css';
 
 const Pagination = ({ activePage, totalPages, onSelect }) => {
   return (
-    <div className="pagination-wrapper">
+    <div className="pagination-container">
       <RSuitePagination
         prev
+        last
         next
         first
-        last
-        ellipsis
-        boundaryLinks
-        maxButtons={5}
         size="md"
-        layout={['total', '-', 'pager', 'skip']}
-        total={totalPages}
-        limit={1}
+        total={totalPages * 10}
+        limit={10}
+        maxButtons={5}
         activePage={activePage}
         onChangePage={onSelect}
       />
+      <div className="page-info">
+        Page {activePage} sur {totalPages}
+      </div>
     </div>
   );
 };
