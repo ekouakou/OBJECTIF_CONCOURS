@@ -26,7 +26,7 @@ const AudioPlayer = ({ id, text, isPlaying, setIsPlaying, speechSynthRef, button
           console.log('Voix disponibles:', voices.map(v => `${v.name} (${v.lang})`));
           
           // Présélection de la voix pour accélérer la lecture
-          selectedVoiceRef.current = findBestFrenchFemaleVoice(voices);
+          selectedVoiceRef.current = findBestAfricanFrenchVoice(voices);
           if (selectedVoiceRef.current) {
             console.log('Voix présélectionnée:', selectedVoiceRef.current.name);
           }
@@ -53,53 +53,85 @@ const AudioPlayer = ({ id, text, isPlaying, setIsPlaying, speechSynthRef, button
     };
   }, []);
 
-  // Fonction pour trouver la meilleure voix féminine française
-  const findBestFrenchFemaleVoice = (voices) => {
+  // Fonction pour trouver et forcer une voix féminine (priorité africaine)
+  const findBestAfricanFrenchVoice = (voices) => {
     if (!voices || !voices.length) return null;
     
-    // 1. Voix Google féminine française
-    const googleFrenchFemaleVoice = voices.find(voice => 
-      voice.lang.includes('fr') && 
-      voice.name.includes('Google') && 
-      (voice.name.toLowerCase().includes('female') || 
-       voice.name.toLowerCase().includes('féminin') ||
-       voice.name.toLowerCase().includes('femme'))
-    );
+    console.log("Toutes les voix disponibles:", voices.map(v => v.name));
     
-    if (googleFrenchFemaleVoice) {
-      return googleFrenchFemaleVoice;
+    // PRIORITÉ 1: Essayer des voix féminines spécifiques connues
+    const knownFemaleVoices = [
+      "Amelie",
+      "Thomas",
+      "Google français", // Souvent féminine par défaut
+      "Audrey",
+      "Virginie",
+      "Microsoft Hélène",
+      "Microsoft Zira",
+      "Sylvie",
+
+    ];
+    
+    for (const voiceName of knownFemaleVoices) {
+      const voice = voices.find(v => v.name.includes(voiceName));
+      if (voice) {
+        console.log(`Voix féminine connue trouvée: ${voice.name}`);
+        return voice;
+      }
     }
     
-    // 2. N'importe quelle voix Google française
-    const googleFrenchVoice = voices.find(voice => 
-      voice.lang.includes('fr') && 
-      voice.name.includes('Google')
+    // PRIORITÉ 2: Voix Google avec langue française (généralement femme)
+    const googleFrenchVoice = voices.find(v => 
+      v.name.includes("Google") && 
+      (v.lang.startsWith("fr") || v.name.toLowerCase().includes("français"))
     );
     
     if (googleFrenchVoice) {
+      console.log(`Voix Google française trouvée: ${googleFrenchVoice.name}`);
       return googleFrenchVoice;
     }
     
-    // 3. N'importe quelle voix féminine française
-    const femaleFrenchVoice = voices.find(voice => 
-      voice.lang.includes('fr') && 
-      (voice.name.toLowerCase().includes('female') || 
-       voice.name.toLowerCase().includes('féminin') ||
-       voice.name.toLowerCase().includes('femme'))
-    );
+    // PRIORITÉ 3: Voix explicitement féminine
+    const explicitFemaleVoice = voices.find(v => {
+      const name = v.name.toLowerCase();
+      return name.includes("female") || 
+             name.includes("femme") || 
+             name.includes("féminin") || 
+             name.includes("woman");
+    });
     
-    if (femaleFrenchVoice) {
-      return femaleFrenchVoice;
+    if (explicitFemaleVoice) {
+      console.log(`Voix explicitement féminine trouvée: ${explicitFemaleVoice.name}`);
+      return explicitFemaleVoice;
     }
     
-    // 4. N'importe quelle voix française
-    const frenchVoice = voices.find(voice => voice.lang.includes('fr'));
-    
+    // PRIORITÉ 4: N'importe quelle voix française
+    const frenchVoice = voices.find(v => v.lang.startsWith("fr"));
     if (frenchVoice) {
+      console.log(`Fallback sur voix française: ${frenchVoice.name}`);
       return frenchVoice;
     }
     
-    return null;
+    // PRIORITÉ 5: Première voix disponible
+    console.log(`Aucune voix féminine trouvée, utilisation de la première voix disponible: ${voices[0].name}`);
+    return voices[0];
+  };
+
+  // Appliquer des transformations pour un accent africain à un texte
+  const transformTextForAfricanAccent = (text) => {
+    if (!text) return text;
+    
+    // Cette fonction est optionnelle et peut être adaptée selon les besoins
+    // Elle simule certaines caractéristiques de prononciation des français d'Afrique
+    
+    return text
+      // Allonger certaines voyelles pour un rythme plus musical
+      .replace(/é/g, 'é')
+      .replace(/è/g, 'è')
+      .replace(/à/g, 'à')
+      // Ajouter des pauses pour un rythme plus cadencé
+      .replace(/\./g, '... ')
+      .replace(/,/g, ', ')
   };
 
   // Fonction principale pour gérer la lecture audio
@@ -133,13 +165,17 @@ const AudioPlayer = ({ id, text, isPlaying, setIsPlaying, speechSynthRef, button
       }
       
       // Créer un nouvel objet d'énonciation
-      const utterance = new SpeechSynthesisUtterance(text);
+      // Option 1: Utiliser le texte original
+      // const utterance = new SpeechSynthesisUtterance(text);
+      // Option 2: Utiliser le texte transformé (décommenter pour activer)
+      const transformedText = transformTextForAfricanAccent(text);
+      const utterance = new SpeechSynthesisUtterance(transformedText);
       
-      // Configuration des paramètres de base
-      utterance.lang = 'fr-FR';
-      utterance.rate = 1.0;
-      utterance.pitch = 1.1; // Légèrement plus aigu pour une voix plus féminine
-      utterance.volume = 1.0;
+      // Configuration des paramètres pour une voix féminine africaine
+      utterance.lang = 'fr-FR';  // On garde la langue française de base
+      utterance.rate = 0.6;     // Rythme légèrement plus lent (caractéristique de certains accents africains)
+      utterance.pitch = 0.4;     // Ton plus élevé pour une voix plus féminine
+      utterance.volume = 1.0;    // Volume maximum
       
       // Sélectionner la voix
       try {
@@ -151,7 +187,7 @@ const AudioPlayer = ({ id, text, isPlaying, setIsPlaying, speechSynthRef, button
         // Sinon essayer de trouver une voix en direct
         else {
           const voices = window.speechSynthesis.getVoices();
-          const bestVoice = findBestFrenchFemaleVoice(voices);
+          const bestVoice = findBestAfricanFrenchVoice(voices);
           
           if (bestVoice) {
             utterance.voice = bestVoice;
@@ -166,7 +202,7 @@ const AudioPlayer = ({ id, text, isPlaying, setIsPlaying, speechSynthRef, button
       
       // Gestion des événements
       utterance.onstart = () => {
-        console.log('Début de la lecture vocale');
+        console.log('Début de la lecture vocale avec voix féminine africaine');
         
         // Réinitialiser toutes les lectures en cours
         const newIsPlaying = {};
@@ -221,13 +257,13 @@ const AudioPlayer = ({ id, text, isPlaying, setIsPlaying, speechSynthRef, button
       trigger="hover"
       speaker={
         <Tooltip>
-          {isPlaying[id] ? 'Arrêter la lecture audio' : buttonText || 'Lire à haute voix'}
+          {isPlaying[id] ? 'Arrêter la lecture audio' : buttonText || 'Lire avec voix féminine africaine'}
         </Tooltip>
       }
     >
       <Button
         appearance="subtle"
-        size="sm"
+        size="md"
         onClick={toggleSpeech}
         className="audio-button"
       >

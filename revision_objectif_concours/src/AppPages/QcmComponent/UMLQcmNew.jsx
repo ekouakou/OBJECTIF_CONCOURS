@@ -1,752 +1,834 @@
 import React, { useState, useEffect, useRef } from 'react';
 import {
-    Panel,
     Button,
-    ButtonGroup,
-    Radio,
-    RadioGroup,
-    Checkbox,
-    CheckboxGroup,
-    Progress,
-    Modal,
-    FlexboxGrid,
-    Content,
+    Panel,
     Container,
+    Content,
     Header,
     Footer,
-    Form,
-    Divider,
+    ButtonToolbar,
+    ButtonGroup,
     Message,
-    toaster
+    Radio,
+    RadioGroup,
+    Progress,
+    Modal,
+    InputNumber,
+    Tooltip,
+    Whisper,
+    Badge
 } from 'rsuite';
+import { Speaker, CheckOutline, CloseOutline, PlayOutline, PauseOutline } from '@rsuite/icons';
 import 'rsuite/dist/rsuite.min.css';
-import AudioPlayer from './AudioPlayer'; // Votre composant existant
+import Pagination from './Pagination';
+import PageSizeSelector from './PageSizeSelector';
+import SearchBar from '../UML/SearchBar';
+import {
+    generatePDF,
+    getOptionLetters,
+    toggleAllItems,
+    paginateItems,
+    getTotalPages,
+    searchQuestions,
+    formatTime,
+    startCountdown,
+    stopCountdown,
+    clearAllTimers
+} from '../UML/utils';
+// Import des nouveaux composants externalisés
+import AudioPlayer from './AudioPlayer';
+import ConfigButtons from './ConfigButtons';
+import '../styles.css';
 
-const QCMApp = ({ questions, questionReadCount = 1, answerTime = 20, allowMultipleAnswers = false }) => {
-    // États du composant
-    const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
-    const [selectedAnswers, setSelectedAnswers] = useState({});
-    const [timeLeft, setTimeLeft] = useState(answerTime);
-    const [isTimerActive, setIsTimerActive] = useState(false);
-    const [audioPlayCount, setAudioPlayCount] = useState(0);
-    const [isPlaying, setIsPlaying] = useState({});
-    const [showResults, setShowResults] = useState(false);
-    const [quizStarted, setQuizStarted] = useState(false);
-    const [quizFinished, setQuizFinished] = useState(false);
-    const [showConfiguration, setShowConfiguration] = useState(true);
-    const [isTransitioning, setIsTransitioning] = useState(false); // Nouvel état pour gérer les transitions
-    const [config, setConfig] = useState({
-        questionReadCount: questionReadCount,
-        answerTime: answerTime,
-        allowMultipleAnswers: allowMultipleAnswers
+const UMLQcm = ({questionSerie, Title}) => {
+
+    const [activeKey, setActiveKey] = useState(null);
+    const [showAnswers, setShowAnswers] = useState({});
+    const [showExplanation, setShowExplanation] = useState({});
+    const [expandAll, setExpandAll] = useState(false);
+
+    // État pour stocker les réponses de l'utilisateur
+    const [userAnswers, setUserAnswers] = useState({});
+
+    // État pour le mode évaluation
+    const [evaluationMode, setEvaluationMode] = useState(true);
+
+    // État pour les résultats de l'évaluation
+    const [evaluationResults, setEvaluationResults] = useState({
+        score: 0,
+        totalQuestions: 0,
+        correctAnswers: 0,
+        showResults: false
     });
-    
-    // Initialisation du suivi des annonces pour chaque question
+
+    // Recherche
+    const [searchTerm, setSearchTerm] = useState('');
+    const [filteredQuestions, setFilteredQuestions] = useState(questionSerie);
+
+    // Pagination
+    const [itemsPerPage, setItemsPerPage] = useState(5);
+    const [activePage, setActivePage] = useState(1);
+    const [paginatedQuestions, setPaginatedQuestions] = useState([]);
+    const [totalPages, setTotalPages] = useState(1);
+
+    // Option letters
+    const optionLetters = getOptionLetters();
+
+    // Référence pour l'objet SpeechSynthesis
+    const speechSynthRef = useRef(null);
+    const [isPlaying, setIsPlaying] = useState({});
+
+    // État pour gérer les minuteurs par question
+    const [questionTimers, setQuestionTimers] = useState({});
+    const [timeLimit, setTimeLimit] = useState(60); // Temps par défaut: 60 secondes (1 minute)
+
+    // Initialiser la synthèse vocale
     useEffect(() => {
-        // Créer un objet pour suivre les annonces déjà faites
-        for (let i = 0; i < questions.length; i++) {
-            window[`timer_announced_${i}`] = false;
+        if ('speechSynthesis' in window) {
+            speechSynthRef.current = window.speechSynthesis;
         }
-        
-        // Nettoyer ces objets lors du démontage du composant
+
+        // Nettoyer les instances de synthèse vocale lors du démontage du composant
         return () => {
-            for (let i = 0; i < questions.length; i++) {
-                delete window[`timer_announced_${i}`];
+            if (speechSynthRef.current) {
+                speechSynthRef.current.cancel();
             }
-        };
-    }, [questions.length]);
-
-    // Références
-    const speechSynthRef = useRef();
-    const timerRef = useRef(null);
-    const audioCountRef = useRef(0);
-    const currentUtteranceRef = useRef(null); // Référence pour suivre l'utterance en cours
-    const isNavigatingRef = useRef(false); // Référence pour suivre l'état de navigation
-
-    // État pour suivre si l'audio a été lu le nombre de fois requis
-    const [audioCompleted, setAudioCompleted] = useState(false);
-
-    // La question actuelle
-    const currentQuestion = questions[currentQuestionIndex];
-
-    // Vérifier s'il s'agit de la dernière question
-    const isLastQuestion = currentQuestionIndex === questions.length - 1;
-
-    // Fonction améliorée pour annuler toutes les lectures vocales en cours
-    const cancelAllSpeech = () => {
-        // Arrêter toute synthèse vocale en cours
-        window.speechSynthesis.cancel();
-        
-        // Détacher tous les gestionnaires d'événements
-        if (currentUtteranceRef.current) {
-            currentUtteranceRef.current.onend = null;
-            currentUtteranceRef.current.onpause = null;
-            currentUtteranceRef.current.onresume = null;
-            currentUtteranceRef.current.onstart = null;
-            currentUtteranceRef.current.onboundary = null;
-            currentUtteranceRef.current.onerror = null;
-            currentUtteranceRef.current = null;
-        }
-    };
-
-    // Fonction pour démarrer le quiz
-    const startQuiz = () => {
-        setQuizStarted(true);
-        setShowConfiguration(false);
-        prepareQuestion();
-    };
-
-    // Fonction pour préparer une nouvelle question
-    const prepareQuestion = () => {
-        // S'assurer que toute synthèse vocale précédente est bien arrêtée
-        cancelAllSpeech();
-        
-        // Réinitialiser l'état de navigation
-        isNavigatingRef.current = false;
-        
-        setTimeLeft(config.answerTime);
-        setIsTimerActive(false);
-        setAudioPlayCount(0);
-        setAudioCompleted(false);
-        setIsTransitioning(false); // Réinitialiser l'état de transition
-        
-        // Réinitialiser l'état de lecture pour toutes les questions
-        setIsPlaying({});
-
-        // Effacer les marqueurs d'annonces précédents pour cette question
-        const questionKey = `timer_announced_${currentQuestionIndex}`;
-        window[questionKey] = false;
-        
-        // Démarrer automatiquement la lecture audio avec un léger délai
-        setTimeout(() => {
-            playQuestionAudio();
-        }, 500);
-    };
-
-    // Fonction pour lire l'audio de la question
-    const playQuestionAudio = () => {
-        // Ne pas continuer si nous sommes en cours de navigation
-        if (isNavigatingRef.current) {
-            return;
-        }
-
-        // Annuler d'abord toute lecture en cours
-        cancelAllSpeech();
-
-        if (audioPlayCount >= config.questionReadCount) {
-            startTimer();
-            setAudioCompleted(true);
-            return;
-        }
-
-        // Construire le texte à lire
-        const textToRead = `Question ${currentQuestionIndex + 1}: ${currentQuestion.question}. 
-                         Les options sont: ${currentQuestion.options.map((opt, idx) =>
-            `Option ${idx + 1}: ${opt}`).join('. ')}`;
-
-        // Créer un objet d'énonciation
-        const utterance = new SpeechSynthesisUtterance(textToRead);
-        utterance.lang = 'fr-FR';
-        utterance.rate = 1.0;
-        
-        utterance.onend = () => {
-            // Vérifier si nous sommes en transition avant de continuer
-            if (isNavigatingRef.current || isTransitioning) {
-                return; // Ne pas continuer si nous sommes en transition
-            }
-            
-            const newCount = audioPlayCount + 1;
-            setAudioPlayCount(newCount);
-
-            if (newCount < config.questionReadCount) {
-                // Pause entre les lectures
-                setTimeout(() => {
-                    // Vérifier à nouveau si nous sommes en transition avant de lire la prochaine itération
-                    if (!isNavigatingRef.current && !isTransitioning) {
-                        playQuestionAudio();
-                    }
-                }, 1000);
-            } else {
-                startTimer();
-                setAudioCompleted(true);
-            }
-        };
-
-        // Stocker l'utterance dans la référence
-        currentUtteranceRef.current = utterance;
-
-        // Démarrer la nouvelle lecture
-        window.speechSynthesis.speak(utterance);
-
-        // Mettre à jour l'état de lecture UNIQUEMENT pour la question actuelle
-        setIsPlaying({ [currentQuestionIndex]: true });
-    };
-
-    // Fonction pour démarrer le minuteur
-    const startTimer = () => {
-        // Ne pas démarrer le timer si nous sommes en transition
-        if (isNavigatingRef.current || isTransitioning) {
-            return;
-        }
-        
-        setIsTimerActive(true);
-        
-        // On utilise une référence pour suivre si l'annonce a déjà été faite
-        const questionKey = `timer_announced_${currentQuestionIndex}`;
-        if (!window[questionKey]) {
-            // Annonce vocale que le temps commence
-            const startAnnounce = new SpeechSynthesisUtterance(`Vous avez ${config.answerTime} secondes pour répondre.`);
-            startAnnounce.lang = 'fr-FR';
-            
-            // Stocker l'utterance dans la référence
-            currentUtteranceRef.current = startAnnounce;
-            
-            window.speechSynthesis.speak(startAnnounce);
-            
-            // Marquer cette annonce comme déjà faite pour cette question
-            window[questionKey] = true;
-        }
-    };
-
-    // Effet pour gérer le minuteur
-    useEffect(() => {
-        if (isTimerActive && timeLeft > 0 && !isNavigatingRef.current) {
-
-            
-            timerRef.current = setTimeout(() => {
-                // Vérifier à nouveau que nous ne sommes pas en transition
-                if (isNavigatingRef.current || isTransitioning) {
-                    return;
-                }
-                
-                setTimeLeft(prevTime => {
-                    const newTime = prevTime - 1;
-
-                    // Annonces vocales à certains moments
-                    if (newTime === 10) {
-                        // Ne faire l'annonce que si nous ne sommes pas en transition
-                        if (!isNavigatingRef.current && !isTransitioning) {
-                            // Annuler toute lecture en cours avant de faire une nouvelle annonce
-                            cancelAllSpeech();
-                            
-                            const timeWarning = new SpeechSynthesisUtterance("Plus que 10 secondes.");
-                            timeWarning.lang = 'fr-FR';
-                            currentUtteranceRef.current = timeWarning;
-                            window.speechSynthesis.speak(timeWarning);
-                        }
-                    } else if (newTime === 5) {
-                        // Ne faire l'annonce que si nous ne sommes pas en transition
-                        if (!isNavigatingRef.current && !isTransitioning) {
-                            // Annuler toute lecture en cours avant de faire une nouvelle annonce
-                            cancelAllSpeech();
-                            
-                            const timeWarning = new SpeechSynthesisUtterance("5 secondes restantes.");
-                            timeWarning.lang = 'fr-FR';
-                            currentUtteranceRef.current = timeWarning;
-                            window.speechSynthesis.speak(timeWarning);
-                        }
-                    }
-
-                    return newTime;
-                });
-            }, 1000);
-        } else if (timeLeft === 0 && isTimerActive && !isTransitioning && !isNavigatingRef.current) {
-
-            // Marquer comme étant en transition pour éviter les doubles notifications
-            setIsTransitioning(true);
-            
-            // Annuler toute lecture en cours
-            cancelAllSpeech();
-            
-            // Temps écoulé
-            const timeUpAnnounce = new SpeechSynthesisUtterance("Temps écoulé!");
-            timeUpAnnounce.lang = 'fr-FR';
-            
-            // Ajouter un gestionnaire pour savoir quand cette annonce est terminée
-            timeUpAnnounce.onend = () => {
-                // Vérifier que nous ne sommes pas déjà en cours de navigation
-                if (!isNavigatingRef.current) {
-                    // Passer à la question suivante seulement après que l'annonce soit terminée
-                    handleNextQuestion();
-                }
-            };
-            
-            currentUtteranceRef.current = timeUpAnnounce;
-            window.speechSynthesis.speak(timeUpAnnounce);
-        }
-
-        // Nettoyage du timer lors du démontage
-        return () => {
-            if (timerRef.current) {
-                clearTimeout(timerRef.current);
-            }
-        };
-    }, [isTimerActive, timeLeft, isTransitioning]);
-
-    // Nettoyer tous les events audio lors du démontage du composant
-    useEffect(() => {
-        return () => {
-            // Faire un nettoyage complet lors du démontage
-            cancelAllSpeech();
-            if (timerRef.current) {
-                clearTimeout(timerRef.current);
-            }
+            clearAllTimers(questionTimers);
         };
     }, []);
 
-    // Gérer le changement de sélection
-    const handleSelectionChange = (value) => {
-        if (config.allowMultipleAnswers) {
-            setSelectedAnswers(prev => ({
-                ...prev,
-                [currentQuestionIndex]: Array.isArray(value) ? value : [value]
-            }));
-        } else {
-            setSelectedAnswers(prev => ({
-                ...prev,
-                [currentQuestionIndex]: [value]
-            }));
-        }
-    };
 
-    // Version améliorée de la fonction pour passer à la question suivante
-    const handleNextQuestion = () => {
-        // Définir l'état de navigation immédiatement pour bloquer tout traitement audio en cours
-        isNavigatingRef.current = true;
-        setIsTransitioning(true);
-        
-        // Arrêter le timer si actif
-        if (timerRef.current) {
-            clearTimeout(timerRef.current);
-            timerRef.current = null;
-        }
-        
-        // Arrêter complètement toute synthèse vocale
-        cancelAllSpeech();
-        
-        // S'assurer que l'état de lecture est réinitialisé
-        setIsPlaying({});
-        setIsTimerActive(false);
-        
-        // Effacer les marqueurs d'annonce pour TOUTES les questions
-        for (let i = 0; i < questions.length; i++) {
-            window[`timer_announced_${i}`] = false;
-        }
-        
-        // Utiliser un timeout pour s'assurer que les événements audio sont bien nettoyés avant de continuer
-        setTimeout(() => {
-            if (isLastQuestion) {
-                // Fin du quiz
-                setQuizFinished(true);
-                setShowResults(true);
-                isNavigatingRef.current = false; // Réinitialiser l'état de navigation
-            } else {
-                // Passer à la question suivante 
-                setCurrentQuestionIndex(prevIndex => prevIndex + 1);
-                
-                // Petit délai supplémentaire avant de préparer la nouvelle question
-                setTimeout(() => {
-                    prepareQuestion();
-                }, 300);
-            }
-        }, 100);
-    };
-
-    // Calculer le score
-    const calculateScore = () => {
-        let correctCount = 0;
-        let totalQuestions = questions.length;
-
-        questions.forEach((question, index) => {
-            const userAnswers = selectedAnswers[index] || [];
-
-            // Dans le cas d'une seule bonne réponse
-            if (!Array.isArray(question.correctAnswer)) {
-                if (userAnswers.includes(question.correctAnswer)) {
-                    correctCount++;
-                }
-            }
-            // Dans le cas de plusieurs bonnes réponses
-            else {
-                const correctAnswers = question.correctAnswer;
-                const allCorrect = correctAnswers.every(ans => userAnswers.includes(ans));
-                const noIncorrect = userAnswers.every(ans => correctAnswers.includes(ans));
-
-                if (allCorrect && noIncorrect) {
-                    correctCount++;
-                }
-            }
-        });
-
-        return {
-            score: correctCount,
-            total: totalQuestions,
-            percentage: Math.round((correctCount / totalQuestions) * 100)
+    useEffect(() => {
+        return () => {
+            // Cette fonction sera appelée uniquement lors du démontage du composant
+            clearAllTimers();
+            // Réinitialiser l'état des timers si nécessaire lors du démontage
+            setQuestionTimers({});
         };
-    };
+    }, []); // Liste de dépendances vide = exécution uniquement au montage/démontage
 
-    // Redémarrer le quiz
-    const restartQuiz = () => {
-        // Définir l'état de navigation pour bloquer tout traitement audio
-        isNavigatingRef.current = true;
-        
-        // Annuler toute lecture en cours
-        cancelAllSpeech();
-        
-        // Arrêter le timer si actif
-        if (timerRef.current) {
-            clearTimeout(timerRef.current);
-            timerRef.current = null;
+
+    // Effectuer la recherche lorsque le terme de recherche change
+    useEffect(() => {
+        const results = searchQuestions(questionSerie, searchTerm);
+        setFilteredQuestions(results);
+        setActivePage(1); // Retour à la première page après une recherche
+    }, [searchTerm]);
+
+    // Mettre à jour les questions paginées quand la page active, le nombre d'éléments par page ou les résultats de recherche changent
+    useEffect(() => {
+        // Si on choisit d'afficher tout (999), on affiche toutes les questions filtrées
+        const effectiveItemsPerPage = itemsPerPage === 999 ? filteredQuestions.length : itemsPerPage;
+
+        // Calculer le nombre total de pages
+        const pages = getTotalPages(filteredQuestions, effectiveItemsPerPage);
+        setTotalPages(pages);
+
+        // Vérifier si la page active est toujours valide
+        const validActivePage = Math.min(Math.max(1, activePage), Math.max(1, pages));
+        if (validActivePage !== activePage) {
+            setActivePage(validActivePage);
         }
-        
-        setCurrentQuestionIndex(0);
-        setSelectedAnswers({});
-        setTimeLeft(config.answerTime);
-        setIsTimerActive(false);
-        setAudioPlayCount(0);
-        setShowResults(false);
-        setQuizFinished(false);
-        setShowConfiguration(true);
-        setQuizStarted(false);
-        setIsTransitioning(false);
-        
-        // Réinitialiser aussi l'état de lecture
-        setIsPlaying({});
-        
-        // Réinitialiser l'état de navigation après un court délai
-        setTimeout(() => {
-            isNavigatingRef.current = false;
-        }, 200);
+
+        // Filtrer les questions pour la page active
+        const questions = paginateItems(filteredQuestions, validActivePage, effectiveItemsPerPage);
+        setPaginatedQuestions(questions);
+    }, [activePage, itemsPerPage, filteredQuestions]);
+
+    const handleSelect = (eventKey) => {
+        setActiveKey(activeKey === eventKey ? null : eventKey);
     };
 
-    // Mettre à jour la configuration
-    const updateConfig = (key, value) => {
-        setConfig(prev => ({
+    const toggleAnswers = (id) => {
+        setShowAnswers(prev => ({
             ...prev,
-            [key]: value
+            [id]: !prev[id]
         }));
     };
 
-    // Rendu des résultats
-    const renderResults = () => {
-        const result = calculateScore();
-        const resultText = `Vous avez obtenu ${result.score} bonnes réponses sur ${result.total} questions (${result.percentage}%).`;
+    const toggleExplanation = (id) => {
+        setShowExplanation(prev => ({
+            ...prev,
+            [id]: !prev[id]
+        }));
+    };
 
-        // S'assurer que toute synthèse vocale précédente est terminée
-        cancelAllSpeech();
+    // Afficher/masquer toutes les questions
+    const toggleExpandAll = () => {
+        setExpandAll(!expandAll);
+        setActiveKey(expandAll ? null : 'all');
+    };
 
-        // Lire le résultat après un court délai
+    // Afficher/masquer toutes les réponses
+    const handleToggleAllAnswers = (show) => {
+        setShowAnswers(toggleAllItems(questionSerie, show));
+    };
+
+    // Afficher/masquer toutes les explications
+    const handleToggleAllExplanations = (show) => {
+        setShowExplanation(toggleAllItems(questionSerie, show));
+    };
+
+    // Changer le nombre d'éléments par page
+    const handleItemsPerPageChange = (value) => {
+        setItemsPerPage(value);
+        setActivePage(1); // Revenir à la première page quand on change le nombre d'éléments
+    };
+
+    // Gestion de la recherche
+    const handleSearchChange = (value) => {
+        setSearchTerm(value);
+    };
+
+    const clearSearch = () => {
+        setSearchTerm('');
+    };
+
+    // Mode PDF - Affiche tout le contenu
+    const prepareForPDF = () => {
+        // Sauvegarder l'état actuel pour le restaurer après
+        const currentItemsPerPage = itemsPerPage;
+        const currentActivePage = activePage;
+        const currentSearchTerm = searchTerm;
+
+        // Afficher toutes les questions, réponses et explications
+        setSearchTerm(''); // Effacer la recherche pour afficher toutes les questions
+        setItemsPerPage(999); // Afficher tout
+        handleToggleAllAnswers(true);
+        handleToggleAllExplanations(true);
+
+        if (!expandAll) {
+            toggleExpandAll();
+        }
+
+        // Petit délai pour laisser le DOM se mettre à jour
         setTimeout(() => {
-            // Vérifier que nous ne sommes pas en transition
-            if (!isNavigatingRef.current && !isTransitioning) {
-                const resultAnnounce = new SpeechSynthesisUtterance(resultText);
-                resultAnnounce.lang = 'fr-FR';
-                currentUtteranceRef.current = resultAnnounce;
-                window.speechSynthesis.speak(resultAnnounce);
-            }
+            generatePDF('qcm-content', 'qcm-informatique-complet.pdf');
+
+            // Restaurer l'état précédent après un délai supplémentaire
+            setTimeout(() => {
+                setSearchTerm(currentSearchTerm);
+                setItemsPerPage(currentItemsPerPage);
+                setActivePage(currentActivePage);
+                if (expandAll !== (currentItemsPerPage === 999)) {
+                    toggleExpandAll();
+                }
+            }, 500);
         }, 500);
+    };
 
-        return (
-            <Container className="results-container">
-                <Header>
-                    <h2>Résultats du QCM</h2>
-                </Header>
-                <Content>
-                    <Panel bordered>
-                        <h3>Score final</h3>
-                        <Progress.Circle
-                            percent={result.percentage}
-                            strokeColor={result.percentage >= 70 ? '#4CAF50' : result.percentage >= 50 ? '#FF9800' : '#F44336'}
-                            showInfo={true}
-                            status={result.percentage >= 70 ? 'success' : result.percentage >= 50 ? 'active' : 'fail'}
-                        />
-                        <Divider />
-                        <p className="result-text">{resultText}</p>
+    // Gestion du changement de page
+    const handlePageChange = (page) => {
+        setActivePage(page);
+        window.scrollTo(0, 0); // Scroller en haut de la page
+    };
 
-                        <Divider />
+    // Déterminer si on doit afficher la pagination
+    const showPagination = itemsPerPage !== 999 && totalPages > 1;
 
-                        <h3>Détail des réponses</h3>
-                        {questions.map((q, qIndex) => {
-                            const userAnswers = selectedAnswers[qIndex] || [];
-                            const isCorrect = Array.isArray(q.correctAnswer)
-                                ? q.correctAnswer.every(ans => userAnswers.includes(ans)) && userAnswers.every(ans => q.correctAnswer.includes(ans))
-                                : userAnswers.includes(q.correctAnswer);
+    // *** FONCTIONS POUR LE TEXT-TO-SPEECH EXTERNALISÉ ***
+    // Cette fonction est maintenant déplacée dans AudioPlayer.js 
+    // Mais nous gardons ces méthodes d'aide pour préparer le texte
 
-                            return (
-                                <div key={q.id} className="question-result">
-                                    <p className="question-text">
-                                        <b>Question {qIndex + 1}:</b> {q.question}
-                                    </p>
-                                    <Message
-                                        type={isCorrect ? 'success' : 'error'}
-                                        showIcon
-                                    >
-                                        {isCorrect ? 'Correct' : 'Incorrect'}
-                                    </Message>
-                                    <p>
-                                        <b>Votre réponse:</b> {userAnswers.map(idx => q.options[idx]).join(', ') || 'Aucune réponse'}
-                                    </p>
-                                    <p>
-                                        <b>Réponse correcte:</b> {
-                                            Array.isArray(q.correctAnswer)
-                                                ? q.correctAnswer.map(idx => q.options[idx]).join(', ')
-                                                : q.options[q.correctAnswer]
-                                        }
-                                    </p>
-                                    {q.explanation && (
-                                        <p className="explanation"><b>Explication:</b> {q.explanation}</p>
-                                    )}
-                                    <Divider />
-                                </div>
-                            );
-                        })}
-                    </Panel>
-                </Content>
-                <Footer>
-                    <Button appearance="primary" block onClick={restartQuiz}>
-                        Recommencer le quiz
+    // Préparer le texte complet pour la lecture audio
+    const prepareQuestionTextForSpeech = (question) => {
+        let text = `Question ${question.id}: ${question.question} `;
+
+        // Ajouter les options
+        question.options.forEach((option, index) => {
+            text += `Option ${optionLetters[index]}: ${option}. `;
+        });
+
+        // Ajouter la bonne réponse si elle est affichée
+        if (showAnswers[question.id]) {
+            const correctOptionLetter = optionLetters[question.correctAnswer];
+            text += `La bonne réponse est l'option ${correctOptionLetter}: ${question.options[question.correctAnswer]}. `;
+
+            // Ajouter l'explication si elle est affichée
+            if (showExplanation[question.id]) {
+                text += `Explication: ${question.explanation} `;
+
+                // Ajouter les exemples s'ils existent
+                if (question.examples) {
+                    text += `Exemples: ${question.examples} `;
+                }
+            }
+        }
+
+        return text;
+    };
+
+    // Préparer le texte de l'explication uniquement pour la lecture audio
+    const prepareExplanationTextForSpeech = (question) => {
+        let text = `Explication pour la question ${question.id}: ${question.explanation} `;
+
+        // Ajouter les détails
+        if (question.detailedExplanation) {
+            text += `Plus de détails: ${question.detailedExplanation} `;
+        }
+
+        // Ajouter les exemples s'ils existent
+        if (question.examples) {
+            text += `Exemples: ${question.examples} `;
+        }
+
+        return text;
+    };
+
+    // Fonction pour lire une question à voix haute
+    const handleSpeak = (question) => {
+        const text = prepareQuestionTextForSpeech(question);
+        return text;
+    };
+
+    // Fonction pour lire une explication à voix haute
+    const handleSpeakExplanation = (question) => {
+        const text = prepareExplanationTextForSpeech(question);
+        return text;
+    };
+
+    // *** NOUVELLES FONCTIONS POUR L'ÉVALUATION ***
+
+    // Basculer entre le mode évaluation et le mode consultation
+    const toggleEvaluationMode = () => {
+        if (evaluationMode) {
+            // Si on quitte le mode évaluation, réinitialiser les réponses
+            setUserAnswers({});
+            setEvaluationResults({
+                score: 0,
+                totalQuestions: 0,
+                correctAnswers: 0,
+                showResults: false
+            });
+
+            // Arrêter tous les minuteurs
+            clearAllTimers();
+            setQuestionTimers({});
+        } else {
+            // Si on entre en mode évaluation...
+            // Code existant
+        }
+        setEvaluationMode(!evaluationMode);
+    };
+
+    // Gérer la sélection d'une réponse par l'utilisateur
+    const handleUserAnswerChange = (questionId, answerIndex) => {
+        setUserAnswers(prev => ({
+            ...prev,
+            [questionId]: answerIndex
+        }));
+
+        // Arrêter le minuteur pour cette question lorsqu'une réponse est donnée
+        if (questionTimers[questionId] && questionTimers[questionId].active) {
+            stopCountdown(questionId, setQuestionTimers);
+        }
+    };
+
+
+    // Évaluer les réponses et calculer le score
+    const evaluateAnswers = () => {
+        let correctCount = 0;
+        let totalCount = 0;
+
+        clearAllTimers();
+
+        // Si nous utilisons la recherche ou la pagination, évaluons uniquement les questions visibles
+        const questionsToEvaluate = itemsPerPage === 999 ? filteredQuestions : paginatedQuestions;
+
+        totalCount = questionsToEvaluate.length;
+
+        questionsToEvaluate.forEach(question => {
+            const userAnswer = userAnswers[question.id];
+
+            // Vérifier si l'utilisateur a répondu et si la réponse est correcte
+            if (userAnswer !== undefined && userAnswer === question.correctAnswer) {
+                correctCount++;
+            }
+        });
+
+        const scorePercentage = totalCount > 0 ? Math.round((correctCount / totalCount) * 100) : 0;
+
+        // Mettre à jour les résultats
+        setEvaluationResults({
+            score: scorePercentage,
+            totalQuestions: totalCount,
+            correctAnswers: correctCount,
+            showResults: true
+        });
+
+        // Afficher les bonnes réponses
+        const newShowAnswers = {};
+        questionsToEvaluate.forEach(question => {
+            newShowAnswers[question.id] = true;
+        });
+        setShowAnswers(newShowAnswers);
+
+        // Arrêter tous les minuteurs
+        clearAllTimers(questionTimers);
+    };
+
+    // Fermer la modal des résultats
+    const closeResults = () => {
+        setEvaluationResults(prev => ({
+            ...prev,
+            showResults: false
+        }));
+    };
+
+    // Réinitialiser le test
+    const resetTest = () => {
+        setUserAnswers({});
+        setEvaluationResults({
+            score: 0,
+            totalQuestions: 0,
+            correctAnswers: 0,
+            showResults: false
+        });
+        handleToggleAllAnswers(false);
+
+        // Arrêter tous les minuteurs
+        clearAllTimers();
+        // Réinitialiser l'état des minuteurs
+        setQuestionTimers({});
+    };
+
+
+    // *** FONCTIONS POUR LE MINUTEUR ***
+
+    // Gérer le changement de la limite de temps
+    const handleTimeLimitChange = (value) => {
+        setTimeLimit(value);
+    };
+
+    // Démarrer le minuteur pour une question spécifique
+    const handleStartTimer = (questionId) => {
+        // Vérifier si l'utilisateur a déjà répondu à cette question
+        if (userAnswers[questionId] !== undefined) {
+            return; // Ne pas démarrer le minuteur si la question a déjà été répondue
+        }
+
+        // Fonction à exécuter lorsque le temps est écoulé
+        const onTimeUp = (qId) => {
+            setQuestionTimers(prev => ({
+                ...prev,
+                [qId]: {
+                    ...prev[qId],
+                    timeLeft: 0,
+                    active: false,
+                    expired: true
+                }
+            }));
+        };
+
+        // Démarrer le compte à rebours avec la nouvelle implémentation
+        startCountdown(questionId, timeLimit, setQuestionTimers, onTimeUp);
+    };
+
+
+    // Vérifier si une question peut être répondue (minuteur actif ou pas encore démarré)
+    const canAnswer = (questionId) => {
+        const timer = questionTimers[questionId];
+        if (!timer) return true; // Pas de minuteur = peut répondre
+        if (timer.expired) return false; // Minuteur expiré = ne peut pas répondre
+        return timer.active || !timer.started; // Minuteur actif ou pas encore démarré = peut répondre
+    };
+
+    return (
+        <Container className="qcm-container">
+            <Header className="qcm-header">
+                <h1>QCM d'Informatique</h1>
+                <div className="header-controls">
+                    <Button appearance="primary" onClick={prepareForPDF} className="pdf-button">
+                        Télécharger en PDF complet
                     </Button>
-                </Footer>
-            </Container>
-        );
-    };
+                    <Button
+                        appearance={evaluationMode ? "primary" : "ghost"}
+                        onClick={toggleEvaluationMode}
+                        className="evaluation-button"
+                    >
+                        {evaluationMode ? "Quitter le mode évaluation" : "Passer en mode évaluation"}
+                    </Button>
+                </div>
+            </Header>
 
-    // Écran de configuration
-    const renderConfigScreen = () => {
-        return (
-            <Container>
-                <Header>
-                    <h2>Configuration du QCM</h2>
-                </Header>
-                <Content>
-                    <Panel bordered>
-                        <Form fluid>
-                            <Form.Group>
-                                <Form.ControlLabel>Nombre de lectures de la question:</Form.ControlLabel>
-                                <Form.Control
-                                    name="questionReadCount"
-                                    accepter={props => (
-                                        <input
-                                            {...props}
-                                            type="number"
-                                            min="1"
-                                            max="5"
-                                            value={config.questionReadCount}
-                                            onChange={e => updateConfig('questionReadCount', parseInt(e.target.value, 10))}
-                                            className="rs-input"
-                                        />
+            {evaluationMode && (
+                <div className="evaluation-controls">
+                    <Message showIcon type="info">
+                        <b>Mode évaluation actif</b> - Sélectionnez vos réponses et cliquez sur "Évaluer mes réponses" quand vous avez terminé.
+                    </Message>
+
+                    <div className="timer-controls">
+                        <label>Limite de temps par question (secondes):</label>
+                        <InputNumber
+                            min={10}
+                            max={600}
+                            value={timeLimit}
+                            onChange={handleTimeLimitChange}
+                            step={10}
+                        />
+                        <Whisper
+                            placement="top"
+                            trigger="hover"
+                            speaker={<Tooltip>Le temps commence à courir individuellement pour chaque question lorsque vous cliquez sur le bouton "Commencer"</Tooltip>}
+                        >
+                            <Button appearance="link">?</Button>
+                        </Whisper>
+                    </div>
+
+                    <Button
+                        appearance="primary"
+                        color="green"
+                        onClick={evaluateAnswers}
+                        disabled={Object.keys(userAnswers).length === 0}
+                        block
+                    >
+                        Évaluer mes réponses
+                    </Button>
+                    <Button
+                        appearance="subtle"
+                        onClick={resetTest}
+                        disabled={Object.keys(userAnswers).length === 0}
+                        block
+                    >
+                        Réinitialiser le test
+                    </Button>
+                </div>
+            )}
+
+            {!evaluationMode && (
+                <ConfigButtons
+                    expandAll={expandAll}
+                    toggleExpandAll={toggleExpandAll}
+                    handleToggleAllAnswers={handleToggleAllAnswers}
+                    handleToggleAllExplanations={handleToggleAllExplanations}
+                />
+            )}
+
+            <Content className="qcm-content" id="qcm-content">
+                <div className="qcm-intro">
+                    <h2>{Title}</h2>
+                    <p>Ce QCM couvre divers sujets liés à l'informatique, du développement web aux concepts avancés.</p>
+                </div>
+
+                {/* Barre de recherche */}
+                <div className="search-section">
+                    <SearchBar
+                        value={searchTerm}
+                        onChange={handleSearchChange}
+                        onClear={clearSearch}
+                        disabled={evaluationMode}
+                    />
+                </div>
+
+                {/* Résultats de recherche */}
+                {searchTerm && !evaluationMode && (
+                    <div className="search-results-info">
+                        <p>
+                            {filteredQuestions.length === 0
+                                ? 'Aucune question ne correspond à votre recherche.'
+                                : `${filteredQuestions.length} question(s) trouvée(s) pour "${searchTerm}"`}
+                        </p>
+                        {filteredQuestions.length > 0 && (
+                            <Button
+                                appearance="link"
+                                onClick={clearSearch}
+                                className="clear-search-link"
+                            >
+                                Effacer la recherche
+                            </Button>
+                        )}
+                    </div>
+                )}
+
+                {/* Contrôles de pagination et affichage */}
+                <div className="pagination-controls">
+                    <PageSizeSelector
+                        value={itemsPerPage}
+                        onChange={handleItemsPerPageChange}
+                        disabled={evaluationMode}
+                    />
+
+                    {showPagination && !evaluationMode && (
+                        <Pagination
+                            activePage={activePage}
+                            totalPages={totalPages}
+                            onSelect={handlePageChange}
+                        />
+                    )}
+                </div>
+
+                {/* Message quand il n'y a pas de résultats */}
+                {filteredQuestions.length === 0 ? (
+                    <div className="no-results">
+                        <Message type="info" showIcon>
+                            Aucune question ne correspond à votre recherche. Veuillez essayer avec d'autres termes.
+                        </Message>
+                    </div>
+                ) : (
+                    // Affichage des questions
+                    paginatedQuestions.map((item) => (
+                        <Panel
+                            key={item.id}
+                            className={`question-panel ${evaluationMode && userAnswers[item.id] !== undefined
+                                ? 'answered'
+                                : evaluationMode && questionTimers[item.id]?.expired
+                                    ? 'time-expired'
+                                    : ''
+                                }`}
+                            header={
+                                <div className="question-header-content">
+                                    <span>{`Question ${item.id}: ${item.question}`}</span>
+                                    {!evaluationMode && (
+                                        <div className="audio-controls">
+                                            <AudioPlayer
+                                                id={item.id}
+                                                text={handleSpeak(item)}
+                                                isPlaying={isPlaying}
+                                                setIsPlaying={setIsPlaying}
+                                                speechSynthRef={speechSynthRef}
+                                                buttonText="Écouter la question"
+                                            />
+                                        </div>
                                     )}
-                                />
-                            </Form.Group>
-
-                            <Form.Group>
-                                <Form.ControlLabel>Temps pour répondre (secondes):</Form.ControlLabel>
-                                <Form.Control
-                                    name="answerTime"
-                                    accepter={props => (
-                                        <input
-                                            {...props}
-                                            type="number"
-                                            min="5"
-                                            max="120"
-                                            value={config.answerTime}
-                                            onChange={e => updateConfig('answerTime', parseInt(e.target.value, 10))}
-                                            className="rs-input"
-                                        />
+                                    {evaluationMode && (
+                                        <div className="timer-control">
+                                            {!questionTimers[item.id]?.started ? (
+                                                <Button
+                                                    appearance="ghost"
+                                                    color="blue"
+                                                    size="sm"
+                                                    onClick={(e) => {
+                                                        e.stopPropagation();
+                                                        handleStartTimer(item.id);
+                                                    }}
+                                                    disabled={userAnswers[item.id] !== undefined}
+                                                >
+                                                    <PlayOutline /> Commencer ({timeLimit}s)
+                                                </Button>
+                                            ) : (
+                                                <div className="timer-display">
+                                                    Temps restant:
+                                                    <Badge
+                                                        content={formatTime(questionTimers[item.id]?.timeLeft || 0)}
+                                                        color={
+                                                            questionTimers[item.id]?.timeLeft > 30
+                                                                ? 'green'
+                                                                : questionTimers[item.id]?.timeLeft > 10
+                                                                    ? 'yellow'
+                                                                    : 'red'
+                                                        }
+                                                    />
+                                                    {questionTimers[item.id]?.expired && (
+                                                        <span className="time-expired-badge">Temps écoulé</span>
+                                                    )}
+                                                </div>
+                                            )}
+                                        </div>
                                     )}
-                                />
-                            </Form.Group>
-
-                            <Form.Group>
-                                <Form.ControlLabel>Type de réponse:</Form.ControlLabel>
-                                <Form.Control
-                                    name="allowMultipleAnswers"
-                                    accepter={props => (
-                                        <Checkbox
-                                            {...props}
-                                            checked={config.allowMultipleAnswers}
-                                            onChange={(_, checked) => updateConfig('allowMultipleAnswers', checked)}
-                                        >
-                                            Autoriser les réponses multiples
-                                        </Checkbox>
-                                    )}
-                                />
-                            </Form.Group>
-
-                            <Form.Group>
-                                <Button appearance="primary" block onClick={startQuiz}>
-                                    Commencer le QCM
-                                </Button>
-                            </Form.Group>
-                        </Form>
-                    </Panel>
-                </Content>
-            </Container>
-        );
-    };
-
-    // Rendu de la question actuelle
-    const renderQuestion = () => {
-        return (
-            <Container>
-                <Header>
-                    <FlexboxGrid justify="space-between" align="middle">
-                        <FlexboxGrid.Item colspan={16}>
-                            <h2>Question {currentQuestionIndex + 1}/{questions.length}</h2>
-                        </FlexboxGrid.Item>
-                        <FlexboxGrid.Item colspan={8} style={{ textAlign: 'right' }}>
-                            <div className="timer-container">
-                                <Progress.Circle
-                                    percent={(timeLeft / config.answerTime) * 100}
-                                    showInfo={false}
-                                    status={
-                                        timeLeft > config.answerTime * 0.5 ? 'success' :
-                                            timeLeft > config.answerTime * 0.25 ? 'active' : 'fail'
-                                    }
-                                    strokeWidth={8}
-                                    style={{ width: 40, marginRight: 10 }}
-                                />
-                                <span className="timer-text">{timeLeft}s</span>
-                            </div>
-                        </FlexboxGrid.Item>
-                    </FlexboxGrid>
-                </Header>
-
-                <Content>
-                    <Panel bordered>
-                        <div className="question-content">
-                            <div className="question-header">
-                                <h3>{currentQuestion.question}</h3>
-                                <AudioPlayer
-                                    id={currentQuestionIndex}
-                                    text={`${currentQuestion.question}. Les options sont: ${currentQuestion.options.map((opt, idx) =>
-                                        `Option ${idx + 1}: ${opt}`).join('. ')}`}
-                                    isPlaying={isPlaying}
-                                    setIsPlaying={setIsPlaying}
-                                    speechSynthRef={speechSynthRef}
-                                    buttonText="Réécouter la question"
-                                />
-                            </div>
-
-                            <Divider />
-
-                            <div className="answer-options">
-                                {config.allowMultipleAnswers ? (
-                                    <CheckboxGroup
-                                        name={`question-${currentQuestionIndex}`}
-                                        value={selectedAnswers[currentQuestionIndex] || []}
-                                        onChange={handleSelectionChange}
-                                    >
-                                        {currentQuestion.options.map((option, optionIndex) => (
-                                            <Checkbox key={optionIndex} value={optionIndex}>
-                                                {option}
-                                            </Checkbox>
-                                        ))}
-                                    </CheckboxGroup>
-                                ) : (
+                                </div>
+                            }
+                            collapsible
+                            expanded={expandAll || activeKey === item.id}
+                            onSelect={() => !expandAll && handleSelect(item.id)}
+                        >
+                            {evaluationMode ? (
+                                <div className="options-container evaluation">
                                     <RadioGroup
-                                        name={`question-${currentQuestionIndex}`}
-                                        value={selectedAnswers[currentQuestionIndex]?.[0]}
-                                        onChange={value => handleSelectionChange(value)}
+                                        name={`question-${item.id}`}
+                                        value={userAnswers[item.id]}
+                                        onChange={(value) => handleUserAnswerChange(item.id, value)}
+                                        disabled={!canAnswer(item.id)}
                                     >
-                                        {currentQuestion.options.map((option, optionIndex) => (
-                                            <Radio key={optionIndex} value={optionIndex}>
-                                                {option}
+                                        {item.options.map((option, index) => (
+                                            <Radio
+                                                key={index}
+                                                value={index}
+                                                disabled={!canAnswer(item.id)}
+                                                className={`option-radio ${showAnswers[item.id] && (
+                                                    item.correctAnswer === index
+                                                        ? 'correct-answer'
+                                                        : userAnswers[item.id] === index
+                                                            ? 'incorrect-answer'
+                                                            : ''
+                                                )
+                                                    }`}
+                                            >
+                                                <span className="option-letter">{optionLetters[index]}.</span> {option}
+                                                {showAnswers[item.id] && item.correctAnswer === index && (
+                                                    <span className="correct-badge"><CheckOutline /></span>
+                                                )}
+                                                {showAnswers[item.id] && userAnswers[item.id] === index && item.correctAnswer !== index && (
+                                                    <span className="incorrect-badge"><CloseOutline /></span>
+                                                )}
                                             </Radio>
                                         ))}
                                     </RadioGroup>
-                                )}
-                            </div>
-                        </div>
-                    </Panel>
-                </Content>
 
-                <Footer>
-                    <Button
-                        appearance="primary"
-                        block
-                        onClick={handleNextQuestion}
-                        disabled={!audioCompleted || isTransitioning || isNavigatingRef.current}
-                    >
-                        {isLastQuestion ? "Terminer" : "Question suivante"}
+                                    {questionTimers[item.id]?.expired && !userAnswers[item.id] && (
+                                        <Message showIcon type="error" className="time-expired-message">
+                                            Temps écoulé pour cette question. Vous ne pouvez plus y répondre.
+                                        </Message>
+                                    )}
+                                </div>
+                            ) : (
+                                <div className="options-container">
+                                    {item.options.map((option, index) => (
+                                        <div
+                                            key={index}
+                                            className={`option ${showAnswers[item.id] && item.correctAnswer === index ? 'correct-answer' : ''}`}
+                                        >
+                                            <span className="option-letter">{optionLetters[index]}.</span> {option}
+                                            {showAnswers[item.id] && item.correctAnswer === index && <span className="correct-badge">✓</span>}
+                                        </div>
+                                    ))}
+                                </div>
+                            )}
+
+                            {!evaluationMode && (
+                                <div className="button-container">
+                                    <Button
+                                        className="answer-button"
+                                        appearance="subtle"
+                                        onClick={() => toggleAnswers(item.id)}
+                                    >
+                                        {showAnswers[item.id] ? 'Masquer la réponse' : 'Afficher la réponse'}
+                                    </Button>
+                                    <Button
+                                        className="explanation-button"
+                                        appearance="subtle"
+                                        onClick={() => toggleExplanation(item.id)}
+                                        disabled={!showAnswers[item.id]}
+                                    >
+                                        {showExplanation[item.id] ? 'Masquer l\'explication' : 'Afficher l\'explication'}
+                                    </Button>
+                                </div>
+                            )}
+
+                            {(showExplanation[item.id] && showAnswers[item.id]) && (
+                                <div className="explanation-box">
+                                    <div className="explanation-header">
+                                        <h4>Explication:</h4>
+                                        <AudioPlayer
+                                            id={`explanation-${item.id}`}
+                                            text={handleSpeakExplanation(item)}
+                                            isPlaying={isPlaying}
+                                            setIsPlaying={setIsPlaying}
+                                            speechSynthRef={speechSynthRef}
+                                            buttonText="Écouter l'explication"
+                                        />
+                                    </div>
+                                    <p>{item.explanation}</p>
+                                    <br />
+                                    <h4>Plus de détail:</h4>
+                                    {item.detailedExplanation}
+                                    <br />
+                                    {item.examples && (
+                                        <div className="examples-section">
+                                            <h4>Exemples:</h4>
+                                            <p>{item.examples}</p>
+                                        </div>
+                                    )}
+
+                                    {item.imageUrl && (
+                                        <div className="examples-section">
+                                            <h4>Illustration:</h4>
+                                            <img src={item.imageUrl} className='w-100' />
+                                        </div>
+                                    )}
+
+                                    {item.usefulLinks && item.usefulLinks.length > 0 && (
+                                        <div className="links-section">
+                                            <h4>Liens utiles:</h4>
+                                            <ul>
+                                                {item.usefulLinks.map((link, index) => (
+                                                    <li key={index}>
+                                                        <a href={link} target="_blank" rel="noopener noreferrer">
+                                                            {link}
+                                                        </a>
+                                                    </li>
+                                                ))}
+                                            </ul>
+                                        </div>
+                                    )}
+                                </div>
+                            )}
+                        </Panel>
+                    ))
+                )}
+
+                {/* Pagination en bas aussi pour plus de confort */}
+                {showPagination && filteredQuestions.length > 0 && !evaluationMode && (
+                    <div className="bottom-pagination">
+                        <Pagination
+                            activePage={activePage}
+                            totalPages={totalPages}
+                            onSelect={handlePageChange}
+                        />
+                    </div>
+                )}
+            </Content>
+
+
+            <Footer className="qcm-footer">
+                <p>© 2025 - QCM d'Informatique</p>
+            </Footer>
+
+            {/* Modal des résultats */}<Modal
+                open={evaluationResults.showResults}
+                onClose={closeResults}
+                size="md"
+            >
+                <Modal.Header>
+                    <Modal.Title>Résultats de votre évaluation</Modal.Title>
+                </Modal.Header>
+                <Modal.Body>
+                    <div className="results-content">
+                        <h3>Score final: {evaluationResults.score}%</h3>
+                        <Progress.Line
+                            percent={evaluationResults.score}
+                            status={evaluationResults.score >= 70 ? "success" : evaluationResults.score >= 50 ? "active" : "fail"}
+                            strokeWidth={8}
+                        />
+                        <p>Vous avez répondu correctement à {evaluationResults.correctAnswers} question(s) sur {evaluationResults.totalQuestions}.</p>
+
+                        {evaluationResults.score >= 80 && (
+                            <Message type="success" showIcon className="result-message">
+                                <h4>Excellent travail !</h4>
+                                <p>Vous maîtrisez très bien ce sujet.</p>
+                            </Message>
+                        )}
+
+                        {evaluationResults.score >= 60 && evaluationResults.score < 80 && (
+                            <Message type="info" showIcon className="result-message">
+                                <h4>Bon travail !</h4>
+                                <p>Vous avez une bonne compréhension du sujet, mais il reste quelques points à améliorer.</p>
+                            </Message>
+                        )}
+
+                        {evaluationResults.score < 60 && (
+                            <Message type="warning" showIcon className="result-message">
+                                <h4>Continuez vos efforts !</h4>
+                                <p>Revoyez les explications des questions pour améliorer votre compréhension du sujet.</p>
+                            </Message>
+                        )}
+
+                        <p className="review-instructions">Les réponses correctes sont maintenant affichées en vert. Vous pouvez consulter les explications pour en savoir plus sur chaque question.</p>
+                    </div>
+                </Modal.Body>
+                <Modal.Footer>
+                    <Button onClick={closeResults} appearance="primary">
+                        Voir les corrections
                     </Button>
-                </Footer>
-            </Container>
-        );
-    };
-
-    // Rendu principal
-    return (
-        <div className="qcm-container">
-            {showConfiguration && renderConfigScreen()}
-
-            {quizStarted && !quizFinished && !showResults && renderQuestion()}
-
-            {showResults && renderResults()}
-
-            <style jsx global>{`
-        .qcm-container {
-          max-width: 800px;
-          margin: 0 auto;
-          padding: 20px;
-        }
-        
-        .question-content {
-          margin-bottom: 20px;
-        }
-        
-        .question-header {
-          display: flex;
-          justify-content: space-between;
-          align-items: flex-start;
-        }
-        
-        .timer-container {
-          display: flex;
-          align-items: center;
-        }
-        
-        .timer-text {
-          font-size: 18px;
-          font-weight: bold;
-        }
-        
-        .answer-options {
-          margin-top: 20px;
-        }
-        
-        .results-container {
-          text-align: center;
-        }
-        
-        .results-container .rs-progress-circle {
-          margin: 20px auto;
-          width: 120px;
-          height: 120px;
-        }
-        
-        .result-text {
-          font-size: 18px;
-          margin: 20px 0;
-        }
-        
-        .question-result {
-          text-align: left;
-          margin-bottom: 20px;
-        }
-        
-        .question-text {
-          margin-bottom: 10px;
-        }
-        
-        .explanation {
-          font-style: italic;
-          color: #666;
-          margin-top: 10px;
-        }
-      `}</style>
-        </div>
+                    <Button onClick={() => {
+                        closeResults();
+                        resetTest();
+                    }} appearance="subtle">
+                        Recommencer le test
+                    </Button>
+                </Modal.Footer>
+            </Modal>
+        </Container>
     );
 };
 
-export default QCMApp;
+export default UMLQcm;

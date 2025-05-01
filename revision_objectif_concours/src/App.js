@@ -2,12 +2,9 @@ import "./App.css";
 import React from "react";
 import { HashRouter as Router, Routes, Route } from "react-router-dom";
 // import LoadExternalScripts from './AppComponents/LoadExternalScripts';
-import UMLQcm from "./AppPages/QcmComponent/UMLQcmNew_2";
-// import UMLQcm from "./AppPages/UML/UMLQcm";
-
-import QCMQuestions from"./AppPages/Questions/CODEBARRE_QRCCODE_QCMQuestions"
-// import VerticalTicketWizard from "./AppPages/Home/wiazard/VerticalTicketWizard";
-// import ModernQueueSystem from "./AppPages/Home/Ecran/ModernQueueSystem";
+import QCMApp from "./AppPages/QcmComponent/QCMApp";
+import UMLQcmNew from "./AppPages/QcmComponent/UMLQcmNew";
+import QCMQuestions from"./AppPages/CoteDivoire/QCMOrganisationsAfricaines"
 
 function App() {
   return (
@@ -18,7 +15,9 @@ function App() {
         <div className="content">
           <Routes>
             {/* <Route path="/" element={<UMLQcm questionSerie ={QCMQuestions} Title="Test de connaissances QRCODE" />} /> */}
-            <Route path="/" element={<UMLQcm questions ={QCMQuestions} Title="Test de connaissances QRCODE" />} />
+            <Route path="/" element={<UMLQcmNew questionSerie ={QCMQuestions} Title="Test de connaissances QRCODE" />} />
+            <Route path="/test" element={<QCMApp questions ={QCMQuestions} Title="Test de connaissances QRCODE" />} />
+
 
             {/* <Route path="/:PARAM_LG_AGEID" element={<VerticalTicketWizard />} />
             <Route path="/ecran/:PARAM_LG_AGEID" element={<ModernQueueSystem />} /> */}
