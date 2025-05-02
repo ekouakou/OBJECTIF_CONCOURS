@@ -337,3 +337,35 @@ Quiz de logique ou devinettes
 
 Objets emblématiques (Tour Eiffel, Mona Lisa…)
 
+
+
+
+
+
+
+je veux faire un qcm sur les monument d'affrique, Faite le par pays. et varie la position des bonne reponse leur situation géographique et leur caractéristique. voici un model a suivre.
+
+const QCMSportQuestion2023 = [
+    {
+      id: 1,
+      question: "Quel pays a remporté la Coupe d'Afrique des Nations (CAN) de football organisée en Côte d'Ivoire en 2023 ?",
+      options: [
+        "Côte d'Ivoire",
+        "Sénégal",
+        "Nigeria",
+        "Maroc"
+      ],
+      correctAnswer: 0,
+      explanation: "La Côte d'Ivoire a remporté la CAN 2023 organisée à domicile, décrochant ainsi son troisième titre continental après ceux de 1992 et 2015.",
+      examples: "En finale, les Éléphants ont battu le Nigeria 2-1 grâce à des buts de Franck Kessié et Sébastien Haller, réalisant une remontée après avoir été menés au score.",
+      usefulLinks: [
+        "https://www.cafonline.com/caf-africa-cup-of-nations/",
+        "https://www.fif.ci/"
+      ],
+      imageUrl: "https://example.com/civ-can2023.jpg",
+      detailedExplanation: "Le parcours de la Côte d'Ivoire lors de cette CAN 2023 a été extraordinaire et plein de rebondissements. Après un premier tour difficile où l'équipe a failli être éliminée (une défaite 4-0 contre la Guinée équatoriale lors du dernier match de poule), les Éléphants se sont qualifiés parmi les meilleurs troisièmes. Ce qui a suivi est entré dans l'histoire du football africain : une série de matchs à élimination directe spectaculaires avec des remontées et des victoires à l'arrachée contre le Sénégal (tenant du titre), le Mali et la RD Congo avant de triompher face au Nigeria en finale. Cette victoire, acquise à domicile au Stade Olympique Alassane Ouattara d'Ebimpé, a déclenché des scènes de liesse dans tout le pays. Emmenés par des joueurs comme Sébastien Haller (héros de la finale après avoir surmonté un cancer), Franck Kessié (capitaine et buteur), Simon Adingra et Jean-Michaël Seri, les Éléphants ont offert à leurs supporters un titre qui semblait improbable après les débuts catastrophiques. Cette CAN 2023 restera également dans les mémoires pour l'excellente organisation du tournoi par la Côte d'Ivoire, avec des infrastructures modernes et un engouement populaire extraordinaire."
+    },
+  ];
+  
+  export default QCMSportQuestion2023;
+

@@ -15,8 +15,8 @@ function App() {
         <div className="content">
           <Routes>
             {/* <Route path="/" element={<UMLQcm questionSerie ={QCMQuestions} Title="Test de connaissances QRCODE" />} /> */}
-            <Route path="/" element={<UMLQcmNew questionSerie ={QCMQuestions} Title="Test de connaissances QRCODE" />} />
-            <Route path="/test" element={<QCMApp questions ={QCMQuestions} Title="Test de connaissances QRCODE" />} />
+            <Route path="/" element={<UMLQcmNew questionSerie ={QCMQuestions} Title="Test de connaissances Organistaion Africaine" />} />
+            <Route path="/test" element={<QCMApp questions ={QCMQuestions} Title="Test de connaissances Organistaion Africaine" />} />
 
 
             {/* <Route path="/:PARAM_LG_AGEID" element={<VerticalTicketWizard />} />

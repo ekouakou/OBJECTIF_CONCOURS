@@ -61,13 +61,12 @@ const AudioPlayer = ({ id, text, isPlaying, setIsPlaying, speechSynthRef, button
     
     // PRIORITÉ 1: Essayer des voix féminines spécifiques connues
     const knownFemaleVoices = [
+      "Google français", // Souvent féminine par défaut
       "Amelie",
       "Thomas",
-      "Google français", // Souvent féminine par défaut
       "Audrey",
       "Virginie",
       "Microsoft Hélène",
-      "Microsoft Zira",
       "Sylvie",
 
     ];
@@ -166,16 +165,20 @@ const AudioPlayer = ({ id, text, isPlaying, setIsPlaying, speechSynthRef, button
       
       // Créer un nouvel objet d'énonciation
       // Option 1: Utiliser le texte original
-      // const utterance = new SpeechSynthesisUtterance(text);
+      const utterance = new SpeechSynthesisUtterance(text);
       // Option 2: Utiliser le texte transformé (décommenter pour activer)
-      const transformedText = transformTextForAfricanAccent(text);
-      const utterance = new SpeechSynthesisUtterance(transformedText);
+      // const transformedText = transformTextForAfricanAccent(text);
+      // const utterance = new SpeechSynthesisUtterance(transformedText);
       
       // Configuration des paramètres pour une voix féminine africaine
       utterance.lang = 'fr-FR';  // On garde la langue française de base
       utterance.rate = 0.6;     // Rythme légèrement plus lent (caractéristique de certains accents africains)
       utterance.pitch = 0.4;     // Ton plus élevé pour une voix plus féminine
       utterance.volume = 1.0;    // Volume maximum
+
+      utterance.rate = 0.9;     // Rythme légèrement plus lent (caractéristique de certains accents africains)
+      utterance.pitch = 0.9;     // Ton plus élevé pour une voix plus féminine
+      utterance.volume = 3.0;    // Volume maximum
       
       // Sélectionner la voix
       try {
