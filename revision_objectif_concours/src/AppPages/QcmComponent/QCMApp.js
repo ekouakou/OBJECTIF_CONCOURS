@@ -10,10 +10,11 @@ import {
     Footer,
     Form,
     Divider,
-    Progress
+    Progress,
+    IconButton
 } from 'rsuite';
 import 'rsuite/dist/rsuite.min.css';
-
+import { PauseOutline, PlayOutline } from '@rsuite/icons';
 // Importation des composants externalisés
 import QuestionDisplay from './QuestionDisplay';
 import ConfigScreen from './ConfigScreen';
@@ -38,6 +39,7 @@ const QCMApp = ({ questions, questionReadCount = 1, answerTime = 3, allowMultipl
     const [showConfiguration, setShowConfiguration] = useState(true);
     const [isTransitioning, setIsTransitioning] = useState(false);
     const [audioCompleted, setAudioCompleted] = useState(false);
+    const [isPaused, setIsPaused] = useState(false);
     const [config, setConfig] = useState({
         questionReadCount: questionReadCount,
         answerTime: answerTime,
@@ -88,6 +90,7 @@ const QCMApp = ({ questions, questionReadCount = 1, answerTime = 3, allowMultipl
         setIsTimerActive(false);
         setAudioPlayCount(0);
         setAudioCompleted(false);
+        setIsPaused(false);
 
         // Effacer les marqueurs d'annonces précédents pour cette question
         const questionKey = `timer_announced_${currentQuestionIndex}`;
@@ -96,8 +99,8 @@ const QCMApp = ({ questions, questionReadCount = 1, answerTime = 3, allowMultipl
 
     // Fonction pour démarrer le minuteur
     const startTimer = () => {
-        // Ne pas démarrer le timer si nous sommes en transition
-        if (isNavigatingRef.current || isTransitioning) {
+        // Ne pas démarrer le timer si nous sommes en transition ou en pause
+        if (isNavigatingRef.current || isTransitioning || isPaused) {
             return;
         }
         
@@ -116,7 +119,7 @@ const QCMApp = ({ questions, questionReadCount = 1, answerTime = 3, allowMultipl
 
     // Hook pour gérer le minuteur
     useTimer({
-        isActive: isTimerActive,
+        isActive: isTimerActive && !isPaused,
         timeLeft,
         setTimeLeft,
         isNavigatingRef,
@@ -125,12 +128,12 @@ const QCMApp = ({ questions, questionReadCount = 1, answerTime = 3, allowMultipl
         onTimeUpdate: (newTime) => {
             // Annonces vocales à certains moments
             if (newTime === 10) {
-                if (!isNavigatingRef.current && !isTransitioning) {
+                if (!isNavigatingRef.current && !isTransitioning && !isPaused) {
                     cancelAllSpeech();
                     speakText("Plus que 10 secondes.");
                 }
             } else if (newTime === 5) {
-                if (!isNavigatingRef.current && !isTransitioning) {
+                if (!isNavigatingRef.current && !isTransitioning && !isPaused) {
                     cancelAllSpeech();
                     speakText("5 secondes restantes.");
                 }
@@ -184,6 +187,23 @@ const QCMApp = ({ questions, questionReadCount = 1, answerTime = 3, allowMultipl
         }
     };
 
+    // Fonction pour gérer la pause et la reprise du quiz
+    const togglePause = () => {
+        const newPauseState = !isPaused;
+        setIsPaused(newPauseState);
+        
+        if (newPauseState) {
+            // Mettre en pause
+            cancelAllSpeech(); // Arrêter tout audio en cours
+        } else {
+            // Reprendre
+            // Si le timer était actif avant la pause, le redémarrer
+            if (isTimerActive && audioCompleted) {
+                startTimer();
+            }
+        }
+    };
+
     // Version améliorée de la fonction pour passer à la question suivante
     const handleNextQuestion = () => {
         // Définir l'état de navigation immédiatement pour bloquer tout traitement audio en cours
@@ -221,6 +241,7 @@ const QCMApp = ({ questions, questionReadCount = 1, answerTime = 3, allowMultipl
                 // Réinitialiser l'état audio pour la nouvelle question
                 setAudioPlayCount(0);
                 setAudioCompleted(false);
+                setIsPaused(false);
                 
                 // Attendre un peu avant de réinitialiser les drapeaux de navigation
                 setTimeout(() => {
@@ -259,6 +280,7 @@ const QCMApp = ({ questions, questionReadCount = 1, answerTime = 3, allowMultipl
         setShowConfiguration(true);
         setQuizStarted(false);
         setIsTransitioning(false);
+        setIsPaused(false);
         
         // Réinitialiser l'état de navigation après un court délai
         setTimeout(() => {
@@ -289,7 +311,7 @@ const QCMApp = ({ questions, questionReadCount = 1, answerTime = 3, allowMultipl
                 <Container className="quiz-main-container">
                     <Header className="quiz-header">
                         <FlexboxGrid justify="space-between" align="middle">
-                            <FlexboxGrid.Item colspan={16}>
+                            <FlexboxGrid.Item colspan={12}>
                                 <div className="question-progress">
                                     <h2>Question {currentQuestionIndex + 1}</h2>
                                     <div className="progress-indicator">
@@ -302,6 +324,17 @@ const QCMApp = ({ questions, questionReadCount = 1, answerTime = 3, allowMultipl
                                         ))}
                                     </div>
                                 </div>
+                            </FlexboxGrid.Item>
+                            <FlexboxGrid.Item colspan={4} style={{ textAlign: 'center' }}>
+                                <IconButton
+                                    icon={isPaused ? <PlayOutline/>  : <PauseOutline/>}
+                                    appearance="subtle"
+                                    circle
+                                    size="lg"
+                                    onClick={togglePause}
+                                    className={`pause-button ${isPaused ? 'paused' : ''}`}
+                                    disabled={!audioCompleted || isTransitioning || isNavigatingRef.current}
+                                />
                             </FlexboxGrid.Item>
                             <FlexboxGrid.Item colspan={8} style={{ textAlign: 'right' }}>
                                 <div className="timer-container">
@@ -317,8 +350,8 @@ const QCMApp = ({ questions, questionReadCount = 1, answerTime = 3, allowMultipl
                                                    timeLeft > config.answerTime * 0.25 ? '#FFC107' : '#F44336'}
                                         style={{ width: 60, marginRight: 15 }}
                                     />
-                                    <span className={`timer-text ${timeLeft <= 10 ? 'timer-alert' : ''}`}>
-                                        {timeLeft}s
+                                    <span className={`timer-text ${timeLeft <= 10 ? 'timer-alert' : ''} ${isPaused ? 'paused' : ''}`}>
+                                        {timeLeft}s {isPaused && "(Pause)"}
                                     </span>
                                 </div>
                             </FlexboxGrid.Item>
@@ -326,7 +359,7 @@ const QCMApp = ({ questions, questionReadCount = 1, answerTime = 3, allowMultipl
                     </Header>
 
                     <Content className="quiz-content">
-                        <Panel bordered className="question-panel">
+                        <Panel bordered className={`question-panel ${isPaused ? 'paused' : ''}`}>
                             <QuestionDisplay 
                                 question={currentQuestion}
                                 currentQuestionIndex={currentQuestionIndex}
@@ -343,6 +376,7 @@ const QCMApp = ({ questions, questionReadCount = 1, answerTime = 3, allowMultipl
                                 isTransitioning={isTransitioning}
                                 setAudioCompleted={setAudioCompleted}
                                 startTimer={startTimer}
+                                isPaused={isPaused}
                             />
                         </Panel>
                     </Content>
@@ -350,10 +384,10 @@ const QCMApp = ({ questions, questionReadCount = 1, answerTime = 3, allowMultipl
                     <Footer className="quiz-footer">
                         <Button
                             appearance="primary"
-                            className={`next-button ${isLastQuestion ? 'finish-button' : ''}`}
+                            className={`next-button ${isLastQuestion ? 'finish-button' : ''} ${isPaused ? 'paused' : ''}`}
                             block
                             onClick={handleNextQuestion}
-                            disabled={!audioCompleted || isTransitioning || isNavigatingRef.current}
+                            disabled={!audioCompleted || isTransitioning || isNavigatingRef.current || isPaused}
                         >
                             {isLastQuestion ? "Terminer le quiz" : "Question suivante"}
                         </Button>

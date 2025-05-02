@@ -1,6 +1,9 @@
 Domaines administratifs et institutionnels
 
 QCM sur organisation internationnal
+QCM sur organisation internationnal et africaine qui on été remplacer ou qui on ete supprimer ou mis fin
+
+Question sur les différent mont (montage)
 
 Organisation politique et administrative de la Côte d'Ivoire
 Histoire politique de la Côte d'Ivoire (indépendance, périodes importantes)
@@ -343,7 +346,7 @@ Objets emblématiques (Tour Eiffel, Mona Lisa…)
 
 
 
-je veux faire un qcm sur les monument d'affrique, Faite le par pays. et varie la position des bonne reponse leur situation géographique et leur caractéristique. voici un model a suivre.
+je veux faire un qcm sur les captitale du monde, les capitale les plus dificile a trouver, Faite le par pays. et varie la position des bonne reponse leur situation géographique et leur caractéristique. voici un model a suivre.
 
 const QCMSportQuestion2023 = [
     {

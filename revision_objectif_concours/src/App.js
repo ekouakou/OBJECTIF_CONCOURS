@@ -1,31 +1,100 @@
-import "./App.css";
-import React from "react";
+import React, { useState } from "react";
 import { HashRouter as Router, Routes, Route } from "react-router-dom";
-// import LoadExternalScripts from './AppComponents/LoadExternalScripts';
-import QCMApp from "./AppPages/QcmComponent/QCMApp";
-import UMLQcmNew from "./AppPages/QcmComponent/UMLQcmNew";
-import QCMQuestions from"./AppPages/CoteDivoire/QCMOrganisationsAfricaines"
+import componentMap from "./componentMap";
+import QCMQuestions from "./AppPages/CoteDivoire/QCMOrganisationsAfricaines";
+import QCMCapitalesMonde from "./AppPages/CoteDivoire/QCMCapitalesMonde";
+
+// Simuler des données récupérées de l'API (tableau d'objets)
+const simulatedApiData = [
+  {
+    QCMCapitalesMonde: QCMCapitalesMonde
+  },
+  {
+    QCMQuestions: QCMQuestions,
+  }
+];
+
+// Fusionner tous les objets en un seul pour accès direct
+const variables = simulatedApiData.reduce((acc, obj) => ({ ...acc, ...obj }), {});
+
+// Fonction de récupération dynamique avec vérification des données
+const getVariableByName = (name) => {
+  if (variables && variables.hasOwnProperty(name)) {
+    return variables[name];
+  } else {
+    return null;
+  }
+};
 
 function App() {
+  // Ajoute ici les routes avec ou sans paramètres dynamiques
+  const [routesFromApi] = useState([
+    {
+      path: "/",
+      component: "UMLQcmNew",
+      title: "Test de connaissances Organisation Africaine",
+      props: {
+        questionSerie: "QCMQuestions"
+      }
+    },
+    {
+      path: "/test",
+      component: "QCMApp",
+      title: "Test de connaissances Afrique",
+      props: {
+        questions: "QCMCapitalesMonde"
+      }
+    },
+    {
+      path: "/test/:category?", // paramètre optionnel
+      component: "QCMApp",
+      title: "Test par catégorie",
+      props: {
+        questions: "QCMCapitalesMonde"
+      }
+    },
+    {
+      path: "/quiz/:quizId/:questionId?", // quizId obligatoire, questionId optionnel
+      component: "QuizApp",
+      title: "Quiz dynamique",
+      props: {
+        questions: "QCMQuestions"
+      }
+    }
+  ]);
+
+  // Met à jour les props dynamiquement avec les données appropriées
+  const enrichedRoutes = routesFromApi.map((route) => {
+    const enrichedProps = { ...route.props };
+
+    for (const propKey in enrichedProps) {
+      const variableName = enrichedProps[propKey];
+      enrichedProps[propKey] = getVariableByName(variableName);
+    }
+
+    return { ...route, props: enrichedProps };
+  });
+
   return (
     <div className="app-content">
       <Router>
-        {/* <ScrollToTop /> */}
-
         <div className="content">
           <Routes>
-            {/* <Route path="/" element={<UMLQcm questionSerie ={QCMQuestions} Title="Test de connaissances QRCODE" />} /> */}
-            <Route path="/" element={<UMLQcmNew questionSerie ={QCMQuestions} Title="Test de connaissances Organistaion Africaine" />} />
-            <Route path="/test" element={<QCMApp questions ={QCMQuestions} Title="Test de connaissances Organistaion Africaine" />} />
+            {enrichedRoutes.map((route, index) => {
+              const Component = componentMap[route.component];
+              if (!Component) return null;
 
-
-            {/* <Route path="/:PARAM_LG_AGEID" element={<VerticalTicketWizard />} />
-            <Route path="/ecran/:PARAM_LG_AGEID" element={<ModernQueueSystem />} /> */}
+              return (
+                <Route
+                  key={index}
+                  path={route.path}
+                  element={<Component Title={route.title} {...(route.props || {})} />}
+                />
+              );
+            })}
           </Routes>
         </div>
-        {/* <Footer /> */}
       </Router>
-      {/* <LoadExternalScripts /> */}
     </div>
   );
 }

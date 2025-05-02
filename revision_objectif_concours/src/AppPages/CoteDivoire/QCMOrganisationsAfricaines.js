@@ -91,7 +91,7 @@ const QCMOrganisationsAfricaines = [
           "https://www.sadc.int/",
           "https://www.diplomatie.gouv.fr/fr/dossiers-pays/afrique/organisations-regionales-africaines/article/communaute-de-developpement-d-afrique-australe-sadc"
         ],
-        imageUrl: "https://example.com/sadc-headquarters.jpg",
+        imageUrl: "https://www.sadc.int/sites/default/files/2022-07/RISDP%20Thumbnail.JPG",
         detailedExplanation: "La Communauté de Développement de l'Afrique Australe (SADC) a été établie le 17 août 1992 à Windhoek, en Namibie, en remplacement de la Conférence de coordination pour le développement de l'Afrique australe (SADCC) qui existait depuis 1980. Son siège a été établi à Gaborone, Botswana, en raison de la stabilité politique du pays et de sa position relativement centrale dans la région. La SADC compte actuellement 16 États membres: Afrique du Sud, Angola, Botswana, Comores, République démocratique du Congo, Eswatini, Lesotho, Madagascar, Malawi, Maurice, Mozambique, Namibie, Seychelles, Tanzanie, Zambie et Zimbabwe. L'organisation travaille à promouvoir le développement socio-économique durable et équitable, la paix et la sécurité, ainsi que l'intégration régionale en Afrique australe."
       },
       {
