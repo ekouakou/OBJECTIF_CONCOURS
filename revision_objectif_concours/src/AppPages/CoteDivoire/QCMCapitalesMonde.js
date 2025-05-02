@@ -645,7 +645,727 @@ const QCMCapitalesMonde = [
         ],
         imageUrl: "https://example.com/port-moresby.jpg",
         detailedExplanation: "Fondée en 1873 et nommée d'après l'amiral britannique John Moresby qui explora la région, Port Moresby est située sur la côte sud-est de la Papouasie-Nouvelle-Guinée, donnant sur le golfe de Papouasie. Isolée des autres grandes villes du pays par des chaînes montagneuses difficiles à franchir, elle n'est reliée à aucune autre ville majeure par voie terrestre, ce qui en fait une sorte d'île urbaine dans un pays où de nombreuses régions restent très isolées. La ville présente un contraste saisissant entre quartiers modernes comme Waigani, où se trouvent le Parlement national à l'architecture inspirée des maisons cérémonielles traditionnelles, et zones d'habitat informel où vit une grande partie de la population. Le Musée national et la Galerie d'art présent"
-    }
+    },
+    {
+        id: 35,
+        question: "Quelle est la capitale du Turkménistan ?",
+        options: [
+          "Achgabat",
+          "Bichkek",
+          "Douchanbé",
+          "Tachkent"
+        ],
+        correctAnswer: 0,
+        explanation: "Achgabat (ou Achkhabad) est la capitale du Turkménistan depuis 1924.",
+        examples: "Connue comme la 'ville blanche', Achgabat détient le record mondial pour la plus grande concentration d'édifices en marbre blanc.",
+        usefulLinks: [
+          "https://www.worldatlas.com/articles/what-is-the-capital-of-turkmenistan.html"
+        ],
+        imageUrl: "https://example.com/achgabat.jpg",
+        detailedExplanation: "Achgabat, située près de la frontière avec l'Iran, est la plus grande ville et le centre administratif du Turkménistan. Fondée en 1881, elle est devenue la capitale après l'indépendance du pays suite à l'effondrement de l'Union soviétique en 1991. La ville est célèbre pour son architecture extravagante et ses bâtiments monumentaux recouverts de marbre blanc, ce qui lui a valu une place dans le Livre Guinness des Records. En dépit de sa splendeur architecturale, Achgabat reste une capitale relativement méconnue à l'échelle mondiale."
+      },
+      {
+        id: 36,
+        question: "Quelle est la capitale de la Gambie ?",
+        options: [
+          "Dakar",
+          "Banjul",
+          "Conakry",
+          "Bissau"
+        ],
+        correctAnswer: 1,
+        explanation: "Banjul est la capitale de la Gambie, bien que ce soit une petite ville comparée à la zone urbaine environnante de Serrekunda.",
+        examples: "Située sur l'île de Banjul à l'embouchure du fleuve Gambie, cette capitale est la deuxième plus petite capitale d'Afrique après Victoria (Seychelles).",
+        usefulLinks: [
+          "https://www.britannica.com/place/Banjul"
+        ],
+        imageUrl: "https://example.com/banjul.jpg",
+        detailedExplanation: "Fondée par les Britanniques en 1816 comme poste de commerce, Banjul (anciennement Bathurst) reste une capitale modeste avec une population d'environ 35 000 habitants. La ville conserve de nombreux bâtiments de l'époque coloniale britannique et est un important port d'exportation pour les arachides, principal produit d'exportation du pays. Malgré son statut de capitale, le centre économique et démographique de la Gambie s'est déplacé vers la zone urbaine de Serrekunda, qui est plusieurs fois plus grande que Banjul."
+      },
+      {
+        id: 37,
+        question: "Quelle est la capitale du Tuvalu ?",
+        options: [
+          "Suva",
+          "Apia",
+          "Funafuti",
+          "Nuku'alofa"
+        ],
+        correctAnswer: 2,
+        explanation: "Funafuti est la capitale de Tuvalu, un petit État insulaire d'Océanie.",
+        examples: "Située sur un atoll du même nom, Funafuti est menacée par la montée des eaux due au changement climatique.",
+        usefulLinks: [
+          "https://www.nationalgeographic.com/environment/article/tuvalu-sinking-islands-rising-seas-climate-change"
+        ],
+        imageUrl: "https://example.com/funafuti.jpg",
+        detailedExplanation: "Funafuti est non seulement la capitale mais aussi l'atoll principal de Tuvalu, un des plus petits et plus isolés pays du monde. La ville occupe une bande de terre étroite autour d'une grande lagune. Avec une élévation moyenne de seulement 2 mètres au-dessus du niveau de la mer, Funafuti est particulièrement vulnérable à la montée des eaux et aux tempêtes. La ville abrite environ la moitié de la population totale du pays (environ 6 000 personnes). Son aéroport, construit pendant la Seconde Guerre mondiale, occupe une grande partie de l'île principale."
+      },
+      {
+        id: 38,
+        question: "Quelle est la capitale de l'Ouzbékistan ?",
+        options: [
+          "Samarcande",
+          "Boukhara",
+          "Khiva",
+          "Tachkent"
+        ],
+        correctAnswer: 3,
+        explanation: "Tachkent est la capitale et la plus grande ville d'Ouzbékistan.",
+        examples: "Avec plus de 2,5 millions d'habitants, Tachkent est la ville la plus peuplée d'Asie centrale.",
+        usefulLinks: [
+          "https://whc.unesco.org/en/tentativelists/6502/"
+        ],
+        imageUrl: "https://example.com/tachkent.jpg",
+        detailedExplanation: "Tachkent est une ville au riche patrimoine historique qui a été presque entièrement reconstruite après un dévastateur tremblement de terre en 1966. Cette reconstruction a donné à la ville son aspect actuel, caractérisé par de larges avenues bordées d'arbres, de grands espaces verts et une architecture soviétique monumentale. Tachkent est aujourd'hui un important centre culturel et industriel de l'Asie centrale, abritant de nombreuses universités, musées, théâtres et industries. Le métro de Tachkent, ouvert en 1977, est célèbre pour ses stations somptueusement décorées, considérées comme parmi les plus belles au monde."
+      },
+      {
+        id: 39,
+        question: "Quelle est la capitale du Lesotho ?",
+        options: [
+          "Maseru",
+          "Mbabane",
+          "Gaborone",
+          "Maputo"
+        ],
+        correctAnswer: 0,
+        explanation: "Maseru est la capitale et la plus grande ville du Lesotho, un pays enclavé dans le territoire sud-africain.",
+        examples: "Située sur la rivière Caledon, à la frontière avec l'Afrique du Sud, Maseru est la seule ville importante du pays.",
+        usefulLinks: [
+          "https://www.britannica.com/place/Maseru"
+        ],
+        imageUrl: "https://example.com/maseru.jpg",
+        detailedExplanation: "Fondée comme poste de police britannique en 1869, Maseru est devenue la capitale du protectorat du Basutoland en 1869, puis du Lesotho indépendant en 1966. C'est une ville relativement petite qui compte environ 330 000 habitants. Située à une altitude d'environ 1 600 mètres, elle bénéficie d'un climat tempéré malgré sa latitude tropicale. Centre administratif et commercial du pays, Maseru est aussi le principal point d'entrée au Lesotho, avec son poste-frontière relié à Ladybrand en Afrique du Sud."
+      },
+      {
+        id: 40,
+        question: "Quelle est la capitale du Laos ?",
+        options: [
+          "Phnom Penh",
+          "Vientiane",
+          "Hanoï",
+          "Naypyidaw"
+        ],
+        correctAnswer: 1,
+        explanation: "Vientiane est la capitale et la plus grande ville du Laos.",
+        examples: "Située sur une plaine au bord du Mékong, qui forme la frontière avec la Thaïlande, Vientiane est considérée comme l'une des capitales les plus tranquilles d'Asie du Sud-Est.",
+        usefulLinks: [
+          "https://whc.unesco.org/en/tentativelists/5407/"
+        ],
+        imageUrl: "https://example.com/vientiane.jpg",
+        detailedExplanation: "Vientiane (prononcé 'Viengchan' en lao) est une capitale au rythme nonchalant qui contraste avec d'autres métropoles asiatiques plus trépidantes. La ville conserve de nombreux temples bouddhistes (appelés 'wat'), dont le plus célèbre est le Pha That Luang, un grand stupa doré considéré comme le monument national du Laos. L'influence française est encore visible dans son architecture coloniale et ses larges boulevards. Avec environ un million d'habitants dans son aire urbaine, Vientiane connaît un développement rapide depuis l'ouverture économique du pays dans les années 1990."
+      },
+      {
+        id: 41,
+        question: "Quelle est la capitale du Bénin ?",
+        options: [
+          "Abomey",
+          "Lomé",
+          "Accra",
+          "Porto-Novo"
+        ],
+        correctAnswer: 3,
+        explanation: "Porto-Novo est la capitale officielle du Bénin, bien que Cotonou soit la plus grande ville et le siège du gouvernement.",
+        examples: "Anciennement appelée Hogbonou et Adjatchè, Porto-Novo ('nouveau port' en portugais) a été renommée par les colonisateurs portugais au XVIIe siècle.",
+        usefulLinks: [
+          "https://www.britannica.com/place/Porto-Novo"
+        ],
+        imageUrl: "https://example.com/porto-novo.jpg",
+        detailedExplanation: "Porto-Novo est une ville d'environ 300 000 habitants située dans le sud-est du Bénin. Elle présente un mélange unique d'influences africaines, brésiliennes et coloniales françaises. La ville abrite l'Assemblée nationale et plusieurs musées importants comme le Musée Ethnographique et le Musée Honmè (ancien palais royal). Bien que Porto-Novo soit la capitale constitutionnelle, la plupart des institutions gouvernementales sont basées à Cotonou, la capitale économique du pays, ce qui crée une situation de double capitale de facto."
+      },
+      {
+        id: 42,
+        question: "Quelle est la capitale des Îles Salomon ?",
+        options: [
+          "Honiara",
+          "Port-Vila",
+          "Suva",
+          "Nouméa"
+        ],
+        correctAnswer: 0,
+        explanation: "Honiara est la capitale et la plus grande ville des Îles Salomon, un État insulaire d'Océanie.",
+        examples: "Située sur la côte nord de l'île de Guadalcanal, Honiara a été le théâtre d'importantes batailles pendant la Seconde Guerre mondiale.",
+        usefulLinks: [
+          "https://www.britannica.com/place/Honiara"
+        ],
+        imageUrl: "https://example.com/honiara.jpg",
+        detailedExplanation: "Honiara est devenue la capitale des Îles Salomon en 1952, remplaçant Tulagi après la Seconde Guerre mondiale. La ville s'est développée autour de la base américaine de Henderson Field. Avec environ 85 000 habitants, c'est une capitale modeste qui sert de principal port et centre commercial du pays. La ville conserve de nombreux vestiges de la Seconde Guerre mondiale, notamment sur Bloody Ridge, site d'une bataille décisive. Le Parlement national, avec son architecture inspirée des maisons traditionnelles mélanésiennes, est l'un des bâtiments emblématiques de la ville."
+      },
+      {
+        id: 43,
+        question: "Quelle est la capitale du Burkina Faso ?",
+        options: [
+          "Bamako",
+          "Niamey",
+          "Ouagadougou",
+          "Bobo-Dioulasso"
+        ],
+        correctAnswer: 2,
+        explanation: "Ouagadougou est la capitale et la plus grande ville du Burkina Faso.",
+        examples: "Souvent abrégée en 'Ouaga', la ville est le centre culturel, économique et administratif du pays.",
+        usefulLinks: [
+          "https://www.fespaco.org/"
+        ],
+        imageUrl: "https://example.com/ouagadougou.jpg",
+        detailedExplanation: "Fondée au 15ème siècle par les Mossis, Ouagadougou est devenue la capitale de l'empire Mossi avant d'être colonisée par les Français. Avec environ 2,5 millions d'habitants dans son aire urbaine, c'est aujourd'hui une métropole en pleine expansion. La ville est connue pour accueillir le FESPACO (Festival Panafricain du Cinéma et de la Télévision de Ouagadougou), le plus grand festival de cinéma africain. Malgré sa croissance rapide, Ouagadougou conserve une ambiance de grande ville sahélienne avec ses marchés animés, notamment le Grand Marché, et son architecture qui mélange influences traditionnelles et modernes."
+      },
+      {
+        id: 44,
+        question: "Quelle est la capitale du Honduras ?",
+        options: [
+          "San Salvador",
+          "Managua",
+          "Guatemala City",
+          "Tegucigalpa"
+        ],
+        correctAnswer: 3,
+        explanation: "Tegucigalpa est la capitale et la plus grande ville du Honduras.",
+        examples: "Souvent abrégée en 'Tegus', la ville partage officiellement le statut de capitale avec sa ville jumelle, Comayagüela, formant ensemble le District Central.",
+        usefulLinks: [
+          "https://www.britannica.com/place/Tegucigalpa"
+        ],
+        imageUrl: "https://example.com/tegucigalpa.jpg",
+        detailedExplanation: "Située dans une vallée entourée de montagnes à environ 1 000 mètres d'altitude, Tegucigalpa a été fondée en 1578 comme camp minier. Son nom viendrait de la langue nahuatl et signifierait 'colline d'argent'. La ville est traversée par la rivière Choluteca, qui sépare Tegucigalpa de sa ville jumelle Comayagüela. Avec plus d'un million d'habitants dans son aire métropolitaine, c'est le principal centre politique, administratif et économique du Honduras. Son centre historique abrite plusieurs bâtiments coloniaux, dont la cathédrale Saint-Michel Archange et l'ancienne université nationale."
+      },
+      {
+        id: 45,
+        question: "Quelle est la capitale de l'Arménie ?",
+        options: [
+          "Erevan",
+          "Bakou",
+          "Tbilissi",
+          "Astana"
+        ],
+        correctAnswer: 0,
+        explanation: "Erevan est la capitale et la plus grande ville d'Arménie.",
+        examples: "Fondée en 782 av. J.-C., Erevan est considérée comme l'une des plus anciennes villes continuellement habitées au monde.",
+        usefulLinks: [
+          "https://whc.unesco.org/en/tentativelists/6434/"
+        ],
+        imageUrl: "https://example.com/erevan.jpg",
+        detailedExplanation: "Située dans la vallée de l'Ararat, avec vue sur le mont Ararat (symbole national, bien qu'il se trouve aujourd'hui en Turquie), Erevan est une ville qui mélange architecture soviétique et bâtiments modernes. La ville est connue pour ses constructions en tuf rose, une roche volcanique locale qui lui vaut le surnom de 'Ville rose'. Points d'intérêt notables : la Place de la République, la Cascade (un gigantesque escalier monumental abritant un musée d'art contemporain), et Matenadaran, l'institut des manuscrits anciens qui conserve l'un des plus riches dépôts de manuscrits et livres au monde."
+      },
+      {
+        id: 46,
+        question: "Quelle est la capitale du Botswana ?",
+        options: [
+          "Windhoek",
+          "Gaborone",
+          "Harare",
+          "Lusaka"
+        ],
+        correctAnswer: 1,
+        explanation: "Gaborone est la capitale et la plus grande ville du Botswana.",
+        examples: "Fondée en 1964 pour être la nouvelle capitale à l'indépendance du pays en 1966, Gaborone est l'une des villes à la croissance la plus rapide au monde.",
+        usefulLinks: [
+          "https://www.britannica.com/place/Gaborone"
+        ],
+        imageUrl: "https://example.com/gaborone.jpg",
+        detailedExplanation: "Surnommée 'Gabs' par les locaux, Gaborone était un petit village colonial qui a été choisi comme nouvelle capitale en raison de sa position centrale, sa proximité avec les sources d'eau et l'absence de tribus établies qui auraient pu créer des tensions. La ville a été planifiée selon le modèle des 'garden cities' britanniques. Aujourd'hui, avec environ 230 000 habitants, c'est le centre économique et administratif du pays. Le Three Chiefs Monument, le Parlement et le Gaborone Game Reserve (une réserve naturelle en pleine ville) comptent parmi ses attractions principales."
+      },
+      {
+        id: 47,
+        question: "Quelle est la capitale du Burundi ?",
+        options: [
+          "Kigali",
+          "Bujumbura",
+          "Gitega",
+          "Kampala"
+        ],
+        correctAnswer: 2,
+        explanation: "Gitega est la capitale politique du Burundi depuis 2018, remplaçant Bujumbura qui reste la capitale économique.",
+        examples: "Ancienne capitale du royaume du Burundi, Gitega a été déclarée nouvelle capitale politique du pays en décembre 2018.",
+        usefulLinks: [
+          "https://www.britannica.com/place/Gitega"
+        ],
+        imageUrl: "https://example.com/gitega.jpg",
+        detailedExplanation: "Située au centre du pays, Gitega (parfois écrite Kitega) était déjà la capitale du royaume du Burundi avant la colonisation et est restée un centre administratif important pendant la période coloniale belge. Avec environ 40 000 habitants, c'est une ville beaucoup plus petite que Bujumbura (ancienne capitale). Le transfert de la capitale de Bujumbura à Gitega s'est fait progressivement depuis 2018, avec le déplacement des institutions gouvernementales. Ce changement s'inscrit dans une volonté politique de décentralisation et de renouer avec l'histoire précoloniale du pays."
+      },
+      {
+        id: 48,
+        question: "Quelle est la capitale du Tchad ?",
+        options: [
+          "N'Djamena",
+          "Niamey",
+          "Bangui",
+          "Khartoum"
+        ],
+        correctAnswer: 0,
+        explanation: "N'Djamena est la capitale et la plus grande ville du Tchad.",
+        examples: "Située au confluent des fleuves Chari et Logone, à la frontière avec le Cameroun, N'Djamena était connue sous le nom de Fort-Lamy jusqu'en 1973.",
+        usefulLinks: [
+          "https://www.britannica.com/place/NDjamena"
+        ],
+        imageUrl: "https://example.com/ndjamena.jpg",
+        detailedExplanation: "Fondée par l'officier français Émile Gentil en 1900 comme poste militaire français, la ville a été renommée N'Djamena en 1973 par le président Tombalbaye dans le cadre de sa politique d'africanisation. Avec environ 1,5 million d'habitants, c'est de loin la plus grande ville du pays et son centre économique et administratif. Malgré plusieurs conflits qui ont marqué son histoire récente, N'Djamena connaît aujourd'hui un développement important grâce notamment aux revenus pétroliers. La Grande Mosquée, la Cathédrale Notre-Dame et le Musée National sont parmi ses monuments les plus notables."
+      },
+      {
+        id: 49,
+        question: "Quelle est la capitale du Gabon ?",
+        options: [
+          "Malabo",
+          "Yaoundé",
+          "Brazzaville",
+          "Libreville"
+        ],
+        correctAnswer: 3,
+        explanation: "Libreville est la capitale et la plus grande ville du Gabon.",
+        examples: "Fondée en 1849 par des esclaves libérés, la ville doit son nom ('ville libre') à cette origine.",
+        usefulLinks: [
+          "https://www.britannica.com/place/Libreville"
+        ],
+        imageUrl: "https://example.com/libreville.jpg",
+        detailedExplanation: "Située sur l'estuaire du Komo, sur la côte atlantique, Libreville a été fondée par des esclaves libérés d'un navire négrier brésilien capturé par la marine française. Aujourd'hui, avec environ 800 000 habitants, c'est le centre politique, culturel et économique du Gabon. La ville présente un contraste saisissant entre quartiers modernes avec immeubles de bureaux et zones résidentielles luxueuses, et quartiers populaires plus traditionnels. Parmi ses sites notables figurent la cathédrale Saint-Marie, le Musée National des Arts et Traditions et le front de mer avec sa promenade."
+      },
+      {
+        id: 50,
+        question: "Quelle est la capitale du Niger ?",
+        options: [
+          "Bamako",
+          "Niamey",
+          "N'Djamena",
+          "Ouagadougou"
+        ],
+        correctAnswer: 1,
+        explanation: "Niamey est la capitale et la plus grande ville du Niger.",
+        examples: "Située sur le fleuve Niger dans l'ouest du pays, Niamey a remplacé Zinder comme capitale en 1926, pendant la période coloniale française.",
+        usefulLinks: [
+          "https://www.britannica.com/place/Niamey"
+        ],
+        imageUrl: "https://example.com/niamey.jpg",
+        detailedExplanation: "Niamey était un petit village de pêcheurs avant que les Français n'en fassent un centre administratif colonial. Aujourd'hui, avec plus d'un million d'habitants, c'est le centre politique, administratif, économique et culturel du Niger. La ville est divisée en deux par le fleuve Niger, avec la ville moderne sur la rive gauche et les quartiers plus traditionnels sur la rive droite. Les principaux points d'intérêt comprennent le Musée National du Niger (qui comprend un zoo, un musée et un centre artisanal), la Grande Mosquée et le Marché Grand (Marché Wadata)."
+      },
+      {
+        id: 51,
+        question: "Quelle est la capitale de l'Albanie ?",
+        options: [
+          "Tirana",
+          "Skopje",
+          "Podgorica",
+          "Pristina"
+        ],
+        correctAnswer: 0,
+        explanation: "Tirana est la capitale et la plus grande ville d'Albanie.",
+        examples: "Fondée en 1614 par le général ottoman Sulejman Bargjini, Tirana n'est devenue capitale qu'en 1920.",
+        usefulLinks: [
+          "https://whc.unesco.org/en/tentativelists/6437/"
+        ],
+        imageUrl: "https://example.com/tirana.jpg",
+        detailedExplanation: "Située entre la mer Adriatique et des montagnes, Tirana a connu une transformation spectaculaire depuis la chute du régime communiste en 1991. Sous la direction du maire Edi Rama (devenu plus tard Premier ministre), la ville grise et austère est devenue connue pour ses bâtiments colorés. Avec environ 800 000 habitants, c'est le centre économique, culturel et politique de l'Albanie. La place Skanderbeg, cœur de la ville, la pyramide (ancien musée dédié au dictateur Enver Hoxha), la mosquée Et'hem Bey et le Musée National d'Histoire sont parmi ses sites les plus notables."
+      },
+      {
+        id: 52,
+        question: "Quelle est la capitale du Togo ?",
+        options: [
+          "Accra",
+          "Porto-Novo",
+          "Cotonou",
+          "Lomé"
+        ],
+        correctAnswer: 3,
+        explanation: "Lomé est la capitale et la plus grande ville du Togo.",
+        examples: "Située à l'extrême sud-ouest du pays, à la frontière avec le Ghana, Lomé est le seul pays africain dont la capitale est située sur une frontière.",
+        usefulLinks: [
+          "https://www.britannica.com/place/Lome"
+        ],
+        imageUrl: "https://example.com/lome.jpg",
+        detailedExplanation: "Fondée au XVIIIe siècle par les Ewe, Lomé est devenue capitale de la colonie allemande du Togoland en 1897, puis est restée capitale après l'indépendance en 1960. Avec environ un million d'habitants, c'est le centre administratif, culturel et économique du pays. La ville est connue pour son Grand Marché (un important centre commercial régional), la cathédrale de Lomé, le Monument de l'Indépendance et le Palais des Congrès. Lomé abrite également l'unique port en eau profonde du pays, essentiel pour son économie."
+      },
+      {
+        id: 53,
+        question: "Quelle est la capitale de la Macédoine du Nord ?",
+        options: [
+          "Sofia",
+          "Skopje",
+          "Belgrade",
+          "Tirana"
+        ],
+        correctAnswer: 1,
+        explanation: "Skopje est la capitale et la plus grande ville de la Macédoine du Nord.",
+        examples: "Située sur le fleuve Vardar, Skopje a été presque entièrement reconstruite après un désastreux tremblement de terre en 1963.",
+        usefulLinks: [
+          "https://whc.unesco.org/en/tentativelists/5926/"
+        ],
+        imageUrl: "https://example.com/skopje.jpg",
+        detailedExplanation: "Avec plus de 500 000 habitants, Skopje est le centre politique, économique, culturel et académique de la Macédoine du Nord. La ville a une histoire qui remonte à 4000 ans, ayant été successivement romaine, byzantine, puis ottomane. Après le séisme de 1963, la ville a été reconstruite selon des principes modernistes, puis a connu une transformation controversée dans les années 2010 avec le projet 'Skopje 2014', qui a ajouté de nombreux bâtiments et monuments de style néoclassique et baroque. La forteresse de Kale, le vieux bazar ottoman, la statue d'Alexandre le Grand et le pont de pierre sont parmi ses sites les plus remarquables."
+      },
+      {
+        id: 54,
+        question: "Quelle est la capitale de Djibouti ?",
+        options: [
+          "Djibouti",
+          "Asmara",
+          "Addis-Abeba",
+          "Mogadiscio"
+        ],
+        correctAnswer: 0,
+        explanation: "Djibouti est la capitale et la plus grande ville de la République de Djibouti.",
+        examples: "Située sur le golfe de Tadjoura, à l'entrée de la mer Rouge, Djibouti abrite environ 70% de la population du pays.",
+        usefulLinks: [
+          "https://www.britannica.com/place/Djibouti"
+        ],
+        imageUrl: "https://example.com/djibouti.jpg",
+        detailedExplanation: "Fondée en 1888 par les Français, Djibouti-Ville (son nom complet) est devenue la capitale de la colonie de la Côte française des Somalis, puis du Territoire français des Afars et des Issas, et enfin de la République de Djibouti indépendante en 1977. Avec environ 600 000 habitants, c'est de loin la plus grande ville du pays. Son port en eau profonde, situé stratégiquement à l'entrée de la mer Rouge, est vital pour l'économie nationale et pour l'Éthiopie voisine, enclavée. La ville présente un mélange d'influences africaines, arabes et françaises, visible dans son architecture et sa culture."
+      },
+      {
+        id: 55,
+        question: "Quelle est la capitale du Monténégro ?",
+        options: [
+          "Belgrade",
+          "Podgorica",
+          "Pristina",
+          "Sarajevo"
+        ],
+        correctAnswer: 1,
+        explanation: "Podgorica est la capitale et la plus grande ville du Monténégro.",
+        examples: "Connue sous le nom de Titograd entre 1946 et 1992, la ville a repris son nom historique après la chute de la Yougoslavie.",
+        usefulLinks: [
+          "https://www.britannica.com/place/Podgorica"
+        ],
+        imageUrl: "https://example.com/podgorica.jpg",
+        detailedExplanation: "Située à la confluence des rivières Morača et Ribnica, Podgorica a une histoire qui remonte à l'époque romaine, bien que la ville ait été presque entièrement détruite pendant la Seconde Guerre mondiale. Avec environ 150 000 habitants, c'est le centre politique, économique, culturel et académique du Monténégro. Bien que Podgorica soit la capitale officielle, Cetinje (l'ancienne capitale royale) conserve le statut de capitale historique et culturelle. Parmi les sites notables de Podgorica figurent le pont du Millénaire, la cathédrale orthodoxe de la Résurrection du Christ et les ruines de Doclea, une ancienne ville romaine."
+      },
+      {
+        id: 56,
+        question: "Quelle est la capitale du Cambodge ?",
+        options: [
+          "Hanoï",
+          "Vientiane",
+          "Phnom Penh",
+          "Bangkok"
+        ],
+        correctAnswer: 2,
+        explanation: "Phnom Penh est la capitale et la plus grande ville du Cambodge.",
+        examples: "Située au confluent de trois rivières (le Mékong, le Tonlé Sap et le Bassac), Phnom Penh est surnommée la 'Perle de l'Asie' pour son architecture coloniale française.",
+        usefulLinks: [
+          "https://whc.unesco.org/en/tentativelists/6445/"
+        ],
+        imageUrl: "https://example.com/phnompenh.jpg",
+        detailedExplanation: "Fondée au XVe siècle, Phnom Penh est devenue la capitale permanente du Cambodge en 1866 sous le roi Norodom. La ville a connu une histoire tragique récente, ayant été vidée de sa population sous le régime des Khmers rouges (1975-1979). Depuis les années 1990, elle connaît une renaissance et un développement rapide. Avec environ 2,2 millions d'habitants, c'est le centre politique, économique et culturel du pays. Le Palais Royal, la Pagode d'Argent, le Monument de l'Indépendance et le musée du génocide de Tuol Sleng sont parmi ses sites les plus importants."
+      },
+      {
+        id: 57,
+        question: "Quelle est la capitale de la Géorgie ?",
+        options: [
+          "Bakou",
+          "Tbilissi",
+          "Erevan",
+          "Astana"
+        ],
+        correctAnswer: 1,
+        explanation: "Tbilissi est la capitale et la plus grande ville de la Géorgie.",
+        examples: "Fondée au Ve siècle par le roi Vakhtang Gorgassali, Tbilissi tire son nom des sources d'eau chaude qui s'y trouvent ('tbili' signifie 'chaud' en géorgien).",
+        usefulLinks: [
+          "https://whc.unesco.org/en/tentativelists/5233/"
+        ],
+        imageUrl: "https://example.com/tbilissi.jpg",
+        detailedExplanation: "Située sur les rives du fleuve Koura, Tbilissi a été influencée par les nombreuses puissances qui l'ont contrôlée au cours de son histoire : perses, byzantins, arabes, mongols, turcs et russes. Cette histoire mouvementée a créé une ville au caractère unique, mêlant Orient et Occident. Avec environ 1,2 million d'habitants, c'est le centre politique, économique et culturel du pays. La vieille ville avec ses maisons à balcons en bois, la forteresse de Narikala surplombant la ville, l'avenue Rustaveli et les bains sulfureux sont parmi ses attractions principales."
+      },
+      {
+        id: 58,
+        question: "Quelle est la capitale du Mozambique ?",
+        options: [
+          "Maputo",
+          "Luanda",
+          "Dar es Salam",
+          "Harare"
+        ],
+        correctAnswer: 0,
+        explanation: "Maputo est la capitale et la plus grande ville du Mozambique.",
+        examples: "Anciennement appelée Lourenço Marques à l'époque coloniale portugaise, la ville a été renommée après l'indépendance en 1975.",
+        usefulLinks: [
+          "https://www.britannica.com/place/Maputo"
+        ],
+        imageUrl: "https://example.com/maputo.jpg",
+        detailedExplanation: "Située sur la baie de Maputo, dans l'extrême sud du pays, Maputo a été fondée comme comptoir commercial portugais au XVIIIe siècle. Avec environ 1,1 million d'habitants, c'est le principal port et centre économique du Mozambique. La ville est connue pour son architecture moderniste et Art déco, héritage de l'époque coloniale, ainsi que pour ses larges avenues bordées d'acacias et de jacarandas. La gare centrale, conçue par un élève de Gustave Eiffel, la forteresse de Nossa Senhora da Conceição, et le marché municipal sont parmi ses monuments les plus remarquables."
+      },
+      {
+        id: 59,
+        question: "Quelle est la capitale du Koweït ?",
+        options: [
+          "Manama",
+          "Doha",
+          "Koweït",
+          "Abu Dhabi"
+        ],
+        correctAnswer: 2,
+        explanation: "Koweït (ou Koweït City) est la capitale et la plus grande ville de l'État du Koweït.",
+        examples: "Située au fond de la baie de Koweït, la ville abrite environ 90% de la population du pays.",
+        usefulLinks: [
+          "https://www.britannica.com/place/Kuwait"
+        ],
+        imageUrl: "https://example.com/koweit.jpg",
+        detailedExplanation: "Fondée au début du XVIIIe siècle par le clan des Bani Utub, Koweït City s'est développée autour du commerce maritime et de la pêche aux perles. Aujourd'hui, avec environ 3 millions d'habitants dans son aire urbaine, c'est une métropole moderne grâce aux revenus du pétrole. La ville a été sévèrement endommagée pendant l'invasion irakienne de 1990-1991 mais a été reconstruite depuis. Les Tours Kuwait (trois tours emblématiques en forme de cônes d'encens), le Grand Mosquée, le Souk Al-Mubarakiya et le Musée National sont parmi ses sites les plus notables."
+      },
+      {
+        id: 60,
+        question: "Quelle est la capitale du Nicaragua ?",
+        options: [
+          "San José",
+          "Managua",
+          "Panama",
+          "Tegucigalpa"
+        ],
+        correctAnswer: 1,
+        explanation: "Managua est la capitale et la plus grande ville du Nicaragua.",
+        examples: "Située sur la rive sud du lac Managua, la ville a été reconstruite après un séisme dévastateur en 1972.",
+        usefulLinks: [
+          "https://www.britannica.com/place/Managua"
+        ],
+        imageUrl: "https://example.com/managua.jpg",
+        detailedExplanation: "Managua est devenue la capitale du Nicaragua en 1852, remplaçant les villes rivales de León et Granada. Avec environ 1,5 million d'habitants dans son aire métropolitaine, c'est le centre politique, économique et culturel du pays. La ville a été marquée par le tremblement de terre de 1972 qui a détruit la plupart du centre historique, jamais totalement reconstruit. Parmi ses sites d'intérêt figurent la nouvelle cathédrale (l'ancienne étant restée en ruines), le Palais National de la Culture, le théâtre Rubén Darío et le monument de Sandino sur la colline Tiscapa."
+      },
+      {
+        id: 61,
+        question: "Quelle est la capitale de l'Azerbaïdjan ?",
+        options: [
+          "Bakou",
+          "Tbilissi",
+          "Erevan",
+          "Achgabat"
+        ],
+        correctAnswer: 0,
+        explanation: "Bakou est la capitale et la plus grande ville de l'Azerbaïdjan.",
+        examples: "Située sur la péninsule d'Abchéron, au bord de la mer Caspienne, Bakou est connue comme la 'ville des vents'.",
+        usefulLinks: [
+          "https://whc.unesco.org/fr/list/958"
+        ],
+        imageUrl: "https://example.com/bakou.jpg",
+        detailedExplanation: "Avec une histoire qui remonte au Ier millénaire av. J.-C., Bakou a connu un premier âge d'or au XIIe siècle, puis un second au début du XXe siècle avec le boom pétrolier. Aujourd'hui, avec environ 2,3 millions d'habitants, c'est une ville qui mélange architecture médiévale, bâtiments Art nouveau de l'époque pétrolière et constructions futuristes contemporaines. La vieille ville fortifiée (Icheri Sheher) est classée au patrimoine mondial de l'UNESCO. Parmi les sites remarquables figurent également les Tours de Flamme (gratte-ciels emblématiques en forme de flammes), le Palais des Shirvanshah et le Centre Heydar Aliyev conçu par Zaha Hadid."
+      },
+      {
+        id: 62,
+        question: "Quelle est la capitale d'Oman ?",
+        options: [
+          "Riyad",
+          "Mascate",
+          "Sanaa",
+          "Doha"
+        ],
+        correctAnswer: 1,
+        explanation: "Mascate est la capitale et la plus grande ville du sultanat d'Oman.",
+        examples: "Nichée entre la mer d'Oman et les montagnes rocheuses du Hajar, Mascate est l'une des plus anciennes villes du Moyen-Orient.",
+        usefulLinks: [
+          "https://www.britannica.com/place/Muscat"
+        ],
+        imageUrl: "https://example.com/mascate.jpg",
+        detailedExplanation: "Mascate (Muscat en anglais) a été un important port commercial depuis le Ier siècle, disputé par les Portugais, les Ottomans et les Perses avant de devenir la capitale du sultanat d'Oman. Aujourd'hui, avec environ 1,5 million d'habitants dans son aire métropolitaine, c'est une ville qui a su préserver son patrimoine architectural tout en se modernisant. Contrairement à d'autres capitales du Golfe, Mascate a évité les gratte-ciels démesurés, préférant conserver une architecture basse et traditionnelle. Le Palais Al Alam (résidence cérémonielle du sultan), les forts portugais de Jalali et Mirani, la Grande Mosquée du Sultan Qaboos et le souk de Muttrah comptent parmi ses sites les plus remarquables."
+      },
+      {
+        id: 63,
+        question: "Quelle est la capitale de la Zambie ?",
+        options: [
+          "Harare",
+          "Lusaka",
+          "Lilongwe",
+          "Gaborone"
+        ],
+        correctAnswer: 1,
+        explanation: "Lusaka est la capitale et la plus grande ville de la Zambie.",
+        examples: "Située sur un plateau à environ 1 300 mètres d'altitude, Lusaka est l'une des villes à la croissance la plus rapide d'Afrique.",
+        usefulLinks: [
+          "https://www.britannica.com/place/Lusaka"
+        ],
+        imageUrl: "https://example.com/lusaka.jpg",
+        detailedExplanation: "Fondée en 1905 comme poste administratif britannique, Lusaka est devenue la capitale de la Rhodésie du Nord en 1935, puis de la Zambie indépendante en 1964. Avec environ 2,5 millions d'habitants dans son aire métropolitaine, c'est le centre politique, économique et culturel du pays. La ville est organisée selon un plan en damier, avec de larges avenues bordées d'arbres jacarandas et de flamboyants. Le quartier des affaires moderne contraste avec les marchés traditionnels animés comme le Soweto Market. Parmi ses sites d'intérêt figurent la Freedom Statue, la Cathédrale de la Sainte-Croix et le Musée National."
+      },
+      {
+        id: 64,
+        question: "Quelle est la capitale de la République centrafricaine ?",
+        options: [
+          "Bangui",
+          "N'Djamena",
+          "Yaoundé",
+          "Brazzaville"
+        ],
+        correctAnswer: 0,
+        explanation: "Bangui est la capitale et la plus grande ville de la République centrafricaine.",
+        examples: "Située sur la rive droite de la rivière Oubangui, qui forme la frontière avec la République démocratique du Congo, Bangui est le principal port fluvial du pays.",
+        usefulLinks: [
+          "https://www.britannica.com/place/Bangui"
+        ],
+        imageUrl: "https://example.com/bangui.jpg",
+        detailedExplanation: "Fondée en 1889 comme poste militaire français, Bangui est devenue la capitale de l'Oubangui-Chari (ancien nom de la RCA pendant la période coloniale), puis de la République centrafricaine indépendante en 1960. Avec environ 900 000 habitants, c'est de loin la plus grande ville du pays et son centre politique, économique et culturel. Malgré les conflits qui ont marqué l'histoire récente du pays, la ville conserve quelques sites d'intérêt comme la cathédrale Notre-Dame, le Musée national Barthélemy Boganda et le marché central. L'Oubangui, avec ses plages de sable, constitue un élément important de la vie quotidienne de la ville."
+      },
+      {
+        id: 65,
+        question: "Quelle est la capitale du Zimbabwe ?",
+        options: [
+          "Lusaka",
+          "Maputo",
+          "Harare",
+          "Gaborone"
+        ],
+        correctAnswer: 2,
+        explanation: "Harare est la capitale et la plus grande ville du Zimbabwe.",
+        examples: "Anciennement appelée Salisbury à l'époque coloniale, la ville a été renommée lors de l'indépendance en 1980.",
+        usefulLinks: [
+          "https://www.britannica.com/place/Harare"
+        ],
+        imageUrl: "https://example.com/harare.jpg",
+        detailedExplanation: "Fondée en 1890 par la British South Africa Company de Cecil Rhodes, Harare est située sur un plateau à environ 1 500 mètres d'altitude, ce qui lui confère un climat agréable. Avec environ 1,6 million d'habitants dans la ville proprement dite, c'est le centre administratif, commercial, culturel et des communications du Zimbabwe. La ville est connue pour ses larges avenues bordées de jacarandas et de flamboyants qui fleurissent spectaculairement en octobre et novembre. Parmi ses sites d'intérêt figurent la Maison du Parlement, les Jardins botaniques nationaux, la Galerie nationale d'art et le Musée national."
+      },
+      {
+        id: 66,
+        question: "Quelle est la capitale de la Sierra Leone ?",
+        options: [
+          "Freetown",
+          "Monrovia",
+          "Conakry",
+          "Dakar"
+        ],
+        correctAnswer: 0,
+        explanation: "Freetown est la capitale et la plus grande ville de la Sierra Leone.",
+        examples: "Fondée en 1787 comme colonie pour les 'Pauvres Noirs de Londres' et les anciens esclaves libérés, la ville tire son nom ('ville libre') de cette origine.",
+        usefulLinks: [
+          "https://www.britannica.com/place/Freetown"
+        ],
+        imageUrl: "https://example.com/freetown.jpg",
+        detailedExplanation: "Située sur une péninsule montagneuse entourée par la troisième plus grande baie naturelle du monde, Freetown a été fondée comme un établissement pour les esclaves libérés et est devenue la capitale de la colonie britannique de Sierra Leone, puis du pays indépendant en 1961. Avec environ un million d'habitants, c'est le centre politique, économique et culturel du pays. La ville est construite en amphithéâtre sur les pentes des collines qui entourent la baie, offrant des vues spectaculaires. Parmi ses sites d'intérêt figurent le 'Cotton Tree' (un arbre historique au centre-ville), le Musée national, la Porte de la Liberté et les plages de Lumley et Aberdeen."
+      },
+      {
+        id: 67,
+        question: "Quelle est la capitale de Bahreïn ?",
+        options: [
+          "Doha",
+          "Abou Dabi",
+          "Mascate",
+          "Manama"
+        ],
+        correctAnswer: 3,
+        explanation: "Manama est la capitale et la plus grande ville du royaume de Bahreïn.",
+        examples: "Située au nord-est de l'île principale de Bahreïn, Manama est un important centre financier du Moyen-Orient.",
+        usefulLinks: [
+          "https://www.britannica.com/place/Manama"
+        ],
+        imageUrl: "https://example.com/manama.jpg",
+        detailedExplanation: "Manama, dont le nom signifie 'lieu de repos' ou 'lieu de rêves' en arabe, a une histoire qui remonte à plusieurs siècles, ayant été mentionnée par des géographes islamiques dès le XIVe siècle. Aujourd'hui, avec environ 200 000 habitants dans la ville proprement dite, c'est un centre commercial et financier important du Golfe Persique. La ville mélange gratte-ciels modernes et architecture traditionnelle. Parmi ses sites d'intérêt figurent le Bab Al Bahrain (porte d'entrée du souk), le Musée national de Bahreïn, le Centre mondial du commerce de Bahreïn (deux gratte-ciels reliés par trois ponts) et la Grande Mosquée Al Fateh."
+      },
+      {
+        id: 68,
+        question: "Quelle est la capitale de la Somalie ?",
+        options: [
+          "Mogadiscio",
+          "Djibouti",
+          "Addis-Abeba",
+          "Asmara"
+        ],
+        correctAnswer: 0,
+        explanation: "Mogadiscio est la capitale et la plus grande ville de la Somalie.",
+        examples: "Située sur la côte de l'océan Indien, Mogadiscio (Muqdisho en somali) est l'un des plus anciens établissements urbains d'Afrique de l'Est.",
+        usefulLinks: [
+          "https://www.britannica.com/place/Mogadishu"
+        ],
+        imageUrl: "https://example.com/mogadiscio.jpg",
+        detailedExplanation: "Fondée vers le Xe siècle, Mogadiscio a été un important centre commercial swahili, puis est passée sous influence ottomane et italienne avant de devenir la capitale de la Somalie indépendante en 1960. La ville a gravement souffert de la guerre civile qui a éclaté en 1991, mais connaît une certaine renaissance depuis quelques années. Avec environ 2,5 millions d'habitants, c'est de loin la plus grande ville du pays. Parmi ses sites historiques figurent la cathédrale de Mogadiscio (gravement endommagée pendant la guerre civile), la mosquée Arba'a Rukun datant du XIIIe siècle, et le quartier de Hamarweyne avec son architecture arabo-persane."
+      },
+      {
+        id: 69,
+        question: "Quelle est la capitale de la Jamaïque ?",
+        options: [
+          "Nassau",
+          "La Havane",
+          "Kingston",
+          "Port-au-Prince"
+        ],
+        correctAnswer: 2,
+        explanation: "Kingston est la capitale et la plus grande ville de la Jamaïque.",
+        examples: "Située sur la côte sud-est de l'île, dans une baie naturelle protégée par la Palisadoes, une longue bande de sable, Kingston a remplacé Spanish Town comme capitale en 1872.",
+        usefulLinks: [
+          "https://www.britannica.com/place/Kingston-Jamaica"
+        ],
+        imageUrl: "https://example.com/kingston.jpg",
+        detailedExplanation: "Fondée en 1692 après la destruction de Port Royal par un tremblement de terre, Kingston est devenue un important port commercial britannique avant de devenir la capitale de la Jamaïque indépendante en 1962. Avec environ 670 000 habitants dans la ville proprement dite, c'est le centre politique, économique et culturel du pays. La ville est mondialement connue comme le berceau du reggae, avec des lieux emblématiques comme le musée Bob Marley dans l'ancienne résidence de la star. Autres sites d'intérêt : Devon House (manoir colonial), le National Heroes Park, la Galerie nationale de Jamaïque et l'Université des West Indies."
+      },
+      {
+        id: 70,
+        question: "Quelle est la capitale du Mali ?",
+        options: [
+          "Bamako",
+          "Niamey",
+          "Ouagadougou",
+          "Dakar"
+        ],
+        correctAnswer: 0,
+        explanation: "Bamako est la capitale et la plus grande ville du Mali.",
+        examples: "Située sur les rives du fleuve Niger dans le sud-ouest du pays, Bamako signifierait 'marigot du caïman' en langue bambara.",
+        usefulLinks: [
+          "https://www.britannica.com/place/Bamako"
+        ],
+        imageUrl: "https://example.com/bamako.jpg",
+        detailedExplanation: "Fondée à la fin du XVIe siècle, Bamako était un petit village qui est devenu un important centre commercial grâce à sa position sur le fleuve Niger. La ville a été choisie comme capitale du Soudan français en 1908, puis est devenue celle du Mali indépendant en 1960. Aujourd'hui, avec environ 2,5 millions d'habitants, c'est le centre administratif, commercial et industriel du pays. Parmi ses sites remarquables figurent le Grand Marché (Marché Rose), le Musée National du Mali, le Monument de l'Indépendance, la Grande Mosquée et le Palais de la Culture Amadou Hampâté Bâ."
+      },
+      {
+        id: 71,
+        question: "Quelle est la capitale du Salvador ?",
+        options: [
+          "Guatemala City",
+          "San Salvador",
+          "Tegucigalpa",
+          "San José"
+        ],
+        correctAnswer: 1,
+        explanation: "San Salvador est la capitale et la plus grande ville du Salvador.",
+        examples: "Située dans la vallée de Zalcoatitán, au pied du volcan San Salvador, la ville a été frappée par de nombreux tremblements de terre au cours de son histoire.",
+        usefulLinks: [
+          "https://www.britannica.com/place/San-Salvador"
+        ],
+        imageUrl: "https://example.com/sansalvador.jpg",
+        detailedExplanation: "Fondée en 1525 par les conquistadors espagnols, San Salvador est devenue la capitale de la Province de San Salvador dans la Capitainerie générale du Guatemala, puis du Salvador indépendant en 1821. Aujourd'hui, avec environ 1,8 million d'habitants dans son aire métropolitaine, c'est le centre politique, culturel, éducatif et financier du pays. La ville a dû être reconstruite plusieurs fois après des séismes dévastateurs, le dernier en date remontant à 2001. Parmi ses sites d'intérêt figurent la cathédrale métropolitaine, le Palais National, le Théâtre National et le Monument du Sauveur du Monde (El Salvador del Mundo), symbole de la ville."
+      },
+      {
+        id: 72,
+        question: "Quelle est la capitale de la Guinée ?",
+        options: [
+          "Bissau",
+          "Freetown",
+          "Conakry",
+          "Monrovia"
+        ],
+        correctAnswer: 2,
+        explanation: "Conakry est la capitale et la plus grande ville de la Guinée.",
+        examples: "Située sur la péninsule de Kaloum qui s'avance dans l'océan Atlantique, Conakry était à l'origine établie sur l'île de Tombo avant de s'étendre sur le continent.",
+        usefulLinks: [
+          "https://www.britannica.com/place/Conakry"
+        ],
+        imageUrl: "https://example.com/conakry.jpg",
+        detailedExplanation: "Fondée en 1887 par les Français, Conakry est devenue la capitale de la Guinée française, puis de la République de Guinée indépendante en 1958. Aujourd'hui, avec environ 2 millions d'habitants, c'est le centre politique, économique et culturel du pays. La ville s'étend sur une péninsule étroite, ce qui lui donne une forme allongée avec une grande artère centrale, la Corniche, qui traverse la ville du nord au sud. Parmi ses sites d'intérêt figurent la Grande Mosquée (l'une des plus grandes d'Afrique subsaharienne), le Palais du Peuple, le Marché de Madina (l'un des plus grands marchés d'Afrique de l'Ouest) et le Jardin botanique."
+      },
+      {
+        id: 73,
+        question: "Quelle est la capitale du Congo-Brazzaville (République du Congo) ?",
+        options: [
+          "Brazzaville",
+          "Kinshasa",
+          "Libreville",
+          "Bangui"
+        ],
+        correctAnswer: 0,
+        explanation: "Brazzaville est la capitale et la plus grande ville de la République du Congo (Congo-Brazzaville).",
+        examples: "Située sur la rive droite du fleuve Congo, Brazzaville fait face à Kinshasa, capitale de la République démocratique du Congo, formant ainsi la conurbation transfrontalière la plus peuplée d'Afrique.",
+        usefulLinks: [
+          "https://www.britannica.com/place/Brazzaville"
+        ],
+        imageUrl: "https://example.com/brazzaville.jpg",
+        detailedExplanation: "Fondée en 1880 par l'explorateur italien Pierre Savorgnan de Brazza pour le compte de la France, Brazzaville est devenue la capitale de l'Afrique Équatoriale Française, puis de la République du Congo indépendante en 1960. De 1940 à 1943, elle a même été la capitale de la France Libre du général de Gaulle. Aujourd'hui, avec environ 2 millions d'habitants, c'est le centre politique, administratif et culturel du pays. Parmi ses sites d'intérêt figurent la basilique Sainte-Anne, le Mémorial Pierre Savorgnan de Brazza, le Palais du Parlement et le Marché Total. Le fleuve Congo, qui sépare les deux capitales les plus proches du monde, est un élément central de la vie de la ville."
+      },
+      {
+        id: 74,
+        question: "Quelle est la capitale du Panama ?",
+        options: [
+          "San José",
+          "Managua",
+          "Panama",
+          "Bogota"
+        ],
+        correctAnswer: 2,
+        explanation: "Panama (ou Panama City) est la capitale et la plus grande ville du Panama.",
+        examples: "Située à l'entrée pacifique du canal de Panama, la ville offre un contraste saisissant entre son quartier colonial et ses gratte-ciels modernes.",
+        usefulLinks: [
+          "https://whc.unesco.org/fr/list/790"
+        ],
+        imageUrl: "https://example.com/panama.jpg",
+        detailedExplanation: "Fondée en 1519 par Pedro Arias Dávila, Panama est la plus ancienne ville européenne encore existante sur la côte pacifique des Amériques. La ville originale (Panama Viejo) a été détruite par le pirate Henry Morgan en 1671 et reconstruite à quelques kilomètres (Casco Viejo). Aujourd'hui, avec environ 1,5 million d'habitants dans son aire métropolitaine, c'est un important centre financier international et le cœur économique du pays. Le contraste est frappant entre le Casco Viejo colonial classé au patrimoine mondial de l'UNESCO et le quartier d'affaires ultramoderne de Punta Paitilla avec ses gratte-ciels. Le canal de Panama, qui relie l'océan Pacifique à l'océan Atlantique, est l'attraction principale de la ville."
+      },
 ]
 
 export default QCMCapitalesMonde;
