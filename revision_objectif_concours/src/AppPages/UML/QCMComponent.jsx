@@ -31,518 +31,468 @@ import {
     startCountdown,
     stopCountdown,
     clearAllTimers
-} from '../UML/utils';
+} from './utils';
 import '../styles.css';
 
-const quizData = 
-    {
-        "status": "success",
-        "total": 9,
-        "page": 1,
-        "items_per_page": 10,
-        "total_pages": 1,
-        "questions": [
-            {
+const quizData = {
+    "status": "success",
+    "total": 9,
+    "page": 1,
+    "items_per_page": 10,
+    "total_pages": 1,
+    "questions": [
+        {
+            "id": 1,
+            "text": "En quelle année a eu lieu la Révolution française ?",
+            "explanation": "La Révolution française est un tournant majeur dans l'histoire de France, marquant la fin de la monarchie absolue.",
+            "difficulty_level": "débutant",
+            "created_at": "2025-05-03 00:43:15",
+            "updated_at": "2025-05-03 00:43:15",
+            "quiz": {
                 "id": 1,
-                "text": "En quelle année a eu lieu la Révolution française ?",
-                "explanation": "La Révolution française est un tournant majeur dans l'histoire de France, marquant la fin de la monarchie absolue.",
-                "image_url": null,
-                "detailed_explanation": null,
-                "examples": null,
-                "difficulty_level": "débutant",
-                "created_at": "2025-05-03 00:43:15",
-                "updated_at": "2025-05-03 00:43:15",
-                "quiz": {
-                    "id": 1,
-                    "title": "Les grandes dates de l'Histoire de France",
-                    "description": "Testez vos connaissances sur les dates importantes de l'histoire française",
-                    "difficulty_level": "intermédiaire"
-                },
-                "options": [
-                    {
-                        "id": 1,
-                        "text": "1789",
-                        "is_correct": 1,
-                        "explanation": "La Révolution française a commencé en 1789 avec la prise de la Bastille le 14 juillet."
-                    },
-                    {
-                        "id": 2,
-                        "text": "1799",
-                        "is_correct": 0,
-                        "explanation": "1799 est l'année du coup d'État du 18 Brumaire qui a porté Napoléon Bonaparte au pouvoir."
-                    },
-                    {
-                        "id": 3,
-                        "text": "1769",
-                        "is_correct": 0,
-                        "explanation": "1769 est l'année de naissance de Napoléon Bonaparte."
-                    },
-                    {
-                        "id": 4,
-                        "text": "1815",
-                        "is_correct": 0,
-                        "explanation": "1815 est l'année de la bataille de Waterloo et de la fin du Premier Empire."
-                    }
-                ],
-                "periods": [
-                    {
-                        "id": 4,
-                        "name": "Époque contemporaine",
-                        "start_year": 1789,
-                        "end_year": null,
-                        "description": "De la Révolution française à nos jours"
-                    }
-                ],
-                "years": [
-                    {
-                        "id": 1,
-                        "year": 1789,
-                        "description": "Année de la Révolution française"
-                    }
-                ],
-                "usefulLinks": [
-                    {
-                        "id": 1,
-                        "url": "https:\/\/www.visitsingapore.com\/fr_fr\/",
-                        "description": "Site officiel du tourisme de Singapour"
-                    },
-                    {
-                        "id": 2,
-                        "url": "https:\/\/www.gov.sg\/",
-                        "description": "Site du gouvernement de Singapour"
-                    }
-                ],
-                "translations": []
+                "title": "Les grandes dates de l'Histoire de France",
+                "description": "Testez vos connaissances sur les dates importantes de l'histoire française",
+                "difficulty_level": "intermédiaire"
             },
-            {
+            "options": [
+                {
+                    "id": 1,
+                    "text": "1789",
+                    "is_correct": 1,
+                    "explanation": "La Révolution française a commencé en 1789 avec la prise de la Bastille le 14 juillet."
+                },
+                {
+                    "id": 2,
+                    "text": "1799",
+                    "is_correct": 0,
+                    "explanation": "1799 est l'année du coup d'État du 18 Brumaire qui a porté Napoléon Bonaparte au pouvoir."
+                },
+                {
+                    "id": 3,
+                    "text": "1769",
+                    "is_correct": 0,
+                    "explanation": "1769 est l'année de naissance de Napoléon Bonaparte."
+                },
+                {
+                    "id": 4,
+                    "text": "1815",
+                    "is_correct": 0,
+                    "explanation": "1815 est l'année de la bataille de Waterloo et de la fin du Premier Empire."
+                },
+                {
+                    "id": 33,
+                    "text": "Singapour",
+                    "is_correct": 1,
+                    "explanation": null
+                },
+                {
+                    "id": 34,
+                    "text": "Jakarta",
+                    "is_correct": 0,
+                    "explanation": null
+                },
+                {
+                    "id": 35,
+                    "text": "Kuala Lumpur",
+                    "is_correct": 0,
+                    "explanation": null
+                },
+                {
+                    "id": 36,
+                    "text": "Bangkok",
+                    "is_correct": 0,
+                    "explanation": null
+                }
+            ],
+            "periods": [
+                {
+                    "id": 4,
+                    "name": "Époque contemporaine",
+                    "start_year": 1789,
+                    "end_year": null,
+                    "description": "De la Révolution française à nos jours"
+                }
+            ],
+            "years": [
+                {
+                    "id": 1,
+                    "year": 1789,
+                    "description": "Année de la Révolution française"
+                }
+            ],
+            "translations": []
+        },
+        {
+            "id": 2,
+            "text": "En quelle année Napoléon Bonaparte est-il devenu empereur ?",
+            "explanation": "Napoléon s'est proclamé empereur des Français sous le nom de Napoléon Ier.",
+            "difficulty_level": "intermédiaire",
+            "created_at": "2025-05-03 00:43:15",
+            "updated_at": "2025-05-03 00:43:15",
+            "quiz": {
+                "id": 1,
+                "title": "Les grandes dates de l'Histoire de France",
+                "description": "Testez vos connaissances sur les dates importantes de l'histoire française",
+                "difficulty_level": "intermédiaire"
+            },
+            "options": [
+                {
+                    "id": 5,
+                    "text": "1804",
+                    "is_correct": 1,
+                    "explanation": "Napoléon Bonaparte s'est couronné empereur des Français le 2 décembre 1804 à Notre-Dame de Paris."
+                },
+                {
+                    "id": 6,
+                    "text": "1799",
+                    "is_correct": 0,
+                    "explanation": "En 1799, Napoléon Bonaparte devient Premier Consul après le coup d'État du 18 Brumaire."
+                },
+                {
+                    "id": 7,
+                    "text": "1812",
+                    "is_correct": 0,
+                    "explanation": "1812 est l'année de la campagne de Russie, qui fut un désastre pour l'armée napoléonienne."
+                },
+                {
+                    "id": 8,
+                    "text": "1821",
+                    "is_correct": 0,
+                    "explanation": "1821 est l'année de la mort de Napoléon Bonaparte en exil sur l'île de Sainte-Hélène."
+                }
+            ],
+            "periods": [],
+            "years": [],
+            "translations": []
+        },
+        {
+            "id": 3,
+            "text": "Quelle bataille marque la défaite définitive de Napoléon ?",
+            "explanation": "Cette bataille a mis fin aux Cent-Jours et à l'ère napoléonienne.",
+            "difficulty_level": "intermédiaire",
+            "created_at": "2025-05-03 00:43:15",
+            "updated_at": "2025-05-03 00:43:15",
+            "quiz": {
+                "id": 1,
+                "title": "Les grandes dates de l'Histoire de France",
+                "description": "Testez vos connaissances sur les dates importantes de l'histoire française",
+                "difficulty_level": "intermédiaire"
+            },
+            "options": [
+                {
+                    "id": 9,
+                    "text": "La bataille de Waterloo",
+                    "is_correct": 1,
+                    "explanation": "La bataille de Waterloo, le 18 juin 1815, marque la défaite définitive de Napoléon face aux forces alliées."
+                },
+                {
+                    "id": 10,
+                    "text": "La bataille d'Austerlitz",
+                    "is_correct": 0,
+                    "explanation": "La bataille d'Austerlitz (1805) était une victoire majeure de Napoléon, non une défaite."
+                },
+                {
+                    "id": 11,
+                    "text": "La bataille de Leipzig",
+                    "is_correct": 0,
+                    "explanation": "La bataille de Leipzig (1813) était une défaite importante, mais pas la défaite définitive."
+                },
+                {
+                    "id": 12,
+                    "text": "La bataille de Wagram",
+                    "is_correct": 0,
+                    "explanation": "La bataille de Wagram (1809) était une victoire de Napoléon sur les Autrichiens."
+                }
+            ],
+            "periods": [],
+            "years": [
+                {
+                    "id": 6,
+                    "year": 1815,
+                    "description": "Bataille de Waterloo"
+                }
+            ],
+            "translations": []
+        },
+        {
+            "id": 4,
+            "text": "En quelle année a été proclamée la Cinquième République française ?",
+            "explanation": "La Cinquième République est le régime républicain en vigueur en France aujourd'hui.",
+            "difficulty_level": "intermédiaire",
+            "created_at": "2025-05-03 00:43:15",
+            "updated_at": "2025-05-03 00:43:15",
+            "quiz": {
+                "id": 1,
+                "title": "Les grandes dates de l'Histoire de France",
+                "description": "Testez vos connaissances sur les dates importantes de l'histoire française",
+                "difficulty_level": "intermédiaire"
+            },
+            "options": [
+                {
+                    "id": 13,
+                    "text": "1958",
+                    "is_correct": 1,
+                    "explanation": "La Cinquième République a été proclamée en 1958 avec l'adoption d'une nouvelle Constitution et le retour du général de Gaulle au pouvoir."
+                },
+                {
+                    "id": 14,
+                    "text": "1945",
+                    "is_correct": 0,
+                    "explanation": "1945 marque la fin de la Seconde Guerre mondiale et le début de la Quatrième République."
+                },
+                {
+                    "id": 15,
+                    "text": "1968",
+                    "is_correct": 0,
+                    "explanation": "1968 est l'année des événements de Mai 68, mais pas celle de la proclamation de la Cinquième République."
+                },
+                {
+                    "id": 16,
+                    "text": "1940",
+                    "is_correct": 0,
+                    "explanation": "1940 marque le début du régime de Vichy sous l'occupation allemande."
+                }
+            ],
+            "periods": [],
+            "years": [],
+            "translations": []
+        },
+        {
+            "id": 5,
+            "text": "Quand a commencé la Seconde Guerre mondiale en Europe ?",
+            "explanation": "L'invasion de la Pologne par l'Allemagne nazie est considérée comme le début officiel de la Seconde Guerre mondiale en Europe.",
+            "difficulty_level": "débutant",
+            "created_at": "2025-05-03 00:43:15",
+            "updated_at": "2025-05-03 00:43:15",
+            "quiz": {
                 "id": 2,
-                "text": "En quelle année Napoléon Bonaparte est-il devenu empereur ?",
-                "explanation": "Napoléon s'est proclamé empereur des Français sous le nom de Napoléon Ier.",
-                "image_url": null,
-                "detailed_explanation": null,
-                "examples": null,
-                "difficulty_level": "intermédiaire",
-                "created_at": "2025-05-03 00:43:15",
-                "updated_at": "2025-05-03 00:43:15",
-                "quiz": {
-                    "id": 1,
-                    "title": "Les grandes dates de l'Histoire de France",
-                    "description": "Testez vos connaissances sur les dates importantes de l'histoire française",
-                    "difficulty_level": "intermédiaire"
-                },
-                "options": [
-                    {
-                        "id": 5,
-                        "text": "1804",
-                        "is_correct": 1,
-                        "explanation": "Napoléon Bonaparte s'est couronné empereur des Français le 2 décembre 1804 à Notre-Dame de Paris."
-                    },
-                    {
-                        "id": 6,
-                        "text": "1799",
-                        "is_correct": 0,
-                        "explanation": "En 1799, Napoléon Bonaparte devient Premier Consul après le coup d'État du 18 Brumaire."
-                    },
-                    {
-                        "id": 7,
-                        "text": "1812",
-                        "is_correct": 0,
-                        "explanation": "1812 est l'année de la campagne de Russie, qui fut un désastre pour l'armée napoléonienne."
-                    },
-                    {
-                        "id": 8,
-                        "text": "1821",
-                        "is_correct": 0,
-                        "explanation": "1821 est l'année de la mort de Napoléon Bonaparte en exil sur l'île de Sainte-Hélène."
-                    }
-                ],
-                "periods": [],
-                "years": [],
-                "usefulLinks": [],
-                "translations": []
+                "title": "La Seconde Guerre mondiale",
+                "description": "Quiz complet sur le conflit le plus meurtrier de l'histoire",
+                "difficulty_level": "avancé"
             },
-            {
-                "id": 3,
-                "text": "Quelle bataille marque la défaite définitive de Napoléon ?",
-                "explanation": "Cette bataille a mis fin aux Cent-Jours et à l'ère napoléonienne.",
-                "image_url": null,
-                "detailed_explanation": null,
-                "examples": null,
-                "difficulty_level": "intermédiaire",
-                "created_at": "2025-05-03 00:43:15",
-                "updated_at": "2025-05-03 00:43:15",
-                "quiz": {
-                    "id": 1,
-                    "title": "Les grandes dates de l'Histoire de France",
-                    "description": "Testez vos connaissances sur les dates importantes de l'histoire française",
-                    "difficulty_level": "intermédiaire"
+            "options": [
+                {
+                    "id": 17,
+                    "text": "1er septembre 1939",
+                    "is_correct": 1,
+                    "explanation": "L'Allemagne nazie a envahi la Pologne le 1er septembre 1939, déclenchant la Seconde Guerre mondiale."
                 },
-                "options": [
-                    {
-                        "id": 9,
-                        "text": "La bataille de Waterloo",
-                        "is_correct": 1,
-                        "explanation": "La bataille de Waterloo, le 18 juin 1815, marque la défaite définitive de Napoléon face aux forces alliées."
-                    },
-                    {
-                        "id": 10,
-                        "text": "La bataille d'Austerlitz",
-                        "is_correct": 0,
-                        "explanation": "La bataille d'Austerlitz (1805) était une victoire majeure de Napoléon, non une défaite."
-                    },
-                    {
-                        "id": 11,
-                        "text": "La bataille de Leipzig",
-                        "is_correct": 0,
-                        "explanation": "La bataille de Leipzig (1813) était une défaite importante, mais pas la défaite définitive."
-                    },
-                    {
-                        "id": 12,
-                        "text": "La bataille de Wagram",
-                        "is_correct": 0,
-                        "explanation": "La bataille de Wagram (1809) était une victoire de Napoléon sur les Autrichiens."
-                    }
-                ],
-                "periods": [],
-                "years": [
-                    {
-                        "id": 6,
-                        "year": 1815,
-                        "description": "Bataille de Waterloo"
-                    }
-                ],
-                "usefulLinks": [],
-                "translations": []
-            },
-            {
-                "id": 4,
-                "text": "En quelle année a été proclamée la Cinquième République française ?",
-                "explanation": "La Cinquième République est le régime républicain en vigueur en France aujourd'hui.",
-                "image_url": null,
-                "detailed_explanation": null,
-                "examples": null,
-                "difficulty_level": "intermédiaire",
-                "created_at": "2025-05-03 00:43:15",
-                "updated_at": "2025-05-03 00:43:15",
-                "quiz": {
-                    "id": 1,
-                    "title": "Les grandes dates de l'Histoire de France",
-                    "description": "Testez vos connaissances sur les dates importantes de l'histoire française",
-                    "difficulty_level": "intermédiaire"
+                {
+                    "id": 18,
+                    "text": "1er septembre 1938",
+                    "is_correct": 0,
+                    "explanation": "Cette date correspond aux accords de Munich, un an avant le début de la guerre."
                 },
-                "options": [
-                    {
-                        "id": 13,
-                        "text": "1958",
-                        "is_correct": 1,
-                        "explanation": "La Cinquième République a été proclamée en 1958 avec l'adoption d'une nouvelle Constitution et le retour du général de Gaulle au pouvoir."
-                    },
-                    {
-                        "id": 14,
-                        "text": "1945",
-                        "is_correct": 0,
-                        "explanation": "1945 marque la fin de la Seconde Guerre mondiale et le début de la Quatrième République."
-                    },
-                    {
-                        "id": 15,
-                        "text": "1968",
-                        "is_correct": 0,
-                        "explanation": "1968 est l'année des événements de Mai 68, mais pas celle de la proclamation de la Cinquième République."
-                    },
-                    {
-                        "id": 16,
-                        "text": "1940",
-                        "is_correct": 0,
-                        "explanation": "1940 marque le début du régime de Vichy sous l'occupation allemande."
-                    }
-                ],
-                "periods": [],
-                "years": [],
-                "usefulLinks": [],
-                "translations": []
-            },
-            {
-                "id": 5,
-                "text": "Quand a commencé la Seconde Guerre mondiale en Europe ?",
-                "explanation": "L'invasion de la Pologne par l'Allemagne nazie est considérée comme le début officiel de la Seconde Guerre mondiale en Europe.",
-                "image_url": null,
-                "detailed_explanation": null,
-                "examples": null,
-                "difficulty_level": "débutant",
-                "created_at": "2025-05-03 00:43:15",
-                "updated_at": "2025-05-03 00:43:15",
-                "quiz": {
+                {
+                    "id": 19,
+                    "text": "10 mai 1940",
+                    "is_correct": 0,
+                    "explanation": "Cette date correspond au début de l'offensive allemande à l'Ouest (France, Belgique, Pays-Bas)."
+                },
+                {
+                    "id": 20,
+                    "text": "22 juin 1941",
+                    "is_correct": 0,
+                    "explanation": "Cette date correspond au lancement de l'opération Barbarossa, l'invasion de l'URSS par l'Allemagne nazie."
+                }
+            ],
+            "periods": [
+                {
+                    "id": 7,
+                    "name": "Seconde Guerre mondiale",
+                    "start_year": 1939,
+                    "end_year": 1945,
+                    "description": "Conflit militaire le plus meurtrier de l'histoire"
+                }
+            ],
+            "years": [
+                {
                     "id": 2,
-                    "title": "La Seconde Guerre mondiale",
-                    "description": "Quiz complet sur le conflit le plus meurtrier de l'histoire",
-                    "difficulty_level": "avancé"
-                },
-                "options": [
-                    {
-                        "id": 17,
-                        "text": "1er septembre 1939",
-                        "is_correct": 1,
-                        "explanation": "L'Allemagne nazie a envahi la Pologne le 1er septembre 1939, déclenchant la Seconde Guerre mondiale."
-                    },
-                    {
-                        "id": 18,
-                        "text": "1er septembre 1938",
-                        "is_correct": 0,
-                        "explanation": "Cette date correspond aux accords de Munich, un an avant le début de la guerre."
-                    },
-                    {
-                        "id": 19,
-                        "text": "10 mai 1940",
-                        "is_correct": 0,
-                        "explanation": "Cette date correspond au début de l'offensive allemande à l'Ouest (France, Belgique, Pays-Bas)."
-                    },
-                    {
-                        "id": 20,
-                        "text": "22 juin 1941",
-                        "is_correct": 0,
-                        "explanation": "Cette date correspond au lancement de l'opération Barbarossa, l'invasion de l'URSS par l'Allemagne nazie."
-                    }
-                ],
-                "periods": [
-                    {
-                        "id": 7,
-                        "name": "Seconde Guerre mondiale",
-                        "start_year": 1939,
-                        "end_year": 1945,
-                        "description": "Conflit militaire le plus meurtrier de l'histoire"
-                    }
-                ],
-                "years": [
-                    {
-                        "id": 2,
-                        "year": 1914,
-                        "description": "Début de la Première Guerre mondiale"
-                    }
-                ],
-                "usefulLinks": [],
-                "translations": []
+                    "year": 1914,
+                    "description": "Début de la Première Guerre mondiale"
+                }
+            ],
+            "translations": []
+        },
+        {
+            "id": 6,
+            "text": "Quelle opération militaire désigne le débarquement allié en Normandie ?",
+            "explanation": "Cette opération est la plus grande invasion amphibie de l'histoire.",
+            "difficulty_level": "débutant",
+            "created_at": "2025-05-03 00:43:15",
+            "updated_at": "2025-05-03 00:43:15",
+            "quiz": {
+                "id": 2,
+                "title": "La Seconde Guerre mondiale",
+                "description": "Quiz complet sur le conflit le plus meurtrier de l'histoire",
+                "difficulty_level": "avancé"
             },
-            {
-                "id": 6,
-                "text": "Quelle opération militaire désigne le débarquement allié en Normandie ?",
-                "explanation": "Cette opération est la plus grande invasion amphibie de l'histoire.",
-                "image_url": null,
-                "detailed_explanation": null,
-                "examples": null,
-                "difficulty_level": "débutant",
-                "created_at": "2025-05-03 00:43:15",
-                "updated_at": "2025-05-03 00:43:15",
-                "quiz": {
-                    "id": 2,
-                    "title": "La Seconde Guerre mondiale",
-                    "description": "Quiz complet sur le conflit le plus meurtrier de l'histoire",
-                    "difficulty_level": "avancé"
+            "options": [
+                {
+                    "id": 21,
+                    "text": "Opération Overlord",
+                    "is_correct": 1,
+                    "explanation": "L'opération Overlord est le nom de code du débarquement allié en Normandie le 6 juin 1944."
                 },
-                "options": [
-                    {
-                        "id": 21,
-                        "text": "Opération Overlord",
-                        "is_correct": 1,
-                        "explanation": "L'opération Overlord est le nom de code du débarquement allié en Normandie le 6 juin 1944."
-                    },
-                    {
-                        "id": 22,
-                        "text": "Opération Market Garden",
-                        "is_correct": 0,
-                        "explanation": "L'opération Market Garden était une offensive alliée aux Pays-Bas en septembre 1944."
-                    },
-                    {
-                        "id": 23,
-                        "text": "Opération Torch",
-                        "is_correct": 0,
-                        "explanation": "L'opération Torch était le débarquement allié en Afrique du Nord en novembre 1942."
-                    },
-                    {
-                        "id": 24,
-                        "text": "Opération Barbarossa",
-                        "is_correct": 0,
-                        "explanation": "L'opération Barbarossa était le nom de code de l'invasion allemande de l'URSS."
-                    }
-                ],
-                "periods": [
-                    {
-                        "id": 7,
-                        "name": "Seconde Guerre mondiale",
-                        "start_year": 1939,
-                        "end_year": 1945,
-                        "description": "Conflit militaire le plus meurtrier de l'histoire"
-                    }
-                ],
-                "years": [],
-                "usefulLinks": [],
-                "translations": []
+                {
+                    "id": 22,
+                    "text": "Opération Market Garden",
+                    "is_correct": 0,
+                    "explanation": "L'opération Market Garden était une offensive alliée aux Pays-Bas en septembre 1944."
+                },
+                {
+                    "id": 23,
+                    "text": "Opération Torch",
+                    "is_correct": 0,
+                    "explanation": "L'opération Torch était le débarquement allié en Afrique du Nord en novembre 1942."
+                },
+                {
+                    "id": 24,
+                    "text": "Opération Barbarossa",
+                    "is_correct": 0,
+                    "explanation": "L'opération Barbarossa était le nom de code de l'invasion allemande de l'URSS."
+                }
+            ],
+            "periods": [
+                {
+                    "id": 7,
+                    "name": "Seconde Guerre mondiale",
+                    "start_year": 1939,
+                    "end_year": 1945,
+                    "description": "Conflit militaire le plus meurtrier de l'histoire"
+                }
+            ],
+            "years": [],
+            "translations": []
+        },
+        {
+            "id": 7,
+            "text": "Qui était le dirigeant de l'URSS pendant la Seconde Guerre mondiale ?",
+            "explanation": "Il a dirigé l'Union soviétique pendant la \"Grande Guerre patriotique\".",
+            "difficulty_level": "intermédiaire",
+            "created_at": "2025-05-03 00:43:15",
+            "updated_at": "2025-05-03 00:43:15",
+            "quiz": {
+                "id": 2,
+                "title": "La Seconde Guerre mondiale",
+                "description": "Quiz complet sur le conflit le plus meurtrier de l'histoire",
+                "difficulty_level": "avancé"
             },
-            {
-                "id": 7,
-                "text": "Qui était le dirigeant de l'URSS pendant la Seconde Guerre mondiale ?",
-                "explanation": "Il a dirigé l'Union soviétique pendant la \"Grande Guerre patriotique\".",
-                "image_url": null,
-                "detailed_explanation": null,
-                "examples": null,
-                "difficulty_level": "intermédiaire",
-                "created_at": "2025-05-03 00:43:15",
-                "updated_at": "2025-05-03 00:43:15",
-                "quiz": {
-                    "id": 2,
-                    "title": "La Seconde Guerre mondiale",
-                    "description": "Quiz complet sur le conflit le plus meurtrier de l'histoire",
-                    "difficulty_level": "avancé"
+            "options": [
+                {
+                    "id": 25,
+                    "text": "Joseph Staline",
+                    "is_correct": 1,
+                    "explanation": "Joseph Staline a dirigé l'Union soviétique pendant la Seconde Guerre mondiale de 1939 à 1945."
                 },
-                "options": [
-                    {
-                        "id": 25,
-                        "text": "Joseph Staline",
-                        "is_correct": 1,
-                        "explanation": "Joseph Staline a dirigé l'Union soviétique pendant la Seconde Guerre mondiale de 1939 à 1945."
-                    },
-                    {
-                        "id": 26,
-                        "text": "Léon Trotsky",
-                        "is_correct": 0,
-                        "explanation": "Léon Trotsky était en exil et a été assassiné au Mexique en 1940."
-                    },
-                    {
-                        "id": 27,
-                        "text": "Vladimir Lénine",
-                        "is_correct": 0,
-                        "explanation": "Vladimir Lénine est mort en 1924, bien avant le début de la Seconde Guerre mondiale."
-                    },
-                    {
-                        "id": 28,
-                        "text": "Nikita Khrouchtchev",
-                        "is_correct": 0,
-                        "explanation": "Nikita Khrouchtchev a dirigé l'URSS après la mort de Staline en 1953."
-                    }
-                ],
-                "periods": [
-                    {
-                        "id": 7,
-                        "name": "Seconde Guerre mondiale",
-                        "start_year": 1939,
-                        "end_year": 1945,
-                        "description": "Conflit militaire le plus meurtrier de l'histoire"
-                    }
-                ],
-                "years": [],
-                "usefulLinks": [],
-                "translations": []
+                {
+                    "id": 26,
+                    "text": "Léon Trotsky",
+                    "is_correct": 0,
+                    "explanation": "Léon Trotsky était en exil et a été assassiné au Mexique en 1940."
+                },
+                {
+                    "id": 27,
+                    "text": "Vladimir Lénine",
+                    "is_correct": 0,
+                    "explanation": "Vladimir Lénine est mort en 1924, bien avant le début de la Seconde Guerre mondiale."
+                },
+                {
+                    "id": 28,
+                    "text": "Nikita Khrouchtchev",
+                    "is_correct": 0,
+                    "explanation": "Nikita Khrouchtchev a dirigé l'URSS après la mort de Staline en 1953."
+                }
+            ],
+            "periods": [
+                {
+                    "id": 7,
+                    "name": "Seconde Guerre mondiale",
+                    "start_year": 1939,
+                    "end_year": 1945,
+                    "description": "Conflit militaire le plus meurtrier de l'histoire"
+                }
+            ],
+            "years": [],
+            "translations": []
+        },
+        {
+            "id": 8,
+            "text": "En quelle année le Japon a-t-il capitulé, marquant la fin de la Seconde Guerre mondiale ?",
+            "explanation": "La capitulation du Japon est survenue après les bombardements atomiques d'Hiroshima et Nagasaki.",
+            "difficulty_level": "intermédiaire",
+            "created_at": "2025-05-03 00:43:15",
+            "updated_at": "2025-05-03 00:43:15",
+            "quiz": {
+                "id": 2,
+                "title": "La Seconde Guerre mondiale",
+                "description": "Quiz complet sur le conflit le plus meurtrier de l'histoire",
+                "difficulty_level": "avancé"
             },
-            {
-                "id": 8,
-                "text": "En quelle année le Japon a-t-il capitulé, marquant la fin de la Seconde Guerre mondiale ?",
-                "explanation": "La capitulation du Japon est survenue après les bombardements atomiques d'Hiroshima et Nagasaki.",
-                "image_url": null,
-                "detailed_explanation": null,
-                "examples": null,
-                "difficulty_level": "intermédiaire",
-                "created_at": "2025-05-03 00:43:15",
-                "updated_at": "2025-05-03 00:43:15",
-                "quiz": {
-                    "id": 2,
-                    "title": "La Seconde Guerre mondiale",
-                    "description": "Quiz complet sur le conflit le plus meurtrier de l'histoire",
-                    "difficulty_level": "avancé"
+            "options": [
+                {
+                    "id": 29,
+                    "text": "1945",
+                    "is_correct": 1,
+                    "explanation": "Le Japon a capitulé le 2 septembre 1945, après les bombardements atomiques d'Hiroshima et Nagasaki."
                 },
-                "options": [
-                    {
-                        "id": 29,
-                        "text": "1945",
-                        "is_correct": 1,
-                        "explanation": "Le Japon a capitulé le 2 septembre 1945, après les bombardements atomiques d'Hiroshima et Nagasaki."
-                    },
-                    {
-                        "id": 30,
-                        "text": "1944",
-                        "is_correct": 0,
-                        "explanation": "1944 est l'année du débarquement de Normandie et de la libération de Paris."
-                    },
-                    {
-                        "id": 31,
-                        "text": "1943",
-                        "is_correct": 0,
-                        "explanation": "1943 est l'année de la bataille de Stalingrad et du débarquement en Sicile."
-                    },
-                    {
-                        "id": 32,
-                        "text": "1946",
-                        "is_correct": 0,
-                        "explanation": "En 1946, la guerre était déjà terminée depuis un an."
-                    }
-                ],
-                "periods": [
-                    {
-                        "id": 7,
-                        "name": "Seconde Guerre mondiale",
-                        "start_year": 1939,
-                        "end_year": 1945,
-                        "description": "Conflit militaire le plus meurtrier de l'histoire"
-                    }
-                ],
-                "years": [
-                    {
-                        "id": 3,
-                        "year": 1945,
-                        "description": "Fin de la Seconde Guerre mondiale"
-                    }
-                ],
-                "usefulLinks": [],
-                "translations": []
+                {
+                    "id": 30,
+                    "text": "1944",
+                    "is_correct": 0,
+                    "explanation": "1944 est l'année du débarquement de Normandie et de la libération de Paris."
+                },
+                {
+                    "id": 31,
+                    "text": "1943",
+                    "is_correct": 0,
+                    "explanation": "1943 est l'année de la bataille de Stalingrad et du débarquement en Sicile."
+                },
+                {
+                    "id": 32,
+                    "text": "1946",
+                    "is_correct": 0,
+                    "explanation": "En 1946, la guerre était déjà terminée depuis un an."
+                }
+            ],
+            "periods": [
+                {
+                    "id": 7,
+                    "name": "Seconde Guerre mondiale",
+                    "start_year": 1939,
+                    "end_year": 1945,
+                    "description": "Conflit militaire le plus meurtrier de l'histoire"
+                }
+            ],
+            "years": [
+                {
+                    "id": 3,
+                    "year": 1945,
+                    "description": "Fin de la Seconde Guerre mondiale"
+                }
+            ],
+            "translations": []
+        },
+        {
+            "id": 9,
+            "text": "Quelle est la capitale de Singapour ?",
+            "explanation": "Singapour est à la fois le nom du pays et de sa capitale. C'est une cité-État située en Asie du Sud-Est.",
+            "difficulty_level": "intermédiaire",
+            "created_at": "2025-05-03 03:05:03",
+            "updated_at": "2025-05-03 03:05:03",
+            "quiz": {
+                "id": 1,
+                "title": "Les grandes dates de l'Histoire de France",
+                "description": "Testez vos connaissances sur les dates importantes de l'histoire française",
+                "difficulty_level": "intermédiaire"
             },
-            {
-                "id": 9,
-                "text": "Quelle est la capitale de Singapour ?",
-                "explanation": "Singapour est à la fois le nom du pays et de sa capitale. C'est une cité-État située en Asie du Sud-Est.",
-                "image_url": "https:\/\/example.com\/singapore.jpg",
-                "detailed_explanation": "Singapour est une cité-État insulaire d'Asie du Sud-Est, située à l'extrémité de la péninsule malaise. Le pays et sa capitale portent le même nom. Fondée en tant que comptoir commercial britannique en 1819 par Sir Stamford Raffles, Singapour est devenue indépendante en 1965. Aujourd'hui, c'est l'un des pays les plus prospères au monde, avec un PIB par habitant parmi les plus élevés. La ville de Singapour est connue pour son architecture futuriste, ses jardins spectaculaires comme Gardens by the Bay, et son mélange unique de cultures chinoises, malaises, indiennes et occidentales. C'est également un important hub financier et commercial mondial.",
-                "examples": "Singapour est l'une des économies les plus développées au monde et un important centre financier mondial.",
-                "difficulty_level": "intermédiaire",
-                "created_at": "2025-05-03 03:05:03",
-                "updated_at": "2025-05-03 03:05:03",
-                "quiz": {
-                    "id": 1,
-                    "title": "Les grandes dates de l'Histoire de France",
-                    "description": "Testez vos connaissances sur les dates importantes de l'histoire française",
-                    "difficulty_level": "intermédiaire"
-                },
-                "options": [
-                    {
-                        "id": 33,
-                        "text": "Singapour",
-                        "is_correct": 1,
-                        "explanation": null
-                    },
-                    {
-                        "id": 34,
-                        "text": "Jakarta",
-                        "is_correct": 0,
-                        "explanation": null
-                    },
-                    {
-                        "id": 35,
-                        "text": "Kuala Lumpur",
-                        "is_correct": 0,
-                        "explanation": null
-                    },
-                    {
-                        "id": 36,
-                        "text": "Bangkok",
-                        "is_correct": 0,
-                        "explanation": null
-                    }
-                ],
-                "periods": [],
-                "years": [],
-                "usefulLinks": [],
-                "translations": []
-            }
-        ]
-    }
-
+            "options": [],
+            "periods": [],
+            "years": [],
+            "translations": []
+        }
+    ]
+}
 
 const QCMComponent = () => {
     // États de base

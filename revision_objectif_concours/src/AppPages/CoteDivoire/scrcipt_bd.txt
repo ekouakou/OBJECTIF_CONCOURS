@@ -1,0 +1,314 @@
+-- Table des langues (doit être créée en premier pour les références)
+CREATE TABLE Languages (
+    language_id INT AUTO_INCREMENT PRIMARY KEY,
+    language_code VARCHAR(5) NOT NULL UNIQUE,
+    language_name VARCHAR(50) NOT NULL,
+    is_active BOOLEAN DEFAULT TRUE
+);
+
+-- Table des domaines
+CREATE TABLE Domains (
+    domain_id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    description TEXT
+);
+
+-- Table des catégories
+CREATE TABLE Categories (
+    category_id INT AUTO_INCREMENT PRIMARY KEY,
+    domain_id INT,
+    name VARCHAR(100) NOT NULL,
+    description TEXT,
+    FOREIGN KEY (domain_id) REFERENCES Domains(domain_id)
+);
+
+-- Table des thèmes de quiz
+CREATE TABLE QuizThemes (
+    theme_id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    description TEXT
+);
+
+-- Table des quiz
+CREATE TABLE Quizzes (
+    quiz_id INT AUTO_INCREMENT PRIMARY KEY,
+    title VARCHAR(255) NOT NULL,
+    description TEXT,
+    category_id INT,
+    theme_id INT,
+    difficulty ENUM('débutant', 'intermédiaire', 'avancé', 'expert') DEFAULT 'intermédiaire',
+    time_limit INT COMMENT 'Temps en secondes',
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    is_active BOOLEAN DEFAULT TRUE,
+    FOREIGN KEY (category_id) REFERENCES Categories(category_id),
+    FOREIGN KEY (theme_id) REFERENCES QuizThemes(theme_id)
+);
+
+-- Table des questions
+CREATE TABLE Questions (
+    question_id INT AUTO_INCREMENT PRIMARY KEY,
+    quiz_id INT NOT NULL,
+    question_text TEXT NOT NULL,
+    question_type ENUM('choix_multiple', 'vrai_faux', 'réponse_courte', 'association') NOT NULL,
+    difficulty ENUM('débutant', 'intermédiaire', 'avancé', 'expert'),
+    points INT DEFAULT 1,
+    hint TEXT,
+    explanation TEXT,
+    FOREIGN KEY (quiz_id) REFERENCES Quizzes(quiz_id)
+);
+
+-- Table des options de réponse
+CREATE TABLE Options (
+    option_id INT AUTO_INCREMENT PRIMARY KEY,
+    question_id INT NOT NULL,
+    option_text TEXT NOT NULL,
+    is_correct BOOLEAN NOT NULL DEFAULT FALSE,
+    explanation TEXT,
+    FOREIGN KEY (question_id) REFERENCES Questions(question_id)
+);
+
+-- Table des utilisateurs
+CREATE TABLE Users (
+    user_id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(50) NOT NULL UNIQUE,
+    email VARCHAR(100) NOT NULL UNIQUE,
+    password_hash VARCHAR(255) NOT NULL,
+    first_name VARCHAR(50),
+    last_name VARCHAR(50),
+    profile_picture VARCHAR(255),
+    bio TEXT,
+    role ENUM('user', 'teacher', 'admin') DEFAULT 'user',
+    preferred_language_id INT,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    last_login TIMESTAMP NULL DEFAULT NULL,
+    is_active BOOLEAN DEFAULT TRUE,
+    FOREIGN KEY (preferred_language_id) REFERENCES Languages(language_id)
+);
+
+-- Table pour le système d'authentification
+CREATE TABLE UserTokens (
+    token_id INT AUTO_INCREMENT PRIMARY KEY,
+    user_id INT NOT NULL,
+    token VARCHAR(255) NOT NULL UNIQUE,
+    token_type ENUM('password_reset', 'email_verification', 'remember_me') NOT NULL,
+    expires_at TIMESTAMP NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (user_id) REFERENCES Users(user_id)
+);
+
+-- Table pour les résultats de quiz
+CREATE TABLE QuizResults (
+    result_id INT AUTO_INCREMENT PRIMARY KEY,
+    user_id INT NOT NULL,
+    quiz_id INT NOT NULL,
+    score INT NOT NULL,
+    max_score INT NOT NULL,
+    completion_time INT COMMENT 'Temps en secondes',
+    start_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    end_time TIMESTAMP NULL DEFAULT NULL,
+    status ENUM('en_cours', 'terminé', 'abandonné') DEFAULT 'en_cours',
+    FOREIGN KEY (user_id) REFERENCES Users(user_id),
+    FOREIGN KEY (quiz_id) REFERENCES Quizzes(quiz_id)
+);
+
+-- Table pour les réponses individuelles
+CREATE TABLE UserAnswers (
+    answer_id INT AUTO_INCREMENT PRIMARY KEY,
+    result_id INT NOT NULL,
+    question_id INT NOT NULL,
+    selected_option_id INT,
+    is_correct BOOLEAN,
+    time_spent INT COMMENT 'Temps en secondes',
+    FOREIGN KEY (result_id) REFERENCES QuizResults(result_id),
+    FOREIGN KEY (question_id) REFERENCES Questions(question_id),
+    FOREIGN KEY (selected_option_id) REFERENCES Options(option_id)
+);
+
+-- Table pour les quiz favoris
+CREATE TABLE UserFavorites (
+    favorite_id INT AUTO_INCREMENT PRIMARY KEY,
+    user_id INT NOT NULL,
+    quiz_id INT NOT NULL,
+    added_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (user_id) REFERENCES Users(user_id),
+    FOREIGN KEY (quiz_id) REFERENCES Quizzes(quiz_id),
+    UNIQUE KEY user_quiz_unique (user_id, quiz_id)
+);
+
+-- Table pour les commentaires sur les quiz
+CREATE TABLE QuizComments (
+    comment_id INT AUTO_INCREMENT PRIMARY KEY,
+    quiz_id INT NOT NULL,
+    user_id INT NOT NULL,
+    comment TEXT NOT NULL,
+    rating INT CHECK (rating BETWEEN 1 AND 5),
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    FOREIGN KEY (quiz_id) REFERENCES Quizzes(quiz_id),
+    FOREIGN KEY (user_id) REFERENCES Users(user_id)
+);
+
+-- Table pour les badges et récompenses
+CREATE TABLE Badges (
+    badge_id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(50) NOT NULL,
+    description TEXT,
+    icon_url VARCHAR(255),
+    criteria VARCHAR(255) COMMENT 'Critère pour obtenir le badge'
+);
+
+-- Table pour lier badges et utilisateurs
+CREATE TABLE UserBadges (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    user_id INT NOT NULL,
+    badge_id INT NOT NULL,
+    earned_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (user_id) REFERENCES Users(user_id),
+    FOREIGN KEY (badge_id) REFERENCES Badges(badge_id),
+    UNIQUE KEY user_badge_unique (user_id, badge_id)
+);
+
+-- Table des traductions des badges
+CREATE TABLE BadgeTranslations (
+    translation_id INT AUTO_INCREMENT PRIMARY KEY,
+    badge_id INT NOT NULL,
+    language_id INT NOT NULL,
+    translated_name VARCHAR(50) NOT NULL,
+    translated_description TEXT,
+    FOREIGN KEY (badge_id) REFERENCES Badges(badge_id),
+    FOREIGN KEY (language_id) REFERENCES Languages(language_id)
+);
+
+-- Table pour le suivi des progrès
+CREATE TABLE UserProgress (
+    progress_id INT AUTO_INCREMENT PRIMARY KEY,
+    user_id INT NOT NULL,
+    domain_id INT,
+    category_id INT,
+    theme_id INT,
+    total_questions INT DEFAULT 0,
+    correct_answers INT DEFAULT 0,
+    last_activity TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (user_id) REFERENCES Users(user_id),
+    FOREIGN KEY (domain_id) REFERENCES Domains(domain_id),
+    FOREIGN KEY (category_id) REFERENCES Categories(category_id),
+    FOREIGN KEY (theme_id) REFERENCES QuizThemes(theme_id)
+);
+
+-- Table pour les groupes/classes
+CREATE TABLE Groups (
+    group_id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    description TEXT,
+    created_by INT NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    code VARCHAR(10) UNIQUE COMMENT 'Code pour rejoindre le groupe',
+    FOREIGN KEY (created_by) REFERENCES Users(user_id)
+);
+
+-- Table pour lier utilisateurs et groupes
+CREATE TABLE GroupMembers (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    group_id INT NOT NULL,
+    user_id INT NOT NULL,
+    role ENUM('student', 'teacher', 'admin') DEFAULT 'student',
+    joined_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (group_id) REFERENCES Groups(group_id),
+    FOREIGN KEY (user_id) REFERENCES Users(user_id),
+    UNIQUE KEY group_user_unique (group_id, user_id)
+);
+
+-- Table pour les quiz assignés aux groupes
+CREATE TABLE GroupAssignments (
+    assignment_id INT AUTO_INCREMENT PRIMARY KEY,
+    group_id INT NOT NULL,
+    quiz_id INT NOT NULL,
+    assigned_by INT NOT NULL,
+    assigned_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    due_date TIMESTAMP NULL DEFAULT NULL,
+    instructions TEXT,
+    FOREIGN KEY (group_id) REFERENCES Groups(group_id),
+    FOREIGN KEY (quiz_id) REFERENCES Quizzes(quiz_id),
+    FOREIGN KEY (assigned_by) REFERENCES Users(user_id)
+);
+
+-- Table pour les messages et annonces aux groupes
+CREATE TABLE GroupAnnouncements (
+    announcement_id INT AUTO_INCREMENT PRIMARY KEY,
+    group_id INT NOT NULL,
+    user_id INT NOT NULL,
+    title VARCHAR(255) NOT NULL,
+    content TEXT NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (group_id) REFERENCES Groups(group_id),
+    FOREIGN KEY (user_id) REFERENCES Users(user_id)
+);
+
+-- Table pour les statistiques détaillées
+CREATE TABLE UserStatistics (
+    stat_id INT AUTO_INCREMENT PRIMARY KEY,
+    user_id INT NOT NULL,
+    total_quizzes INT DEFAULT 0,
+    total_questions INT DEFAULT 0,
+    correct_answers INT DEFAULT 0,
+    average_score FLOAT DEFAULT 0,
+    average_time FLOAT DEFAULT 0 COMMENT 'Temps moyen par question en secondes',
+    last_updated TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (user_id) REFERENCES Users(user_id)
+);
+
+-- Table pour les notifications
+CREATE TABLE Notifications (
+    notification_id INT AUTO_INCREMENT PRIMARY KEY,
+    user_id INT NOT NULL,
+    title VARCHAR(255) NOT NULL,
+    message TEXT NOT NULL,
+    type ENUM('success', 'info', 'warning', 'error') DEFAULT 'info',
+    is_read BOOLEAN DEFAULT FALSE,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (user_id) REFERENCES Users(user_id)
+);
+
+-- Table pour les quiz créés par les utilisateurs
+CREATE TABLE UserCreatedQuizzes (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    quiz_id INT NOT NULL,
+    user_id INT NOT NULL,
+    is_public BOOLEAN DEFAULT FALSE,
+    FOREIGN KEY (quiz_id) REFERENCES Quizzes(quiz_id),
+    FOREIGN KEY (user_id) REFERENCES Users(user_id)
+);
+
+-- Table pour les traductions des titres et descriptions de quiz
+CREATE TABLE QuizTranslations (
+    translation_id INT AUTO_INCREMENT PRIMARY KEY,
+    quiz_id INT NOT NULL,
+    language_id INT NOT NULL,
+    translated_title VARCHAR(255) NOT NULL,
+    translated_description TEXT,
+    FOREIGN KEY (quiz_id) REFERENCES Quizzes(quiz_id),
+    FOREIGN KEY (language_id) REFERENCES Languages(language_id)
+);
+
+-- Table pour les préférences utilisateurs
+CREATE TABLE UserSettings (
+    setting_id INT AUTO_INCREMENT PRIMARY KEY,
+    user_id INT NOT NULL,
+    difficulty_preference ENUM('débutant', 'intermédiaire', 'avancé', 'expert', 'mixte') DEFAULT 'mixte',
+    theme_preference VARCHAR(50) DEFAULT 'default',
+    notification_enabled BOOLEAN DEFAULT TRUE,
+    email_notifications BOOLEAN DEFAULT TRUE,
+    display_language_id INT,
+    FOREIGN KEY (user_id) REFERENCES Users(user_id),
+    FOREIGN KEY (display_language_id) REFERENCES Languages(language_id)
+);
+
+-- Création d'index pour améliorer les performances
+CREATE INDEX idx_quiz_results_user ON QuizResults(user_id);
+CREATE INDEX idx_quiz_results_quiz ON QuizResults(quiz_id);
+CREATE INDEX idx_user_answers_result ON UserAnswers(result_id);
+CREATE INDEX idx_user_progress_user ON UserProgress(user_id);
+CREATE INDEX idx_group_members_user ON GroupMembers(user_id);
+CREATE INDEX idx_notifications_user ON Notifications(user_id);
+CREATE INDEX idx_user_language ON Users(preferred_language_id);

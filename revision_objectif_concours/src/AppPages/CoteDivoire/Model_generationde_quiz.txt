@@ -1,0 +1,134 @@
+-- Insertion d'une langue (français)
+INSERT INTO Languages (language_code, language_name) 
+VALUES ('fr', 'Français');
+
+-- Insertion d'un domaine pour la fonction publique
+INSERT INTO Domains (name, description) 
+VALUES ('Administration publique', 'Connaissances relatives à l\'organisation et au fonctionnement de l\'administration publique');
+
+-- Insertion d'une catégorie pour le statut général de la fonction publique
+INSERT INTO Categories (domain_id, name, description) 
+VALUES (1, 'Statut général de la fonction publique', 'Connaissances relatives aux lois et règlements régissant la fonction publique en Côte d\'Ivoire');
+
+-- Insertion de thèmes liés à la fonction publique
+INSERT INTO QuizThemes (name, description)
+VALUES 
+('Législation', 'Questions sur les lois et décrets'),
+('Organisation administrative', 'Structure et organisation de l\'administration'),
+('Droits et obligations', 'Droits et obligations des fonctionnaires'),
+('Carrière et avancement', 'Parcours professionnel dans la fonction publique');
+
+-- Création d'un quiz sur le statut général de la fonction publique ivoirienne
+INSERT INTO Quizzes (title, description, category_id, theme_id, difficulty, time_limit)
+VALUES ('Statut général de la fonction publique en Côte d\'Ivoire', 
+        'Test de connaissances sur les principes fondamentaux régissant la fonction publique ivoirienne', 
+        1, 3, 'intermédiaire', 1200);
+
+-- Insertion de questions sur la fonction publique ivoirienne
+INSERT INTO Questions (quiz_id, question_text, question_type, difficulty, points, explanation)
+VALUES 
+(1, 'Quelle loi régit le statut général de la fonction publique en Côte d\'Ivoire ?', 'choix_multiple', 'intermédiaire', 2, 'La loi n°92-570 du 11 septembre 1992 est le texte fondamental qui régit le statut général de la fonction publique en Côte d\'Ivoire.'),
+(1, 'Qui est considéré comme fonctionnaire selon le statut général de la fonction publique ivoirienne ?', 'choix_multiple', 'débutant', 1, 'Un fonctionnaire est une personne nommée à un emploi permanent et titularisée dans un grade de la hiérarchie administrative.'),
+(1, 'Quels sont les droits fondamentaux reconnus aux fonctionnaires ivoiriens ?', 'choix_multiple', 'intermédiaire', 2, 'Les fonctionnaires jouissent de droits syndicaux, du droit de grève, de protection contre les menaces et attaques, etc.'),
+(1, 'Combien de catégories hiérarchiques compte la fonction publique ivoirienne ?', 'choix_multiple', 'débutant', 1, 'La fonction publique ivoirienne compte 5 catégories hiérarchiques allant de A à E.'),
+(1, 'Quelle est la durée du stage probatoire pour un fonctionnaire nouvellement recruté ?', 'choix_multiple', 'intermédiaire', 2, 'Le stage probatoire dure généralement un an, pouvant être prolongé une fois.'),
+(1, 'Quelles sont les positions statutaires du fonctionnaire ivoirien ?', 'choix_multiple', 'avancé', 3, 'Les positions statutaires sont : activité, détachement, disponibilité et sous les drapeaux.'),
+(1, 'Quel ministère est chargé de la gestion des fonctionnaires en Côte d\'Ivoire ?', 'choix_multiple', 'débutant', 1, 'Le Ministère de la Fonction Publique est l\'organe principal chargé de la gestion des fonctionnaires.'),
+(1, 'Quelle réforme majeure a été introduite dans la fonction publique ivoirienne en 2016 ?', 'choix_multiple', 'avancé', 3, 'La réforme de 2016 a introduit un nouveau système de rémunération basé sur la performance et non plus sur l\'ancienneté.');
+
+-- Insertion des options pour chaque question
+-- Question 1
+INSERT INTO Options (question_id, option_text, is_correct)
+VALUES 
+(1, 'Loi n°92-570 du 11 septembre 1992', TRUE),
+(1, 'Loi n°95-15 du 12 janvier 1995', FALSE),
+(1, 'Loi n°2001-339 du 14 juin 2001', FALSE),
+(1, 'Loi n°2015-532 du 20 juillet 2015', FALSE);
+
+-- Question 2
+INSERT INTO Options (question_id, option_text, is_correct)
+VALUES 
+(2, 'Toute personne travaillant dans une administration publique', FALSE),
+(2, 'Une personne nommée à un emploi permanent et titularisée dans un grade de la hiérarchie administrative', TRUE),
+(2, 'Un agent contractuel de l\'État', FALSE),
+(2, 'Un élu municipal travaillant pour la commune', FALSE);
+
+-- Question 3
+INSERT INTO Options (question_id, option_text, is_correct)
+VALUES 
+(3, 'Droit syndical, droit de grève, droit à la protection', TRUE),
+(3, 'Droit de refuser d\'exécuter les ordres de sa hiérarchie', FALSE),
+(3, 'Droit de créer une entreprise privée en parallèle sans autorisation', FALSE),
+(3, 'Droit de divulguer des informations confidentielles', FALSE);
+
+-- Question 4
+INSERT INTO Options (question_id, option_text, is_correct)
+VALUES 
+(4, '3 catégories (A, B, C)', FALSE),
+(4, '4 catégories (A, B, C, D)', FALSE),
+(4, '5 catégories (A, B, C, D, E)', TRUE),
+(4, '6 catégories (A, B, C, D, E, F)', FALSE);
+
+-- Question 5
+INSERT INTO Options (question_id, option_text, is_correct)
+VALUES 
+(5, '6 mois', FALSE),
+(5, '1 an', TRUE),
+(5, '2 ans', FALSE),
+(5, '3 ans', FALSE);
+
+-- Question 6
+INSERT INTO Options (question_id, option_text, is_correct)
+VALUES 
+(6, 'Activité, détachement, disponibilité, sous les drapeaux', TRUE),
+(6, 'Activité, congé, retraite, suspension', FALSE),
+(6, 'Titulaire, stagiaire, contractuel, vacataire', FALSE),
+(6, 'Présence, absence, congé, mission', FALSE);
+
+-- Question 7
+INSERT INTO Options (question_id, option_text, is_correct)
+VALUES 
+(7, 'Ministère de la Fonction Publique', TRUE),
+(7, 'Ministère de l\'Intérieur', FALSE),
+(7, 'Ministère des Finances', FALSE),
+(7, 'Ministère de la Justice', FALSE);
+
+-- Question 8
+INSERT INTO Options (question_id, option_text, is_correct)
+VALUES 
+(8, 'La numérisation des services administratifs', FALSE),
+(8, 'L\'introduction d\'un système de rémunération basé sur la performance', TRUE),
+(8, 'La réduction du temps de travail hebdomadaire', FALSE),
+(8, 'La suppression des concours d\'entrée dans la fonction publique', FALSE);
+
+-- Création d'un utilisateur administrateur
+INSERT INTO Users (username, email, password_hash, first_name, last_name, role, preferred_language_id)
+VALUES ('admin_ci', 'admin@fonction-publique.ci', 
+        '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', -- mot de passe : "password"
+        'Admin', 'Système', 'admin', 1);
+
+-- Création d'un utilisateur enseignant
+INSERT INTO Users (username, email, password_hash, first_name, last_name, role, preferred_language_id)
+VALUES ('prof_ci', 'professeur@enatci.ci', 
+        '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', -- mot de passe : "password"
+        'Professeur', 'ENAT', 'teacher', 1);
+
+-- Création d'un groupe pour les étudiants de l'ENAT
+INSERT INTO Groups (name, description, created_by, code)
+VALUES ('Étudiants ENAT 2025', 'Groupe des étudiants de l\'École Nationale d\'Administration et de Magistrature, promotion 2025', 2, 'ENAT2025');
+
+-- Assignation du quiz au groupe
+INSERT INTO GroupAssignments (group_id, quiz_id, assigned_by, due_date, instructions)
+VALUES (1, 1, 2, DATE_ADD(NOW(), INTERVAL 30 DAY), 'Ce quiz fait partie de la préparation pour l\'examen de culture générale sur le statut général de la fonction publique. Veuillez le compléter avant la date limite.');
+
+-- Création de badges pour récompenser les connaissances sur la fonction publique
+INSERT INTO Badges (name, description, icon_url, criteria)
+VALUES 
+('Expert Fonction Publique', 'Décerné aux utilisateurs ayant obtenu un score parfait au quiz sur le statut général de la fonction publique', '/badges/expert_fp.png', 'score_parfait_quiz_1'),
+('Connaisseur Législatif', 'Décerné aux utilisateurs ayant correctement répondu à toutes les questions sur la législation de la fonction publique', '/badges/legislatif.png', 'toutes_questions_legislation');
+
+-- Traduction des badges
+INSERT INTO BadgeTranslations (badge_id, language_id, translated_name, translated_description)
+VALUES 
+(1, 1, 'Expert Fonction Publique', 'Décerné aux utilisateurs ayant obtenu un score parfait au quiz sur le statut général de la fonction publique'),
+(2, 1, 'Connaisseur Législatif', 'Décerné aux utilisateurs ayant correctement répondu à toutes les questions sur la législation de la fonction publique');
