@@ -3,6 +3,10 @@
       {
         "title": "Ancienne institution Africaines disparues",
         "questions": "qcmCapitalesMemeNom"
+      },
+      {
+        "title": "Histoire africaine",
+        "questions": "qcmHistoireAfricaine"
       }
     ]
   }

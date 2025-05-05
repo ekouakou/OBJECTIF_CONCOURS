@@ -18,7 +18,25 @@
         ],
         "imageUrl": "https://example.com/bva-logo.jpg",
         "detailedExplanation": "La Bourse des Valeurs d'Abidjan (BVA) a été créée le 18 septembre 1974 en Côte d'Ivoire, bien que les bases de son établissement remontent à 1964. Elle était la première bourse de valeurs opérationnelle en Afrique francophone et représentait un symbole du dynamisme économique ivoirien pendant les années du 'miracle ivoirien'. Dans le cadre de l'approfondissement de l'intégration économique et financière de l'Union Économique et Monétaire Ouest-Africaine (UEMOA), les États membres ont décidé de créer un marché financier commun. Ainsi, le 16 septembre 1998, la BVA a été transformée en Bourse Régionale des Valeurs Mobilières (BRVM), avec son siège maintenu à Abidjan. Cette nouvelle institution dessert désormais les huit pays de l'UEMOA (Bénin, Burkina Faso, Côte d'Ivoire, Guinée-Bissau, Mali, Niger, Sénégal et Togo). La BRVM est devenue un modèle d'intégration financière régionale en Afrique, offrant aux entreprises et aux investisseurs un marché plus large et plus liquide, tout en réduisant les coûts d'infrastructure financière pour les pays membres."
+      },
+      {
+        "id": 2,
+        "question": "Quel ancien organisme, créé en 1972 et dissous en 1994, était chargé du développement agricole au Burkina Faso ?",
+        "options": [
+          "Office National de Développement Rural (ONDR)",
+          "Organisme Régional de Développement (ORD)",
+          "Centre de Développement Agricole (CDA)",
+          "Institut Burkinabé d'Agriculture Tropicale (IBAT)"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Les Organismes Régionaux de Développement (ORD) ont été créés en 1972 au Burkina Faso (alors Haute-Volta) et ont été remplacés en 1994 par les Centres Régionaux de Promotion Agropastorale (CRPA).",
+        "examples": "Les ORD étaient des structures décentralisées chargées de la mise en œuvre des politiques agricoles au niveau régional. Ils ont joué un rôle important dans le développement rural du pays.",
+        "usefulLinks": [
+          "https://www.agriculture.bf/historique",
+          "https://www.fao.org/burkina-faso/programmes"
+        ],
+        "imageUrl": "https://example.com/ord-logo.jpg",
+        "detailedExplanation": "Les Organismes Régionaux de Développement (ORD) ont été créés en 1972 comme structures décentralisées chargées du développement agricole et rural au Burkina Faso. Ils avaient pour mission la vulgarisation agricole, l'approvisionnement en intrants, la commercialisation des produits agricoles et l'aménagement des terres. Avec les réformes économiques des années 1990 et la réorganisation administrative du pays, les ORD ont été dissous en 1994 et remplacés par les Centres Régionaux de Promotion Agropastorale (CRPA), puis plus tard par les Directions Régionales de l'Agriculture. Cette restructuration s'inscrivait dans le cadre des politiques d'ajustement structurel et visait à rendre plus efficaces les services d'appui au monde rural."
       }
     ]
-}
-  
+  }

@@ -1,0 +1,42 @@
+{
+    "qcmHistoireAfricaine": [
+      {
+        "id": 1,
+        "question": "Quel empire ouest-africain a connu son apogée au 13ème siècle sous le règne de Mansa Moussa ?",
+        "options": [
+          "L'Empire du Ghana",
+          "L'Empire du Mali",
+          "L'Empire Songhaï",
+          "L'Empire du Kanem-Bornou"
+        ],
+        "correctAnswer": 1,
+        "explanation": "L'Empire du Mali a connu son apogée au 13ème siècle sous le règne de Mansa Moussa, considéré comme l'un des hommes les plus riches de l'histoire mondiale grâce aux ressources en or de l'empire.",
+        "examples": "Le pèlerinage à La Mecque de Mansa Moussa en 1324-1325 est resté célèbre pour le faste déployé et la quantité d'or distribuée, qui aurait provoqué une dévaluation de l'or au Caire pendant plusieurs années.",
+        "usefulLinks": [
+          "https://www.britannica.com/biography/Mansa-Musa",
+          "https://whc.unesco.org/fr/list/116/"
+        ],
+        "imageUrl": "https://example.com/mali-empire.jpg",
+        "detailedExplanation": "L'Empire du Mali, fondé au 13ème siècle par Sundiata Keita, a connu son apogée sous le règne de Mansa Moussa (1312-1337). Cet immense empire s'étendait du Sahel jusqu'aux forêts côtières et de l'Atlantique au lac Tchad, englobant les territoires actuels du Mali, de la Guinée, du Sénégal, de la Gambie, et des parties du Niger et de la Mauritanie. Sa richesse provenait principalement du commerce transsaharien de l'or et du sel. Mansa Moussa a fortement développé l'islam dans la région, construisant de nombreuses mosquées dont la célèbre mosquée Djingareyber à Tombouctou. Son pèlerinage à la Mecque en 1324-1325 est resté dans les mémoires pour son faste extraordinaire : il était accompagné d'une caravane de 60 000 personnes et 80 à 100 chameaux chargés chacun de 300 livres d'or. Sa générosité dans les villes traversées, notamment au Caire, a été telle qu'elle aurait provoqué une dévaluation de l'or pendant plusieurs années dans la région. Sous son règne, Tombouctou est devenue un centre intellectuel majeur avec la construction de l'université Sankore."
+      },
+      {
+        "id": 2,
+        "question": "Quel royaume d'Afrique australe a bâti le grand complexe architectural de Great Zimbabwe entre le 11ème et le 15ème siècle ?",
+        "options": [
+          "Le Royaume de Mapungubwe",
+          "L'Empire du Monomotapa (Mwenemutapa)",
+          "Le Royaume du Zimbabwe",
+          "L'Empire du Rozwi"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Le Royaume du Zimbabwe a construit le grand complexe architectural de Great Zimbabwe entre le 11ème et le 15ème siècle. Ces impressionnantes structures en pierre sèche, sans mortier, témoignent d'une civilisation sophistiquée.",
+        "examples": "Le Great Zimbabwe est considéré comme le plus grand ensemble architectural en pierre d'Afrique subsaharienne précoloniale et a donné son nom au pays actuel du Zimbabwe après l'indépendance.",
+        "usefulLinks": [
+          "https://whc.unesco.org/fr/list/364/",
+          "https://www.nationalgeographic.com/history/article/great-zimbabwe"
+        ],
+        "imageUrl": "https://example.com/great-zimbabwe.jpg",
+        "detailedExplanation": "Le Royaume du Zimbabwe s'est développé entre le 11ème et le 15ème siècle dans ce qui est aujourd'hui le Zimbabwe et une partie du Mozambique. Sa capitale, Great Zimbabwe, était un complexe architectural impressionnant couvrant près de 800 hectares, avec des murs atteignant jusqu'à 11 mètres de hauteur. Ce qui rend cette construction remarquable est l'utilisation de la technique de pierre sèche, sans mortier, pour assembler des millions de blocs de granite taillés avec précision. Le royaume était prospère grâce au commerce de l'or, de l'ivoire et d'autres biens précieux avec les marchands arabes et swahilis de la côte est-africaine. À son apogée, Great Zimbabwe aurait abrité jusqu'à 18 000 habitants. Le site comprend trois sections principales : la Colline des Ruines (une acropole), la Grande Enceinte (avec son mur conique emblématique) et la Vallée des Ruines. Le déclin du royaume au 15ème siècle reste sujet à débat parmi les historiens, mais pourrait être lié à l'épuisement des ressources environnantes, à des changements climatiques ou à des pressions politiques. Le site a donné son nom au pays moderne du Zimbabwe ('maisons de pierre' en langue shona) lors de son indépendance en 1980."
+      }
+    ]
+  }
