@@ -1,0 +1,24 @@
+{
+    "qcmCapitalesMemeNom": [
+      {
+        "id": 1,
+        "question": "Quelle ancienne institution financière, créée en 1964 et basée à Abidjan, a été remplacée par la Bourse Régionale des Valeurs Mobilières (BRVM) en 1998 ?",
+        "options": [
+          "Bourse des Valeurs d'Abidjan (BVA)",
+          "Caisse Centrale de Coopération Économique (CCCE)",
+          "Banque Ouest-Africaine pour le Commerce (BOAC)",
+          "Institut Monétaire de l'Afrique de l'Ouest (IMAO)"
+        ],
+        "correctAnswer": 0,
+        "explanation": "La Bourse des Valeurs d'Abidjan (BVA), créée en 1964 en Côte d'Ivoire, a été remplacée par la Bourse Régionale des Valeurs Mobilières (BRVM) en 1998 lors de l'intégration des marchés financiers de l'UEMOA.",
+        "examples": "La BVA était la première bourse de valeurs de l'Afrique francophone. Sa transformation en BRVM a marqué une étape importante dans l'intégration financière régionale, créant le premier marché boursier régional en Afrique.",
+        "usefulLinks": [
+          "https://www.brvm.org/fr/historique",
+          "https://www.uemoa.int/fr/organes-institutions-specialisees-uemoa"
+        ],
+        "imageUrl": "https://example.com/bva-logo.jpg",
+        "detailedExplanation": "La Bourse des Valeurs d'Abidjan (BVA) a été créée le 18 septembre 1974 en Côte d'Ivoire, bien que les bases de son établissement remontent à 1964. Elle était la première bourse de valeurs opérationnelle en Afrique francophone et représentait un symbole du dynamisme économique ivoirien pendant les années du 'miracle ivoirien'. Dans le cadre de l'approfondissement de l'intégration économique et financière de l'Union Économique et Monétaire Ouest-Africaine (UEMOA), les États membres ont décidé de créer un marché financier commun. Ainsi, le 16 septembre 1998, la BVA a été transformée en Bourse Régionale des Valeurs Mobilières (BRVM), avec son siège maintenu à Abidjan. Cette nouvelle institution dessert désormais les huit pays de l'UEMOA (Bénin, Burkina Faso, Côte d'Ivoire, Guinée-Bissau, Mali, Niger, Sénégal et Togo). La BRVM est devenue un modèle d'intégration financière régionale en Afrique, offrant aux entreprises et aux investisseurs un marché plus large et plus liquide, tout en réduisant les coûts d'infrastructure financière pour les pays membres."
+      }
+    ]
+}
+  
