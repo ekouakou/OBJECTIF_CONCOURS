@@ -1,0 +1,242 @@
+{
+    "qcmMinisterGouverneurCI":[
+    {
+      "id": 1,
+      "question": "Qui est le gouverneur du district autonome d'Abidjan ?",
+      "options": [
+        "Ibrahim Bacongo Cissé",
+        "Robert Beugré Mambé",
+        "Augustin Thiam",
+        "Fidèle Sarassoro"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Ibrahim Bacongo Cissé est le gouverneur du district autonome d'Abidjan depuis sa nomination en 2023.",
+      "examples": "Le district autonome d'Abidjan est la capitale économique de la Côte d'Ivoire et constitue le district le plus peuplé du pays.",
+      "usefulLinks": [
+        "https://www.gouv.ci/gouverneur-abidjan"
+      ],
+      "detailedExplanation": "Ibrahim Bacongo Cissé, ancien ministre de la Construction, a été nommé gouverneur du district autonome d'Abidjan en 2023. Il a remplacé Robert Beugré Mambé qui occupait ce poste depuis plusieurs années. Le district autonome d'Abidjan comprend 13 communes et représente le centre économique et financier de la Côte d'Ivoire."
+    },
+    {
+      "id": 2,
+      "question": "Qui est le gouverneur du district autonome de Yamoussoukro ?",
+      "options": [
+        "Augustin Thiam",
+        "Ibrahim Bacongo Cissé",
+        "Fidèle Sarassoro",
+        "Lancina Koné"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Augustin Thiam est le gouverneur du district autonome de Yamoussoukro, la capitale politique de la Côte d'Ivoire.",
+      "examples": "Le district autonome de Yamoussoukro abrite la basilique Notre-Dame de la Paix, l'une des plus grandes églises au monde.",
+      "usefulLinks": [
+        "https://www.gouv.ci/gouverneur-yamoussoukro"
+      ],
+      "detailedExplanation": "Augustin Thiam a été nommé gouverneur du district autonome de Yamoussoukro en 2011 et continue d'exercer cette fonction. Yamoussoukro est la capitale politique et administrative de la Côte d'Ivoire depuis 1983, bien que de nombreuses institutions gouvernementales demeurent à Abidjan."
+    },
+    {
+      "id": 3,
+      "question": "Qui est le gouverneur du district autonome de San Pedro ?",
+      "options": [
+        "Fidèle Sarassoro",
+        "Ibrahim Bacongo Cissé",
+        "Laurent Tchagba",
+        "Augustin Thiam"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Fidèle Sarassoro a été nommé gouverneur du district autonome de San Pedro suite à la création des nouveaux districts autonomes.",
+      "examples": "San Pedro est un important port maritime de la Côte d'Ivoire et un centre économique majeur dans le sud-ouest du pays.",
+      "usefulLinks": [
+        "https://www.gouv.ci/gouverneur-san-pedro"
+      ],
+      "detailedExplanation": "Fidèle Sarassoro, ancien directeur de cabinet du Président de la République, a été nommé gouverneur du district autonome de San Pedro. Ce district est stratégique pour l'économie ivoirienne en raison de son port qui est le deuxième plus important du pays après celui d'Abidjan."
+    },
+    {
+      "id": 4,
+      "question": "Qui est le gouverneur du district autonome de Bas-Sassandra ?",
+      "options": [
+        "Lancina Koné",
+        "Fidèle Sarassoro",
+        "Laurent Tchagba",
+        "Apollinaire Koffi Konan"
+      ],
+      "correctAnswer": 3,
+      "explanation": "Apollinaire Koffi Konan est le gouverneur du district autonome de Bas-Sassandra depuis sa nomination en 2021.",
+      "examples": "Le district autonome de Bas-Sassandra est connu pour sa production agricole, notamment le cacao et l'hévéa.",
+      "usefulLinks": [
+        "https://www.gouv.ci/gouverneur-bas-sassandra"
+      ],
+      "detailedExplanation": "Apollinaire Koffi Konan a été nommé gouverneur du district autonome de Bas-Sassandra lors de la création des nouveaux districts autonomes en 2021. Ce district, situé dans le sud-ouest de la Côte d'Ivoire, est une zone importante pour l'agriculture d'exportation."
+    },
+    {
+      "id": 5,
+      "question": "Qui est le gouverneur du district autonome de la Vallée du Bandama ?",
+      "options": [
+        "Lancina Koné",
+        "Augustin Thiam",
+        "Ibrahim Bacongo Cissé",
+        "Fidèle Sarassoro"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Lancina Koné est le gouverneur du district autonome de la Vallée du Bandama depuis 2021.",
+      "examples": "La Vallée du Bandama est une région agricole majeure de la Côte d'Ivoire, avec Bouaké comme ville principale.",
+      "usefulLinks": [
+        "https://www.gouv.ci/gouverneur-vallee-bandama"
+      ],
+      "detailedExplanation": "Lancina Koné a été nommé gouverneur du district autonome de la Vallée du Bandama en 2021. Ce district comprend notamment la ville de Bouaké, deuxième plus grande ville de Côte d'Ivoire, et est considéré comme un carrefour commercial important au centre du pays."
+    },
+    {
+      "id": 6,
+      "question": "Combien de districts autonomes compte la Côte d'Ivoire ?",
+      "options": [
+        "2",
+        "3",
+        "4",
+        "14"
+      ],
+      "correctAnswer": 3,
+      "explanation": "La Côte d'Ivoire compte 14 districts autonomes, y compris Abidjan, Yamoussoukro et 12 autres créés récemment.",
+      "examples": "Les districts autonomes sont des entités administratives spéciales avec un statut particulier, différent des districts ordinaires qui regroupent plusieurs régions.",
+      "usefulLinks": [
+        "https://www.gouv.ci/_actualite-article.php?d=1&recordID=12336&p=15"
+      ],
+      "detailedExplanation": "L'organisation administrative territoriale de la Côte d'Ivoire comprend 14 districts autonomes. Initialement, seuls Abidjan et Yamoussoukro avaient ce statut particulier. Cependant, en 2021, le gouvernement a créé 12 nouveaux districts autonomes pour renforcer la décentralisation et améliorer la gouvernance locale. Ces districts autonomes sont administrés par un gouverneur nommé par le Président de la République et disposent d'une plus grande autonomie administrative et financière que les collectivités territoriales ordinaires."
+    },
+    {
+      "id": 7,
+      "question": "Qui est le gouverneur du district autonome du Woroba ?",
+      "options": [
+        "Vassiriki Koné",
+        "Lancina Koné",
+        "Fidèle Sarassoro",
+        "Augustin Thiam"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Vassiriki Koné est le gouverneur du district autonome du Woroba depuis sa nomination en 2021.",
+      "examples": "Le district autonome du Woroba est situé dans le nord-ouest de la Côte d'Ivoire et comprend plusieurs régions.",
+      "usefulLinks": [
+        "https://www.gouv.ci/gouverneur-woroba"
+      ],
+      "detailedExplanation": "Vassiriki Koné a été nommé gouverneur du district autonome du Woroba lors de la création des nouveaux districts autonomes en 2021. Ce district regroupe plusieurs régions du nord-ouest de la Côte d'Ivoire et représente une zone importante pour l'agriculture et l'élevage."
+    },
+    {
+      "id": 8,
+      "question": "Qui est le gouverneur du district autonome des Lacs ?",
+      "options": [
+        "Augustin Thiam",
+        "Amedé Kouakou Koffi",
+        "Lancina Koné",
+        "Ibrahim Bacongo Cissé"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Amedé Kouakou Koffi est le gouverneur du district autonome des Lacs depuis 2021.",
+      "examples": "Le district autonome des Lacs est connu pour ses plans d'eau et sa production agricole diversifiée.",
+      "usefulLinks": [
+        "https://www.gouv.ci/gouverneur-lacs"
+      ],
+      "detailedExplanation": "Amedé Kouakou Koffi a été nommé gouverneur du district autonome des Lacs en 2021. Ce district, situé au centre du pays, est caractérisé par ses nombreux lacs et barrages, et joue un rôle important dans la production agricole et la pêche en Côte d'Ivoire."
+    },
+    {
+      "id": 9,
+      "question": "Qui est le gouverneur du district autonome des Savanes ?",
+      "options": [
+        "Téné Birahima Ouattara",
+        "Vassiriki Koné",
+        "Fidèle Sarassoro",
+        "Lancina Koné"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Téné Birahima Ouattara est le gouverneur du district autonome des Savanes depuis sa nomination en 2021.",
+      "examples": "Le district autonome des Savanes est situé à l'extrême nord de la Côte d'Ivoire et partage des frontières avec le Mali et le Burkina Faso.",
+      "usefulLinks": [
+        "https://www.gouv.ci/gouverneur-savanes"
+      ],
+      "detailedExplanation": "Téné Birahima Ouattara a été nommé gouverneur du district autonome des Savanes en 2021. Ce district, situé au nord du pays, est caractérisé par son climat sec de type sahélien et son économie basée principalement sur l'agriculture et l'élevage."
+    },
+    {
+      "id": 10,
+      "question": "Qui est le gouverneur du district autonome du Zanzan ?",
+      "options": [
+        "Benjamin Effoli",
+        "Téné Birahima Ouattara",
+        "Amedé Kouakou Koffi",
+        "Vassiriki Koné"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Benjamin Effoli est le gouverneur du district autonome du Zanzan depuis 2021.",
+      "examples": "Le district autonome du Zanzan est situé à l'est de la Côte d'Ivoire et partage une frontière avec le Ghana.",
+      "usefulLinks": [
+        "https://www.gouv.ci/gouverneur-zanzan"
+      ],
+      "detailedExplanation": "Benjamin Effoli a été nommé gouverneur du district autonome du Zanzan en 2021. Ce district, situé à l'est du pays, est une zone frontière avec le Ghana et joue un rôle important dans les échanges commerciaux transfrontaliers."
+    },
+    {
+      "id": 11,
+      "question": "Qui est le gouverneur du district autonome du Denguélé ?",
+      "options": [
+        "Famoussa Coulibaly",
+        "Vassiriki Koné",
+        "Téné Birahima Ouattara",
+        "Benjamin Effoli"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Famoussa Coulibaly est le gouverneur du district autonome du Denguélé depuis 2021.",
+      "examples": "Le district autonome du Denguélé est situé au nord-ouest de la Côte d'Ivoire et est connu pour ses traditions culturelles et son élevage.",
+      "usefulLinks": [
+        "https://www.gouv.ci/gouverneur-dengele"
+      ],
+      "detailedExplanation": "Famoussa Coulibaly a été nommé gouverneur du district autonome du Denguélé en 2021. Ce district, situé dans le nord-ouest du pays, est caractérisé par son paysage montagneux et son économie basée sur l'agriculture et l'élevage."
+    },
+    {
+      "id": 12,
+      "question": "Qui est le gouverneur du district autonome du Gôh-Djiboua ?",
+      "options": [
+        "Serey Doh Célestin",
+        "Famoussa Coulibaly",
+        "Amedé Kouakou Koffi",
+        "Apollinaire Koffi Konan"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Serey Doh Célestin est le gouverneur du district autonome du Gôh-Djiboua depuis 2021.",
+      "examples": "Le district autonome du Gôh-Djiboua est une région agricole majeure, connue pour sa production de café et de cacao.",
+      "usefulLinks": [
+        "https://www.gouv.ci/gouverneur-goh-djiboua"
+      ],
+      "detailedExplanation": "Serey Doh Célestin a été nommé gouverneur du district autonome du Gôh-Djiboua en 2021. Ce district, situé dans le centre-ouest du pays, est une zone agricole importante qui contribue significativement à l'économie nationale grâce à sa production de café, de cacao et d'autres cultures de rente."
+    },
+    {
+      "id": 13,
+      "question": "Qui est le gouverneur du district autonome des Montagnes ?",
+      "options": [
+        "Kouakou Kouadio Denis",
+        "Serey Doh Célestin",
+        "Benjamin Effoli",
+        "Famoussa Coulibaly"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Kouakou Kouadio Denis est le gouverneur du district autonome des Montagnes depuis 2021.",
+      "examples": "Le district autonome des Montagnes est situé à l'ouest de la Côte d'Ivoire et est caractérisé par son relief montagneux.",
+      "usefulLinks": [
+        "https://www.gouv.ci/gouverneur-montagnes"
+      ],
+      "detailedExplanation": "Kouakou Kouadio Denis a été nommé gouverneur du district autonome des Montagnes en 2021. Ce district, situé à l'ouest du pays, est caractérisé par son relief montagneux et abrite plusieurs communautés ethniques. Il joue un rôle économique important grâce à sa production agricole diversifiée."
+    },
+    {
+      "id": 14,
+      "question": "Qui est le gouverneur du district autonome du Sassandra-Marahoué ?",
+      "options": [
+        "Kobenan Kouassi Adjoumani",
+        "Kouakou Kouadio Denis",
+        "Serey Doh Célestin",
+        "Amedé Kouakou Koffi"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Kobenan Kouassi Adjoumani est le gouverneur du district autonome du Sassandra-Marahoué depuis 2021.",
+      "examples": "Le district autonome du Sassandra-Marahoué est traversé par le fleuve Sassandra et est connu pour sa production agricole diversifiée.",
+      "usefulLinks": [
+        "https://www.gouv.ci/gouverneur-sassandra-marahoue"
+      ],
+      "detailedExplanation": "Kobenan Kouassi Adjoumani a été nommé gouverneur du district autonome du Sassandra-Marahoué en 2021. Ce district, situé dans le centre-ouest du pays, est traversé par le fleuve Sassandra et constitue une zone agricole importante pour l'économie nationale."
+    }
+  ]
+}

@@ -1,0 +1,618 @@
+{
+    "qcmDistrictsCommunesCoteIvoire": [
+      {
+        "id": 1,
+        "question": "Combien de districts autonomes compte la Côte d'Ivoire ?",
+        "options": [
+            "2",
+            "3",
+            "4",
+            "14"
+        ],
+        "correctAnswer": 3,
+        "explanation": "La Côte d'Ivoire compte 14 districts autonomes, y compris Abidjan, Yamoussoukro et 12 autres créés récemment.",
+        "examples": "Les districts autonomes sont des entités administratives spéciales avec un statut particulier, différent des districts ordinaires qui regroupent plusieurs régions.",
+        "usefulLinks": [
+            "https://www.gouv.ci/_actualite-article.php?d=1&recordID=12336&p=15"
+        ],
+        "detailedExplanation": "L'organisation administrative territoriale de la Côte d'Ivoire comprend 14 districts autonomes. Initialement, seuls Abidjan et Yamoussoukro avaient ce statut particulier. Cependant, en 2021, le gouvernement a créé 12 nouveaux districts autonomes pour renforcer la décentralisation et améliorer la gouvernance locale. Ces districts autonomes sont administrés par un gouverneur nommé par le Président de la République et disposent d'une plus grande autonomie administrative et financière que les collectivités territoriales ordinaires."
+        },
+      {
+        "id": 2,
+        "question": "Quel est le chef-lieu du département de Dabou ?",
+        "options": [
+          "Jacqueville",
+          "Dabou",
+          "Grand-Lahou",
+          "Sikensi"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Dabou est le chef-lieu du département de Dabou, situé dans la région des Grands Ponts, dans le district des Lagunes.",
+        "examples": "Dabou est une ville importante pour la culture de l'ananas et du palmier à huile, avec la présence de l'usine PALMCI, l'une des plus grandes huileries de la région.",
+        "usefulLinks": [
+          "https://www.gouv.ci/gouvernement/region/12"
+        ],
+        "detailedExplanation": "Le département de Dabou est situé dans le sud de la Côte d'Ivoire, à environ 45 km à l'ouest d'Abidjan, dans la région des Grands Ponts qui fait partie du district des Lagunes. Il s'étend sur une superficie d'environ 2 258 km². Le département est bordé au sud par le Golfe de Guinée et comprend une zone importante de lagunes côtières. Le chef-lieu, la ville de Dabou, est située sur la rive nord de la lagune Ébrié. Le département comprend les sous-préfectures de Dabou, Lopou, Toupah et Yassap. Cette zone est caractérisée par un climat subéquatorial avec quatre saisons distinctes et une végétation de forêt dense humide, bien que fortement modifiée par l'agriculture. La population est principalement composée de l'ethnie Adjoukrou (sous-groupe Akan), ainsi que de nombreux groupes issus de l'immigration interne et des pays voisins. L'économie du département repose essentiellement sur l'agriculture (palmier à huile, hévéa, ananas, manioc, banane plantain), la pêche lagunaire et le commerce. Dabou est également un important carrefour routier sur l'axe Abidjan-San Pedro."
+      },
+      {
+        "id": 3,
+        "question": "Quelle commune du district d'Abidjan abrite le quartier administratif et des affaires ?",
+        "options": [
+          "Cocody",
+          "Plateau",
+          "Marcory",
+          "Treichville"
+        ],
+        "correctAnswer": 1,
+        "explanation": "La commune du Plateau est le quartier administratif et des affaires du district d'Abidjan, souvent désigné comme le 'Manhattan africain' en raison de ses gratte-ciels.",
+        "examples": "Le Plateau abrite la plupart des ministères, la présidence, de nombreux sièges de banques et d'entreprises ainsi que l'emblématique tour CAISTAB, l'un des plus hauts bâtiments d'Afrique de l'Ouest.",
+        "usefulLinks": [
+          "https://abidjan.district.ci/"
+        ],
+        "detailedExplanation": "La commune du Plateau est située au cœur du district d'Abidjan, sur une presqu'île s'avançant dans la lagune Ébrié. Elle couvre une superficie relativement modeste d'environ 2,5 km². Cette commune constitue le centre administratif, politique et économique de la Côte d'Ivoire. Son relief en plateau a donné son nom à la commune et a permis le développement d'un urbanisme vertical unique en Afrique de l'Ouest, avec de nombreux immeubles de grande hauteur. Le Plateau abrite la présidence de la République, la primature, la plupart des ministères, la Banque Centrale des États de l'Afrique de l'Ouest (BCEAO), le siège de nombreuses banques internationales, de grandes entreprises et des institutions diplomatiques. La commune est caractérisée par une architecture moderne contrastant avec le reste de la ville, des avenues larges et bien entretenues, et une forte concentration d'activités pendant la journée. En revanche, elle se vide considérablement la nuit, sa population résidente permanente étant relativement faible par rapport à la population qui y travaille quotidiennement. Le Plateau est relié aux autres communes d'Abidjan par plusieurs ponts, dont le pont Félix Houphouët-Boigny et le pont Charles de Gaulle."
+      },
+      {
+        "id": 4,
+        "question": "Quel département est le chef-lieu de la région du Moronou ?",
+        "options": [
+          "Arrah",
+          "Bongouanou",
+          "M'Batto",
+          "Daoukro"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Bongouanou est le chef-lieu de la région du Moronou, située dans l'est de la Côte d'Ivoire et faisant partie du district des Lacs.",
+        "examples": "Bongouanou est un important centre de production de cacao et de café, ainsi qu'un lieu de fabrication traditionnelle du pagne baoulé.",
+        "usefulLinks": [
+          "https://www.gouv.ci/gouvernement/region/21"
+        ],
+        "detailedExplanation": "La région du Moronou est située dans l'est de la Côte d'Ivoire, à environ 200 km au nord-est d'Abidjan. Elle fait partie du district des Lacs et s'étend sur une superficie d'environ 6 900 km². La région comprend trois départements : Bongouanou (chef-lieu régional), Arrah et M'Batto. Bongouanou, ville principale de la région, est située dans une zone de transition entre la forêt dense du sud et la savane arborée du nord. La région est caractérisée par un climat tropical humide avec quatre saisons distinctes. La population est majoritairement composée des ethnies Agni et Baoulé (groupes Akan), ainsi que de communautés issues de l'immigration interne et des pays voisins. L'économie régionale repose principalement sur l'agriculture (cacao, café, palmier à huile, hévéa, cultures vivrières comme l'igname, le manioc et la banane plantain) et le commerce. La région est également connue pour son artisanat traditionnel, notamment la fabrication de pagnes tissés baoulé et la sculpture sur bois. Bongouanou a connu un développement notable depuis sa désignation comme chef-lieu régional, avec l'amélioration des infrastructures administratives, sanitaires et éducatives."
+      },
+      {
+        "id": 5,
+        "question": "Quelle commune du district autonome de Yamoussoukro abrite la Basilique Notre-Dame de la Paix ?",
+        "options": [
+          "Attiégouakro",
+          "Yamoussoukro",
+          "Toumodi",
+          "Didiévi"
+        ],
+        "correctAnswer": 1,
+        "explanation": "La commune de Yamoussoukro, dans le district autonome du même nom, abrite la Basilique Notre-Dame de la Paix, le plus grand édifice chrétien du monde en termes de superficie.",
+        "examples": "Construite entre 1985 et 1989 à l'initiative du président Félix Houphouët-Boigny, la Basilique Notre-Dame de la Paix est inspirée de la Basilique Saint-Pierre de Rome mais légèrement plus grande.",
+        "usefulLinks": [
+          "https://www.basiliqueyamoussoukro.ci/"
+        ],
+        "detailedExplanation": "Yamoussoukro est la capitale politique de la Côte d'Ivoire depuis 1983 et le centre du district autonome de Yamoussoukro. Située dans le centre du pays, à environ 230 km au nord-ouest d'Abidjan, la ville s'étend sur une superficie d'environ 3 500 hectares. Yamoussoukro est la ville natale du premier président ivoirien, Félix Houphouët-Boigny, qui en a fait la capitale politique du pays et l'a dotée d'infrastructures monumentales. La Basilique Notre-Dame de la Paix en est l'exemple le plus emblématique. Construite entre 1985 et 1989 et consacrée par le Pape Jean-Paul II en 1990, elle couvre une superficie de 30 000 m² avec un dôme culminant à 158 mètres. Sa construction aurait coûté environ 300 millions de dollars. Outre la basilique, Yamoussoukro abrite également d'autres infrastructures importantes comme le Palais présidentiel, la Fondation Félix Houphouët-Boigny pour la recherche de la paix, l'Institut National Polytechnique Houphouët-Boigny, l'École Nationale d'Administration, un aéroport international et le lac aux crocodiles sacrés. La ville présente un urbanisme particulier avec de larges avenues peu fréquentées, contrastant avec son statut de capitale."
+      },
+      {
+        "id": 6,
+        "question": "Quel est le chef-lieu du département de Man ?",
+        "options": [
+          "Danané",
+          "Biankouma",
+          "Facobly",
+          "Man"
+        ],
+        "correctAnswer": 3,
+        "explanation": "Man est le chef-lieu du département de Man, situé dans la région du Tonkpi, dans l'ouest montagneux de la Côte d'Ivoire.",
+        "examples": "Man est surnommée 'la ville aux 18 montagnes' et est connue pour ses cascades, notamment la cascade de la Dent de Man et celle du Mont Tonkoui.",
+        "usefulLinks": [
+          "https://www.gouv.ci/gouvernement/region/31"
+        ],
+        "detailedExplanation": "Le département de Man est situé dans l'ouest montagneux de la Côte d'Ivoire, dans la région du Tonkpi dont il est le chef-lieu. Il s'étend sur une superficie d'environ 4 000 km². Le département comprend les sous-préfectures de Man, Gbangbégouiné, Gotongouiné, Podiagouiné, Sangouiné et Yapleu. La ville de Man est située au pied du Mont Tonkoui (1 189 m) dans une zone de relief accidenté. Cette région montagneuse, qui fait partie de la dorsale guinéenne, est caractérisée par un climat plus frais et plus humide que le reste du pays, avec une pluviométrie annuelle dépassant 1 800 mm. La végétation est composée principalement de forêt dense humide semi-décidue de montagne et de savane d'altitude sur les sommets. La population est majoritairement d'ethnie Dan (Yacouba) et Wê. L'économie du département repose sur l'agriculture (café, cacao, riz, cultures maraîchères), l'exploitation forestière et le tourisme. Man constitue un pôle touristique important avec ses paysages montagneux, ses cascades, sa forêt sacrée de Gbêpleu et son marché artisanal où l'on trouve notamment des sculptures sur bois et des tissages traditionnels. La ville abrite également un festival culturel important, le Festival des Masques (FESTIMA)."
+      },
+      {
+        "id": 7,
+        "question": "Quel district abrite la ville de San Pedro, deuxième port de Côte d'Ivoire ?",
+        "options": [
+          "District du Bas-Sassandra",
+          "District de la Comoé",
+          "District du Denguélé",
+          "District des Montagnes"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Le District du Bas-Sassandra abrite la ville de San Pedro, qui possède le deuxième port en importance de Côte d'Ivoire après celui d'Abidjan.",
+        "examples": "Le port de San Pedro, créé dans les années 1970, est spécialisé dans l'exportation du cacao, du café, du bois et des produits miniers de l'ouest du pays.",
+        "usefulLinks": [
+          "http://www.portdesanpedro.ci/",
+          "https://www.gouv.ci/gouvernement/region/5"
+        ],
+        "detailedExplanation": "Le District du Bas-Sassandra est situé dans le sud-ouest de la Côte d'Ivoire, en bordure de l'océan Atlantique. Il s'étend sur une superficie d'environ 40 200 km². Le district comprend trois régions administratives : San Pedro (chef-lieu : San Pedro), Gbôklé (chef-lieu : Sassandra) et Nawa (chef-lieu : Soubré). La ville de San Pedro, deuxième port du pays, est située à environ 350 km à l'ouest d'Abidjan. Le port a été créé dans les années 1970 dans le cadre d'un vaste projet d'aménagement du sud-ouest ivoirien pour désenclaver cette région et créer un second pôle de développement économique après Abidjan. Le port dispose d'une rade en eau profonde permettant d'accueillir des navires de fort tonnage et s'étend sur une superficie de 200 hectares avec 2 000 mètres de quais. Il traite annuellement environ 4,5 millions de tonnes de marchandises. La région du Bas-Sassandra est caractérisée par un climat subéquatorial humide et était autrefois couverte de forêt dense, mais celle-ci a considérablement reculé en raison de l'exploitation forestière et du développement des cultures de rente (cacao, café, hévéa, palmier à huile). La population est très diverse ethniquement, avec une forte proportion d'immigrants venus d'autres régions de Côte d'Ivoire et des pays voisins, attirés par le développement économique lié au port et aux activités agricoles."
+      },
+      {
+        "id": 8,
+        "question": "Quelle commune du district d'Abidjan abrite l'Université Félix Houphouët-Boigny ?",
+        "options": [
+          "Cocody",
+          "Plateau",
+          "Abobo",
+          "Yopougon"
+        ],
+        "correctAnswer": 0,
+        "explanation": "La commune de Cocody, souvent désignée comme le quartier résidentiel haut de gamme d'Abidjan, abrite l'Université Félix Houphouët-Boigny, la plus ancienne et la plus grande université du pays.",
+        "examples": "L'Université Félix Houphouët-Boigny, anciennement Université de Cocody, accueille environ 60 000 étudiants et comprend plusieurs facultés et instituts répartis sur un vaste campus.",
+        "usefulLinks": [
+          "https://www.univ-fhb.edu.ci/",
+          "https://abidjan.district.ci/"
+        ],
+        "detailedExplanation": "La commune de Cocody est située dans la partie est du district d'Abidjan, s'étendant sur une superficie d'environ 132 km². Elle est considérée comme le quartier résidentiel haut de gamme de la capitale économique ivoirienne, abritant de nombreuses villas de luxe, des ambassades, des centres commerciaux modernes et des établissements éducatifs de premier plan. Cocody est caractérisée par un urbanisme aéré avec de larges avenues bordées d'arbres, de nombreux espaces verts et une architecture variée. L'Université Félix Houphouët-Boigny, fondée en 1964 sous le nom d'Université d'Abidjan puis renommée en 1996 Université de Cocody avant de prendre son nom actuel en 2012, est la plus ancienne institution d'enseignement supérieur du pays. Son campus principal à Cocody s'étend sur plus de 200 hectares et comprend 13 UFR (Unités de Formation et de Recherche), plusieurs instituts spécialisés, une bibliothèque universitaire, des résidences étudiantes et des installations sportives. Outre l'université, Cocody abrite d'autres institutions importantes comme l'Hôpital Universitaire de Cocody, le Centre Hospitalier Universitaire (CHU), le Lycée Technique d'Abidjan, l'École Normale Supérieure, le Golf Club d'Abidjan et l'Hôtel Ivoire avec son complexe de loisirs. La commune est également connue pour ses quartiers distincts comme Cocody-Ambassades, Deux-Plateaux, Riviera, Angré et Danga."
+      },
+      {
+        "id": 9,
+        "question": "Quel est le chef-lieu du département de Bouaflé ?",
+        "options": [
+          "Sinfra",
+          "Zuénoula",
+          "Bouaflé",
+          "Gohitafla"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Bouaflé est le chef-lieu du département de Bouaflé, situé dans la région de la Marahoué, dans le centre-ouest de la Côte d'Ivoire.",
+        "examples": "Bouaflé est située au carrefour de plusieurs axes routiers importants et est connue pour son grand marché régional qui attire des commerçants de toute la région.",
+        "usefulLinks": [
+          "https://www.gouv.ci/gouvernement/region/19"
+        ],
+        "detailedExplanation": "Le département de Bouaflé est situé dans le centre-ouest de la Côte d'Ivoire, dans la région de la Marahoué dont il est le chef-lieu. Il s'étend sur une superficie d'environ 4 214 km². Le département comprend les sous-préfectures de Bouaflé, Bégbessou, Bonon, N'Douffoukankro, Pakouabo et Zaguiéta. La ville de Bouaflé est située à environ 60 km à l'ouest de Yamoussoukro et à 340 km au nord-ouest d'Abidjan. La région est traversée par le fleuve Marahoué (Bandama rouge) qui lui donne son nom. Elle est caractérisée par un climat tropical humide de transition avec deux saisons sèches et deux saisons des pluies. La végétation originelle de forêt dense humide semi-décidue a largement fait place aux cultures et aux jachères. La population est multiculturelle, composée principalement des ethnies Gouro, Baoulé et Sénoufo, ainsi que de nombreux migrants venus du nord du pays et des pays voisins (Burkina Faso, Mali). L'économie du département repose essentiellement sur l'agriculture (café, cacao, hévéa, palmier à huile et cultures vivrières comme l'igname, le manioc et la banane plantain). La ville de Bouaflé est un important centre commercial et administratif régional avec la présence de plusieurs services décentralisés de l'État."
+      },
+      {
+        "id": 10,
+        "question": "Quel département est le chef-lieu de la région du Cavally ?",
+        "options": [
+          "Guiglo",
+          "Bloléquin",
+          "Taï",
+          "Toulepleu"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Guiglo est le chef-lieu de la région du Cavally, située dans l'ouest de la Côte d'Ivoire, à la frontière avec le Liberia.",
+        "examples": "La région du Cavally, traversée par le fleuve du même nom, abrite une partie importante du Parc National de Taï, l'une des dernières grandes forêts primaires d'Afrique de l'Ouest.",
+        "usefulLinks": [
+          "https://www.gouv.ci/gouvernement/region/32"
+        ],
+        "detailedExplanation": "La région du Cavally est située dans l'ouest de la Côte d'Ivoire, à la frontière avec le Liberia. Elle s'étend sur une superficie d'environ 15 180 km². La région comprend quatre départements : Guiglo (chef-lieu régional), Bloléquin, Taï et Toulepleu. La ville de Guiglo est située sur les rives du fleuve Cavally qui donne son nom à la région et marque la frontière avec le Liberia. Cette zone frontalière est caractérisée par un climat subéquatorial très humide avec une pluviométrie annuelle dépassant souvent 2 000 mm. La végétation naturelle est la forêt dense humide sempervirente, bien qu'elle ait été considérablement réduite par l'exploitation forestière et l'extension des cultures de rente. La région abrite une partie importante du Parc National de Taï, classé au patrimoine mondial de l'UNESCO. La population est principalement composée des ethnies Guéré, Wê et Krahn. L'économie régionale repose essentiellement sur l'agriculture (cacao, café, hévéa, palmier à huile et cultures vivrières), l'exploitation forestière et, dans une moindre mesure, l'écotourisme lié au parc. La région a été particulièrement affectée par les crises politico-militaires qu'a connues la Côte d'Ivoire entre 2002 et 2011, en raison de sa position frontalière avec le Liberia, mais connaît depuis un processus de reconstruction et de développement."
+      },
+      {
+        "id": 11,
+        "question": "Quelle commune du district autonome de Bouaké abrite le marché de gros de Bouaké ?",
+        "options": [
+          "Commune de Bouaké",
+          "Commune de Djébonoua",
+          "Commune de Botro",
+          "Commune de Béoumi"
+        ],
+        "correctAnswer": 0,
+        "explanation": "La Commune de Bouaké abrite le marché de gros de Bouaké, le plus grand marché de l'intérieur du pays et plaque tournante du commerce entre le nord et le sud de la Côte d'Ivoire.",
+        "examples": "Le marché de gros de Bouaké est particulièrement réputé pour le commerce des produits agricoles (igname, manioc, fruits) et des textiles, notamment les pagnes traditionnels et les tissus importés.",
+        "usefulLinks": [
+          "https://www.gouv.ci/gouvernement/region/13"
+        ],
+        "detailedExplanation": "La Commune de Bouaké est située dans le centre de la Côte d'Ivoire, à environ 350 km au nord d'Abidjan. Elle constitue le cœur du district autonome de Bouaké, créé plus récemment que les deux autres districts autonomes (Abidjan et Yamoussoukro). Bouaké est la deuxième plus grande ville du pays avec une population estimée à plus de 600 000 habitants. La ville s'étend sur une superficie d'environ 71,8 km² et est divisée en plusieurs quartiers distincts. Située à un carrefour stratégique entre le nord et le sud du pays, Bouaké a historiquement joué un rôle important dans les échanges commerciaux régionaux. Son marché de gros, l'un des plus importants d'Afrique de l'Ouest, couvre plusieurs hectares et est organisé en sections spécialisées (céréales, tubercules, fruits et légumes, bétail, textiles, etc.). Ce marché attire des commerçants venus de toute la Côte d'Ivoire ainsi que des pays limitrophes comme le Burkina Faso, le Mali et la Guinée. La ville a été particulièrement affectée par la crise politico-militaire de 2002-2011, ayant servi de quartier général aux forces rebelles, mais connaît depuis un important processus de reconstruction. Outre son activité commerciale, Bouaké dispose d'une université (l'Université Alassane Ouattara), d'un CHU, d'écoles supérieures et d'industries textiles et agroalimentaires."
+      },
+      {
+        "id": 12,
+        "question": "Quel est le chef-lieu du département de Korhogo ?",
+        "options": [
+          "Sinématiali",
+          "M'Bengué",
+          "Korhogo",
+          "Dikodougou"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Korhogo est le chef-lieu du département de Korhogo, situé dans la région du Poro, dans le nord de la Côte d'Ivoire.",
+        "examples": "Korhogo est un important centre culturel sénoufo, connu pour son artisanat traditionnel, notamment les toiles peintes (toiles de Korhogo), la sculpture sur bois et le travail du bronze.",
+        "usefulLinks": [
+          "https://www.gouv.ci/gouvernement/region/25"
+        ],
+        "detailedExplanation": "Le département de Korhogo est situé dans le nord de la Côte d'Ivoire, dans la région du Poro dont il est le chef-lieu. Il s'étend sur une superficie d'environ 12 500 km². Le département comprend les sous-préfectures de Korhogo, Dassoungbo, Kanoroba, Komborodougou, Koni, Lataha, Nafoun, Napiéolédougou, Niofoin, Sohouo et Tioroniaradougou. La ville de Korhogo, quatrième plus grande ville du pays, est située à environ 600 km au nord d'Abidjan. Cette région est caractérisée par un climat tropical sec de type soudanais avec une longue saison sèche (octobre à mai) et une courte saison des pluies (juin à septembre). Le paysage est dominé par la savane arborée et arbustive. La population est majoritairement d'ethnie Sénoufo, avec des communautés importantes de Malinké et de Peulh. L'économie du département repose principalement sur l'agriculture (coton, anacarde, mangue, riz, mil, sorgho), l'élevage (bovins, ovins, caprins) et l'artisanat. Korhogo est également un important centre commercial pour tout le nord du pays, avec un grand marché qui attire des commerçants de la Côte d'Ivoire et des pays voisins (Mali, Burkina Faso). La ville abrite l'Université Peleforo Gon Coulibaly et plusieurs institutions de formation professionnelle. Elle est également connue pour son riche patrimoine culturel, notamment ses cases sacrées, ses bois sacrés et ses festivals traditionnels."
+      },
+      {
+        "id": 13,
+        "question": "Quelle commune du district d'Abidjan est connue pour son port de pêche traditionnel ?",
+        "options": [
+          "Treichville",
+          "Port-Bouët",
+          "Yopougon",
+          "Vridi"
+        ],
+        "correctAnswer": 1,
+        "explanation": "La commune de Port-Bouët, située au sud du district d'Abidjan en bordure de l'océan Atlantique, est connue pour son important port de pêche traditionnel.",
+        "examples": "Le port de pêche artisanale de Port-Bouët est un lieu animé où les pêcheurs, principalement d'ethnie Fanti et Alladian, débarquent quotidiennement leur pêche qui est ensuite vendue et fumée sur place par les femmes.",
+        "usefulLinks": [
+          "https://abidjan.district.ci/"
+        ],
+        "detailedExplanation": "La commune de Port-Bouët est située dans la partie sud du district d'Abidjan, en bordure de l'océan Atlantique. Elle s'étend sur une superficie d'environ 111 km². Cette commune côtière est caractérisée par ses longues plages de sable fin bordant l'océan sur plus de 20 km. Port-Bouët abrite plusieurs quartiers distincts, dont le village de pêcheurs traditionnel, les zones résidentielles, la zone industrielle et portuaire, ainsi que l'aéroport international Félix Houphouët-Boigny. Le port de pêche traditionnel est un élément emblématique de la commune. Il constitue un lieu d'activité intense où cohabitent différentes techniques de pêche, depuis les pirogues traditionnelles jusqu'aux chalutiers semi-industriels. La pêche est pratiquée principalement par des populations des ethnies Fanti (originaires du Ghana), N'zima (Apolloniens), Alladian et Avikam. Le poisson débarqué est traité sur place : une partie est vendue fraîche sur les étals du marché aux poissons attenant, tandis qu'une autre partie est fumée selon des techniques traditionnelles par les femmes dans des fumoirs artisanaux. Cette activité de fumage, qui imprègne l'air du quartier d'une odeur caractéristique, constitue une part importante de"
+    },
+    {
+        "id": 14,
+        "question": "Quel est le chef-lieu de la région du Gôh ?",
+        "options": [
+        "Oumé",
+        "Gagnoa",
+        "Lakota",
+        "Divo"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Gagnoa est le chef-lieu de la région du Gôh, située dans le centre-ouest de la Côte d'Ivoire.",
+        "examples": "Gagnoa est un important centre de production de cacao et constitue l'un des principaux foyers culturels bété du pays.",
+        "usefulLinks": [
+        "https://www.gouv.ci/gouvernement/region/15"
+        ],
+        "detailedExplanation": "La région du Gôh est située dans le centre-ouest de la Côte d'Ivoire à environ 270 km au nord-ouest d'Abidjan. Elle s'étend sur une superficie d'environ 8 000 km². La région comprend deux départements : Gagnoa (chef-lieu régional) et Oumé. La ville de Gagnoa est un carrefour économique important dans la boucle du cacao ivoirien. Cette région est caractérisée par un climat subéquatorial à quatre saisons et une végétation originelle de forêt dense humide semi-décidue, largement transformée par l'agriculture. La population est principalement constituée de l'ethnie Bété, ainsi que de nombreux groupes issus de l'immigration interne et des pays voisins, notamment le Burkina Faso. L'économie régionale repose essentiellement sur l'agriculture (cacao, café, palmier à huile, hévéa et cultures vivrières). Gagnoa dispose d'infrastructures administratives, sanitaires et éducatives importantes, dont une antenne universitaire rattachée à l'Université Jean Lorougnon Guédé. La ville est également connue pour son riche patrimoine culturel bété, notamment ses danses traditionnelles et ses masques."
+        },
+        {
+        "id": 15,
+        "question": "Quelle commune du district d'Abidjan abrite la principale zone industrielle du pays ?",
+        "options": [
+        "Koumassi",
+        "Marcory",
+        "Yopougon",
+        "Abobo"
+        ],
+        "correctAnswer": 0,
+        "explanation": "La commune de Koumassi abrite la plus grande zone industrielle du district d'Abidjan et de la Côte d'Ivoire.",
+        "examples": "La zone industrielle de Koumassi regroupe de nombreuses entreprises des secteurs agroalimentaire, textile, chimique et métallurgique, notamment la brasserie SOLIBRA et plusieurs usines textiles.",
+        "usefulLinks": [
+        "https://abidjan.district.ci/"
+        ],
+        "detailedExplanation": "La commune de Koumassi est située dans la partie sud du district d'Abidjan, sur l'île de Petit-Bassam, entre la lagune Ébrié et la baie du Banco. Elle couvre une superficie d'environ 9 km². Koumassi est caractérisée par sa vocation industrielle marquée, abritant la plus importante zone industrielle du pays qui s'étend sur environ 120 hectares. Cette zone industrielle, développée dès les années 1960, concentre plus de 300 entreprises de divers secteurs : agroalimentaire (brasseries, huileries, conserveries), textile, chimie (savonneries, parfumeries, peintures), métallurgie, matériaux de construction, et industries diverses. Les usines emploient une part importante de la population active de la commune et des communes environnantes. Outre sa zone industrielle, Koumassi comprend des quartiers résidentiels populaires densément peuplés, ainsi que des zones commerciales dynamiques avec plusieurs marchés, dont le grand marché central de Koumassi. La commune est reliée au reste d'Abidjan par plusieurs ponts et voies rapides, notamment le boulevard Valéry Giscard d'Estaing qui la traverse. Sa position stratégique entre le port autonome d'Abidjan et l'aéroport international Félix Houphouët-Boigny a favorisé son développement industriel."
+        },
+        {
+        "id": 16,
+        "question": "Quel est le chef-lieu du département de Daloa ?",
+        "options": [
+        "Zoukougbeu",
+        "Vavoua",
+        "Issia",
+        "Daloa"
+        ],
+        "correctAnswer": 3,
+        "explanation": "Daloa est le chef-lieu du département de Daloa, situé dans la région du Haut-Sassandra dans le centre-ouest de la Côte d'Ivoire.",
+        "examples": "Daloa est surnommée 'la ville des antilopes' et constitue un important carrefour routier et commercial au cœur de la zone de production cacaoyère.",
+        "usefulLinks": [
+        "https://www.gouv.ci/gouvernement/region/16"
+        ],
+        "detailedExplanation": "Le département de Daloa est situé dans le centre-ouest de la Côte d'Ivoire, dans la région du Haut-Sassandra dont il est le chef-lieu. Il s'étend sur une superficie d'environ 5 305 km². Le département comprend les sous-préfectures de Daloa, Bédiala, Gadouan, Gboguhé, Gonaté et Zaïbo. La ville de Daloa, troisième plus grande ville du pays, est située à environ 400 km au nord-ouest d'Abidjan. Cette région est caractérisée par un climat subéquatorial à quatre saisons et était autrefois couverte de forêt dense humide semi-décidue, aujourd'hui largement remplacée par des plantations. La population est très diversifiée ethniquement, avec une prédominance des ethnies Bété et Malinké, ainsi que de nombreux migrants venus d'autres régions de Côte d'Ivoire et des pays voisins, notamment du Burkina Faso. L'économie du département repose principalement sur l'agriculture (cacao, café, hévéa, palmier à huile et cultures vivrières comme le riz, le manioc et la banane plantain). Daloa constitue un important centre commercial et administratif, avec la présence de nombreux services décentralisés de l'État, d'établissements d'enseignement supérieur, dont l'Université Jean Lorougnon Guédé, et d'infrastructures sanitaires comme le CHR de Daloa."
+        },
+        {
+        "id": 17,
+        "question": "Quelle commune du district d'Abidjan abrite la principale gare routière internationale ?",
+        "options": [
+        "Adjamé",
+        "Abobo",
+        "Yopougon",
+        "Treichville"
+        ],
+        "correctAnswer": 0,
+        "explanation": "La commune d'Adjamé abrite la principale gare routière internationale d'Abidjan, point de départ des transports vers les pays de la sous-région ouest-africaine.",
+        "examples": "La gare routière internationale d'Adjamé est le point de départ des bus et 'cars' vers le Burkina Faso, le Mali, la Guinée, le Ghana et d'autres pays limitrophes. Elle est réputée pour son animation perpétuelle, de jour comme de nuit.",
+        "usefulLinks": [
+        "https://abidjan.district.ci/"
+        ],
+        "detailedExplanation": "La commune d'Adjamé est située au centre du district d'Abidjan, couvrant une superficie d'environ 12 km². Cette commune est considérée comme le cœur commercial populaire de la capitale économique ivoirienne. Adjamé est caractérisée par une intense activité commerciale, avec la présence du plus grand marché de la ville (Forum des marchés d'Adjamé) qui s'étend sur plusieurs hectares. La gare routière internationale d'Adjamé, localisée à proximité du grand marché, constitue le principal hub de transport terrestre non seulement pour Abidjan mais pour toute la Côte d'Ivoire. Cette gare routière est divisée en plusieurs zones selon les destinations : transport urbain, transport national (vers les villes de l'intérieur du pays) et transport international (vers les pays voisins). La section internationale regroupe des compagnies de transport assurant des liaisons régulières vers les capitales et grandes villes des pays limitrophes : Accra (Ghana), Ouagadougou (Burkina Faso), Bamako (Mali), Conakry (Guinée), Monrovia (Liberia), etc. La zone est extrêmement animée, avec une forte concentration de voyageurs, de commerçants, de restaurateurs et d'autres prestataires de services liés au transport. Outre la gare routière et le grand marché, Adjamé abrite également la grande mosquée d'Abidjan, le CHU d'Adjamé et d'importants axes routiers dont le pont Charles de Gaulle qui relie Adjamé au Plateau."
+        },
+        {
+        "id": 18,
+        "question": "Quel est le chef-lieu de la région du Sud-Comoé ?",
+        "options": [
+        "Grand-Bassam",
+        "Adiaké",
+        "Aboisso",
+        "Tiapoum"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Aboisso est le chef-lieu de la région du Sud-Comoé, située dans le sud-est de la Côte d'Ivoire, à la frontière avec le Ghana.",
+        "examples": "Aboisso est traversée par le fleuve Bia et est connue pour ses plantations de palmiers à huile et d'hévéas, ainsi que pour sa proximité avec le parc national des Îles Ehotilé.",
+        "usefulLinks": [
+        "https://www.gouv.ci/gouvernement/region/28"
+        ],
+        "detailedExplanation": "La région du Sud-Comoé est située dans le sud-est de la Côte d'Ivoire, à la frontière avec le Ghana. Elle s'étend sur une superficie d'environ 7 000 km². La région comprend quatre départements : Aboisso (chef-lieu régional), Adiaké, Grand-Bassam et Tiapoum. La ville d'Aboisso est située à environ 120 km à l'est d'Abidjan, sur les rives du fleuve Bia. Cette région est caractérisée par un climat subéquatorial très humide avec une pluviométrie annuelle dépassant 1 800 mm. La végétation originelle est la forêt dense humide sempervirente, aujourd'hui fortement modifiée par l'agriculture. La population est majoritairement d'ethnie Agni (sous-groupe N'dénéan), avec des communautés importantes d'Abouré, d'Éhotilé et de migrants venus d'autres régions de Côte d'Ivoire et des pays voisins. L'économie régionale repose principalement sur l'agriculture (palmier à huile, hévéa, cacao, café, cocotier, cultures vivrières), la pêche (maritime et lagunaire) et le tourisme, notamment à Grand-Bassam (première capitale de la Côte d'Ivoire coloniale et site classé au patrimoine mondial de l'UNESCO) et autour du parc national des Îles Ehotilé. La région dispose d'un riche patrimoine culturel, avec notamment les fêtes traditionnelles Abissa (N'zima) et Popo Carnaval (Abouré), ainsi que de nombreux sites historiques liés à la période coloniale."
+        },
+        {
+        "id": 19,
+        "question": "Quelle est la particularité de la commune de Grand-Bassam ?",
+        "options": [
+        "C'est l'ancienne capitale de la Côte d'Ivoire française",
+        "C'est la ville la plus ancienne du pays",
+        "C'est le plus grand port de pêche artisanale",
+        "C'est une enclave française en territoire ivoirien"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Grand-Bassam a été la première capitale de la Côte d'Ivoire française, de 1893 à 1900, avant que celle-ci ne soit transférée à Bingerville puis à Abidjan.",
+        "examples": "Le quartier colonial de Grand-Bassam, avec ses bâtiments d'architecture coloniale bien préservés, a été inscrit au patrimoine mondial de l'UNESCO en 2012.",
+        "usefulLinks": [
+        "https://whc.unesco.org/fr/list/1322/"
+        ],
+        "detailedExplanation": "Grand-Bassam est une ville côtière située à environ 40 km à l'est d'Abidjan, dans la région du Sud-Comoé. Elle couvre une superficie d'environ 120 km². Fondée comme comptoir commercial à l'époque précoloniale, Grand-Bassam a été établie comme premier poste colonial français en 1842. Elle est devenue la première capitale de la colonie de Côte d'Ivoire en 1893, fonction qu'elle a conservée jusqu'en 1900, date à laquelle une épidémie de fièvre jaune a conduit au transfert de la capitale à Bingerville. La ville historique de Grand-Bassam est divisée en deux parties distinctes séparées par la lagune Ouladine : la ville coloniale au nord, avec ses bâtiments administratifs, commerciaux et résidentiels construits entre 1890 et 1930, et le village N'zima au sud, représentant l'établissement autochtone. Le quartier colonial abrite de nombreux édifices historiques remarquablement préservés, comme l'ancien Palais du Gouverneur, l'ancien Tribunal, l'ancienne Poste, la Cathédrale Saint-Paul et plusieurs maisons de commerce. En raison de sa valeur historique et architecturale exceptionnelle, la ville historique de Grand-Bassam a été inscrite sur la liste du patrimoine mondial de l'UNESCO en juin 2012, devenant ainsi le premier site ivoirien à bénéficier de cette reconnaissance internationale. Aujourd'hui, Grand-Bassam s'est développée comme une destination touristique importante, connue non seulement pour son patrimoine historique mais aussi pour ses plages, son festival culturel Abissa et son artisanat, notamment le tissage de pagne et la sculpture sur bois."
+        },
+        {
+        "id": 20,
+        "question": "Quel est le chef-lieu du département d'Odienné ?",
+        "options": [
+        "Madinani",
+        "Séguélon",
+        "Odienné",
+        "Boundiali"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Odienné est le chef-lieu du département d'Odienné, situé dans la région du Kabadougou, dans le nord-ouest de la Côte d'Ivoire.",
+        "examples": "Odienné est connue pour son architecture soudanaise traditionnelle, notamment sa grande mosquée construite en style soudano-sahélien, et pour son artisanat de tissage.",
+        "usefulLinks": [
+        "https://www.gouv.ci/gouvernement/region/17"
+        ],
+        "detailedExplanation": "Le département d'Odienné est situé dans le nord-ouest de la Côte d'Ivoire, dans la région du Kabadougou dont il est le chef-lieu. Il s'étend sur une superficie d'environ 14 000 km². Le département comprend les sous-préfectures d'Odienné, Bako, Bougousso, Dioulatièdougou et Tiémé. La ville d'Odienné est située à environ 850 km au nord-ouest d'Abidjan, non loin des frontières avec la Guinée et le Mali. Cette région est caractérisée par un climat tropical sec de type soudano-guinéen avec une longue saison sèche (octobre à mai) et une courte saison des pluies (juin à septembre). Le paysage est dominé par la savane arborée avec des massifs montagneux isolés, dont le mont Denguelé (725 m). La population est majoritairement d'ethnie Malinké (Dioula), pratiquant en grande partie l'islam. L'économie du département repose principalement sur l'agriculture (coton, anacarde, mangue, riz, mil, maïs), l'élevage (bovins, ovins, caprins) et l'artisanat, notamment le tissage traditionnel. La ville d'Odienné constitue un centre commercial important pour l'extrême nord-ouest ivoirien, avec un grand marché hebdomadaire qui attire des commerçants de la Côte d'Ivoire et des pays voisins. La région possède également un potentiel minier (or, fer) et touristique (paysages montagneux, architecture traditionnelle soudano-sahélienne, sites historiques liés à Samory Touré)."
+        },
+        {
+        "id": 21,
+        "question": "Quelle commune du district d'Abidjan est connue pour ses nombreux espaces verts et son golf ?",
+        "options": [
+        "Cocody",
+        "Bingerville",
+        "Marcory",
+        "Anyama"
+        ],
+        "correctAnswer": 0,
+        "explanation": "La commune de Cocody est réputée pour ses nombreux espaces verts, ses jardins publics et son golf club qui en font l'une des communes les plus verdoyantes du district d'Abidjan.",
+        "examples": "Cocody abrite le Golf Club d'Abidjan qui s'étend sur 40 hectares, le Jardin botanique de Bingerville à sa périphérie, ainsi que de nombreux parcs et jardins publics comme le Parc du Banco.",
+        "usefulLinks": [
+        "https://abidjan.district.ci/"
+        ],
+        "detailedExplanation": "La commune de Cocody est située dans la partie est du district d'Abidjan, s'étendant sur une superficie d'environ 132 km². Elle est considérée comme le quartier résidentiel haut de gamme de la capitale économique ivoirienne. Cocody se distingue des autres communes du district par son urbanisme aéré, ses larges avenues bordées d'arbres et ses nombreux espaces verts. Cette caractéristique résulte d'une planification urbaine qui, dès l'époque coloniale, a privilégié un développement intégrant la végétation existante. Le Golf Club d'Abidjan, créé dans les années 1950, constitue un poumon vert majeur au cœur de la commune avec son parcours de 18 trous s'étendant sur environ 40 hectares. Outre le golf, Cocody abrite d'autres espaces verts importants comme le parc du Vallon (situé près de l'Hôtel Ivoire), les jardins de l'Université Félix Houphouët-Boigny, les berges aménagées de la lagune Ébrié, et plusieurs petits parcs et jardins publics dispersés dans les différents quartiers. La commune jouxte également la forêt du Banco, une forêt primaire de 3 000 hectares classée parc national, qui constitue un autre espace vert majeur d'Abidjan. Cette abondance d'espaces verts contribue à la qualité de vie dans cette commune et explique en partie son attractivité résidentielle pour les catégories socioprofessionnelles aisées, tant ivoiriennes qu'expatriées."
+        },
+        {
+        "id": 22,
+        "question": "Quel est le chef-lieu de la région du Gbêkê ?",
+        "options": [
+        "Sakassou",
+        "Béoumi",
+        "Botro",
+        "Bouaké"
+        ],
+        "correctAnswer": 3,
+        "explanation": "Bouaké est le chef-lieu de la région du Gbêkê, située dans le centre de la Côte d'Ivoire. C'est également la deuxième plus grande ville du pays après Abidjan.",
+        "examples": "Bouaké est un important carrefour commercial entre le nord et le sud du pays, connu pour son grand marché régional et sa production textile, notamment avec l'usine Gonfreville.",
+        "usefulLinks": [
+        "https://www.gouv.ci/gouvernement/region/13"
+        ],
+        "detailedExplanation": "La région du Gbêkê est située dans le centre de la Côte d'Ivoire, couvrant une superficie d'environ 8 996 km². Elle comprend quatre départements : Bouaké (chef-lieu régional), Béoumi, Botro et Sakassou. La ville de Bouaké, deuxième plus grande ville du pays, est située à environ 350 km au nord d'Abidjan. Cette région de transition entre la zone forestière du sud et la savane du nord est caractérisée par un climat tropical humide avec quatre saisons et une végétation de savane arborée entrecoupée de forêts galeries le long des cours d'eau. La population est majoritairement d'ethnie Baoulé, avec des communautés importantes de Dioula, Sénoufo et de migrants venus d'autres régions de Côte d'Ivoire et des pays voisins. L'économie régionale repose sur l'agriculture (coton, anacarde, igname, manioc, maïs), l'élevage, l'artisanat et l'industrie, notamment textile. Bouaké constitue un pôle économique majeur pour le centre du pays avec son grand marché de gros qui joue un rôle crucial dans les échanges commerciaux entre le nord et le sud. La ville a été particulièrement affectée par la crise politico-militaire de 2002-2011, ayant servi de quartier général aux forces rebelles, mais connaît depuis un important processus de reconstruction. La région abrite également des sites touristiques et culturels importants, notamment à Sakassou, ancienne capitale du royaume baoulé, où se trouvent la résidence des reines mères et plusieurs sites sacrés."
+        },
+        {
+        "id": 23,
+        "question": "Quelle est la spécificité de la région du Bélier ?",
+        "options": [
+        "Elle abrite la plus grande réserve naturelle du pays",
+        "Elle comprend la capitale politique de la Côte d'Ivoire",
+        "Elle possède le plus grand lac artificiel d'Afrique",
+        "Elle est la principale région productrice de diamants"
+        ],
+        "correctAnswer": 1,
+        "explanation": "La région du Bélier comprend la ville de Yamoussoukro, capitale politique de la Côte d'Ivoire depuis 1983.",
+        "examples": "Outre la capitale politique avec ses monuments imposants comme la Basilique Notre-Dame de la Paix, la région du Bélier est le berceau de la culture baoulé et un important centre de production d'igname.",
+        "usefulLinks": [
+        "https://www.gouv.ci/gouvernement/region/9"
+        ],
+        "detailedExplanation": "La région du Bélier est située dans le centre de la Côte d'Ivoire, couvrant une superficie d'environ 6 783 km². Elle comprend cinq départements : Yamoussoukro, Didiévi, Tiébissou, Toumodi et Djébonoua. La particularité majeure de cette région est qu'elle abrite Yamoussoukro, capitale politique officielle de la Côte d'Ivoire depuis 1983, ville natale du premier président ivoirien Félix Houphouët-Boigny. La région se trouve dans une zone de transition entre la forêt au sud et la savane au nord, caractérisée par un climat tropical humide avec quatre saisons et une végétation de savane arborée. La population est majoritairement d'ethnie Baoulé, l'un des plus importants groupes ethniques du pays. La région constitue d'ailleurs le cœur historique du royaume baoulé, fondé au 18ème siècle par la reine Abla Pokou. L'économie régionale repose principalement sur l'agriculture (igname, manioc, anacarde, café, cacao), l'élevage et l'artisanat, notamment le tissage de pagnes traditionnels baoulé. Yamoussoukro, bien que capitale politique, reste une ville de taille moyenne comparée à Abidjan, mais dispose d'infrastructures monumentales comme la Basilique Notre-Dame de la Paix (plus grande église chrétienne du monde en termes de superficie), le Palais présidentiel, la Fondation Félix Houphouët-Boigny pour la recherche de la paix, plusieurs grandes écoles et instituts, et l'aéroport international. La région possède également de nombreux sites culturels et touristiques liés à l'histoire et aux traditions baoulé."
+        },
+        {
+        "id": 24,
+        "question": "Quelle commune du district d'Abidjan abrite le plus grand marché de vivriers ?",
+        "options": [
+        "Adjamé",
+        "Abobo",
+        "Treichville",
+        "Yopougon"
+        ],
+        "correctAnswer": 0,
+        "explanation": "La commune d'Adjamé abrite le plus grand marché de produits vivriers du district d'Abidjan, connu sous le nom de Forum des marchés d'Adjamé ou Grand Marché d'Adjamé.",
+        "examples": "Le marché d'Adjamé s'étend sur plusieurs hectares et comprend différentes sections spécialisées, dont une importante zone dédiée aux produits vivriers (fruits, légumes, tubercules) venant de toutes les régions du pays.",
+        "usefulLinks": [
+        "https://abidjan.district.ci/"
+        ],
+        "detailedExplanation": "La commune d'Adjamé est située au centre du district d'Abidjan, couvrant une superficie d'environ 12 km². Cette commune est considérée comme le cœur commercial populaire de la capitale économique ivoirienne. Le Forum des marchés d'Adjamé, communément appelé Grand Marché d'Adjamé, est le plus vaste ensemble commercial d'Abidjan et l'un des plus importants d'Afrique de l'Ouest. Il s'étend sur plusieurs hectares et comprend différentes sections spécialisées : vivriers, vêtements, chaussures, tissus, électronique, quincaillerie, etc. La section des produits vivriers est particulièrement importante, constituant le principal point d'approvisionnement en denrées alimentaires fraîches pour une grande partie de la population abidjanaise. On y trouve une immense variété de produits venant de toutes les régions du pays : tubercules (igname, manioc, patate douce), céréales (riz, maïs, mil), fruits (bananes, ananas, mangues, oranges), légumes, condiments, etc. Le marché est organisé selon une logique de spécialisation par produit, avec des zones dédiées à chaque catégorie de denrées. Chaque jour, des dizaines de camions en provenance des zones rurales déchargent leurs produits, généralement la nuit ou très tôt le matin. Le marché est extrêmement animé, avec une forte affluence tout au long de la journée. Il joue un rôle économique crucial, non seulement pour l'approvisionnement alimentaire d'Abidjan, mais aussi comme source de revenus pour des milliers de commerçants, de transporteurs et de manutentionnaires."
+        },
+        {
+        "id": 25,
+        "question": "Quel est le chef-lieu de la région de l'Agnéby-Tiassa ?",
+        "options": [
+        "Agboville",
+        "Tiassalé",
+        "Sikensi",
+        "Taabo"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Agboville est le chef-lieu de la région de l'Agnéby-Tiassa, située dans le sud de la Côte d'Ivoire.",
+        "examples": "Agboville est connue pour sa production d'ananas et son patrimoine culturel abbey, notamment les sculptures traditionnelles sur bois et les masques.",
+        "usefulLinks": [
+        "https://www.gouv.ci/gouvernement/region/8"
+        ],
+        "detailedExplanation": "La région de l'Agnéby-Tiassa est située dans le sud de la Côte d'Ivoire, à environ 80 km au nord d'Abidjan. Elle s'étend sur une superficie d'environ 9 000 km². La région comprend quatre départements : Agboville (chef-lieu régional), Tiassalé, Sikensi et Taabo. La ville d'Agboville est située sur l'axe ferroviaire Abidjan-Ouagadougou, ce qui a contribué à son développement historique comme centre de collecte et d'expédition des produits agricoles. La région est caractérisée par un climat subéquatorial à quatre saisons et une végétation originelle de forêt dense humide semi-décidue, aujourd'hui largement transformée par l'agriculture. La population est composée principalement des ethnies Abbey, Attié, Abidji et Baoulé. L'économie régionale repose essentiellement sur l'agriculture (café, cacao, hévéa, palmier à huile, ananas, banane et cultures vivrières), l'exploitation forestière et, dans le département de Taabo, la production hydroélectrique grâce au barrage de Taabo sur le fleuve Bandama. La région possède également un riche patrimoine culturel, notamment les danses et masques traditionnels abbey et abidji, ainsi que des sites touristiques comme les rapides de Tiassalé sur le fleuve Bandama et le lac de Taabo. Agboville dispose d'infrastructures administratives, sanitaires et éducatives importantes pour la région, ainsi que d'industries de transformation agricole, notamment dans le secteur de l'ananas."
+        },
+        {
+            "id": 26,
+            "question": "Quel est le chef-lieu de la région du Moronou ?",
+            "options": [
+              "Arrah",
+              "M'Batto",
+              "Bongouanou",
+              "Kotobi"
+            ],
+            "correctAnswer": 2,
+            "explanation": "Bongouanou est le chef-lieu de la région du Moronou, située dans l'est de la Côte d'Ivoire.",
+            "examples": "Bongouanou est un important centre de production de café et de cacao, et accueille chaque année la fête de l'igname qui met en valeur cette culture vivrière emblématique de la région.",
+            "usefulLinks": [
+              "https://www.gouv.ci/gouvernement/region/23"
+            ],
+            "detailedExplanation": "La région du Moronou est située dans l'est de la Côte d'Ivoire et s'étend sur une superficie d'environ 6 900 km². Elle comprend trois départements : Bongouanou (chef-lieu régional), Arrah et M'Batto. La ville de Bongouanou est située à environ 210 km au nord-est d'Abidjan. Cette région est caractérisée par un climat subéquatorial à quatre saisons et une végétation originelle de forêt dense humide semi-décidue, aujourd'hui largement transformée par l'agriculture. La population est principalement d'ethnie Agni (branche N'dénian) et Agni-Morofou, ainsi que des communautés baoulé et des migrants venus d'autres régions de Côte d'Ivoire et des pays voisins, notamment du Burkina Faso. L'économie régionale repose essentiellement sur l'agriculture, dominée par les cultures de rente (café, cacao, hévéa) et les cultures vivrières (igname, banane plantain, manioc, taro). L'igname tient une place particulière dans la culture locale, célébrée chaque année lors de la fête traditionnelle de l'igname (Paquinou) qui marque le début de la nouvelle année agricole. La région dispose également d'un potentiel touristique avec des sites naturels comme les chutes d'eau d'Arrah et un riche patrimoine culturel agni, notamment ses danses traditionnelles, ses instruments de musique et son artisanat."
+          },
+          {
+            "id": 27,
+            "question": "Quelle commune du district d'Abidjan abrite le siège de la Présidence de la République ?",
+            "options": [
+              "Cocody",
+              "Plateau",
+              "Marcory",
+              "Port-Bouët"
+            ],
+            "correctAnswer": 1,
+            "explanation": "La commune du Plateau abrite le Palais présidentiel, siège de la Présidence de la République de Côte d'Ivoire.",
+            "examples": "Le Plateau, considéré comme le centre administratif et des affaires d'Abidjan, est souvent appelé le 'Petit Manhattan' en raison de ses nombreux gratte-ciels. Outre le Palais présidentiel, il abrite la plupart des ministères et institutions de l'État.",
+            "usefulLinks": [
+              "https://abidjan.district.ci/"
+            ],
+            "detailedExplanation": "La commune du Plateau est située au centre du district d'Abidjan, s'étendant sur une superficie d'environ 3 km². Elle constitue le centre administratif, politique et financier de la Côte d'Ivoire. Le Plateau tire son nom de sa position géographique surélevée sur un plateau dominant la lagune Ébrié. Cette commune abrite le Palais présidentiel, un imposant édifice construit dans les années 1960 et rénové plusieurs fois, notamment après la crise post-électorale de 2011. Ce palais, également appelé 'Palais de la Présidence', est le siège officiel de la Présidence de la République et le lieu où se tiennent les conseils des ministres et les cérémonies officielles de l'État. Outre le Palais présidentiel, le Plateau concentre la plupart des institutions étatiques : la Primature, de nombreux ministères, la Banque Centrale des États de l'Afrique de l'Ouest (BCEAO), la Cour Suprême, le Conseil Économique et Social, etc. La commune est également le centre financier et économique du pays avec les sièges de nombreuses banques, compagnies d'assurances et grandes entreprises nationales et internationales. Son paysage urbain est caractérisé par des gratte-ciels imposants (Tour BCEAO, Immeuble SCIAM, Tour CCIA, Immeuble CAISTAB, etc.) qui lui ont valu le surnom de 'Petit Manhattan'. Contrairement à d'autres communes d'Abidjan, le Plateau est peu peuplé la nuit mais extrêmement animé en journée, accueillant quotidiennement des centaines de milliers de travailleurs et de visiteurs."
+          },
+          {
+            "id": 28,
+            "question": "Quel est le chef-lieu de la région du Poro ?",
+            "options": [
+              "Sinématiali",
+              "Korhogo",
+              "Dikodougou",
+              "M'Bengué"
+            ],
+            "correctAnswer": 1,
+            "explanation": "Korhogo est le chef-lieu de la région du Poro, située dans le nord de la Côte d'Ivoire. C'est également la quatrième plus grande ville du pays.",
+            "examples": "Korhogo est reconnue comme la capitale culturelle du peuple Sénoufo et est célèbre pour son artisanat, notamment le tissage des toiles de Korhogo, la sculpture sur bois et la fabrication de perles.",
+            "usefulLinks": [
+              "https://www.gouv.ci/gouvernement/region/24"
+            ],
+            "detailedExplanation": "La région du Poro est située dans le nord de la Côte d'Ivoire, s'étendant sur une superficie d'environ 13 400 km². Elle comprend quatre départements : Korhogo (chef-lieu régional), Sinématiali, Dikodougou et M'Bengué. La ville de Korhogo est située à environ 635 km au nord d'Abidjan. Cette région est caractérisée par un climat tropical sec de type soudanien avec une saison sèche marquée (octobre à mai) et une saison des pluies (juin à septembre). Le paysage est dominé par la savane arborée entrecoupée de forêts galeries le long des cours d'eau. La population est majoritairement d'ethnie Sénoufo, reconnue pour sa riche tradition culturelle et artistique. L'économie régionale repose principalement sur l'agriculture (coton, anacarde, mangue, riz, mil, maïs), l'élevage (bovins, ovins, caprins), l'artisanat et le commerce. Korhogo constitue un important pôle économique pour le nord ivoirien avec son grand marché, ses unités de transformation agroalimentaire et son aéroport international. La ville et sa région sont célèbres pour leur artisanat, notamment les toiles peintes de Korhogo (pagne teint avec des motifs traditionnels), la sculpture sur bois, la poterie, le travail du bronze et le tissage. La région possède également un riche patrimoine culturel avec des sites comme le dôme de Niofoin, les pics de Korhogo, les cases sacrées de Niangbo et les danses traditionnelles sénoufos comme le Boloye (danse des panthères)."
+          },
+          {
+            "id": 29,
+            "question": "Quelle commune du district d'Abidjan est célèbre pour son marché aux poissons ?",
+            "options": [
+              "Treichville",
+              "Port-Bouët",
+              "Vridi",
+              "Koumassi"
+            ],
+            "correctAnswer": 0,
+            "explanation": "La commune de Treichville est célèbre pour son marché aux poissons, l'un des plus importants points d'approvisionnement en produits halieutiques de la capitale économique.",
+            "examples": "Le marché aux poissons de Treichville, situé près de la lagune Ébrié, propose une grande variété de poissons, crustacés et mollusques frais, fumés ou séchés provenant aussi bien de la pêche maritime que lagunaire.",
+            "usefulLinks": [
+              "https://abidjan.district.ci/"
+            ],
+            "detailedExplanation": "La commune de Treichville est située dans la partie sud du district d'Abidjan, sur l'île de Petit-Bassam entre la lagune Ébrié et l'océan Atlantique. Elle couvre une superficie d'environ 9 km². Treichville est l'une des plus anciennes communes du district, développée pendant la période coloniale comme quartier populaire et commercial. Le marché aux poissons de Treichville, localisé à proximité de la lagune Ébrié, est l'un des plus importants et des plus réputés d'Abidjan. Sa position stratégique, proche à la fois du port de pêche et des zones de pêche lagunaire, en fait un lieu privilégié pour la commercialisation des produits halieutiques. Ce marché, qui s'anime très tôt le matin avec l'arrivée des pêcheurs et des grossistes, propose une impressionnante variété de produits : poissons de mer (capitaines, carpes, dorades, barracudas, thons, etc.), poissons de lagune (tilapias, mâchoirons, etc.), crustacés (crabes, crevettes, langoustes) et mollusques. On y trouve également différentes préparations : poissons frais, fumés, séchés ou fermentés. Le marché est organisé en plusieurs sections, avec des zones spécifiques pour chaque type de produit et mode de préparation. Il attire une clientèle diverse, des ménagères aux restaurateurs, en passant par les revendeuses qui approvisionnent d'autres marchés de la ville. Outre son importance économique, le marché aux poissons de Treichville constitue un lieu d'échanges culturels et un témoignage vivant des traditions de pêche des populations lagunaires et côtières de Côte d'Ivoire."
+          },
+          {
+            "id": 30,
+            "question": "Quel est le chef-lieu de la région du Worodougou ?",
+            "options": [
+              "Mankono",
+              "Séguéla",
+              "Kani",
+              "Dianra"
+            ],
+            "correctAnswer": 1,
+            "explanation": "Séguéla est le chef-lieu de la région du Worodougou, située dans le nord-ouest de la Côte d'Ivoire.",
+            "examples": "Séguéla est connue pour ses gisements de diamant et pour être un centre commercial important dans le nord-ouest ivoirien, notamment pour la noix de cajou.",
+            "usefulLinks": [
+              "https://www.gouv.ci/gouvernement/region/32"
+            ],
+            "detailedExplanation": "La région du Worodougou est située dans le nord-ouest de la Côte d'Ivoire, couvrant une superficie d'environ 14 000 km². Elle comprend deux départements principaux : Séguéla (chef-lieu régional) et Mankono. La ville de Séguéla est située à environ 570 km au nord-ouest d'Abidjan. Cette région est caractérisée par un climat tropical de transition entre le climat soudanien au nord et le climat guinéen au sud, avec une saison sèche marquée (novembre à avril) et une saison des pluies (mai à octobre). Le paysage est dominé par la savane arborée avec des forêts galeries le long des cours d'eau. La population est majoritairement d'ethnie Malinké (Dioula) et Sénoufo, pratiquant principalement l'islam. L'économie régionale repose sur l'agriculture (coton, anacarde, mangue, cultures vivrières), l'élevage et surtout l'extraction minière. Séguéla est particulièrement connue pour ses gisements diamantifères découverts dans les années 1960, qui ont contribué à son développement économique mais ont également été à l'origine de tensions pendant la crise politico-militaire ivoirienne. La région possède également des gisements d'or exploités de manière artisanale et industrielle. La ville de Séguéla constitue un carrefour commercial important entre le nord et l'ouest du pays, avec un grand marché hebdomadaire qui attire des commerçants de toute la région et des pays voisins. La région dispose d'un patrimoine culturel riche avec notamment les danses traditionnelles malinké, la musique du balafon et l'artisanat local (tissage, vannerie, forge)."
+          },
+          {
+            "id": 31,
+            "question": "Quelle commune du district d'Abidjan abrite l'Université Félix Houphouët-Boigny ?",
+            "options": [
+              "Abobo",
+              "Cocody",
+              "Bingerville",
+              "Plateau"
+            ],
+            "correctAnswer": 1,
+            "explanation": "La commune de Cocody abrite l'Université Félix Houphouët-Boigny, la plus ancienne et la plus grande université du pays, anciennement connue sous le nom d'Université d'Abidjan.",
+            "examples": "Le campus principal de l'Université Félix Houphouët-Boigny s'étend sur plusieurs dizaines d'hectares dans la commune de Cocody et accueille plus de 60 000 étudiants dans diverses disciplines.",
+            "usefulLinks": [
+              "https://www.univ-fhb.edu.ci/"
+            ],
+            "detailedExplanation": "La commune de Cocody est située dans la partie est du district d'Abidjan, s'étendant sur une superficie d'environ 132 km². Elle est considérée comme le quartier résidentiel haut de gamme de la capitale économique ivoirienne. L'Université Félix Houphouët-Boigny, fondée en 1964 sous le nom d'Université d'Abidjan et rebaptisée en l'honneur du premier président de la Côte d'Ivoire en 2012, est implantée dans le quartier de Cocody. Son campus principal, communément appelé 'Campus de Cocody', s'étend sur une superficie d'environ 200 hectares au bord de la lagune Ébrié. L'université comprend plusieurs unités de formation et de recherche (UFR) couvrant un large éventail de disciplines : sciences humaines et sociales, sciences juridiques et politiques, sciences économiques et de gestion, sciences médicales, sciences des structures de la matière et technologie, biosciences, sciences de la terre et des ressources minières, etc. Elle dispose également de nombreuses infrastructures : bibliothèque universitaire centrale, centre de calcul, restaurant universitaire, cités universitaires, installations sportives, etc. Avec plus de 60 000 étudiants, c'est la plus grande université du pays et l'une des plus importantes d'Afrique francophone. Elle joue un rôle crucial dans la formation des élites intellectuelles et professionnelles de la Côte d'Ivoire et attire également de nombreux étudiants étrangers, principalement d'Afrique de l'Ouest. Outre l'Université Félix Houphouët-Boigny, Cocody abrite également d'autres établissements d'enseignement supérieur comme l'École Normale Supérieure (ENS) et plusieurs grandes écoles et universités privées."
+          },
+          {
+            "id": 32,
+            "question": "Quel est le chef-lieu de la région du Folon ?",
+            "options": [
+              "Kaniasso",
+              "Madinani",
+              "Minignan",
+              "Touba"
+            ],
+            "correctAnswer": 2,
+            "explanation": "Minignan est le chef-lieu de la région du Folon, située à l'extrême nord-ouest de la Côte d'Ivoire, à la frontière avec la Guinée et le Mali.",
+            "examples": "Minignan est une ville frontalière connue pour son commerce transfrontalier avec la Guinée et le Mali, ainsi que pour sa production d'anacarde et ses sites naturels montagneux.",
+            "usefulLinks": [
+              "https://www.gouv.ci/gouvernement/region/12"
+            ],
+            "detailedExplanation": "La région du Folon est située à l'extrême nord-ouest de la Côte d'Ivoire, à la frontière avec la Guinée et le Mali. Elle s'étend sur une superficie d'environ 3 600 km². La région comprend deux départements : Minignan (chef-lieu régional) et Kaniasso. La ville de Minignan est située à environ 900 km au nord-ouest d'Abidjan, dans une zone montagneuse. Cette région est caractérisée par un climat tropical sec de type soudano-guinéen avec une longue saison sèche (octobre à mai) et une courte saison des pluies (juin à septembre). Le paysage est marqué par la savane arborée et des reliefs montagneux, notamment le mont Tougoukoli qui culmine à 650 mètres d'altitude. La population est majoritairement d'ethnie Malinké (Dioula), pratiquant en grande partie l'islam. L'économie de la région repose principalement sur l'agriculture (coton, anacarde, mangue, cultures vivrières comme le mil, le sorgho et le maïs), l'élevage (bovins, ovins, caprins) et le commerce transfrontalier avec la Guinée et le Mali. La ville de Minignan constitue un petit centre commercial pour cette zone frontalière, avec un marché hebdomadaire qui attire des commerçants des pays voisins. Malgré sa position périphérique et son relatif enclavement, la région possède un potentiel touristique grâce à ses paysages montagneux, ses chutes d'eau et sa biodiversité. Elle dispose également d'un potentiel minier (or, fer) encore peu exploité. La région a été particulièrement touchée par la crise politico-militaire ivoirienne de 2002-2011, étant située dans l'ancienne zone sous contrôle des Forces Nouvelles."
+          },
+          {
+            "id": 33,
+            "question": "Quelle commune du district d'Abidjan est connue pour son quartier Biafra, important centre du textile ?",
+            "options": [
+              "Treichville",
+              "Abobo",
+              "Adjamé",
+              "Marcory"
+            ],
+            "correctAnswer": 0,
+            "explanation": "La commune de Treichville est connue pour son quartier Biafra qui est un important centre du commerce textile en Côte d'Ivoire.",
+            "examples": "Le quartier Biafra de Treichville est réputé pour ses nombreuses boutiques et ateliers de confection textile, où l'on trouve aussi bien des tissus traditionnels africains que des textiles importés d'Asie et d'Europe.",
+            "usefulLinks": [
+              "https://abidjan.district.ci/"
+            ],
+            "detailedExplanation": "La commune de Treichville est située dans la partie sud du district d'Abidjan, sur l'île de Petit-Bassam entre la lagune Ébrié et l'océan Atlantique. Elle couvre une superficie d'environ 9 km². L'un de ses quartiers les plus connus est Biafra, qui s'est développé comme un centre majeur du commerce textile en Côte d'Ivoire. Le quartier Biafra tire son nom des événements historiques liés à la guerre civile nigériane (1967-1970), période durant laquelle de nombreux commerçants originaires de l'est du Nigeria se sont installés dans cette zone. Au fil des décennies, ce quartier s'est imposé comme une référence dans le secteur textile à Abidjan et même à l'échelle nationale. Il est caractérisé par une forte concentration de boutiques, d'entrepôts et d'ateliers spécialisés dans le commerce et la transformation de textiles divers. On y trouve une impressionnante variété de produits : tissus traditionnels africains (wax, basin, kente, bogolan), textiles importés d'Asie et d'Europe, matériel de couture et de mercerie, vêtements confectionnés, etc. Le quartier attire une clientèle très diverse, des particuliers aux professionnels du secteur (tailleurs, stylistes, décorateurs), et constitue également un pôle d'approvisionnement pour les commerçants venus d'autres régions de Côte d'Ivoire et des pays voisins. Outre son importance économique, Biafra est également un lieu d'innovations dans la mode africaine, avec de nombreux créateurs qui y puisent leur inspiration et leurs matières premières. Le quartier contribue significativement à l'animation urbaine de Treichville, avec ses rues commerçantes animées et ses nombreux ateliers de couture où résonnent le bruit des machines à coudre et les discussions entre clients et vendeurs."
+          },
+          {
+            "id": 34,
+            "question": "Quel est le chef-lieu de la région du Hambol ?",
+            "options": [
+              "Katiola",
+              "Dabakala",
+              "Niakara",
+              "Tafiré"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Katiola est le chef-lieu de la région du Hambol, située dans le centre-nord de la Côte d'Ivoire.",
+            "examples": "Katiola est connue comme le centre de la tradition potière mangoro et pour son centre artisanal qui valorise cet art ancestral transmis de mère en fille.",
+            "usefulLinks": [
+              "https://www.gouv.ci/gouvernement/region/16"
+            ],
+            "detailedExplanation": "La région du Hambol est située dans le centre-nord de la Côte d'Ivoire, s'étendant sur une superficie d'environ 15 200 km². Elle comprend trois départements : Katiola (chef-lieu régional), Dabakala et Niakara. La ville de Katiola est située à environ 440 km au nord d'Abidjan, sur l'axe routier et ferroviaire reliant Abidjan à Ouagadougou. Cette région est caractérisée par un climat tropical de transition entre le climat soudanien et le climat baouléen, avec une saison sèche (novembre à février), une grande saison des pluies (mars à juin), une petite saison sèche (juillet à août) et une petite saison des pluies (septembre à octobre). Le paysage est dominé par la savane arborée entrecoupée de forêts galeries le long des cours d'eau. La population est diversifiée ethniquement, avec une prédominance des Tagbana et des Mangoro à Katiola, des Djimini à Dabakala et des Tagouana à Niakara. Ces groupes font partie de l'ensemble culturel sénoufo au sens large. L'économie régionale repose principalement sur l'agriculture (igname, manioc, coton, anacarde, mangue), l'élevage et l'artisanat. Katiola est particulièrement réputée pour son artisanat potier, une tradition ancestrale perpétuée par les femmes mangoro et tagbana qui fabriquent des poteries aux formes et aux décors caractéristiques. Le Centre Artisanal de Katiola, créé pour valoriser et promouvoir cet artisanat, attire de nombreux visiteurs. La région a connu un développement économique limité comparé à d'autres régions ivoiriennes, en partie en raison de son enclavement relatif et des conséquences de la crise politico-militaire de 2002-2011, la région ayant été située dans la zone sous contrôle des Forces Nouvelles."
+          },
+          {
+            "id": 35,
+            "question": "Quelle commune du district d'Abidjan héberge le stade Félix Houphouët-Boigny ?",
+            "options": [
+              "Cocody",
+              "Yopougon",
+              "Plateau",
+              "Marcory"
+            ],
+            "correctAnswer": 2,
+            "explanation": "La commune du Plateau héberge le stade Félix Houphouët-Boigny, communément appelé 'Le Félicia', qui est le plus ancien grand stade de Côte d'Ivoire.",
+            "examples": "Le stade Félix Houphouët-Boigny, d'une capacité d'environ 35 000 places, a longtemps été le stade principal de l'équipe nationale de football de Côte d'Ivoire avant la construction du stade Olympique d'Ebimpé.",
+            "usefulLinks": [
+              "https://abidjan.district.ci/"
+            ],
+            "detailedExplanation": "La commune du Plateau est située au centre du district d'Abidjan, s'étendant sur une superficie d'environ 3 km². Elle constitue le centre administratif, politique et financier de la Côte d'Ivoire. Le stade Félix Houphouët-Boigny, surnommé 'Le Félicia', est situé dans la partie sud de cette commune, à proximité de la lagune Ébrié. Construit en 1964 et nommé en l'honneur du premier président de la Côte d'Ivoire, ce stade a une capacité d'environ 35 000 spectateurs. Il a été rénové à plusieurs reprises, notamment pour la Coupe d'Afrique des Nations (CAN) organisée par la Côte d'Ivoire en 1984. Pendant plusieurs décennies, le stade Félix Houphouët-Boigny a été le principal lieu de rencontre pour les matchs internationaux de l'équipe nationale de football de Côte d'Ivoire (les Éléphants), ainsi que pour les grands clubs abidjanais comme l'ASEC Mimosas et l'Africa Sports. Il a également accueilli de nombreux événements sportifs internationaux et des manifestations culturelles et politiques d'envergure. Avec la construction du stade Olympique d'Ebimpé (60 000 places) dans la commune d'Anyama en 2020, le stade Félix Houphouët-Boigny a perdu son statut de principal stade national, mais il reste un lieu emblématique du sport ivoirien et continue d'accueillir des rencontres de championnat national. Sa position centrale dans la ville en fait un équipement sportif facilement accessible, bien que cette situation en plein cœur du quartier d'affaires pose parfois des problèmes de circulation les jours de match."
+          },
+          {
+            "id": 36,
+            "question": "Quel est le chef-lieu de la région du Cavally ?",
+            "options": [
+              "Toulepleu",
+              "Guiglo",
+              "Taï",
+              "Bloléquin"
+            ],
+            "correctAnswer": 1,
+            "explanation": "Guiglo est le chef-lieu de la région du Cavally, située dans l'ouest de la Côte d'Ivoire, à la frontière avec le Liberia.",
+            "examples": "Guiglo est une ville située sur les rives du fleuve Sassandra et connue pour sa proximité avec le Parc national de Taï, l'une des dernières grandes forêts primaires d'Afrique de l'Ouest.",
+            "usefulLinks": [
+              "https://www.gouv.ci/gouvernement/region/10"
+            ],
+            "detailedExplanation": "La région du Cavally est située dans l'ouest de la Côte d'Ivoire, à la frontière avec le Liberia. Elle s'étend sur une superficie d'environ 8 500 km². La région comprend quatre départements : Guiglo (chef-lieu régional), Bloléquin, Taï et Toulepleu. La ville de Guiglo est située à environ 600 km à l'ouest d'Abidjan, sur les rives du fleuve Sassandra. Cette région est caractérisée par un climat subéquatorial très humide avec une pluviométrie annuelle dépassant 1 800 mm. La végétation originelle est la forêt dense humide sempervirente, aujourd'hui partiellement défrichée pour l'agriculture mais encore bien préservée dans le Parc national de Taï. La population est composée principalement des ethnies Guéré (We), Wobé et Yacouba, avec une présence importante de migrants internes (notamment Baoulé) et internationaux (Burkinabés, Libériens). L'économie régionale repose essentiellement sur l'agriculture (café, cacao, hévéa, palmier à huile, cultures vivrières), l'exploitation forestière et, dans une moindre mesure, le tourisme lié au Parc national de Taï. Ce parc, inscrit au patrimoine mondial de l'UNESCO, est l'une des dernières grandes forêts primaires d'Afrique de l'Ouest et abrite une biodiversité exceptionnelle, notamment des espèces menacées comme le chimpanzé et l'hippopotame pygmée. La région a été particulièrement touchée par les crises politiques et les conflits armés qu'a connus la Côte d'Ivoire, notamment en raison de sa situation frontalière avec le Liberia. Ces événements ont exacerbé les tensions foncières entre populations autochtones et migrants, et ont entraîné des déplacements massifs de population et des destructions d'infrastructures."
+          }
+    ]
+}
