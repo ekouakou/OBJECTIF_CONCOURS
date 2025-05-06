@@ -13,15 +13,15 @@
         "questions": "QCMSportQuestion2023"
       },
       {
-        "title": "Connait tu la côte d'ivoire ",
+        "title": "Connait tu la côte d'ivoire ?",
         "questions": "qcmGeographieCoteIvoire"
       },
       {
-        "title": "Connait tu la côte d'ivoire ",
+        "title": "Connait tu les communes de côte d'ivoire ?",
         "questions": "qcmDistrictsCommunesCoteIvoire"
       },
       {
-        "title": "Connait tu la côte d'ivoire ",
+        "title": "Connait tu les gouvernneur des districte de la CI ? ",
         "questions": "qcmMinisterGouverneurCI"
       }
     ]
