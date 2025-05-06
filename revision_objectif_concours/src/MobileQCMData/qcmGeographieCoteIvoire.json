@@ -1,0 +1,353 @@
+{
+    "qcmGeographieCoteIvoire": [
+      {
+        "id": 1,
+        "question": "Quel est le district le plus peuplé de la Côte d'Ivoire ?",
+        "options": [
+          "District d'Abidjan",
+          "District de Yamoussoukro",
+          "District des Montagnes",
+          "District du Bas-Sassandra"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Le District d'Abidjan est le plus peuplé de la Côte d'Ivoire avec environ 5 millions d'habitants, représentant près de 20% de la population totale du pays.",
+        "examples": "Abidjan est souvent surnommée la 'Manhattan d'Afrique' en raison de ses gratte-ciels et de son dynamisme économique. Le district abrite le port autonome d'Abidjan, l'un des plus importants d'Afrique de l'Ouest.",
+        "usefulLinks": [
+          "https://abidjan.district.ci/",
+          "https://www.gouv.ci/gouvernement/organismes/7"
+        ],
+        "detailedExplanation": "Le District d'Abidjan est situé au sud-est de la Côte d'Ivoire, en bordure du Golfe de Guinée et de la lagune Ébrié. Il s'étend sur une superficie d'environ 2 119 km². Le district comprend 13 communes : Abobo, Adjamé, Attécoubé, Cocody, Koumassi, Marcory, Plateau, Port-Bouët, Treichville, Yopougon, Bingerville, Songon et Anyama. En tant que capitale économique de la Côte d'Ivoire, Abidjan concentre la majorité des activités économiques, financières et commerciales du pays. Le district est caractérisé par une forte urbanisation, un réseau de transports développé et une importante infrastructure portuaire et industrielle. La région bénéficie d'un climat tropical humide avec deux saisons des pluies (mai-juillet et octobre-novembre) et deux saisons sèches."
+      },
+      {
+        "id": 2,
+        "question": "Quelle est la région administrative qui abrite la capitale politique de la Côte d'Ivoire ?",
+        "options": [
+          "Région du Bélier",
+          "Région des Lagunes",
+          "Région du Gbêkê",
+          "Région du Yamoussoukro"
+        ],
+        "correctAnswer": 0,
+        "explanation": "La Région du Bélier, dont le chef-lieu est Yamoussoukro, abrite la capitale politique de la Côte d'Ivoire depuis 1983.",
+        "examples": "Yamoussoukro est célèbre pour la Basilique Notre-Dame de la Paix, la plus grande basilique chrétienne au monde, inspirée de la Basilique Saint-Pierre de Rome mais légèrement plus grande.",
+        "usefulLinks": [
+          "https://www.gouv.ci/gouvernement/region/8"
+        ],
+        "detailedExplanation": "La Région du Bélier est située dans le centre de la Côte d'Ivoire. Elle s'étend sur une superficie d'environ 6 366 km². La région comprend quatre départements : Yamoussoukro, Didiévi, Tiébissou et Toumodi. Le nom 'Bélier' fait référence à un animal symbolique dans la culture baoulé, l'ethnie majoritaire de cette région. Cette zone est caractérisée par un relief de plateaux et de plaines, avec une végétation de savane arborée et de forêt mésophile. L'économie régionale repose principalement sur l'agriculture (café, cacao, igname, manioc) et l'élevage. Yamoussoukro, devenue capitale politique en 1983 sous la présidence de Félix Houphouët-Boigny (originaire de cette région), abrite plusieurs institutions importantes comme la Fondation Félix Houphouët-Boigny pour la recherche de la paix et l'Institut National Polytechnique Houphouët-Boigny."
+      },
+      {
+        "id": 3,
+        "question": "Quel département est situé à l'extrême ouest de la Côte d'Ivoire et partage une frontière avec le Liberia ?",
+        "options": [
+          "Département de Tabou",
+          "Département de Guiglo",
+          "Département de Toulepleu",
+          "Département de Danané"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Le Département de Toulepleu est situé à l'extrême ouest de la Côte d'Ivoire et partage une longue frontière avec le Liberia.",
+        "examples": "Cette zone frontalière a connu d'importants mouvements de population pendant les crises politiques ivoiriennes et la guerre civile libérienne dans les années 1990-2000.",
+        "usefulLinks": [
+          "https://www.gouv.ci/gouvernement/region/32"
+        ],
+        "detailedExplanation": "Le Département de Toulepleu est situé dans la région du Cavally, à l'ouest de la Côte d'Ivoire. Il s'étend sur une superficie d'environ 2 805 km². Le chef-lieu est la ville de Toulepleu. Le département comprend les sous-préfectures de Toulepleu, Bakoubli, Tiobly, Péhé et Sahibly. Cette région est caractérisée par une végétation de forêt dense humide, typique de la région ouest du pays. Le climat y est subéquatorial avec une pluviométrie abondante. La population est principalement composée des ethnies Guéré, Yacouba et Wê. L'économie du département repose essentiellement sur l'agriculture, avec la culture du cacao, du café, de l'hévéa et du palmier à huile, ainsi que des cultures vivrières comme le riz, le manioc et la banane plantain. Sa position frontalière en fait un lieu d'échanges commerciaux importants mais l'a également rendu vulnérable aux instabilités politiques régionales."
+      },
+      {
+        "id": 4,
+        "question": "Quelle sous-préfecture de la région du Gbôklé est connue pour son important port de pêche ?",
+        "options": [
+          "Sous-préfecture de Sassandra",
+          "Sous-préfecture de Fresco",
+          "Sous-préfecture de Grand-Lahou",
+          "Sous-préfecture de San-Pédro"
+        ],
+        "correctAnswer": 0,
+        "explanation": "La sous-préfecture de Sassandra, dans la région du Gbôklé, est connue pour son important port de pêche qui constitue une source majeure d'activité économique pour la localité.",
+        "examples": "Sassandra est également réputée pour ses plages, ses cocoteraies et son embouchure fluviale qui forme un paysage spectaculaire où le fleuve Sassandra se jette dans l'océan Atlantique.",
+        "usefulLinks": [
+          "https://www.gouv.ci/gouvernement/region/14"
+        ],
+        "detailedExplanation": "La sous-préfecture de Sassandra est située dans le sud-ouest de la Côte d'Ivoire, dans la région du Gbôklé dont elle est le chef-lieu. Elle est bordée au sud par l'océan Atlantique et traversée par le fleuve Sassandra qui lui donne son nom. Cette localité côtière bénéficie d'un climat subéquatorial avec une végétation principalement forestière et des plantations de palmiers à huile et de cocotiers le long du littoral. Historiquement, Sassandra était un comptoir colonial important, et son port a joué un rôle significatif avant la construction du port de San-Pédro. Aujourd'hui, l'économie locale repose sur la pêche artisanale et industrielle, l'agriculture (cacao, café, palmier à huile, hévéa, cocotier) et le tourisme naissant. La population est composée de plusieurs groupes ethniques dont les Godié, les Neyo et les Bakwé. La région est également connue pour sa biodiversité avec notamment la présence du Parc national de Gaoulou à proximité."
+      },
+      {
+        "id": 5,
+        "question": "Quel district du nord de la Côte d'Ivoire partage des frontières avec le Mali et le Burkina Faso ?",
+        "options": [
+          "District du Denguélé",
+          "District des Savanes",
+          "District du Woroba",
+          "District de la Vallée du Bandama"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Le District des Savanes, situé à l'extrême nord de la Côte d'Ivoire, partage des frontières avec le Mali et le Burkina Faso.",
+        "examples": "Ce district est connu pour la ville de Korhogo, important centre commercial et artisanal du nord ivoirien, réputé notamment pour son artisanat de tissage et de teinture.",
+        "usefulLinks": [
+          "https://www.gouv.ci/gouvernement/region/26"
+        ],
+        "detailedExplanation": "Le District des Savanes est situé à l'extrême nord de la Côte d'Ivoire et s'étend sur une superficie d'environ 40 323 km². Il est composé de quatre régions administratives : le Poro (chef-lieu : Korhogo), le Tchologo (chef-lieu : Ferkessédougou), la Bagoué (chef-lieu : Boundiali) et le Folon (chef-lieu : Minignan). La région est caractérisée par un climat tropical sec de type soudanais avec une longue saison sèche (octobre à mai) et une courte saison des pluies (juin à septembre). Le paysage est dominé par la savane arborée et arbustive. L'économie du district repose principalement sur l'agriculture (coton, anacarde, mangue, riz), l'élevage (bovins, ovins, caprins) et l'artisanat. La population est majoritairement composée des ethnies Sénoufo, Malinké et Lobi. Le district est traversé par d'importantes voies de communication reliant la Côte d'Ivoire aux pays sahéliens, ce qui en fait une zone stratégique pour le commerce transfrontalier."
+      },
+      {
+        "id": 6,
+        "question": "Quelle région administrative de Côte d'Ivoire est connue pour la production de diamants ?",
+        "options": [
+          "Région du Tonkpi",
+          "Région du Lôh-Djiboua",
+          "Région du Gôh",
+          "Région du Guémon"
+        ],
+        "correctAnswer": 0,
+        "explanation": "La Région du Tonkpi, située à l'ouest de la Côte d'Ivoire, est connue pour ses gisements de diamants, notamment autour de la ville de Séguéla.",
+        "examples": "Les mines de diamants de Tortiya et de Séguéla ont contribué à faire de cette région un centre important pour l'extraction de diamants alluviaux en Côte d'Ivoire.",
+        "usefulLinks": [
+          "https://www.gouv.ci/gouvernement/region/31"
+        ],
+        "detailedExplanation": "La Région du Tonkpi est située dans l'ouest montagneux de la Côte d'Ivoire, à la frontière avec la Guinée et le Liberia. Elle s'étend sur une superficie d'environ 12 295 km². Son chef-lieu est la ville de Man, surnommée 'la ville aux 18 montagnes' en raison du relief accidenté qui caractérise la région. Le Tonkpi comprend six départements : Man, Biankouma, Danané, Sipilou, Zouan-Hounien et Kouibly. Cette région est caractérisée par un climat de montagne plus frais que dans le reste du pays, avec une végétation de forêt dense et de savane d'altitude. Outre l'exploitation diamantifère, l'économie de la région repose sur l'agriculture (café, cacao, riz, cultures maraîchères), l'exploitation forestière et le tourisme. La région abrite les plus hauts sommets du pays, dont le Mont Nimba (1 752 m) et le Mont Tonkoui (1 189 m), ainsi que de nombreuses cascades comme les Cascades de Man. La population est majoritairement composée des ethnies Dan (Yacouba) et Wê."
+      },
+      {
+        "id": 7,
+        "question": "Quel département de la région du Sud-Comoé est connu pour sa lagune et son importance dans l'écotourisme ?",
+        "options": [
+          "Département d'Aboisso",
+          "Département d'Adiaké",
+          "Département de Grand-Bassam",
+          "Département de Tiapoum"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Le Département d'Adiaké, dans la région du Sud-Comoé, est connu pour sa lagune Aby et son importance croissante dans l'écotourisme ivoirien.",
+        "examples": "La lagune Aby est célèbre pour le village sur pilotis de Tiagba et pour les éléphants d'eau qui peuvent parfois être observés dans cette zone humide protégée.",
+        "usefulLinks": [
+          "https://www.gouv.ci/gouvernement/region/29"
+        ],
+        "detailedExplanation": "Le Département d'Adiaké est situé dans le sud-est de la Côte d'Ivoire, dans la région du Sud-Comoé. Il s'étend sur une superficie d'environ 1 260 km². Le chef-lieu est la ville d'Adiaké. Le département comprend les sous-préfectures d'Adiaké, d'Assinie-Mafia, d'Etuéboué et de Bianou. Cette région lagunaire est caractérisée par un climat subéquatorial très humide avec deux saisons des pluies. La végétation est composée de forêts littorales, de mangroves et de zones marécageuses. La lagune Aby, qui couvre environ 424 km², constitue un écosystème riche en biodiversité avec de nombreuses espèces de poissons, d'oiseaux et de mammifères aquatiques. L'économie locale repose sur la pêche lagunaire et maritime, l'agriculture (palmier à huile, cocotier, manioc, banane plantain) et le tourisme écologique en développement. La population est principalement composée des ethnies N'zima (Apolloniens), Éotilé, Essouma et Agni. Le département abrite également le Parc national des Îles Éhotilés, un ensemble d'îles lagunaires classées site Ramsar (zone humide d'importance internationale)."
+      },
+      {
+        "id": 8,
+        "question": "Quelle sous-préfecture du département de Katiola est connue pour son artisanat de poterie traditionnelle ?",
+        "options": [
+          "Sous-préfecture de Fronan",
+          "Sous-préfecture de Timbé",
+          "Sous-préfecture de Niakaramadougou",
+          "Sous-préfecture de Katiola"
+        ],
+        "correctAnswer": 3,
+        "explanation": "La sous-préfecture de Katiola, dans le département du même nom, est célèbre dans tout le pays pour son artisanat de poterie traditionnelle réalisé par les femmes mangoro.",
+        "examples": "Les potières de Katiola perpétuent un savoir-faire ancestral transmis de mère en fille, produisant des canaris, des marmites et des objets décoratifs qui sont vendus dans tout le pays.",
+        "usefulLinks": [
+          "https://www.gouv.ci/gouvernement/region/17"
+        ],
+        "detailedExplanation": "La sous-préfecture de Katiola est située dans le centre-nord de la Côte d'Ivoire, dans la région du Hambol dont elle est le chef-lieu. Elle se trouve à environ 400 km d'Abidjan. La zone est caractérisée par un climat tropical de transition entre le sud forestier et le nord sahélien, avec une végétation de savane arborée. La sous-préfecture s'étend autour de la ville de Katiola, important carrefour commercial entre le nord et le sud du pays. La population est majoritairement composée de l'ethnie Tagbana (sous-groupe Sénoufo) et de Mangoro. L'économie locale repose sur l'agriculture (igname, manioc, coton, anacarde), l'élevage et l'artisanat. La poterie de Katiola est particulièrement renommée et constitue un élément important du patrimoine culturel ivoirien. Les poteries sont fabriquées selon des techniques traditionnelles utilisant l'argile locale et des outils rudimentaires, puis cuites dans des fours à ciel ouvert. La production est essentiellement féminine et s'inscrit dans une tradition séculaire qui se transmet de génération en génération."
+      },
+      {
+        "id": 9,
+        "question": "Quel département de la région du Gontougo est frontalier avec le Ghana ?",
+        "options": [
+          "Département de Bondoukou",
+          "Département de Tanda",
+          "Département de Transua",
+          "Département de Koun-Fao"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Le Département de Bondoukou, dans la région du Gontougo, partage une frontière orientale avec le Ghana.",
+        "examples": "Bondoukou est une ville historique qui a été un important carrefour commercial entre l'empire Ashanti (Ghana actuel) et les royaumes du nord de la Côte d'Ivoire, ce qui explique sa richesse culturelle et son architecture traditionnelle.",
+        "usefulLinks": [
+          "https://www.gouv.ci/gouvernement/region/15"
+        ],
+        "detailedExplanation": "Le Département de Bondoukou est situé à l'est de la Côte d'Ivoire, dans la région du Gontougo dont il est le chef-lieu. Il s'étend sur une superficie d'environ 7 600 km². Le département comprend les sous-préfectures de Bondoukou, Tabagne, Sorobango, Yézimala, Sapli et Bondo. Cette région frontalière est caractérisée par un climat tropical humide avec deux saisons des pluies et une végétation de savane arborée et de forêt claire. Le relief est dominé par des plateaux et des collines. La population est multiculturelle, composée principalement des ethnies Koulango, Abron, Lobi et Dioula. L'économie du département repose sur l'agriculture (igname, manioc, maïs, anacarde), l'élevage et le commerce transfrontalier avec le Ghana. Bondoukou est une ville historique qui a été un important centre commercial et religieux depuis le 17ème siècle. Elle conserve un riche patrimoine architectural avec ses mosquées anciennes et ses maisons traditionnelles. La ville est également connue pour ses festivals culturels, notamment le Sakahou, célébration de la nouvelle année dans la tradition abron."
+      },
+      {
+        "id": 10,
+        "question": "Quelle région administrative abrite le Parc National de Taï, inscrit au patrimoine mondial de l'UNESCO ?",
+        "options": [
+          "Région de San-Pedro",
+          "Région de la Nawa",
+          "Région du Cavally",
+          "Région du Guémon"
+        ],
+        "correctAnswer": 2,
+        "explanation": "La Région du Cavally, située dans l'ouest de la Côte d'Ivoire, abrite une grande partie du Parc National de Taï, la plus grande forêt tropicale primaire protégée d'Afrique de l'Ouest et site du patrimoine mondial de l'UNESCO.",
+        "examples": "Le Parc National de Taï est l'un des derniers refuges pour de nombreuses espèces menacées comme le chimpanzé d'Afrique occidentale, l'hippopotame pygmée et le léopard.",
+        "usefulLinks": [
+          "https://whc.unesco.org/fr/list/195/",
+          "https://www.gouv.ci/gouvernement/region/32"
+        ],
+        "detailedExplanation": "La Région du Cavally est située dans l'ouest de la Côte d'Ivoire, à la frontière avec le Liberia. Elle s'étend sur une superficie d'environ 15 180 km². Son chef-lieu est la ville de Guiglo. La région comprend quatre départements : Guiglo, Bloléquin, Toulepleu et Taï. Cette zone est caractérisée par un climat subéquatorial très humide avec une pluviométrie annuelle dépassant souvent 2 000 mm. Le Parc National de Taï, qui s'étend sur environ 536 000 hectares entre les régions du Cavally et de San-Pedro, représente l'un des derniers grands blocs intacts de forêt tropicale primaire en Afrique de l'Ouest. Il abrite une biodiversité exceptionnelle avec plus de 1 300 espèces de plantes supérieures, 230 espèces d'oiseaux et 54 espèces de mammifères, dont certaines sont endémiques à la région. L'économie de la région repose principalement sur l'agriculture (cacao, café, hévéa, palmier à huile), l'exploitation forestière et, de plus en plus, l'écotourisme lié au parc. La population est principalement composée des ethnies Guéré, Wê et Krahn."
+      },
+      {
+        "id": 11,
+        "question": "Quel district abrite le plus grand barrage hydroélectrique de Côte d'Ivoire ?",
+        "options": [
+          "District de la Vallée du Bandama",
+          "District des Montagnes",
+          "District du Sassandra-Marahoué",
+          "District des Lacs"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Le District de la Vallée du Bandama abrite le barrage de Kossou, le plus grand barrage hydroélectrique de Côte d'Ivoire, construit sur le fleuve Bandama.",
+        "examples": "Le lac de Kossou, créé par ce barrage, est le plus grand lac artificiel du pays avec une superficie de 1 700 km² et joue un rôle important dans la production électrique nationale.",
+        "usefulLinks": [
+          "https://www.gouv.ci/gouvernement/region/11"
+        ],
+        "detailedExplanation": "Le District de la Vallée du Bandama est situé dans le centre de la Côte d'Ivoire. Il s'étend sur une superficie d'environ 28 518 km². Le district comprend deux régions administratives : le Gbêkê (chef-lieu : Bouaké) et le Hambol (chef-lieu : Katiola). Il tire son nom du fleuve Bandama qui le traverse du nord au sud. Cette région est caractérisée par un climat tropical de transition avec une végétation de savane arborée et de forêt claire. Le barrage de Kossou, construit entre 1969 et 1973, est un ouvrage majeur qui a transformé le paysage et l'économie régionale. D'une puissance installée de 174 MW, il fournit une part importante de l'électricité du pays. Sa construction a nécessité le déplacement d'environ 75 000 personnes, principalement d'ethnie Baoulé, et la création de nouveaux villages autour du lac. Aujourd'hui, le lac de Kossou est aussi un lieu important pour la pêche artisanale et commence à développer des activités touristiques. L'économie du district repose sur l'agriculture (coton, anacarde, igname, manioc), l'élevage, la pêche et l'industrie, notamment dans la ville de Bouaké, deuxième plus grande ville du pays."
+      },
+      {
+        "id": 12,
+        "question": "Quelle sous-préfecture de la région du Moronou est connue pour sa tradition de fabrication de pagne traditionnel baoulé ?",
+        "options": [
+          "Sous-préfecture de Bongouanou",
+          "Sous-préfecture d'Arrah",
+          "Sous-préfecture de Kotobi",
+          "Sous-préfecture de M'Batto"
+        ],
+        "correctAnswer": 0,
+        "explanation": "La sous-préfecture de Bongouanou, dans la région du Moronou, est réputée pour sa tradition de fabrication de pagne baoulé, tissu traditionnel aux motifs géométriques colorés.",
+        "examples": "Le pagne baoulé de Bongouanou, tissé traditionnellement par les hommes sur des métiers à tisser horizontaux, est particulièrement prisé lors des cérémonies importantes comme les mariages et les funérailles.",
+        "usefulLinks": [
+          "https://www.gouv.ci/gouvernement/region/21"
+        ],
+        "detailedExplanation": "La sous-préfecture de Bongouanou est située dans l'est de la Côte d'Ivoire, dans la région du Moronou dont elle est le chef-lieu. Elle s'étend autour de la ville de Bongouanou, à environ 200 km au nord-est d'Abidjan. Cette zone est caractérisée par un climat tropical humide et une végétation de transition entre la forêt méridionale et la savane septentrionale. La population est majoritairement d'ethnie Agni (sous-groupe Akan), avec une importante communauté Baoulé. L'économie locale repose principalement sur l'agriculture (café, cacao, palmier à huile, hévéa, cultures vivrières) et l'artisanat. La fabrication traditionnelle de pagne baoulé constitue un élément important du patrimoine culturel de la région. Ces tissus, appelés 'Kita' en langue baoulé, sont fabriqués à partir de fils de coton teints naturellement et tissés en bandes étroites qui sont ensuite cousues ensemble. Les motifs géométriques complexes racontent souvent des histoires ou transmettent des proverbes. Cette activité artisanale, autrefois très répandue, tend aujourd'hui à se raréfier face à la concurrence des tissus industriels, mais des efforts de préservation et de valorisation sont entrepris."
+      },
+      {
+        "id": 13,
+        "question": "Quel département de la région du Kabadougou abrite les ruines de Kong, ancienne cité marchande et centre islamique ?",
+        "options": [
+          "Département d'Odienné",
+          "Département de Touba",
+          "Département de Séguélon",
+          "Département de Madinani"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Le Département d'Odienné, dans la région du Kabadougou, abrite les ruines de Kong, importante cité marchande et centre islamique qui a prospéré du 17ème au 19ème siècle.",
+        "examples": "Kong était un important carrefour commercial contrôlant les routes de commerce transsaharien et abritait des écoles coraniques renommées avant sa destruction par Samori Touré en 1897.",
+        "usefulLinks": [
+          "https://www.gouv.ci/gouvernement/region/16"
+        ],
+        "detailedExplanation": "Le Département d'Odienné est situé dans le nord-ouest de la Côte d'Ivoire, dans la région du Kabadougou dont il est le chef-lieu. Il s'étend sur une superficie d'environ 14 000 km², à la frontière avec la Guinée et le Mali. Le département comprend les sous-préfectures d'Odienné, Bako, Bougousso, Dioulatiedougou, Gbéléban et Tiémé. Cette région est caractérisée par un climat tropical sec de type soudanien, avec une longue saison sèche et une courte saison des pluies. Le paysage est dominé par la savane arborée et des inselbergs granitiques. La population est majoritairement d'ethnie Malinké (Dioula). L'économie du département repose sur l'agriculture (coton, anacarde, mangue, igname), l'élevage (bovins, ovins, caprins) et le commerce. Les ruines de Kong témoignent de l'importance historique de cette région qui abritait un royaume prospère fondé au 17ème siècle et devenu un centre commercial et religieux majeur en Afrique de l'Ouest précoloniale. La ville était célèbre pour son architecture soudanaise, ses mosquées et ses madrasas (écoles coraniques). Aujourd'hui, le site est un important lieu de mémoire et de tourisme culturel."
+      },
+      {
+        "id": 14,
+        "question": "Quelle région administrative de Côte d'Ivoire abrite la réserve naturelle de Lamto, célèbre pour ses recherches scientifiques sur la savane ?",
+        "options": [
+          "Région de l'Agnéby-Tiassa",
+          "Région du Bélier",
+          "Région du N'Zi",
+          "Région de l'Iffou"
+        ],
+        "correctAnswer": 0,
+        "explanation": "La Région de l'Agnéby-Tiassa abrite la réserve naturelle de Lamto, station de recherche écologique internationalement reconnue pour ses études sur l'écosystème de savane.",
+        "examples": "Créée en 1962, la station écologique de Lamto est un laboratoire à ciel ouvert qui a permis de nombreuses avancées scientifiques sur la biodiversité de la savane guinéenne et le cycle du carbone dans ces écosystèmes.",
+        "usefulLinks": [
+          "https://www.gouv.ci/gouvernement/region/4",
+          "http://www.lamto.cnrs.fr/"
+        ],
+        "detailedExplanation": "La Région de l'Agnéby-Tiassa est située dans le sud de la Côte d'Ivoire. Elle s'étend sur une superficie d'environ 9 080 km². Son chef-lieu est la ville d'Agboville. La région comprend les départements d'Agboville, Sikensi et Tiassalé. Cette zone est caractérisée par un climat subéquatorial avec quatre saisons distinctes et une végétation de forêt dense humide sempervirente entrecoupée de zones de savane, notamment dans sa partie nord. La réserve naturelle de Lamto, créée en 1962, est située près du village de Lamto dans le département de Tiassalé, en bordure du fleuve Bandama. Elle couvre une superficie de 2 500 hectares et constitue une zone de transition forêt-savane particulièrement intéressante pour la recherche scientifique. Depuis sa création, cette station écologique a accueilli des chercheurs du monde entier qui y ont mené des études à long terme sur la structure et le fonctionnement des écosystèmes de savane, la biodiversité, le cycle du carbone, et les impacts du changement climatique. La réserve abrite une faune diversifiée comprenant plus de 150 espèces d'oiseaux, de nombreux reptiles et mammifères. L'économie de la région repose principalement sur l'agriculture (café, cacao, hévéa, palmier à huile, banane plantain, cultures maraîchères) et l'exploitation forestière."
+      },
+      {
+        "id": 15,
+        "question": "Quel département de la région du Haut-Sassandra est le premier producteur de cacao de Côte d'Ivoire ?",
+        "options": [
+          "Département de Daloa",
+          "Département de Vavoua",
+          "Département d'Issia",
+          "Département de Zoukougbeu"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Le Département de Daloa, dans la région du Haut-Sassandra, est considéré comme le premier producteur de cacao de Côte d'Ivoire, contribuant significativement au statut du pays comme premier producteur mondial.",
+        "examples": "Daloa accueille chaque année la Fête du Cacao et du Chocolat, événement majeur qui célèbre l'importance de cette culture pour l'économie locale et nationale.",
+        "usefulLinks": [
+          "https://www.gouv.ci/gouvernement/region/18"
+        ],
+        "detailedExplanation": "Le Département de Daloa est situé dans le centre-ouest de la Côte d'Ivoire, dans la région du Haut-Sassandra dont il est le chef-lieu. Il s'étend sur une superficie d'environ 5 305 km². Le département comprend les sous-préfectures de Daloa, Bédiala, Gadouan, Gboguhé et Zaïbo. Cette région est caractérisée par un climat subéquatorial avec une pluviométrie annuelle de 1 200 à 1 500 mm et une végétation de forêt dense humide semi-décidue, bien que fortement défrichée pour l'agriculture. La ville de Daloa est la troisième plus grande ville du pays et constitue un important carrefour commercial pour toute la région ouest. La population est multiculturelle, composée principalement des ethnies Bété, Niaboua, Malinké et de nombreux groupes issus de l'immigration (burkinabè, maliens, etc.). L'économie du département repose essentiellement sur l'agriculture, avec le cacao comme culture principale, suivi du café, de l'hévéa et des cultures vivrières (riz, maïs, manioc, banane plantain). La production cacaoyère y est favorisée par des conditions climatiques et pédologiques optimales. Cependant, cette monoculture intensive pose des défis environnementaux, notamment la déforestation et l'épuisement des sols."
+      },
+      {
+        "id": 16,
+        "question": "Quel district de Côte d'Ivoire abrite le Parc National de la Comoé, plus grand parc national d'Afrique de l'Ouest ?",
+        "options": [
+          "District de la Vallée du Bandama",
+          "District du Zanzan",
+          "District des Savanes",
+          "District du Woroba"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Le District du Zanzan, situé au nord-est de la Côte d'Ivoire, abrite le Parc National de la Comoé, le plus grand parc national d'Afrique de l'Ouest avec une superficie de 1,15 million d'hectares.",
+        "examples": "Le Parc National de la Comoé, classé au patrimoine mondial de l'UNESCO, est traversé par le fleuve Comoé et abrite une remarquable diversité d'habitats allant de la savane aux forêts-galeries.",
+        "usefulLinks": [
+          "https://whc.unesco.org/fr/list/227/",
+          "https://www.gouv.ci/gouvernement/region/35"
+        ],
+        "detailedExplanation": "Le District du Zanzan est situé au nord-est de la Côte d'Ivoire, à la frontière avec le Ghana et le Burkina Faso. Il s'étend sur une superficie d'environ 38 285 km². Le district comprend deux régions administratives : le Gontougo (chef-lieu : Bondoukou) et le Bounkani (chef-lieu : Bouna). Cette zone est caractérisée par un climat tropical de type soudanais avec une longue saison sèche et une courte saison des pluies. Le paysage est dominé par la savane arborée et arbustive, avec des forêts-galeries le long des cours d'eau. Le Parc National de la Comoé, créé en 1968 et déclaré patrimoine mondial de l'UNESCO en 1983, occupe une grande partie du territoire du district. Il tire son nom du fleuve Comoé qui le traverse du nord au sud sur environ 230 km. Le parc présente une biodiversité exceptionnelle avec plus de 620 espèces végétales, 135 espèces de mammifères (éléphants, buffles, antilopes, hippopotames, lions), 35 espèces d'amphibiens et plus de 500 espèces d'oiseaux. La population du district est principalement composée des ethnies Koulango, Lobi, Dioula et Abron. L'économie repose sur l'agriculture (igname, mil, sorgho, coton, anacarde), l'élevage et, dans une moindre mesure, l'écotourisme lié au parc."
+      },
+      {
+        "id": 17,
+        "question": "Quelle région administrative de Côte d'Ivoire est connue pour ses plantations d'anacarde (noix de cajou) ?",
+        "options": [
+          "Région du Hambol",
+          "Région du Gbêkê",
+          "Région du Poro",
+          "Toutes ces régions"
+        ],
+        "correctAnswer": 3,
+        "explanation": "Les trois régions citées (Hambol, Gbêkê et Poro) sont toutes d'importantes zones de production d'anacarde (noix de cajou), faisant de la Côte d'Ivoire le premier producteur mondial de cette culture.",
+        "examples": "La Côte d'Ivoire produit environ 900 000 tonnes d'anacarde par an, principalement dans sa partie nord où le climat est favorable à cette culture.",
+        "usefulLinks": [
+          "https://www.gouv.ci/gouvernement/region/17",
+          "https://www.gouv.ci/gouvernement/region/13",
+          "https://www.gouv.ci/gouvernement/region/25"
+        ],
+        "detailedExplanation": "Les régions du Hambol, du Gbêkê et du Poro sont situées dans le centre et le nord de la Côte d'Ivoire. Elles sont caractérisées par un climat tropical de transition à tendance soudanaise, avec une longue saison sèche et une courte saison des pluies. Ce climat, combiné à des sols adaptés, est particulièrement favorable à la culture de l'anacardier (Anacardium occidentale), arbre fruitier dont on récolte la noix de cajou. L'anacarde a été introduite en Côte d'Ivoire dans les années 1960 principalement comme espèce de reboisement pour lutter contre l'érosion. Depuis les années 1990, sa culture s'est développée de façon spectaculaire, particulièrement dans les régions septentrionales. Aujourd'hui, la Côte d'Ivoire est devenue le premier producteur et exportateur mondial d'anacarde avec environ 25% de la production mondiale. Cette filière représente une source de revenus importante pour près de 250 000 producteurs, principalement de petits exploitants familiaux. Les régions mentionnées concentrent la majorité de cette production avec des villes comme Korhogo (Poro), Katiola (Hambol) et Bouaké (Gbêkê) qui sont devenues d'importants centres de collecte et de commercialisation. Malgré cette position dominante, le pays fait face au défi de développer la transformation locale, car plus de 90% de la production est encore exportée sous forme brute."
+      },
+      {
+        "id": 18,
+        "question": "Quelle sous-préfecture de la région de la Bagoué abrite un important marché hebdomadaire transfrontalier ?",
+        "options": [
+          "Sous-préfecture de Boundiali",
+          "Sous-préfecture de Tengréla",
+          "Sous-préfecture de Kouto",
+          "Sous-préfecture de Kasséré"
+        ],
+        "correctAnswer": 1,
+        "explanation": "La sous-préfecture de Tengréla, dans la région de la Bagoué, abrite un important marché hebdomadaire transfrontalier qui attire des commerçants du Mali et de la Côte d'Ivoire.",
+        "examples": "Le marché de Tengréla est particulièrement réputé pour le commerce du bétail, des produits agricoles et des biens manufacturés qui transitent entre le Mali et la Côte d'Ivoire.",
+        "usefulLinks": [
+          "https://www.gouv.ci/gouvernement/region/7"
+        ],
+        "detailedExplanation": "La sous-préfecture de Tengréla est située à l'extrême nord de la Côte d'Ivoire, dans la région de la Bagoué, à la frontière avec le Mali. Elle s'étend autour de la ville de Tengréla, à environ 850 km d'Abidjan. Cette zone frontalière est caractérisée par un climat tropical sec de type soudanais avec une longue saison sèche (octobre à mai) et une courte saison des pluies (juin à septembre). Le paysage est dominé par la savane arborée et arbustive. La population est majoritairement d'ethnie Sénoufo et Malinké. L'économie locale repose sur l'agriculture (coton, anacarde, mil, sorgho, maïs), l'élevage (bovins, ovins, caprins) et le commerce transfrontalier. Le marché hebdomadaire de Tengréla, qui se tient traditionnellement le dimanche, est un lieu d'échanges commerciaux important entre les populations ivoiriennes et maliennes. Il favorise la circulation des personnes et des biens entre les deux pays et contribue significativement à l'économie locale. Les principaux produits échangés sont le bétail (bovins, ovins, caprins), les céréales, les produits maraîchers, les produits manufacturés et divers articles de consommation courante. Ce marché joue également un rôle social important en tant que lieu de rencontres et d'échanges culturels entre les populations frontalières qui partagent souvent les mêmes traditions et parfois des liens familiaux."
+      },
+      {
+        "id": 19,
+        "question": "Quel département de la région du Sud-Comoé abrite la ville historique de Grand-Bassam, première capitale de la Côte d'Ivoire coloniale ?",
+        "options": [
+          "Département d'Aboisso",
+          "Département d'Adiaké",
+          "Département de Grand-Bassam",
+          "Département de Tiapoum"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Le Département de Grand-Bassam, dans la région du Sud-Comoé, abrite la ville historique de Grand-Bassam qui fut la première capitale de la Côte d'Ivoire coloniale de 1893 à 1900.",
+        "examples": "Le quartier colonial de Grand-Bassam, avec ses bâtiments d'architecture coloniale bien préservés, est inscrit au patrimoine mondial de l'UNESCO depuis 2012.",
+        "usefulLinks": [
+          "https://whc.unesco.org/fr/list/1322/",
+          "https://www.gouv.ci/gouvernement/region/29"
+        ],
+        "detailedExplanation": "Le Département de Grand-Bassam est situé dans le sud-est de la Côte d'Ivoire, dans la région du Sud-Comoé. Il s'étend sur une superficie d'environ 1 034 km², en bordure de l'océan Atlantique et à proximité d'Abidjan. Le chef-lieu est la ville de Grand-Bassam. Cette zone côtière est caractérisée par un climat subéquatorial très humide avec quatre saisons et une végétation de forêt littorale, de mangrove et de cocoteraies. La ville de Grand-Bassam a été fondée en 1842 comme comptoir commercial français et devint la première capitale de la colonie de Côte d'Ivoire en 1893. Suite à une épidémie de fièvre jaune en 1899, la capitale fut transférée à Bingerville en 1900. Le quartier colonial, situé sur une langue de terre entre la lagune Ébrié et l'océan, comprend des bâtiments administratifs, commerciaux et résidentiels de l'époque coloniale, dont l'ancien Palais du Gouverneur, la Poste, la Douane et plusieurs maisons de commerce. Aujourd'hui, Grand-Bassam est une destination touristique importante qui allie patrimoine historique et plages. La ville est également connue pour son festival d'arts et de culture Abissa, célébré chaque année par l'ethnie N'zima. L'économie du département repose sur le tourisme, la pêche, l'agriculture (cocotier, palmier à huile, cultures maraîchères) et l'artisanat, notamment la fabrication de pagnes traditionnels."
+      },
+      {
+        "id": 20,
+        "question": "Quel district de Côte d'Ivoire abrite le plus grand port du pays ?",
+        "options": [
+          "District d'Abidjan",
+          "District du Bas-Sassandra",
+          "District des Lagunes",
+          "District du Sud-Comoé"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Le District d'Abidjan abrite le Port Autonome d'Abidjan, plus grand port de Côte d'Ivoire et l'un des plus importants d'Afrique de l'Ouest en termes de trafic.",
+        "examples": "Le Port Autonome d'Abidjan traite environ 90% du commerce extérieur de la Côte d'Ivoire et sert également de port de transit pour les pays enclavés comme le Mali, le Burkina Faso et le Niger.",
+        "usefulLinks": [
+          "https://www.portabidjan.ci/fr",
+          "https://www.gouv.ci/gouvernement/organismes/7"
+        ],
+        "detailedExplanation": "Le District d'Abidjan est situé au sud-est de la Côte d'Ivoire, en bordure du Golfe de Guinée et de la lagune Ébrié. Le Port Autonome d'Abidjan, créé en 1950 et opérationnel depuis 1951, est construit sur la lagune Ébrié et relié à l'océan Atlantique par le canal de Vridi (2 700 mètres de long, 370 mètres de large et 16 mètres de profondeur). Cette infrastructure portuaire s'étend sur une superficie de 1 000 hectares dont 800 hectares de plan d'eau. Le port dispose de plus de 6 km de quais, de nombreux terminaux spécialisés (conteneurs, minéralier, fruitier, pétrolier, etc.), d'entrepôts et de zones logistiques. Ses installations permettent d'accueillir des navires de grande taille (jusqu'à 260 mètres de long avec un tirant d'eau de 12,5 mètres). Le port traite annuellement un trafic d'environ 25 millions de tonnes de marchandises et plus d'un million de conteneurs EVP (Équivalent Vingt Pieds). Son influence s'étend au-delà des frontières ivoiriennes puisqu'il assure une part importante du commerce extérieur des pays enclavés de l'hinterland (Mali, Burkina Faso, Niger). Cette position stratégique fait d'Abidjan un hub logistique régional majeur. Le port emploie directement plusieurs milliers de personnes et génère de nombreuses activités économiques connexes dans les secteurs du transport, de la logistique, du transit et des services."
+      }
+    ]
+  }
+  
