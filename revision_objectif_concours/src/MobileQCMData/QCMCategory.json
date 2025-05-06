@@ -22,7 +22,9 @@
       },
       {
         "title": "Connait tu les gouvernneur des districte de la CI ? ",
-        "questions": "qcmMinisterGouverneurCI"
+        "questions": "qcmMinisterGouverneurCI",
+        "iconName": "edit_note",
+        "colorHex": "#FF6B6B"
       }
     ]
   }
