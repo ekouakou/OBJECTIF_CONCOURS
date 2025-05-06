@@ -222,6 +222,131 @@
           "https://www.gouv.ci/gouvernement/region/16"
         ],
         "detailedExplanation": "Le Département d'Odienné est situé dans le nord-ouest de la Côte d'Ivoire, dans la région du Kabadougou dont il est le chef-lieu. Il s'étend sur une superficie d'environ 14 000 km², à la frontière avec la Guinée et le Mali. Le département comprend les sous-préfectures d'Odienné, Bako, Bougousso, Dioulatiedougou, Gbéléban et Tiémé. Cette région est caractérisée par un climat tropical sec de type soudanien, avec une longue saison sèche et une courte saison des pluies. Le paysage est dominé par la savane arborée et des inselbergs granitiques. La population est majoritairement d'ethnie Malinké (Dioula). L'économie du département repose sur l'agriculture (coton, anacarde, mangue, igname), l'élevage (bovins, ovins, caprins) et le commerce. Les ruines de Kong témoignent de l'importance historique de cette région qui abritait un royaume prospère fondé au 17ème siècle et devenu un centre commercial et religieux majeur en Afrique de l'Ouest précoloniale. La ville était célèbre pour son architecture soudanaise, ses mosquées et ses madrasas (écoles coraniques). Aujourd'hui, le site est un important lieu de mémoire et de tourisme culturel."
+      },
+      {
+        "id": 14,
+        "question": "Quelle région administrative de Côte d'Ivoire abrite la réserve naturelle de Lamto, célèbre pour ses recherches scientifiques sur la savane ?",
+        "options": [
+          "Région de l'Agnéby-Tiassa",
+          "Région du Bélier",
+          "Région du N'Zi",
+          "Région de l'Iffou"
+        ],
+        "correctAnswer": 0,
+        "explanation": "La Région de l'Agnéby-Tiassa abrite la réserve naturelle de Lamto, station de recherche écologique internationalement reconnue pour ses études sur l'écosystème de savane.",
+        "examples": "Créée en 1962, la station écologique de Lamto est un laboratoire à ciel ouvert qui a permis de nombreuses avancées scientifiques sur la biodiversité de la savane guinéenne et le cycle du carbone dans ces écosystèmes.",
+        "usefulLinks": [
+          "https://www.gouv.ci/gouvernement/region/4",
+          "http://www.lamto.cnrs.fr/"
+        ],
+        "detailedExplanation": "La Région de l'Agnéby-Tiassa est située dans le sud de la Côte d'Ivoire. Elle s'étend sur une superficie d'environ 9 080 km². Son chef-lieu est la ville d'Agboville. La région comprend les départements d'Agboville, Sikensi et Tiassalé. Cette zone est caractérisée par un climat subéquatorial avec quatre saisons distinctes et une végétation de forêt dense humide sempervirente entrecoupée de zones de savane, notamment dans sa partie nord. La réserve naturelle de Lamto, créée en 1962, est située près du village de Lamto dans le département de Tiassalé, en bordure du fleuve Bandama. Elle couvre une superficie de 2 500 hectares et constitue une zone de transition forêt-savane particulièrement intéressante pour la recherche scientifique. Depuis sa création, cette station écologique a accueilli des chercheurs du monde entier qui y ont mené des études à long terme sur la structure et le fonctionnement des écosystèmes de savane, la biodiversité, le cycle du carbone, et les impacts du changement climatique. La réserve abrite une faune diversifiée comprenant plus de 150 espèces d'oiseaux, de nombreux reptiles et mammifères. L'économie de la région repose principalement sur l'agriculture (café, cacao, hévéa, palmier à huile, banane plantain, cultures maraîchères) et l'exploitation forestière."
+      },
+      {
+        "id": 15,
+        "question": "Quel département de la région du Haut-Sassandra est le premier producteur de cacao de Côte d'Ivoire ?",
+        "options": [
+          "Département de Daloa",
+          "Département de Vavoua",
+          "Département d'Issia",
+          "Département de Zoukougbeu"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Le Département de Daloa, dans la région du Haut-Sassandra, est considéré comme le premier producteur de cacao de Côte d'Ivoire, contribuant significativement au statut du pays comme premier producteur mondial.",
+        "examples": "Daloa accueille chaque année la Fête du Cacao et du Chocolat, événement majeur qui célèbre l'importance de cette culture pour l'économie locale et nationale.",
+        "usefulLinks": [
+          "https://www.gouv.ci/gouvernement/region/18"
+        ],
+        "detailedExplanation": "Le Département de Daloa est situé dans le centre-ouest de la Côte d'Ivoire, dans la région du Haut-Sassandra dont il est le chef-lieu. Il s'étend sur une superficie d'environ 5 305 km². Le département comprend les sous-préfectures de Daloa, Bédiala, Gadouan, Gboguhé et Zaïbo. Cette région est caractérisée par un climat subéquatorial avec une pluviométrie annuelle de 1 200 à 1 500 mm et une végétation de forêt dense humide semi-décidue, bien que fortement défrichée pour l'agriculture. La ville de Daloa est la troisième plus grande ville du pays et constitue un important carrefour commercial pour toute la région ouest. La population est multiculturelle, composée principalement des ethnies Bété, Niaboua, Malinké et de nombreux groupes issus de l'immigration (burkinabè, maliens, etc.). L'économie du département repose essentiellement sur l'agriculture, avec le cacao comme culture principale, suivi du café, de l'hévéa et des cultures vivrières (riz, maïs, manioc, banane plantain). La production cacaoyère y est favorisée par des conditions climatiques et pédologiques optimales. Cependant, cette monoculture intensive pose des défis environnementaux, notamment la déforestation et l'épuisement des sols."
+      },
+      {
+        "id": 16,
+        "question": "Quel district de Côte d'Ivoire abrite le Parc National de la Comoé, plus grand parc national d'Afrique de l'Ouest ?",
+        "options": [
+          "District de la Vallée du Bandama",
+          "District du Zanzan",
+          "District des Savanes",
+          "District du Woroba"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Le District du Zanzan, situé au nord-est de la Côte d'Ivoire, abrite le Parc National de la Comoé, le plus grand parc national d'Afrique de l'Ouest avec une superficie de 1,15 million d'hectares.",
+        "examples": "Le Parc National de la Comoé, classé au patrimoine mondial de l'UNESCO, est traversé par le fleuve Comoé et abrite une remarquable diversité d'habitats allant de la savane aux forêts-galeries.",
+        "usefulLinks": [
+          "https://whc.unesco.org/fr/list/227/",
+          "https://www.gouv.ci/gouvernement/region/35"
+        ],
+        "detailedExplanation": "Le District du Zanzan est situé au nord-est de la Côte d'Ivoire, à la frontière avec le Ghana et le Burkina Faso. Il s'étend sur une superficie d'environ 38 285 km². Le district comprend deux régions administratives : le Gontougo (chef-lieu : Bondoukou) et le Bounkani (chef-lieu : Bouna). Cette zone est caractérisée par un climat tropical de type soudanais avec une longue saison sèche et une courte saison des pluies. Le paysage est dominé par la savane arborée et arbustive, avec des forêts-galeries le long des cours d'eau. Le Parc National de la Comoé, créé en 1968 et déclaré patrimoine mondial de l'UNESCO en 1983, occupe une grande partie du territoire du district. Il tire son nom du fleuve Comoé qui le traverse du nord au sud sur environ 230 km. Le parc présente une biodiversité exceptionnelle avec plus de 620 espèces végétales, 135 espèces de mammifères (éléphants, buffles, antilopes, hippopotames, lions), 35 espèces d'amphibiens et plus de 500 espèces d'oiseaux. La population du district est principalement composée des ethnies Koulango, Lobi, Dioula et Abron. L'économie repose sur l'agriculture (igname, mil, sorgho, coton, anacarde), l'élevage et, dans une moindre mesure, l'écotourisme lié au parc."
+      },
+      {
+        "id": 17,
+        "question": "Quelle région administrative de Côte d'Ivoire est connue pour ses plantations d'anacarde (noix de cajou) ?",
+        "options": [
+          "Région du Hambol",
+          "Région du Gbêkê",
+          "Région du Poro",
+          "Toutes ces régions"
+        ],
+        "correctAnswer": 3,
+        "explanation": "Les trois régions citées (Hambol, Gbêkê et Poro) sont toutes d'importantes zones de production d'anacarde (noix de cajou), faisant de la Côte d'Ivoire le premier producteur mondial de cette culture.",
+        "examples": "La Côte d'Ivoire produit environ 900 000 tonnes d'anacarde par an, principalement dans sa partie nord où le climat est favorable à cette culture.",
+        "usefulLinks": [
+          "https://www.gouv.ci/gouvernement/region/17",
+          "https://www.gouv.ci/gouvernement/region/13",
+          "https://www.gouv.ci/gouvernement/region/25"
+        ],
+        "detailedExplanation": "Les régions du Hambol, du Gbêkê et du Poro sont situées dans le centre et le nord de la Côte d'Ivoire. Elles sont caractérisées par un climat tropical de transition à tendance soudanaise, avec une longue saison sèche et une courte saison des pluies. Ce climat, combiné à des sols adaptés, est particulièrement favorable à la culture de l'anacardier (Anacardium occidentale), arbre fruitier dont on récolte la noix de cajou. L'anacarde a été introduite en Côte d'Ivoire dans les années 1960 principalement comme espèce de reboisement pour lutter contre l'érosion. Depuis les années 1990, sa culture s'est développée de façon spectaculaire, particulièrement dans les régions septentrionales. Aujourd'hui, la Côte d'Ivoire est devenue le premier producteur et exportateur mondial d'anacarde avec environ 25% de la production mondiale. Cette filière représente une source de revenus importante pour près de 250 000 producteurs, principalement de petits exploitants familiaux. Les régions mentionnées concentrent la majorité de cette production avec des villes comme Korhogo (Poro), Katiola (Hambol) et Bouaké (Gbêkê) qui sont devenues d'importants centres de collecte et de commercialisation. Malgré cette position dominante, le pays fait face au défi de développer la transformation locale, car plus de 90% de la production est encore exportée sous forme brute."
+      },
+      {
+        "id": 18,
+        "question": "Quelle sous-préfecture de la région de la Bagoué abrite un important marché hebdomadaire transfrontalier ?",
+        "options": [
+          "Sous-préfecture de Boundiali",
+          "Sous-préfecture de Tengréla",
+          "Sous-préfecture de Kouto",
+          "Sous-préfecture de Kasséré"
+        ],
+        "correctAnswer": 1,
+        "explanation": "La sous-préfecture de Tengréla, dans la région de la Bagoué, abrite un important marché hebdomadaire transfrontalier qui attire des commerçants du Mali et de la Côte d'Ivoire.",
+        "examples": "Le marché de Tengréla est particulièrement réputé pour le commerce du bétail, des produits agricoles et des biens manufacturés qui transitent entre le Mali et la Côte d'Ivoire.",
+        "usefulLinks": [
+          "https://www.gouv.ci/gouvernement/region/7"
+        ],
+        "detailedExplanation": "La sous-préfecture de Tengréla est située à l'extrême nord de la Côte d'Ivoire, dans la région de la Bagoué, à la frontière avec le Mali. Elle s'étend autour de la ville de Tengréla, à environ 850 km d'Abidjan. Cette zone frontalière est caractérisée par un climat tropical sec de type soudanais avec une longue saison sèche (octobre à mai) et une courte saison des pluies (juin à septembre). Le paysage est dominé par la savane arborée et arbustive. La population est majoritairement d'ethnie Sénoufo et Malinké. L'économie locale repose sur l'agriculture (coton, anacarde, mil, sorgho, maïs), l'élevage (bovins, ovins, caprins) et le commerce transfrontalier. Le marché hebdomadaire de Tengréla, qui se tient traditionnellement le dimanche, est un lieu d'échanges commerciaux important entre les populations ivoiriennes et maliennes. Il favorise la circulation des personnes et des biens entre les deux pays et contribue significativement à l'économie locale. Les principaux produits échangés sont le bétail (bovins, ovins, caprins), les céréales, les produits maraîchers, les produits manufacturés et divers articles de consommation courante. Ce marché joue également un rôle social important en tant que lieu de rencontres et d'échanges culturels entre les populations frontalières qui partagent souvent les mêmes traditions et parfois des liens familiaux."
+      },
+      {
+        "id": 19,
+        "question": "Quel département de la région du Sud-Comoé abrite la ville historique de Grand-Bassam, première capitale de la Côte d'Ivoire coloniale ?",
+        "options": [
+          "Département d'Aboisso",
+          "Département d'Adiaké",
+          "Département de Grand-Bassam",
+          "Département de Tiapoum"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Le Département de Grand-Bassam, dans la région du Sud-Comoé, abrite la ville historique de Grand-Bassam qui fut la première capitale de la Côte d'Ivoire coloniale de 1893 à 1900.",
+        "examples": "Le quartier colonial de Grand-Bassam, avec ses bâtiments d'architecture coloniale bien préservés, est inscrit au patrimoine mondial de l'UNESCO depuis 2012.",
+        "usefulLinks": [
+          "https://whc.unesco.org/fr/list/1322/",
+          "https://www.gouv.ci/gouvernement/region/29"
+        ],
+        "detailedExplanation": "Le Département de Grand-Bassam est situé dans le sud-est de la Côte d'Ivoire, dans la région du Sud-Comoé. Il s'étend sur une superficie d'environ 1 034 km², en bordure de l'océan Atlantique et à proximité d'Abidjan. Le chef-lieu est la ville de Grand-Bassam. Cette zone côtière est caractérisée par un climat subéquatorial très humide avec quatre saisons et une végétation de forêt littorale, de mangrove et de cocoteraies. La ville de Grand-Bassam a été fondée en 1842 comme comptoir commercial français et devint la première capitale de la colonie de Côte d'Ivoire en 1893. Suite à une épidémie de fièvre jaune en 1899, la capitale fut transférée à Bingerville en 1900. Le quartier colonial, situé sur une langue de terre entre la lagune Ébrié et l'océan, comprend des bâtiments administratifs, commerciaux et résidentiels de l'époque coloniale, dont l'ancien Palais du Gouverneur, la Poste, la Douane et plusieurs maisons de commerce. Aujourd'hui, Grand-Bassam est une destination touristique importante qui allie patrimoine historique et plages. La ville est également connue pour son festival d'arts et de culture Abissa, célébré chaque année par l'ethnie N'zima. L'économie du département repose sur le tourisme, la pêche, l'agriculture (cocotier, palmier à huile, cultures maraîchères) et l'artisanat, notamment la fabrication de pagnes traditionnels."
+      },
+      {
+        "id": 20,
+        "question": "Quel district de Côte d'Ivoire abrite le plus grand port du pays ?",
+        "options": [
+          "District d'Abidjan",
+          "District du Bas-Sassandra",
+          "District des Lagunes",
+          "District du Sud-Comoé"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Le District d'Abidjan abrite le Port Autonome d'Abidjan, plus grand port de Côte d'Ivoire et l'un des plus importants d'Afrique de l'Ouest en termes de trafic.",
+        "examples": "Le Port Autonome d'Abidjan traite environ 90% du commerce extérieur de la Côte d'Ivoire et sert également de port de transit pour les pays enclavés comme le Mali, le Burkina Faso et le Niger.",
+        "usefulLinks": [
+          "https://www.portabidjan.ci/fr",
+          "https://www.gouv.ci/gouvernement/organismes/7"
+        ],
+        "detailedExplanation": "Le District d'Abidjan est situé au sud-est de la Côte d'Ivoire, en bordure du Golfe de Guinée et de la lagune Ébrié. Le Port Autonome d'Abidjan, créé en 1950 et opérationnel depuis 1951, est construit sur la lagune Ébrié et relié à l'océan Atlantique par le canal de Vridi (2 700 mètres de long, 370 mètres de large et 16 mètres de profondeur). Cette infrastructure portuaire s'étend sur une superficie de 1 000 hectares dont 800 hectares de plan d'eau. Le port dispose de plus de 6 km de quais, de nombreux terminaux spécialisés (conteneurs, minéralier, fruitier, pétrolier, etc.), d'entrepôts et de zones logistiques. Ses installations permettent d'accueillir des navires de grande taille (jusqu'à 260 mètres de long avec un tirant d'eau de 12,5 mètres). Le port traite annuellement un trafic d'environ 25 millions de tonnes de marchandises et plus d'un million de conteneurs EVP (Équivalent Vingt Pieds). Son influence s'étend au-delà des frontières ivoiriennes puisqu'il assure une part importante du commerce extérieur des pays enclavés de l'hinterland (Mali, Burkina Faso, Niger). Cette position stratégique fait d'Abidjan un hub logistique régional majeur. Le port emploie directement plusieurs milliers de personnes et génère de nombreuses activités économiques connexes dans les secteurs du transport, de la logistique, du transit et des services."
       }
     ]
   }
