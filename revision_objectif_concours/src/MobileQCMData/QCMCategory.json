@@ -1,30 +1,40 @@
 {
-    "QCMCategory": [
-      {
-        "title": "Ancienne institution Africaines disparues",
-        "questions": "qcmCapitalesMemeNom"
-      },
-      {
-        "title": "Histoire africaine",
-        "questions": "qcmHistoireAfricaine"
-      },
-      {
-        "title": "Sport Ivoirien 2023",
-        "questions": "QCMSportQuestion2023"
-      },
-      {
-        "title": "Connait tu la côte d'ivoire ?",
-        "questions": "qcmGeographieCoteIvoire"
-      },
-      {
-        "title": "Connait tu les communes de côte d'ivoire ?",
-        "questions": "qcmDistrictsCommunesCoteIvoire"
-      },
-      {
-        "title": "Connait tu les gouvernneur des districte de la CI ? ",
-        "questions": "qcmMinisterGouverneurCI",
-        "iconName": "edit_note",
-        "colorHex": "#b74ead"
-      }
-    ]
-  }
+  "QCMCategory": [
+    {
+      "title": "Ancienne institution Africaines disparues",
+      "questions": "qcmCapitalesMemeNom",
+      "iconName": "history_edu",
+      "colorHex": "#ff6f00"
+    },
+    {
+      "title": "Histoire africaine",
+      "questions": "qcmHistoireAfricaine",
+      "iconName": "auto_stories",
+      "colorHex": "#2e7d32"
+    },
+    {
+      "title": "Sport Ivoirien 2023",
+      "questions": "QCMSportQuestion2023",
+      "iconName": "sports_soccer",
+      "colorHex": "#0288d1"
+    },
+    {
+      "title": "Connait tu la côte d'ivoire ?",
+      "questions": "qcmGeographieCoteIvoire",
+      "iconName": "public",
+      "colorHex": "#fbc02d"
+    },
+    {
+      "title": "Connait tu les communes de côte d'ivoire ?",
+      "questions": "qcmDistrictsCommunesCoteIvoire",
+      "iconName": "map",
+      "colorHex": "#8e24aa"
+    },
+    {
+      "title": "Connait tu les gouvernneur des districte de la CI ? ",
+      "questions": "qcmMinisterGouverneurCI",
+      "iconName": "edit_note",
+      "colorHex": "#b74ead"
+    }
+  ]
+}
