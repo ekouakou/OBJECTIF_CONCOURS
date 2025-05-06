@@ -7,15 +7,13 @@
       {
         "title": "Histoire africaine",
         "questions": "qcmHistoireAfricaine"
-      }
-      ,
+      },
       {
         "title": "Sport Ivoirien 2023",
         "questions": "QCMSportQuestion2023"
-      }
-      ,
+      },
       {
-        "title": "Connait tu la côte d'ivoire 1",
+        "title": "Connait tu la côte d'ivoire ",
         "questions": "qcmGeographieCoteIvoire"
       }
     ]
