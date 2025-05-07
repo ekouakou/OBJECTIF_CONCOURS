@@ -3,7 +3,9 @@
       {
         "id": 1,
         "question": "Parmi ces personnalités, laquelle occupe actuellement le poste de gouverneur du district autonome d'Abidjan ?",
-        "options": [
+        "examples": "",
+        "examples": "",
+"options": [
           "Robert Beugré Mambé",
           "Ibrahim Bacongo Cissé",
           "Vincent Toh Bi Irié",
@@ -16,7 +18,8 @@
       {
         "id": 2,
         "question": "Quel ancien directeur de cabinet du Président a été nommé gouverneur du district autonome de San Pedro ?",
-        "options": [
+        "examples": "",
+"options": [
           "Patrick Achi",
           "Marcel Amon Tanoh",
           "Fidèle Sarassoro",
@@ -29,7 +32,8 @@
       {
         "id": 3,
         "question": "Depuis quelle année Augustin Thiam occupe-t-il le poste de gouverneur du district autonome de Yamoussoukro ?",
-        "options": [
+        "examples": "",
+"options": [
           "2018",
           "2020",
           "2013",
@@ -42,7 +46,8 @@
       {
         "id": 4,
         "question": "Lequel de ces districts autonomes est gouverné par Apollinaire Koffi Konan ?",
-        "options": [
+        "examples": "",
+"options": [
           "Bas-Sassandra",
           "Comoé",
           "Lagunes",
@@ -55,7 +60,8 @@
       {
         "id": 5,
         "question": "Qui, parmi ces personnalités, n'est PAS gouverneur d'un district autonome en Côte d'Ivoire ?",
-        "options": [
+        "examples": "",
+"options": [
           "Vassiriki Koné",
           "Lancina Koné",
           "Kadiatou Ly Sangare",
@@ -68,7 +74,8 @@
       {
         "id": 6,
         "question": "Quel lien existe entre le gouverneur du district autonome des Savanes et le Président de la République de Côte d'Ivoire ?",
-        "options": [
+        "examples": "",
+"options": [
           "Ce sont des cousins",
           "Ce sont des frères",
           "Ils n'ont aucun lien de parenté",
@@ -81,7 +88,8 @@
       {
         "id": 7,
         "question": "Combien de districts autonomes ont été créés en Côte d'Ivoire en 2021, en plus des deux préexistants (Abidjan et Yamoussoukro) ?",
-        "options": [
+        "examples": "",
+"options": [
           "10",
           "14",
           "12",
@@ -94,7 +102,8 @@
       {
         "id": 8,
         "question": "Quel ancien ministre de l'Agriculture est devenu gouverneur du district autonome du Sassandra-Marahoué ?",
-        "options": [
+        "examples": "",
+"options": [
           "Kobenan Kouassi Adjoumani",
           "Mamadou Sangafowa Coulibaly",
           "Kobénan Kouassi",
@@ -107,7 +116,8 @@
       {
         "id": 9,
         "question": "Lequel de ces districts autonomes n'existe PAS en Côte d'Ivoire ?",
-        "options": [
+        "examples": "",
+"options": [
           "Zanzan",
           "Woroba",
           "Bandama",
@@ -120,7 +130,8 @@
       {
         "id": 10,
         "question": "Qui gouverne le district autonome qui abrite la deuxième plus grande ville de Côte d'Ivoire ?",
-        "options": [
+        "examples": "",
+"options": [
           "Augustin Thiam",
           "Ibrahim Bacongo Cissé",
           "Lancina Koné",
@@ -133,7 +144,8 @@
       {
         "id": 11,
         "question": "Quel district autonome partage à la fois une frontière avec le Mali et le Burkina Faso ?",
-        "options": [
+        "examples": "",
+"options": [
           "Zanzan",
           "Denguélé",
           "Savanes",
@@ -146,7 +158,8 @@
       {
         "id": 12,
         "question": "Quel district autonome ivoirien est connu pour son relief montagneux et son pic culminant à plus de 1000 mètres d'altitude ?",
-        "options": [
+        "examples": "",
+"options": [
           "Lacs",
           "Montagnes",
           "Denguélé",
@@ -159,7 +172,8 @@
       {
         "id": 13,
         "question": "Lequel de ces gouverneurs a précédemment occupé un poste ministériel avant sa nomination ?",
-        "options": [
+        "examples": "",
+"options": [
           "Benjamin Effoli",
           "Famoussa Coulibaly",
           "Ibrahim Bacongo Cissé",
@@ -172,7 +186,8 @@
       {
         "id": 14,
         "question": "Quel district autonome est considéré comme le plus important pôle économique après Abidjan ?",
-        "options": [
+        "examples": "",
+"options": [
           "Yamoussoukro",
           "Vallée du Bandama",
           "San Pedro",
@@ -185,7 +200,8 @@
       {
         "id": 15,
         "question": "Quel évènement majeur a conduit à la réorganisation administrative créant 12 nouveaux districts autonomes en Côte d'Ivoire ?",
-        "options": [
+        "examples": "",
+"options": [
           "L'élection présidentielle de 2020",
           "La révision constitutionnelle de 2020",
           "Le plan national de développement 2021-2025",
@@ -199,7 +215,8 @@
       {
         "id": 16,
         "question": "Quelle particularité administrative distingue le district autonome d'Abidjan des autres districts ?",
-        "options": [
+        "examples": "",
+"options": [
           "C'est le seul ayant un statut de collectivité territoriale",
           "C'est le seul à disposer d'un conseil de district élu au suffrage universel",
           "C'est le seul dont le gouverneur est également ministre",
@@ -212,7 +229,8 @@
       {
         "id": 17,
         "question": "Lequel de ces districts autonomes abrite la Basilique Notre-Dame de la Paix, considérée comme la plus grande église du monde selon certains critères ?",
-        "options": [
+        "examples": "",
+"options": [
           "Montagnes",
           "Vallée du Bandama",
           "Yamoussoukro",
@@ -225,7 +243,8 @@
       {
         "id": 18,
         "question": "Quel district autonome ivoirien est connu pour son barrage hydroélectrique qui fournit une part importante de l'électricité du pays ?",
-        "options": [
+        "examples": "",
+"options": [
           "Sassandra-Marahoué",
           "Lacs",
           "Bas-Sassandra",
@@ -238,7 +257,8 @@
       {
         "id": 19,
         "question": "Quelle personnalité politique a été la première à occuper le poste de gouverneur du district autonome d'Abidjan lors de sa création ?",
-        "options": [
+        "examples": "",
+"options": [
           "Robert Beugré Mambé",
           "Ibrahim Bacongo Cissé",
           "Vincent Toh Bi Irié",
@@ -251,7 +271,8 @@
       {
         "id": 20,
         "question": "Quel district autonome est traversé par le fleuve Comoé et abrite le Parc National de la Comoé, classé au patrimoine mondial de l'UNESCO ?",
-        "options": [
+        "examples": "",
+"options": [
           "Zanzan",
           "Savanes",
           "Vallée du Bandama",
@@ -264,7 +285,8 @@
       {
         "id": 21,
         "question": "Quelle fonction occupait Serey Doh Célestin avant d'être nommé gouverneur du district autonome du Gôh-Djiboua ?",
-        "options": [
+        "examples": "",
+"options": [
           "Préfet de région",
           "Ministre de la Sécurité",
           "Directeur général des Douanes",
@@ -277,7 +299,8 @@
       {
         "id": 22,
         "question": "Lequel de ces gouverneurs de district autonome a également été maire d'une commune importante ?",
-        "options": [
+        "examples": "",
+"options": [
           "Ibrahim Bacongo Cissé",
           "Fidèle Sarassoro",
           "Augustin Thiam",
@@ -290,7 +313,8 @@
       {
         "id": 23,
         "question": "Quelle est la spécificité du district autonome des Lacs par rapport aux autres districts ?",
-        "options": [
+        "examples": "",
+"options": [
           "C'est le district qui possède le plus grand nombre de barrages hydroélectriques",
           "C'est le seul district dont les limites correspondent exactement à celles d'une ancienne région",
           "C'est le district qui compte le plus grand nombre de communes",
@@ -303,7 +327,8 @@
       {
         "id": 24,
         "question": "Quel district autonome partage une frontière avec le Ghana et joue un rôle important dans les échanges commerciaux transfrontaliers ?",
-        "options": [
+        "examples": "",
+"options": [
           "Zanzan",
           "Comoé",
           "Abidjan",
@@ -316,7 +341,8 @@
       {
         "id": 25,
         "question": "Dans quel objectif principal les districts autonomes ont-ils été créés en Côte d'Ivoire selon les autorités ?",
-        "options": [
+        "examples": "",
+"options": [
           "Pour faciliter l'organisation des élections",
           "Pour accélérer le développement économique des régions",
           "Pour renforcer le contrôle du pouvoir central",
@@ -326,5 +352,6 @@
         "explanation": "Les districts autonomes ont été créés principalement pour accélérer le développement économique des régions en Côte d'Ivoire.",
         "detailedExplanation": "La création des districts autonomes s'inscrit dans une vision de développement économique décentralisé. Selon les autorités ivoiriennes, cette réforme administrative vise à rapprocher l'administration des administrés, à réduire les disparités régionales et surtout à accélérer le développement économique local en dotant chaque grande zone du pays d'une structure administrative capable de concevoir et mettre en œuvre des projets d'envergure adaptés aux réalités locales."
       }
+      
     ]
   }
