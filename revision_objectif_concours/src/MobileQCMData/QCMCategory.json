@@ -30,12 +30,7 @@
       "iconName": "map",
       "colorHex": "#8e24aa"
     },
-    {
-      "title": "Ministre gouvernneur des districts de la CI partie 2 ? ",
-      "questions": "qcmMinisterGouverneurCI2",
-      "iconName": "edit_note",
-      "colorHex": "#b74ead"
-    },
+    
     {
       "title": "UML ? ",
       "questions": "qcmUML",
