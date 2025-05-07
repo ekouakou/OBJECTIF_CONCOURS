@@ -35,12 +35,6 @@
       "questions": "qcmMinisterGouverneurCI2",
       "iconName": "edit_note",
       "colorHex": "#b74ead"
-    },
-    {
-      "title": "UML ? ",
-      "questions": "qcmUML",
-      "iconName": "edit_note",
-      "colorHex": "#0288d1"
     }
   ]
 }
