@@ -1,0 +1,330 @@
+{
+    "qcmMinisterGouverneurCI2": [
+      {
+        "id": 1,
+        "question": "Parmi ces personnalités, laquelle occupe actuellement le poste de gouverneur du district autonome d'Abidjan ?",
+        "options": [
+          "Robert Beugré Mambé",
+          "Ibrahim Bacongo Cissé",
+          "Vincent Toh Bi Irié",
+          "Anne Désirée Ouloto"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Ibrahim Bacongo Cissé est le gouverneur du district autonome d'Abidjan depuis sa nomination en 2023, succédant à Robert Beugré Mambé.",
+        "detailedExplanation": "Ibrahim Bacongo Cissé, ancien ministre de la Construction, a été nommé gouverneur du district autonome d'Abidjan en 2023. Il a remplacé Robert Beugré Mambé qui occupait ce poste auparavant et qui est devenu Premier Ministre. Le district autonome d'Abidjan comprend 13 communes et représente le centre économique et financier de la Côte d'Ivoire avec environ 5 millions d'habitants."
+      },
+      {
+        "id": 2,
+        "question": "Quel ancien directeur de cabinet du Président a été nommé gouverneur du district autonome de San Pedro ?",
+        "options": [
+          "Patrick Achi",
+          "Marcel Amon Tanoh",
+          "Fidèle Sarassoro",
+          "Alcide Djédjé"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Fidèle Sarassoro, ancien directeur de cabinet du Président, est le gouverneur du district autonome de San Pedro.",
+        "detailedExplanation": "Fidèle Sarassoro a été nommé gouverneur du district autonome de San Pedro après avoir occupé le poste de directeur de cabinet du Président. San Pedro est un port maritime stratégique pour l'économie ivoirienne, étant le deuxième plus important du pays après celui d'Abidjan, et constitue une plaque tournante pour l'exportation du cacao."
+      },
+      {
+        "id": 3,
+        "question": "Depuis quelle année Augustin Thiam occupe-t-il le poste de gouverneur du district autonome de Yamoussoukro ?",
+        "options": [
+          "2018",
+          "2020",
+          "2013",
+          "2011"
+        ],
+        "correctAnswer": 3,
+        "explanation": "Augustin Thiam a été nommé gouverneur du district autonome de Yamoussoukro en 2011 et continue d'exercer cette fonction.",
+        "detailedExplanation": "Augustin Thiam est l'un des gouverneurs les plus anciens en poste, ayant été nommé à la tête du district autonome de Yamoussoukro en 2011. Yamoussoukro, capitale politique et administrative de la Côte d'Ivoire depuis 1983, abrite notamment la Basilique Notre-Dame de la Paix, l'une des plus grandes églises au monde."
+      },
+      {
+        "id": 4,
+        "question": "Lequel de ces districts autonomes est gouverné par Apollinaire Koffi Konan ?",
+        "options": [
+          "Bas-Sassandra",
+          "Comoé",
+          "Lagunes",
+          "Sassandra-Marahoué"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Apollinaire Koffi Konan est le gouverneur du district autonome de Bas-Sassandra depuis sa nomination en 2021.",
+        "detailedExplanation": "Apollinaire Koffi Konan dirige le district autonome de Bas-Sassandra, une zone importante pour l'agriculture d'exportation située dans le sud-ouest de la Côte d'Ivoire. Ce district est particulièrement connu pour sa production de cacao, d'hévéa et de palmier à huile."
+      },
+      {
+        "id": 5,
+        "question": "Qui, parmi ces personnalités, n'est PAS gouverneur d'un district autonome en Côte d'Ivoire ?",
+        "options": [
+          "Vassiriki Koné",
+          "Lancina Koné",
+          "Kadiatou Ly Sangare",
+          "Amedé Kouakou Koffi"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Kadiatou Ly Sangare n'est pas gouverneur d'un district autonome en Côte d'Ivoire, contrairement aux autres personnes citées.",
+        "detailedExplanation": "Vassiriki Koné est gouverneur du district autonome du Woroba, Lancina Koné dirige le district autonome de la Vallée du Bandama, et Amedé Kouakou Koffi est à la tête du district autonome des Lacs. En revanche, Kadiatou Ly Sangare n'occupe pas de fonction de gouverneur dans l'administration territoriale ivoirienne."
+      },
+      {
+        "id": 6,
+        "question": "Quel lien existe entre le gouverneur du district autonome des Savanes et le Président de la République de Côte d'Ivoire ?",
+        "options": [
+          "Ce sont des cousins",
+          "Ce sont des frères",
+          "Ils n'ont aucun lien de parenté",
+          "Ce sont d'anciens camarades d'école"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Téné Birahima Ouattara, gouverneur du district autonome des Savanes, est le frère du Président Alassane Ouattara.",
+        "detailedExplanation": "Téné Birahima Ouattara, nommé gouverneur du district autonome des Savanes en 2021, est le frère cadet du Président Alassane Dramane Ouattara. Il a précédemment occupé d'autres fonctions gouvernementales, notamment comme ministre de la Défense."
+      },
+      {
+        "id": 7,
+        "question": "Combien de districts autonomes ont été créés en Côte d'Ivoire en 2021, en plus des deux préexistants (Abidjan et Yamoussoukro) ?",
+        "options": [
+          "10",
+          "14",
+          "12",
+          "8"
+        ],
+        "correctAnswer": 2,
+        "explanation": "En 2021, 12 nouveaux districts autonomes ont été créés, s'ajoutant aux 2 préexistants (Abidjan et Yamoussoukro).",
+        "detailedExplanation": "La réorganisation administrative territoriale de 2021 a porté le nombre total de districts autonomes en Côte d'Ivoire à 14, avec la création de 12 nouveaux districts qui s'ajoutent à ceux d'Abidjan et Yamoussoukro. Cette réforme visait à renforcer la décentralisation et améliorer la gouvernance locale."
+      },
+      {
+        "id": 8,
+        "question": "Quel ancien ministre de l'Agriculture est devenu gouverneur du district autonome du Sassandra-Marahoué ?",
+        "options": [
+          "Kobenan Kouassi Adjoumani",
+          "Mamadou Sangafowa Coulibaly",
+          "Kobénan Kouassi",
+          "Souleymane Diarrassouba"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Kobenan Kouassi Adjoumani, ancien ministre de l'Agriculture, est le gouverneur du district autonome du Sassandra-Marahoué depuis 2021.",
+        "detailedExplanation": "Kobenan Kouassi Adjoumani, qui a occupé le poste de ministre de l'Agriculture et du Développement Rural, dirige désormais le district autonome du Sassandra-Marahoué. Cette région est traversée par le fleuve Sassandra et constitue une zone agricole importante pour l'économie nationale ivoirienne."
+      },
+      {
+        "id": 9,
+        "question": "Lequel de ces districts autonomes n'existe PAS en Côte d'Ivoire ?",
+        "options": [
+          "Zanzan",
+          "Woroba",
+          "Bandama",
+          "Montagnes"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Il n'existe pas de district autonome nommé simplement 'Bandama' en Côte d'Ivoire, mais plutôt le district autonome de la 'Vallée du Bandama'.",
+        "detailedExplanation": "Parmi les 14 districts autonomes ivoiriens, on compte bien le Zanzan, le Woroba et les Montagnes, mais il n'existe pas de district nommé simplement 'Bandama'. On trouve en revanche le district autonome de la 'Vallée du Bandama', avec Bouaké comme ville principale."
+      },
+      {
+        "id": 10,
+        "question": "Qui gouverne le district autonome qui abrite la deuxième plus grande ville de Côte d'Ivoire ?",
+        "options": [
+          "Augustin Thiam",
+          "Ibrahim Bacongo Cissé",
+          "Lancina Koné",
+          "Téné Birahima Ouattara"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Lancina Koné gouverne le district autonome de la Vallée du Bandama, qui comprend Bouaké, deuxième plus grande ville de Côte d'Ivoire.",
+        "detailedExplanation": "Bouaké, deuxième ville la plus peuplée de Côte d'Ivoire après Abidjan, se situe dans le district autonome de la Vallée du Bandama. Ce district est gouverné par Lancina Koné depuis 2021 et constitue un carrefour commercial important au centre du pays."
+      },
+      {
+        "id": 11,
+        "question": "Quel district autonome partage à la fois une frontière avec le Mali et le Burkina Faso ?",
+        "options": [
+          "Zanzan",
+          "Denguélé",
+          "Savanes",
+          "Woroba"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Le district autonome des Savanes, situé à l'extrême nord de la Côte d'Ivoire, partage des frontières avec le Mali et le Burkina Faso.",
+        "detailedExplanation": "Le district autonome des Savanes, gouverné par Téné Birahima Ouattara, est le plus septentrional de Côte d'Ivoire. Sa position géographique lui confère des frontières avec deux pays sahéliens : le Mali à l'ouest et le Burkina Faso à l'est, ce qui en fait une zone stratégique pour les échanges commerciaux transfrontaliers."
+      },
+      {
+        "id": 12,
+        "question": "Quel district autonome ivoirien est connu pour son relief montagneux et son pic culminant à plus de 1000 mètres d'altitude ?",
+        "options": [
+          "Lacs",
+          "Montagnes",
+          "Denguélé",
+          "Woroba"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Le district autonome des Montagnes est caractérisé par son relief montagneux avec le mont Nimba qui culmine à plus de 1000 mètres d'altitude.",
+        "detailedExplanation": "Le district autonome des Montagnes, situé à l'ouest du pays et gouverné par Kouakou Kouadio Denis, est caractérisé par son relief accidenté et abrite le mont Nimba dont le pic atteint 1752 mètres d'altitude. Cette zone montagneuse abrite plusieurs groupes ethniques et possède une biodiversité riche et variée."
+      },
+      {
+        "id": 13,
+        "question": "Lequel de ces gouverneurs a précédemment occupé un poste ministériel avant sa nomination ?",
+        "options": [
+          "Benjamin Effoli",
+          "Famoussa Coulibaly",
+          "Ibrahim Bacongo Cissé",
+          "Augustin Thiam"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Ibrahim Bacongo Cissé a été ministre de la Construction avant d'être nommé gouverneur du district autonome d'Abidjan.",
+        "detailedExplanation": "Avant sa nomination comme gouverneur du district autonome d'Abidjan en 2023, Ibrahim Bacongo Cissé occupait le poste de ministre de la Construction, du Logement et de l'Urbanisme dans le gouvernement ivoirien. Cette expérience ministérielle lui confère une expertise particulière pour gérer les défis urbains de la capitale économique."
+      },
+      {
+        "id": 14,
+        "question": "Quel district autonome est considéré comme le plus important pôle économique après Abidjan ?",
+        "options": [
+          "Yamoussoukro",
+          "Vallée du Bandama",
+          "San Pedro",
+          "Gôh-Djiboua"
+        ],
+        "correctAnswer": 2,
+        "explanation": "San Pedro, avec son port maritime international, est considéré comme le deuxième pôle économique de Côte d'Ivoire après Abidjan.",
+        "detailedExplanation": "Le district autonome de San Pedro, gouverné par Fidèle Sarassoro, abrite le deuxième port maritime du pays. Ce port est crucial pour l'exportation des produits agricoles, notamment le cacao, ce qui en fait un centre économique majeur. La ville de San Pedro est en plein développement et constitue un pôle de croissance économique important après Abidjan."
+      },
+      {
+        "id": 15,
+        "question": "Quel évènement majeur a conduit à la réorganisation administrative créant 12 nouveaux districts autonomes en Côte d'Ivoire ?",
+        "options": [
+          "L'élection présidentielle de 2020",
+          "La révision constitutionnelle de 2020",
+          "Le plan national de développement 2021-2025",
+          "La signature des accords de paix définitifs"
+        ],
+        "correctAnswer": 2,
+        "explanation": "La création des 12 nouveaux districts autonomes s'inscrit dans le cadre du Plan National de Développement (PND) 2021-2025.",
+        "detailedExplanation": "La réorganisation administrative territoriale de 2021, qui a porté le nombre de districts autonomes de 2 à 14, s'inscrit dans le cadre du Plan National de Développement (PND) 2021-2025. Cette réforme vise à renforcer la décentralisation, améliorer la gouvernance locale et accélérer le développement économique régional en Côte d'Ivoire."
+      }
+    ,
+      {
+        "id": 16,
+        "question": "Quelle particularité administrative distingue le district autonome d'Abidjan des autres districts ?",
+        "options": [
+          "C'est le seul ayant un statut de collectivité territoriale",
+          "C'est le seul à disposer d'un conseil de district élu au suffrage universel",
+          "C'est le seul dont le gouverneur est également ministre",
+          "C'est le seul qui regroupe plusieurs régions administratives distinctes"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Le district autonome d'Abidjan est le seul à disposer d'un conseil de district élu au suffrage universel direct.",
+        "detailedExplanation": "Contrairement aux autres districts autonomes dont les conseillers sont nommés, le district autonome d'Abidjan est doté d'un conseil de district élu au suffrage universel direct. Cette particularité confère à la capitale économique une forme de démocratie locale plus directe, permettant aux habitants de choisir leurs représentants au niveau du district."
+      },
+      {
+        "id": 17,
+        "question": "Lequel de ces districts autonomes abrite la Basilique Notre-Dame de la Paix, considérée comme la plus grande église du monde selon certains critères ?",
+        "options": [
+          "Montagnes",
+          "Vallée du Bandama",
+          "Yamoussoukro",
+          "Lacs"
+        ],
+        "correctAnswer": 2,
+        "explanation": "La Basilique Notre-Dame de la Paix se trouve à Yamoussoukro, capitale politique et siège du district autonome du même nom.",
+        "detailedExplanation": "Construite à l'initiative du président Félix Houphouët-Boigny et consacrée par le Pape Jean-Paul II en 1990, la Basilique Notre-Dame de la Paix de Yamoussoukro est réputée pour être l'une des plus grandes églises du monde, inspirée de la Basilique Saint-Pierre de Rome mais avec des dimensions supérieures. Elle est située dans le district autonome de Yamoussoukro, gouverné par Augustin Thiam."
+      },
+      {
+        "id": 18,
+        "question": "Quel district autonome ivoirien est connu pour son barrage hydroélectrique qui fournit une part importante de l'électricité du pays ?",
+        "options": [
+          "Sassandra-Marahoué",
+          "Lacs",
+          "Bas-Sassandra",
+          "Comoé"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Le district autonome du Sassandra-Marahoué abrite le barrage hydroélectrique de Buyo sur le fleuve Sassandra, qui fournit une part significative de l'électricité nationale.",
+        "detailedExplanation": "Le barrage de Buyo, construit sur le fleuve Sassandra dans les années 1980, est l'un des principaux barrages hydroélectriques de Côte d'Ivoire. Situé dans le district autonome du Sassandra-Marahoué, il contribue significativement à la production électrique nationale avec une capacité installée de 165 MW et constitue également un réservoir important pour l'irrigation agricole."
+      },
+      {
+        "id": 19,
+        "question": "Quelle personnalité politique a été la première à occuper le poste de gouverneur du district autonome d'Abidjan lors de sa création ?",
+        "options": [
+          "Robert Beugré Mambé",
+          "Ibrahim Bacongo Cissé",
+          "Vincent Toh Bi Irié",
+          "Pierre Dimba"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Robert Beugré Mambé a été le premier gouverneur du district autonome d'Abidjan lors de sa création en 2011.",
+        "detailedExplanation": "Robert Beugré Mambé a été nommé premier gouverneur du district autonome d'Abidjan en 2011, poste qu'il a occupé pendant plusieurs années avant d'être remplacé par Ibrahim Bacongo Cissé en 2023. Il a ensuite été nommé Premier Ministre de Côte d'Ivoire, marquant une progression notable dans sa carrière politique."
+      },
+      {
+        "id": 20,
+        "question": "Quel district autonome est traversé par le fleuve Comoé et abrite le Parc National de la Comoé, classé au patrimoine mondial de l'UNESCO ?",
+        "options": [
+          "Zanzan",
+          "Savanes",
+          "Vallée du Bandama",
+          "Bounkani"
+        ],
+        "correctAnswer": 3,
+        "explanation": "Le district autonome du Bounkani est traversé par le fleuve Comoé et abrite le Parc National de la Comoé, classé au patrimoine mondial de l'UNESCO.",
+        "detailedExplanation": "Le Parc National de la Comoé, l'une des plus grandes réserves de biosphère d'Afrique de l'Ouest avec ses 11 500 km², est situé dans le district autonome du Bounkani au nord-est de la Côte d'Ivoire. Cette aire protégée, traversée par le fleuve Comoé, est reconnue pour sa biodiversité exceptionnelle et a été inscrite au patrimoine mondial de l'UNESCO en 1983."
+      },
+      {
+        "id": 21,
+        "question": "Quelle fonction occupait Serey Doh Célestin avant d'être nommé gouverneur du district autonome du Gôh-Djiboua ?",
+        "options": [
+          "Préfet de région",
+          "Ministre de la Sécurité",
+          "Directeur général des Douanes",
+          "Ambassadeur"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Serey Doh Célestin était Ministre de la Sécurité avant sa nomination comme gouverneur du district autonome du Gôh-Djiboua.",
+        "detailedExplanation": "Avant d'être nommé gouverneur du district autonome du Gôh-Djiboua en 2021, Serey Doh Célestin occupait le poste de Ministre de la Sécurité dans le gouvernement ivoirien. Cette expérience dans le domaine sécuritaire lui confère une expertise particulière pour gérer les enjeux de sécurité dans cette région agricole importante pour l'économie nationale."
+      },
+      {
+        "id": 22,
+        "question": "Lequel de ces gouverneurs de district autonome a également été maire d'une commune importante ?",
+        "options": [
+          "Ibrahim Bacongo Cissé",
+          "Fidèle Sarassoro",
+          "Augustin Thiam",
+          "Lancina Koné"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Ibrahim Bacongo Cissé a été maire de la commune de Cocody à Abidjan avant de devenir gouverneur du district autonome d'Abidjan.",
+        "detailedExplanation": "Avant sa nomination comme ministre puis comme gouverneur du district autonome d'Abidjan, Ibrahim Bacongo Cissé a exercé la fonction de maire de Cocody, l'une des communes les plus huppées d'Abidjan. Cette expérience de gestion municipale lui a permis d'acquérir une connaissance approfondie des réalités urbaines abidjanaises."
+      },
+      {
+        "id": 23,
+        "question": "Quelle est la spécificité du district autonome des Lacs par rapport aux autres districts ?",
+        "options": [
+          "C'est le district qui possède le plus grand nombre de barrages hydroélectriques",
+          "C'est le seul district dont les limites correspondent exactement à celles d'une ancienne région",
+          "C'est le district qui compte le plus grand nombre de communes",
+          "C'est le seul district qui tire son nom d'une caractéristique géographique et non ethnique"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Le district autonome des Lacs se distingue par son nombre important de barrages hydroélectriques, notamment celui de Kossou et de Taabo.",
+        "detailedExplanation": "Le district autonome des Lacs, gouverné par Amedé Kouakou Koffi, abrite plusieurs barrages hydroélectriques majeurs dont ceux de Kossou et de Taabo sur le fleuve Bandama, qui constituent des infrastructures énergétiques cruciales pour la Côte d'Ivoire. Ces barrages ont également créé d'importants lacs artificiels qui ont modifié le paysage et l'économie locale, favorisant notamment la pêche."
+      },
+      {
+        "id": 24,
+        "question": "Quel district autonome partage une frontière avec le Ghana et joue un rôle important dans les échanges commerciaux transfrontaliers ?",
+        "options": [
+          "Zanzan",
+          "Comoé",
+          "Abidjan",
+          "Indénié-Djuablin"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Le district autonome du Zanzan, situé à l'est de la Côte d'Ivoire, partage une frontière avec le Ghana et joue un rôle clé dans les échanges commerciaux transfrontaliers.",
+        "detailedExplanation": "Le district autonome du Zanzan, gouverné par Benjamin Effoli, est situé à l'est du pays et partage une longue frontière avec le Ghana. Cette position géographique en fait une zone stratégique pour les échanges commerciaux entre les deux pays, avec plusieurs postes frontaliers facilitant le commerce transfrontalier, légal et parfois informel."
+      },
+      {
+        "id": 25,
+        "question": "Dans quel objectif principal les districts autonomes ont-ils été créés en Côte d'Ivoire selon les autorités ?",
+        "options": [
+          "Pour faciliter l'organisation des élections",
+          "Pour accélérer le développement économique des régions",
+          "Pour renforcer le contrôle du pouvoir central",
+          "Pour satisfaire aux exigences des partenaires internationaux"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Les districts autonomes ont été créés principalement pour accélérer le développement économique des régions en Côte d'Ivoire.",
+        "detailedExplanation": "La création des districts autonomes s'inscrit dans une vision de développement économique décentralisé. Selon les autorités ivoiriennes, cette réforme administrative vise à rapprocher l'administration des administrés, à réduire les disparités régionales et surtout à accélérer le développement économique local en dotant chaque grande zone du pays d'une structure administrative capable de concevoir et mettre en œuvre des projets d'envergure adaptés aux réalités locales."
+      }
+    ]
+  }
