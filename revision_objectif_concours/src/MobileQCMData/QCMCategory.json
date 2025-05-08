@@ -36,6 +36,12 @@
       "questions": "qcmUML",
       "iconName": "edit_note",
       "colorHex": "#0288d1"
+    },
+    {
+      "title": "Bas-Sassandra ? ",
+      "questions": "BasSassandra",
+      "iconName": "edit_note",
+      "colorHex": "#0288d1"
     }
   ]
 }
