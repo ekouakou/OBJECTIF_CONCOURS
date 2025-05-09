@@ -16,10 +16,7 @@
           "https://www.gouv.ci/gouvernement/regions/bas-sassandra",
           "https://www.portdesanpedro.ci/"
         ],
-        "imageUrl": [
-          "https://example.com/kean-zoh.jpg",
-          "https://example.com/kean-zoh.jpg"
-        ],
+        "imageUrl": ["https://example.com/kean-zoh.jpg"],
         "detailedExplanation": "Le district de Bas-Sassandra, avec San-Pédro comme capitale, est l'une des 14 subdivisions administratives de la Côte d'Ivoire. Cette ville portuaire fut développée dans les années 1960 sous la présidence de Félix Houphouët-Boigny comme un projet majeur pour diversifier l'économie ivoirienne. Aujourd'hui, San-Pédro est un centre économique vital pour l'exportation de cacao, de café, de bois, et d'autres ressources agricoles de la région ouest du pays."
       }
     ]
