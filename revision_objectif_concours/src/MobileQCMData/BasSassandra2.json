@@ -1,0 +1,1500 @@
+{
+    "BasSassandra": [
+      {
+        "id": 1,
+        "question": "Quelle est la capitale du district de Bas-Sassandra en Côte d'Ivoire ?",
+        "options": [
+          "San-Pédro",
+          "Sassandra",
+          "Soubré",
+          "Tabou"
+        ],
+        "correctAnswer": 0,
+        "explanation": "San-Pédro est la capitale du district de Bas-Sassandra, situé dans le sud-ouest de la Côte d'Ivoire.",
+        "examples": "San-Pédro est également le deuxième port le plus important de Côte d'Ivoire après Abidjan, et joue un rôle économique majeur pour le district et le pays.",
+        "usefulLinks": [
+          "https://www.gouv.ci/gouvernement/regions/bas-sassandra",
+          "https://www.portdesanpedro.ci/"
+        ],
+        "imageUrl": [
+          "Map_of_Côte_d'Ivoire_Regions_Departments_and_Autonomous_Districts.png",
+          "Map_of_Côte_d'Ivoire_Regions_Departments_and_Autonomous_Districts.png"
+        ],
+        "detailedExplanation": "Le district de Bas-Sassandra, avec San-Pédro comme capitale, est l'une des 14 subdivisions administratives de la Côte d'Ivoire. Cette ville portuaire fut développée dans les années 1960 sous la présidence de Félix Houphouët-Boigny comme un projet majeur pour diversifier l'économie ivoirienne. Aujourd'hui, San-Pédro est un centre économique vital pour l'exportation de cacao, de café, de bois, et d'autres ressources agricoles de la région ouest du pays."
+      },
+      {
+        "id": 2,
+        "question": "En quelle année le port autonome de San-Pédro a-t-il été officiellement inauguré ?",
+        "options": [
+          "1960",
+          "1971",
+          "1983",
+          "1992"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Le port autonome de San-Pédro a été officiellement inauguré en 1971, faisant partie d'un vaste projet de développement régional sous la présidence de Félix Houphouët-Boigny.",
+        "examples": "Ce projet a transformé un petit village de pêcheurs en une ville portuaire industrielle majeure en seulement quelques années.",
+        "usefulLinks": [
+          "https://www.portdesanpedro.ci/historique",
+          "https://www.gouv.ci/infrastructures/ports"
+        ],
+        "imageUrl": [
+          "https://example.com/kean-zoh.jpg",
+          "https://example.com/kean-zoh.jpg"
+        ],
+        "detailedExplanation": "Le développement du port de San-Pédro faisait partie d'une stratégie gouvernementale pour désenclaver la région sud-ouest de la Côte d'Ivoire et créer un deuxième pôle économique important après Abidjan. Ce projet ambitieux incluait non seulement la construction du port en eau profonde, mais aussi le développement d'infrastructures routières, d'une ville moderne et d'installations industrielles. Aujourd'hui, le Port Autonome de San-Pédro (PASP) est spécialisé dans l'exportation des produits agricoles (cacao, café, bois, caoutchouc) et joue un rôle stratégique pour les pays voisins enclavés comme le Mali et le Burkina Faso."
+      },
+      {
+        "id": 3,
+        "question": "Quelle part de la production nationale de cacao provient du district de Bas-Sassandra ?",
+        "options": [
+          "Environ 15%",
+          "Environ 25%",
+          "Environ 40%",
+          "Plus de 50%"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Le district de Bas-Sassandra produit environ 40% du cacao ivoirien, ce qui en fait la principale région productrice du pays.",
+        "examples": "Cette production contribue de manière significative à faire de la Côte d'Ivoire le premier producteur mondial de cacao, avec environ 40% de la production mondiale.",
+        "usefulLinks": [
+          "https://www.conseil-cafe-cacao.ci/",
+          "https://www.fao.org/cote-ivoire/agriculture"
+        ],
+        "imageUrl": [
+          "https://example.com/kean-zoh.jpg",
+          "https://example.com/kean-zoh.jpg"
+        ],
+        "detailedExplanation": "Le district de Bas-Sassandra bénéficie de conditions climatiques et de sols particulièrement favorables à la culture du cacaoyer. Les régions de Soubré, San-Pédro, et Sassandra sont des zones de production intensive. Cette culture constitue la principale activité économique pour de nombreuses familles de la région. Le cacao est transporté vers le port de San-Pédro pour être exporté, faisant de ce port un maillon essentiel dans la chaîne logistique du cacao ivoirien. La transformation locale du cacao reste cependant un défi, la majeure partie étant exportée sous forme de fèves brutes."
+      },
+      {
+        "id": 4,
+        "question": "Lequel des parcs nationaux suivants se trouve dans le district de Bas-Sassandra ?",
+        "options": [
+          "Parc national de Taï",
+          "Parc national de la Comoé",
+          "Parc national du Banco",
+          "Parc national d'Azagny"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Le Parc national de Taï se trouve dans le district de Bas-Sassandra. C'est l'une des dernières grandes forêts primaires d'Afrique de l'Ouest.",
+        "examples": "Classé au patrimoine mondial de l'UNESCO en 1982, ce parc abrite des espèces menacées comme l'éléphant de forêt, le chimpanzé et l'hippopotame pygmée.",
+        "usefulLinks": [
+          "https://whc.unesco.org/fr/list/195/",
+          "https://www.oipr.ci/parc-national-de-tai"
+        ],
+        "imageUrl": [
+          "https://example.com/kean-zoh.jpg",
+          "https://example.com/kean-zoh.jpg"
+        ],
+        "detailedExplanation": "Le Parc national de Taï couvre une superficie d'environ 5 300 km² et représente le plus grand espace protégé de la forêt guinéenne d'Afrique de l'Ouest. Sa biodiversité est exceptionnelle avec plus de 1 300 espèces de plantes vasculaires, dont 12% sont endémiques à la région. Il abrite également 12 espèces de primates, dont le singe Diana et le colobe rouge, ainsi que 234 espèces d'oiseaux. Le parc fait face à des défis importants comme le braconnage, l'exploitation forestière illégale et l'expansion agricole, mais reste un sanctuaire écologique vital pour la région."
+      },
+      {
+        "id": 5,
+        "correctAnswer": 3,
+        "question": "Quel peuple autochtone est majoritairement présent dans la région côtière du district de Bas-Sassandra ?",
+        "options": [
+          "Les Baoulés",
+          "Les Malinkés",
+          "Les Senoufos",
+          "Les Krous"
+        ],
+        "explanation": "Les Krous constituent le principal groupe ethnique autochtone de la région côtière du district de Bas-Sassandra.",
+        "examples": "Les Krous sont traditionnellement connus pour leurs compétences en navigation et en pêche, et ont longtemps servi d'intermédiaires commerciaux entre les navires européens et les populations de l'intérieur.",
+        "usefulLinks": [
+          "https://www.persee.fr/doc/cea_0008-0055_1984_num_24_94_2208",
+          "https://www.cote-ivoire-tourisme.ci/decouvrir-la-cote-divoire/culture-et-traditions"
+        ],
+        "imageUrl": [
+          "https://example.com/kean-zoh.jpg",
+          "https://example.com/kean-zoh.jpg"
+        ],
+        "detailedExplanation": "Les Krous représentent un groupe ethnique important du sud-ouest ivoirien, comprenant plusieurs sous-groupes comme les Bétés, les Didas, les Godié et les Wê. Leur culture est caractérisée par une organisation sociale basée sur la gérontocratie (gouvernement des anciens) et un système de classes d'âge. Historiquement, ils ont résisté à la colonisation française et ont maintenu une forte identité culturelle. Dans la région côtière du Bas-Sassandra, notamment autour de Sassandra et Tabou, les communautés krous ont développé des techniques de pêche sophistiquées et ont été parmi les premiers à établir des contacts commerciaux avec les Européens."
+      },
+      {
+        "id": 6,
+        "question": "Quelle infrastructure de transport majeure, achevée en 2018, a considérablement amélioré la connectivité entre Abidjan et le district de Bas-Sassandra ?",
+        "options": [
+          "Le pont Henri Konan Bédié",
+          "L'autoroute du Nord",
+          "L'autoroute Abidjan-San-Pédro",
+          "Le chemin de fer Man-San-Pédro"
+        ],
+        "correctAnswer": 2,
+        "explanation": "L'autoroute Abidjan-San-Pédro, dont le premier tronçon a été achevé en 2018, est un projet d'infrastructure majeur visant à relier la capitale économique au district de Bas-Sassandra.",
+        "examples": "Cette autoroute réduit considérablement le temps de trajet entre les deux zones économiques majeures du pays et facilite le transport des marchandises vers le port de San-Pédro.",
+        "usefulLinks": [
+          "https://www.ageroute.ci/projets/autoroute-abidjan-san-pedro",
+          "https://www.gouv.ci/infrastructures/routes"
+        ],
+        "imageUrl": [
+          "https://example.com/kean-zoh.jpg",
+          "https://example.com/kean-zoh.jpg"
+        ],
+        "detailedExplanation": "L'autoroute Abidjan-San-Pédro est un projet stratégique pour le développement économique de la Côte d'Ivoire, s'inscrivant dans le Plan National de Développement. Cette infrastructure de 400 km est réalisée en plusieurs phases, avec un premier tronçon opérationnel depuis 2018. Elle vise à désenclaver le sud-ouest du pays, à faciliter l'acheminement des produits agricoles vers les ports d'exportation, et à stimuler le développement régional. Le projet inclut également la construction de voies de contournement des principales villes traversées et d'aires de repos. Cet axe routier s'inscrit dans un réseau plus large d'infrastructures régionales visant à connecter la Côte d'Ivoire aux pays voisins comme le Liberia et la Guinée."
+      },
+      {
+        "id": 7,
+        "question": "Quel affluent du fleuve Sassandra traverse la ville de Soubré dans le district de Bas-Sassandra ?",
+        "options": [
+          "Le Cavally",
+          "Le Bandama",
+          "Le Nzo",
+          "Le Lobo"
+        ],
+        "correctAnswer": 3,
+        "explanation": "Le Lobo est un affluent important du fleuve Sassandra qui traverse la ville de Soubré dans le district de Bas-Sassandra.",
+        "examples": "Cette rivière joue un rôle important dans l'approvisionnement en eau et l'agriculture de la région de Soubré.",
+        "usefulLinks": [
+          "https://www.hydrology.ci/bassin-du-sassandra",
+          "https://www.eaux-forets.gouv.ci/ressources-hydriques"
+        ],
+        "imageUrl": [
+          "https://example.com/kean-zoh.jpg",
+          "https://example.com/kean-zoh.jpg"
+        ],
+        "detailedExplanation": "Le bassin hydrographique du Sassandra est l'un des plus importants de Côte d'Ivoire, et le Lobo constitue l'un de ses principaux affluents. Il prend sa source dans les régions centrales du pays et parcourt environ 180 km avant de se jeter dans le Sassandra près de Soubré. Cette rivière est essentielle pour l'économie locale, servant à l'irrigation des plantations de cacao, café et hévéa. La confluence du Lobo et du Sassandra crée une zone de biodiversité riche, mais qui fait face à des défis environnementaux liés à la déforestation et à la pollution agricole. Le Lobo, comme de nombreux cours d'eau de la région, fait l'objet de programmes de gestion durable des ressources en eau."
+      },
+      {
+        "id": 8,
+        "question": "Quel barrage hydroélectrique majeur a été inauguré en 2017 dans le district de Bas-Sassandra ?",
+        "options": [
+          "Barrage de Kossou",
+          "Barrage de Buyo",
+          "Barrage de Soubré",
+          "Barrage de Taabo"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Le barrage hydroélectrique de Soubré a été inauguré en 2017 sur le fleuve Sassandra, dans le district de Bas-Sassandra.",
+        "examples": "Avec une capacité de 275 MW, ce barrage est le plus grand projet hydroélectrique réalisé en Côte d'Ivoire depuis l'indépendance après celui de Buyo.",
+        "usefulLinks": [
+          "https://www.ci-energies.ci/index.php/projets/barrage-de-soubre",
+          "https://www.afdb.org/fr/projects-operations/project-portfolio/soubre-hydroelectric-power-project"
+        ],
+        "imageUrl": [
+          "https://example.com/kean-zoh.jpg",
+          "https://example.com/kean-zoh.jpg"
+        ],
+        "detailedExplanation": "Le barrage hydroélectrique de Soubré, également connu sous le nom de barrage de Gribo-Popoli, représente un investissement majeur d'environ 331 milliards de francs CFA. Construit avec la coopération technique et financière chinoise, il augmente la capacité de production électrique nationale de près de 10%. Le projet comprend un barrage principal de 4,5 km de long, une centrale électrique équipée de trois turbines de 90 MW chacune, et un poste de transformation. Outre la production d'électricité, le barrage contribue à la régulation du débit du fleuve Sassandra, à l'irrigation agricole et au développement de la pêche continentale. Il a également entraîné des programmes de relogement pour les populations déplacées et des initiatives de protection environnementale."
+      },
+      {
+        "id": 9,
+        "question": "Quel produit agricole, autre que le cacao, constitue une culture d'exportation majeure dans le district de Bas-Sassandra ?",
+        "options": [
+          "Le coton",
+          "L'hévéa",
+          "Le riz",
+          "L'arachide"
+        ],
+        "correctAnswer": 1,
+        "explanation": "L'hévéa (caoutchouc naturel) est, après le cacao, l'une des principales cultures d'exportation du district de Bas-Sassandra.",
+        "examples": "La région abrite plusieurs plantations industrielles d'hévéa ainsi que de nombreux petits producteurs qui approvisionnent l'industrie du caoutchouc.",
+        "usefulLinks": [
+          "https://apromac.ci/",
+          "https://www.firca.ci/filieres/hevea"
+        ],
+        "imageUrl": [
+          "https://example.com/kean-zoh.jpg",
+          "https://example.com/kean-zoh.jpg"
+        ],
+        "detailedExplanation": "L'hévéaculture dans le district de Bas-Sassandra s'est considérablement développée depuis les années 1990, dans le cadre de la politique de diversification agricole. La région bénéficie d'un climat favorable et de sols adaptés à cette culture. Des entreprises comme SAPH (Société Africaine de Plantations d'Hévéas) et SOGB (Société des Caoutchoucs de Grand-Béréby) y ont établi d'importantes plantations industrielles, souvent en association avec des programmes de plantations villageoises. La production de caoutchouc naturel génère une activité économique substantielle, depuis la collecte du latex jusqu'à sa transformation primaire avant exportation. La filière hévéa constitue une source de revenus importante pour de nombreux agriculteurs de la région, complémentaire à la cacaoculture."
+      },
+      {
+        "id": 10,
+        "question": "Quelle personnalité politique originaire du district de Bas-Sassandra a occupé le poste de Premier ministre de Côte d'Ivoire entre 2012 et 2020 ?",
+        "options": [
+          "Charles Konan Banny",
+          "Guillaume Soro",
+          "Jeannot Ahoussou-Kouadio",
+          "Amadou Gon Coulibaly"
+        ],
+        "correctAnswer": 3,
+        "explanation": "Amadou Gon Coulibaly, originaire de Korhogo mais ayant des liens politiques forts avec le district de Bas-Sassandra, a été Premier ministre de Côte d'Ivoire de janvier 2017 à juillet 2020, date de son décès.",
+        "examples": "Il était considéré comme le dauphin du président Alassane Ouattara et avait été désigné comme candidat à l'élection présidentielle de 2020 avant son décès inattendu.",
+        "usefulLinks": [
+          "https://www.gouv.ci/gouvernement/premiers-ministres",
+          "https://www.jeuneafrique.com/dossiers/amadou-gon-coulibaly"
+        ],
+        "imageUrl": [
+          "https://example.com/kean-zoh.jpg",
+          "https://example.com/kean-zoh.jpg"
+        ],
+        "detailedExplanation": "Amadou Gon Coulibaly, surnommé 'AGC', était une figure politique majeure de la Côte d'Ivoire contemporaine. Bien que né à Korhogo dans le nord du pays, il a développé de solides liens politiques avec le district de Bas-Sassandra où il a mené plusieurs projets de développement. Ingénieur des travaux publics de formation, il a occupé plusieurs postes ministériels avant d'être nommé Premier ministre. Durant son mandat, il a supervisé l'implémentation du Plan National de Développement 2016-2020, avec un accent particulier sur les infrastructures dans le district de Bas-Sassandra, notamment le développement du port de San-Pédro et l'autoroute Abidjan-San-Pédro. Son décès subit en juillet 2020, peu après son retour d'un traitement médical en France, a profondément marqué la vie politique ivoirienne."
+      },
+      {
+        "id": 11,
+        "question": "Quel projet agro-industriel majeur de transformation de l'huile de palme a été inauguré à San-Pédro en 2018 ?",
+        "options": [
+          "Le complexe sucrier de Zuénoula",
+          "L'usine CEMOI de transformation du cacao",
+          "L'usine PALMCI de San-Pédro",
+          "Le complexe OLAM de transformation d'anacarde"
+        ],
+        "correctAnswer": 2,
+        "explanation": "L'usine PALMCI de San-Pédro, l'une des plus grandes unités de transformation d'huile de palme du pays, a été inaugurée dans sa version modernisée en 2018.",
+        "examples": "Cette usine traite les régimes de palmiers à huile provenant des plantations environnantes et produit de l'huile de palme brute destinée à l'exportation et au marché local.",
+        "usefulLinks": [
+          "https://www.palmci.ci/",
+          "https://www.agenceecofin.com/industrie/agroalimentaire"
+        ],
+        "imageUrl": [
+          "https://example.com/kean-zoh.jpg",
+          "https://example.com/kean-zoh.jpg"
+        ],
+        "detailedExplanation": "PALMCI, filiale du groupe SIFCA, est un acteur majeur de l'agroindustrie en Côte d'Ivoire. Son usine de San-Pédro, après une modernisation substantielle achevée en 2018, possède une capacité de traitement de 40 tonnes de régimes par heure, ce qui en fait l'une des plus performantes de la sous-région. Cette installation s'inscrit dans la stratégie nationale de transformation locale des matières premières agricoles. Elle s'approvisionne auprès des plantations industrielles environnantes mais aussi de nombreux petits producteurs dans un rayon de 50 km. L'usine produit principalement de l'huile de palme brute, mais aussi des sous-produits comme les palmistes et les tourteaux. Elle emploie directement plus de 300 personnes et génère de nombreux emplois indirects dans la filière huile de palme du district de Bas-Sassandra."
+      },
+      {
+        "id": 12,
+        "question": "Quelle est la principale compagnie maritime qui opère des services réguliers de transport de marchandises depuis le port de San-Pédro ?",
+        "options": [
+          "CMA CGM",
+          "Maersk Line",
+          "Mediterranean Shipping Company (MSC)",
+          "Grimaldi Lines"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Mediterranean Shipping Company (MSC) est la principale compagnie maritime opérant des services réguliers de transport de marchandises depuis le port de San-Pédro.",
+        "examples": "MSC assure des liaisons hebdomadaires entre San-Pédro et les grands ports européens, asiatiques et américains, facilitant ainsi l'exportation du cacao et d'autres produits de la région.",
+        "usefulLinks": [
+          "https://www.msc.com/destinations/africa/ivory-coast",
+          "https://www.portdesanpedro.ci/operateurs"
+        ],
+        "imageUrl": [
+          "https://example.com/kean-zoh.jpg",
+          "https://example.com/kean-zoh.jpg"
+        ],
+        "detailedExplanation": "Mediterranean Shipping Company (MSC), deuxième plus grande compagnie de transport maritime de conteneurs au monde, joue un rôle crucial dans la connectivité du port de San-Pédro aux marchés internationaux. La compagnie a établi une présence significative à San-Pédro depuis le début des années 2000, investissant dans des infrastructures portuaires et des services logistiques. MSC opère plusieurs lignes régulières reliant San-Pédro à l'Europe (notamment Anvers et Rotterdam), à l'Asie (principalement la Chine et Singapour), et aux Amériques. Ces services sont essentiels pour l'économie du district de Bas-Sassandra, permettant l'exportation efficace du cacao, du caoutchouc, de l'huile de palme et du bois. MSC collabore également avec les opérateurs locaux pour développer des solutions logistiques intégrées pour les pays enclavés comme le Mali et le Burkina Faso."
+      },
+      {
+        "id": 13,
+        "question": "Quelle université publique a été créée à San-Pédro en 2016 ?",
+        "options": [
+          "Université Félix Houphouët-Boigny",
+          "Université Alassane Ouattara",
+          "Université de San-Pédro",
+          "Université Jean Lorougnon Guédé"
+        ],
+        "correctAnswer": 2,
+        "explanation": "L'Université de San-Pédro a été créée en 2016 dans le cadre de la politique d'expansion de l'enseignement supérieur en Côte d'Ivoire.",
+        "examples": "Cette université se spécialise dans les formations liées aux ressources naturelles, à l'agriculture et aux sciences marines, en lien avec les spécificités économiques du district de Bas-Sassandra.",
+        "usefulLinks": [
+          "https://www.univ-sanpedro.edu.ci/",
+          "https://www.enseignement.gouv.ci/universites"
+        ],
+        "imageUrl": [
+          "https://example.com/kean-zoh.jpg",
+          "https://example.com/kean-zoh.jpg"
+        ],
+        "detailedExplanation": "L'Université de San-Pédro (USP) a été créée pour répondre aux besoins de formation supérieure dans le sud-ouest ivoirien et désengorger les universités d'Abidjan. Elle se compose de plusieurs unités de formation et de recherche (UFR) spécialisées dans les sciences agricoles et environnementales, les sciences de la mer et des pêches, les sciences économiques et de gestion, et les sciences fondamentales et appliquées. L'université accueille actuellement environ 5 000 étudiants et développe des partenariats avec le secteur privé local, notamment les entreprises agroindustrielles et portuaires. Elle joue un rôle important dans la recherche sur les écosystèmes forestiers et marins de la région, contribuant à leur gestion durable. Son campus principal, encore en développement, est situé à la périphérie de San-Pédro et comprend des installations modernes d'enseignement et de recherche."
+      },
+      {
+        "id": 14,
+        "question": "Quel phénomène naturel côtier spectaculaire, attirant des touristes, peut être observé près de la ville de Grand-Béréby dans le district de Bas-Sassandra ?",
+        "options": [
+          "Les chutes de la Dodo",
+          "Les falaises de Monogaga",
+          "La lagune de Fresco",
+          "Le phare de Sassandra"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Les falaises de Monogaga, situées près de Grand-Béréby, constituent un phénomène naturel spectaculaire attirant des touristes dans le district de Bas-Sassandra.",
+        "examples": "Ces falaises abruptes surplombant l'océan offrent des panoramas exceptionnels et abritent une végétation unique adaptée à ces conditions particulières.",
+        "usefulLinks": [
+          "https://www.cote-ivoire-tourisme.ci/les-regions/sud-ouest",
+          "https://www.oipr.ci/aires-protegees/reserve-de-monogaga"
+        ],
+        "imageUrl": [
+          "https://example.com/kean-zoh.jpg",
+          "https://example.com/kean-zoh.jpg"
+        ],
+        "detailedExplanation": "Les falaises de Monogaga font partie d'un écosystème côtier unique qui s'étend sur environ 25 km le long du littoral du district de Bas-Sassandra. Elles sont composées de roches latéritiques rougeâtres qui contrastent spectaculairement avec le bleu de l'océan et le vert de la végétation environnante. Cette zone côtière abrite une forêt littorale protégée, la Réserve de Monogaga, qui couvre plus de 8 000 hectares et constitue l'un des derniers exemples de forêt côtière en Afrique de l'Ouest. La biodiversité y est exceptionnelle, avec plusieurs espèces endémiques de plantes et d'animaux. Les falaises offrent de nombreux points de vue panoramiques accessibles par des sentiers aménagés, faisant de cette région une destination écotouristique émergente. Des projets de développement touristique durable sont en cours pour préserver ce patrimoine naturel tout en valorisant son potentiel économique."
+      },
+      {
+        "id": 15,
+        "question": "Quelle est la superficie approximative du district de Bas-Sassandra ?",
+        "options": [
+          "15 000 km²",
+          "25 000 km²",
+          "40 000 km²",
+          "60 000 km²"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Le district de Bas-Sassandra couvre une superficie approximative de 25 000 km², ce qui représente environ 8% du territoire national ivoirien.",
+        "examples": "Cette vaste région s'étend du littoral atlantique jusqu'aux zones forestières de l'intérieur, englobant plusieurs régions administratives.",
+        "usefulLinks": [
+          "https://www.gouv.ci/gouvernement/regions",
+          "https://www.ins.ci/divisions-administratives"
+        ],
+        "imageUrl": [
+          "https://example.com/kean-zoh.jpg",
+          "https://example.com/kean-zoh.jpg"
+        ],
+        "detailedExplanation": "Le district de Bas-Sassandra, créé lors de la réforme administrative de 2011, regroupe les régions de San-Pédro, Nawa et Gbôklé. Il s'étend sur environ 25 000 km² dans le sud-ouest de la Côte d'Ivoire, partageant une frontière internationale avec le Liberia à l'ouest. Sa géographie est caractérisée par une zone côtière au sud, une vaste zone forestière au centre (incluant une partie du Parc national de Taï), et des zones de transition vers la savane au nord. La densité de population varie considérablement, avec des concentrations plus importantes autour des centres urbains comme San-Pédro et Soubré, et des zones moins peuplées dans les régions forestières. Le district est traversé par plusieurs cours d'eau importants, notamment le fleuve Sassandra qui lui donne son nom et constitue sa limite orientale sur une grande partie de son cours."
+      },
+      {
+        "id": 16,
+        "question": "Quel projet d'infrastructure portuaire majeur a été lancé en 2020 pour moderniser le port de San-Pédro ?",
+        "options": [
+          "Terminal à conteneurs TC2",
+          "Quai minéralier",
+          "Terminal céréalier",
+          "Marina touristique"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Le projet de quai minéralier a été lancé en 2020 pour moderniser le port de San-Pédro et permettre l'exportation des ressources minières de l'ouest de la Côte d'Ivoire et des pays voisins.",
+        "examples": "Ce projet vise notamment à faciliter l'exportation du minerai de fer des gisements de Mont Klahoyo et de Man, ainsi que d'autres ressources minières de la région ouest.",
+        "usefulLinks": [
+          "https://www.portdesanpedro.ci/projets",
+          "https://www.gouv.ci/infrastructures/ports-maritimes"
+        ],
+        "imageUrl": [
+          "https://example.com/kean-zoh.jpg",
+          "https://example.com/kean-zoh.jpg"
+        ],
+        "detailedExplanation": "Le projet de quai minéralier du port de San-Pédro représente un investissement stratégique d'environ 300 milliards de francs CFA. Cette infrastructure spécialisée vise à positionner le port comme un hub régional pour l'exportation des ressources minières. Le quai est conçu pour accueillir des navires de grand tonnage (jusqu'à 250 000 tonnes) et sera équipé de systèmes de chargement à haut débit capables de traiter jusqu'à 20 millions de tonnes de minerais par an. Ce projet s'inscrit dans une stratégie plus large de diversification des activités du port de San-Pédro, traditionnellement orienté vers l'exportation de produits agricoles. Il est étroitement lié au développement des gisements de fer de l'ouest ivoirien et à l'amélioration des infrastructures ferroviaires pour acheminer ces minerais jusqu'au port."
+      },
+      {
+        "id": 17,
+        "question": "Quel célèbre écrivain ivoirien, originaire de Sassandra dans le district de Bas-Sassandra, a écrit 'Les Soleils des Indépendances' ?",
+        "options": [
+          "Bernard Dadié",
+          "Ahmadou Kourouma",
+          "Véronique Tadjo",
+          "Jean-Marie Adiaffi"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Ahmadou Kourouma, originaire de Boundiali mais ayant des liens avec Sassandra où il a vécu, est l'auteur du roman 'Les Soleils des Indépendances', œuvre majeure de la littérature africaine.",
+        "examples": "Ce roman publié en 1968 est considéré comme un classique de la littérature africaine francophone et a marqué une rupture stylistique par son utilisation novatrice du français influencé par les structures linguistiques malinké.",
+        "usefulLinks": [
+          "https://www.academie-francaise.fr/ahmadou-kourouma",
+          "https://www.seuil.com/auteur/ahmadou-kourouma/14350"
+        ],
+        "imageUrl": [
+          "https://example.com/kean-zoh.jpg",
+          "https://example.com/kean-zoh.jpg"
+        ],
+        "detailedExplanation": "Ahmadou Kourouma (1927-2003) est l'un des écrivains africains les plus influents du XXe siècle. Bien que né à Boundiali dans le nord de la Côte d'Ivoire, il a entretenu des liens particuliers avec le district de Bas-Sassandra où il a séjourné à plusieurs reprises, notamment à Sassandra. Son chef-d'œuvre 'Les Soleils des Indépendances' (1968) raconte l'histoire de Fama, prince malinké déchu dans l'Afrique des indépendances. L'originalité de Kourouma réside dans sa capacité à 'malinkiser' le français, créant ainsi une langue littéraire nouvelle qui reflète les réalités africaines. Ses autres œuvres majeures incluent 'Monnè, outrages et défis' (1990), 'En attendant le vote des bêtes sauvages' (1998) et 'Allah n'est pas obligé' (2000). Kourouma a reçu de nombreux prix littéraires internationaux, dont le Prix du livre Inter et le Prix Renaudot."
+      },
+      {
+        "id": 18,
+        "question": "Quelle espèce animale emblématique, gravement menacée, est protégée dans le Parc national de Taï dans le district de Bas-Sassandra ?",
+        "options": [
+          "Le lion d'Afrique",
+          "Le gorille des plaines occidentales",
+          "L'hippopotame pygmée",
+          "L'éléphant de savane"
+        ],
+        "correctAnswer": 2,
+        "explanation": "L'hippopotame pygmée (Choeropsis liberiensis) est une espèce emblématique gravement menacée qui est protégée dans le Parc national de Taï.",
+        "examples": "Le Parc national de Taï abrite l'une des dernières populations viables d'hippopotames pygmées, une espèce endémique des forêts d'Afrique de l'Ouest dont la population mondiale est estimée à moins de 3 000 individus.",
+        "usefulLinks": [
+          "https://www.iucnredlist.org/species/10032/18567171",
+          "https://whc.unesco.org/fr/list/195"
+        ],
+        "imageUrl": [
+          "https://example.com/kean-zoh.jpg",
+          "https://example.com/kean-zoh.jpg"
+        ],
+        "detailedExplanation": "L'hippopotame pygmée (Choeropsis liberiensis) est un mammifère semi-aquatique beaucoup plus petit que l'hippopotame commun, pesant entre 160 et 275 kg à l'âge adulte. Contrairement à son cousin, il est solitaire et vit dans les forêts denses à proximité des cours d'eau. Le Parc national de Taï constitue l'un de ses derniers habitats naturels préservés. Cette espèce est classée comme 'en danger' sur la Liste rouge de l'UICN en raison de la destruction de son habitat et du braconnage. Des efforts de conservation importants sont déployés dans le parc, notamment des programmes de suivi écologique, des patrouilles anti-braconnage et des initiatives d'éducation environnementale auprès des communautés locales. L'hippopotame pygmée est considéré comme une espèce 'parapluie' : sa protection bénéficie à de nombreuses autres espèces partageant son habitat."
+      },
+      {
+        "id": 19,
+        "question": "Quel pourcentage de la population du district de Bas-Sassandra travaille dans le secteur agricole ?",
+        "options": [
+          "Environ 30%",
+          "Environ 50%",
+          "Environ 70%",
+          "Plus de 80%"
+        ],
+        "correctAnswer": 3,
+        "explanation": "Plus de 80% de la population du district de Bas-Sassandra travaille dans le secteur agricole, ce qui en fait la principale activité économique de la région.",
+        "examples": "Cette forte proportion s'explique par l'importance des cultures de rente comme le cacao, l'hévéa et le palmier à huile, ainsi que par les cultures vivrières nécessaires à l'alimentation locale.",
+        "usefulLinks": [
+          "https://www.ins.ci/wp-content/uploads/2021/RGPH2021-resultats-globaux.pdf",
+          "https://www.agriculture.gouv.ci/statistiques-agricoles"
+        ],
+        "imageUrl": [
+          "https://example.com/kean-zoh.jpg",
+          "https://example.com/kean-zoh.jpg"
+        ],
+        "detailedExplanation": "L'économie du district de Bas-Sassandra est fortement dominée par l'agriculture, qui emploie plus de 80% de la population active. Cette situation reflète la vocation agricole historique de la région, renforcée par les politiques de développement des cultures d'exportation depuis l'indépendance. Le secteur agricole est diversifié, comprenant à la fois des cultures de rente (cacao, café, hévéa, palmier à huile) destinées à l'exportation et des cultures vivrières (manioc, banane plantain, riz, maïs) pour la consommation locale. L'agriculture est pratiquée sous différentes formes, allant des petites exploitations familiales traditionnelles aux grandes plantations industrielles. Malgré cette prédominance, le district fait face à des défis importants comme la déforestation, le vieillissement des plantations, la volatilité des prix mondiaux et les difficultés d'accès au crédit pour les petits producteurs. Des programmes de modernisation agricole sont en cours pour améliorer la productivité et la durabilité du secteur."
+      },
+      {
+        "id": 20,
+        "question": "Quelle cérémonie traditionnelle d'initiation est pratiquée par le peuple Wê dans la région montagneuse du district de Bas-Sassandra ?",
+        "options": [
+          "Le Dipri",
+          "Le Poro",
+          "Le Glaé",
+          "Le N'Goron"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Le Glaé est une cérémonie traditionnelle d'initiation pratiquée par le peuple Wê dans la région montagneuse du district de Bas-Sassandra.",
+        "examples": "Cette cérémonie marque le passage des jeunes hommes à l'âge adulte et comprend diverses épreuves physiques et spirituelles, ainsi que la transmission des savoirs traditionnels.",
+        "usefulLinks": [
+          "https://www.cote-ivoire-tourisme.ci/culture-et-traditions",
+          "https://unesdoc.unesco.org/ark:/48223/pf0000233259"
+        ],
+        "imageUrl": [
+          "https://example.com/kean-zoh.jpg",
+          "https://example.com/kean-zoh.jpg"
+        ],
+        "detailedExplanation": "Le Glaé est un rite initiatique complexe du peuple Wê (également appelé Guéré-Wobé) qui habite principalement la région montagneuse du district de Bas-Sassandra, notamment autour de la ville de Tai. Cette cérémonie, dont le nom signifie littéralement 'la guerre' en langue wê, se déroule traditionnellement tous les 25 à 30 ans. Les jeunes hommes, généralement âgés de 15 à 25 ans, sont isolés en forêt pendant plusieurs semaines où ils subissent diverses épreuves physiques et apprennent les secrets de la chasse, la médecine traditionnelle, l'artisanat, et les règles sociales de la communauté. Le Glaé comprend également une dimension spirituelle importante, avec l'apprentissage des rituels sacrés et la communication avec les ancêtres. La cérémonie se conclut par un retour solennel au village où les initiés, désormais considérés comme des hommes adultes, reçoivent de nouveaux noms et sont intégrés dans la classe d'âge des adultes. Bien que cette pratique se soit modifiée avec le temps sous l'influence de la modernisation, elle reste un élément culturel important pour préserver l'identité du peuple Wê."
+      },
+      {
+        "id": 21,
+        "question": "Quelle est la principale langue véhiculaire utilisée dans le commerce et les échanges quotidiens dans le district de Bas-Sassandra ?",
+        "options": [
+          "Le baoulé",
+          "Le bété",
+          "Le français",
+          "Le dioula"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Le français est la principale langue véhiculaire utilisée dans le commerce et les échanges quotidiens dans le district de Bas-Sassandra, bien que de nombreuses langues locales y soient également parlées.",
+        "examples": "En tant que langue officielle de la Côte d'Ivoire, le français sert de lingua franca dans cette région multiculturelle qui accueille des populations de diverses origines ethniques et nationales.",
+        "usefulLinks": [
+          "https://www.ethnologue.com/country/CI",
+          "https://www.axl.cefan.ulaval.ca/afrique/cotiv.htm"
+        ],
+        "imageUrl": [
+          "https://example.com/kean-zoh.jpg",
+          "https://example.com/kean-zoh.jpg"
+        ],
+        "detailedExplanation": "Le district de Bas-Sassandra est caractérisé par une grande diversité linguistique, avec plusieurs langues autochtones appartenant principalement aux groupes krou (bété, dida, godié, wê) et akan (baoulé). Cette diversité a été amplifiée par les importantes migrations internes depuis l'indépendance, qui ont amené dans la région des populations du centre et du nord du pays, ainsi que des pays voisins comme le Burkina Faso, le Mali et la Guinée. Dans ce contexte multiculturel, le français, langue officielle de la Côte d'Ivoire héritée de la colonisation, s'est imposé comme la principale langue véhiculaire, particulièrement dans les zones urbaines comme San-Pédro et Soubré. Il est utilisé dans l'administration, l'éducation, les médias, et sert de langue commune dans les échanges commerciaux et la vie quotidienne. Le dioula, une variante du bambara, joue également un rôle important comme langue commerciale, particulièrement dans les marchés, mais son usage reste moins répandu que dans le nord et le centre du pays."
+      },
+      {
+        "id": 22,
+        "question": "En quelle année le district de Bas-Sassandra a-t-il été officiellement créé dans sa forme administrative actuelle ?",
+        "options": [
+          "1997",
+          "2002",
+          "2011",
+          "2015"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Le district de Bas-Sassandra a été officiellement créé dans sa forme administrative actuelle en 2011, dans le cadre d'une réorganisation territoriale majeure de la Côte d'Ivoire.",
+        "examples": "Cette réforme administrative a créé 14 districts en Côte d'Ivoire, dont celui de Bas-Sassandra, dans le but de décentraliser le pouvoir et de favoriser un développement plus équilibré du territoire.",
+        "usefulLinks": [
+          "https://www.gouv.ci/doc/decret-2011-263.pdf",
+          "https://www.ins.ci/organisation-administrative"
+        ],
+        "imageUrl": [
+          "https://example.com/kean-zoh.jpg",
+          "https://example.com/kean-zoh.jpg"
+        ],
+        "detailedExplanation": "La création du district de Bas-Sassandra s'inscrit dans la réforme administrative majeure initiée par le décret n°2011-263 du 28 septembre 2011. Cette réorganisation territoriale, mise en œuvre après la crise post-électorale de 2010-2011, visait à moderniser l'administration territoriale ivoirienne et à rapprocher les services publics des citoyens. Le district de Bas-Sassandra a été formé par le regroupement de trois régions : San-Pédro, Nawa et Gbôklé. Cette entité administrative de niveau supérieur est dirigée par un gouverneur nommé par décret présidentiel. Le découpage en districts s'inspire du modèle français des collectivités territoriales et répond à plusieurs objectifs : améliorer la gouvernance locale, faciliter la planification du développement régional, et créer des pôles de croissance économique équilibrés sur l'ensemble du territoire national. Depuis sa création, le district de Bas-Sassandra a bénéficié de plusieurs programmes de développement ciblés, notamment dans les domaines des infrastructures et de l'agriculture."
+      },
+      {
+        "id": 23,
+        "question": "Quelle industrie de transformation a été développée à Soubré pour valoriser la production locale de cacao ?",
+        "options": [
+          "Une usine de chocolat artisanal",
+          "Une unité de production de beurre de cacao",
+          "Une fabrique de poudre de cacao instantané",
+          "Une usine de tourteaux et d'aliments pour bétail"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Une unité de production de beurre de cacao a été développée à Soubré pour valoriser la production locale de cacao et créer de la valeur ajoutée.",
+        "examples": "Cette unité industrielle transforme les fèves de cacao en beurre de cacao, un produit semi-fini à plus forte valeur ajoutée utilisé dans l'industrie chocolatière et cosmétique.",
+        "usefulLinks": [
+          "https://www.conseil-cafe-cacao.ci/transformation-locale",
+          "https://www.cargill.com/sustainability/cocoa/cocoa-promise-in-action"
+        ],
+        "imageUrl": [
+          "https://example.com/kean-zoh.jpg",
+          "https://example.com/kean-zoh.jpg"
+        ],
+        "detailedExplanation": "L'unité de production de beurre de cacao de Soubré fait partie des initiatives visant à augmenter le taux de transformation locale du cacao ivoirien, qui reste relativement faible (moins de 30% de la production est transformée localement). Cette installation industrielle, fruit d'un partenariat entre des investisseurs internationaux et des acteurs locaux, a une capacité de traitement de plusieurs milliers de tonnes de fèves par an. Elle utilise des technologies modernes pour extraire le beurre de cacao, un produit à haute valeur ajoutée utilisé non seulement dans l'industrie alimentaire pour la fabrication de chocolat, mais aussi dans les industries cosmétique et pharmaceutique. L'usine emploie plusieurs centaines de personnes, créant ainsi des emplois industriels qualifiés dans cette région traditionnellement agricole. Ce type d'initiative s'inscrit dans la politique nationale de valorisation des produits agricoles, visant à augmenter les revenus générés par la filière cacao et à diversifier l'économie locale."
+      },
+      {
+        "id": 24,
+        "question": "Quel type de pêche traditionnelle est pratiqué par les communautés kroumen le long des côtes du district de Bas-Sassandra ?",
+        "options": [
+          "La pêche au filet dérivant",
+          "La pêche à la senne tournante",
+          "La pêche en pirogue à balancier",
+          "La pêche au harpon"
+        ],
+        "correctAnswer": 2,
+        "explanation": "La pêche en pirogue à balancier est un type de pêche traditionnelle pratiqué par les communautés kroumen le long des côtes du district de Bas-Sassandra.",
+        "examples": "Cette technique utilise des pirogues monoxyles équipées d'un balancier latéral qui assure la stabilité sur les eaux parfois agitées de l'océan Atlantique.",
+        "usefulLinks": [
+          "https://www.fao.org/fishery/fr/country/civ",
+          "https://www.mirah.gouv.ci/peche-artisanale"
+        ],
+        "imageUrl": [
+          "https://example.com/kean-zoh.jpg",
+          "https://example.com/kean-zoh.jpg"
+        ],
+        "detailedExplanation": "La pêche en pirogue à balancier est une technique ancestrale des communautés kroumen qui habitent le littoral du district de Bas-Sassandra, notamment autour de Tabou, Grand-Béréby et Sassandra. Ces pirogues traditionnelles sont taillées dans un seul tronc d'arbre (d'où le terme 'monoxyle') et sont équipées d'un balancier latéral fait de bois léger qui stabilise l'embarcation dans les eaux océaniques. Cette technique permet aux pêcheurs de s'aventurer plus loin des côtes pour accéder à des zones de pêche plus riches. Les pêcheurs kroumen utilisent principalement des filets maillants et des lignes à main pour capturer diverses espèces de poissons comme le thon, la dorade, le mérou et le capitaine. Cette pêche artisanale joue un rôle important dans l'économie locale et la sécurité alimentaire des communautés côtières. Bien que confrontée à des défis comme la surpêche industrielle et le changement climatique, cette tradition se perpétue grâce à la transmission des savoirs entre générations et représente un élément important du patrimoine culturel maritime de la région."
+      },
+      {
+        "id": 25,
+        "question": "Quel événement culturel majeur se déroule chaque année à San-Pédro, célébrant la diversité ethnique du district de Bas-Sassandra ?",
+        "options": [
+          "Le Festival des Masques",
+          "Le FESTIPRIX",
+          "Le Carnaval des Peuples",
+          "Le FEMUA"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Le FESTIPRIX (Festival des Peuples de San-Pédro pour la Paix et l'Intégration des Cultures) est un événement culturel majeur qui se déroule chaque année à San-Pédro, célébrant la diversité ethnique du district de Bas-Sassandra.",
+        "examples": "Ce festival rassemble les différentes communautés ethniques locales et étrangères vivant dans la région pour des spectacles de danse, de musique, des expositions d'art et des échanges culturels.",
+        "usefulLinks": [
+          "https://www.culture.gouv.ci/festivals",
+          "https://www.cote-ivoire-tourisme.ci/agenda-culturel"
+        ],
+        "imageUrl": [
+          "https://example.com/kean-zoh.jpg",
+          "https://example.com/kean-zoh.jpg"
+        ],
+        "detailedExplanation": "Le FESTIPRIX a été créé dans les années 2000 pour promouvoir la cohésion sociale et célébrer la richesse culturelle du district de Bas-Sassandra, région qui accueille de nombreuses communautés d'origines diverses. Pendant une semaine, la ville de San-Pédro devient le théâtre de nombreuses activités culturelles : défilés traditionnels, concerts, danses folkloriques, gastronomie locale, expositions d'artisanat, conférences sur le patrimoine culturel, et compétitions sportives. Chaque édition met à l'honneur une thématique particulière liée à la paix, au développement durable ou à l'intégration culturelle. Le festival attire non seulement les habitants du district mais aussi des visiteurs nationaux et internationaux, contribuant ainsi au développement du tourisme culturel dans la région. Au-delà de sa dimension festive, le FESTIPRIX joue un rôle important dans la préservation et la transmission des traditions culturelles locales, tout en favorisant le dialogue interculturel dans une région marquée par une forte diversité ethnique."
+      },
+      {
+        "id": 26,
+        "question": "Quelle commune abrite le siège administratif du département de San-Pédro dans le district de Bas-Sassandra ?",
+        "options": [
+          "Tabou",
+          "San-Pédro ville",
+          "Grand-Béréby",
+          "Sassandra"
+        ],
+        "correctAnswer": 1,
+        "explanation": "San-Pédro ville est le siège administratif du département de San-Pédro et constitue également le chef-lieu du district de Bas-Sassandra.",
+        "examples": "La ville de San-Pédro a été développée dans les années 1960-1970 dans le cadre d'un plan d'aménagement du sud-ouest ivoirien pour désenclaver cette région riche en ressources naturelles.",
+        "usefulLinks": [
+          "https://www.gouv.ci/gouvernement/regions/bas-sassandra",
+          "https://www.sanpedro-ci.com"
+        ],
+        "imageUrl": [
+          "https://example.com/kean-zoh.jpg",
+          "https://example.com/kean-zoh.jpg"
+        ],
+        "detailedExplanation": "San-Pédro ville est non seulement le siège administratif du département de San-Pédro mais aussi le chef-lieu du district de Bas-Sassandra. Développée à partir des années 1960 sous l'impulsion du président Félix Houphouët-Boigny, la ville a été créée autour du port en eau profonde inauguré en 1971. Ce port constitue le deuxième pôle économique portuaire du pays après Abidjan. La ville compte aujourd'hui plus de 300 000 habitants et s'est développée comme un centre industriel majeur axé sur la transformation des ressources agricoles (cacao, café, bois, huile de palme) et l'exportation. Elle abrite plusieurs institutions administratives régionales, dont la préfecture du département et les sièges des directions régionales des ministères."
+      },
+      {
+        "id": 27,
+        "question": "Quel fleuve, d'une longueur d'environ 650 km, a donné son nom au district de Bas-Sassandra ?",
+        "options": [
+          "Le fleuve Bandama",
+          "Le fleuve Sassandra",
+          "Le fleuve Cavally",
+          "Le fleuve Comoé"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Le fleuve Sassandra, qui s'étend sur environ 650 km, a donné son nom au district de Bas-Sassandra. Il prend sa source en Guinée et se jette dans l'océan Atlantique près de la ville de Sassandra.",
+        "examples": "Le fleuve Sassandra constitue une voie navigable importante et une source de ressources halieutiques pour les populations riveraines. Il alimente également plusieurs barrages hydroélectriques.",
+        "usefulLinks": [
+          "https://www.eauxetforets.gouv.ci/bassins-fluviaux",
+          "https://www.hydrology.ci/sassandra-basin"
+        ],
+        "imageUrl": [
+          "https://example.com/kean-zoh.jpg",
+          "https://example.com/kean-zoh.jpg"
+        ],
+        "detailedExplanation": "Le fleuve Sassandra est l'un des principaux cours d'eau de Côte d'Ivoire avec ses 650 km de longueur. Il prend sa source dans les montagnes de Guinée sous le nom de Tienba, traverse l'ouest de la Côte d'Ivoire et se jette dans l'océan Atlantique près de la ville de Sassandra. Son bassin versant couvre environ 75 000 km². Le fleuve a donné son nom au district administratif de Bas-Sassandra, désignant la partie inférieure de son cours. Il est exploité pour la production d'électricité avec plusieurs barrages, dont celui de Buyo (inauguré en 1980) et celui de Soubré (inauguré en 2017). Le fleuve joue un rôle économique important pour la pêche, l'agriculture irriguée et le transport fluvial. Ses affluents principaux incluent le Lobo, le Davo et le N'zo."
+      },
+      {
+        "id": 28,
+        "question": "Quel projet d'infrastructure majeur a été initié en 2021 pour relier San-Pédro à la frontière libérienne ?",
+        "options": [
+          "Le barrage hydroélectrique de Gribo-Popoli",
+          "L'autoroute San-Pédro - Harper",
+          "Le chemin de fer Man - San-Pédro",
+          "Le pont sur le fleuve Cavally"
+        ],
+        "correctAnswer": 1,
+        "explanation": "L'autoroute San-Pédro - Harper est un projet d'infrastructure routière majeur initié en 2021 pour relier la ville portuaire de San-Pédro en Côte d'Ivoire à Harper au Liberia.",
+        "examples": "Ce projet s'inscrit dans le cadre du développement des corridors économiques ouest-africains et vise à faciliter les échanges commerciaux entre la Côte d'Ivoire et le Liberia.",
+        "usefulLinks": [
+          "https://www.ageroute.ci/projets/corridor-san-pedro-harper",
+          "https://www.africainfradata.org/project/san-pedro-harper-highway"
+        ],
+        "imageUrl": [
+          "https://example.com/kean-zoh.jpg",
+          "https://example.com/kean-zoh.jpg"
+        ],
+        "detailedExplanation": "L'autoroute San-Pédro - Harper est un projet d'infrastructure stratégique lancé en 2021 pour relier San-Pédro (Côte d'Ivoire) à Harper (Liberia) sur une distance d'environ 160 km. Ce projet est financé en partie par la Banque Africaine de Développement (BAD) et s'inscrit dans le Plan National de Développement de la Côte d'Ivoire. L'objectif est de désenclaver la région frontalière, stimuler le commerce transfrontalier et renforcer l'intégration économique régionale. Cette autoroute permettra également au port de San-Pédro d'étendre son hinterland au Liberia et à la Sierra Leone. Le projet inclut la construction de postes-frontières à procédures simplifiées et plusieurs infrastructures sociales le long du corridor. La première phase des travaux devrait s'achever en 2025, avec une mise en service complète prévue pour 2027."
+      },
+      {
+        "id": 29,
+        "question": "Quelle aire protégée du district de Bas-Sassandra est classée au patrimoine mondial de l'UNESCO depuis 1982 ?",
+        "options": [
+          "La réserve naturelle de Sassandra",
+          "Le Parc national de Taï",
+          "La forêt classée de la Haute Dodo",
+          "La réserve de faune du N'zo"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Le Parc national de Taï, situé dans le district de Bas-Sassandra, est inscrit au patrimoine mondial de l'UNESCO depuis 1982 en raison de sa biodiversité exceptionnelle et de sa forêt primaire remarquablement préservée.",
+        "examples": "Le Parc national de Taï abrite plus de 1 300 espèces de plantes supérieures, 234 espèces d'oiseaux et 54 espèces de mammifères, dont l'hippopotame pygmée, endémique de la région.",
+        "usefulLinks": [
+          "https://whc.unesco.org/fr/list/195/",
+          "https://www.oipr.ci/parc/tai"
+        ],
+        "imageUrl": [
+          "https://example.com/kean-zoh.jpg",
+          "https://example.com/kean-zoh.jpg"
+        ],
+        "detailedExplanation": "Le Parc national de Taï, créé en 1972 et inscrit au patrimoine mondial de l'UNESCO en 1982, s'étend sur 5 364 km² dans le sud-ouest de la Côte d'Ivoire, dans le district de Bas-Sassandra. Il constitue le plus grand vestige de forêt primaire d'Afrique de l'Ouest et abrite une biodiversité exceptionnelle, incluant 12 espèces endémiques et plusieurs espèces menacées comme l'hippopotame pygmée (Choeropsis liberiensis), le chimpanzé d'Afrique occidentale (Pan troglodytes verus) et le colobe bai de Miss Waldron (Piliocolobus waldronae). Le parc joue un rôle crucial dans la régulation du climat local et la protection des bassins versants des fleuves Cavally et Sassandra. Malgré des défis liés au braconnage et à l'exploitation forestière illégale, il bénéficie de programmes de conservation soutenus par des organisations internationales et le gouvernement ivoirien."
+      },
+      {
+        "id": 30,
+        "question": "Quelle usine de transformation agro-industrielle majeure a été inaugurée à Soubré en 2019 ?",
+        "options": [
+          "Une unité de transformation de l'hévéa",
+          "Une raffinerie d'huile de palme",
+          "Une usine de transformation du cacao",
+          "Une conserverie d'ananas"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Une usine de transformation du cacao a été inaugurée à Soubré en 2019, marquant un tournant dans la stratégie de valorisation locale de la production cacaoyère de la région.",
+        "examples": "Cette usine permet de transformer les fèves de cacao en produits semi-finis comme le beurre de cacao, la poudre et la liqueur de cacao, créant ainsi de la valeur ajoutée localement.",
+        "usefulLinks": [
+          "https://www.conseil-cafe-cacao.ci/transformations",
+          "https://www.investinsoubre.ci"
+        ],
+        "imageUrl": [
+          "https://example.com/kean-zoh.jpg",
+          "https://example.com/kean-zoh.jpg"
+        ],
+        "detailedExplanation": "L'usine de transformation du cacao inaugurée à Soubré en 2019 représente un investissement d'environ 60 milliards de francs CFA (environ 91 millions d'euros). Cette infrastructure moderne, d'une capacité de traitement de 50 000 tonnes de fèves par an, s'inscrit dans la politique nationale de transformation locale d'au moins 50% de la production cacaoyère ivoirienne d'ici 2025. Elle emploie directement plus de 300 personnes et génère environ 2 000 emplois indirects. L'usine produit principalement du beurre, de la poudre et de la liqueur de cacao destinés à l'exportation et au marché local. Son implantation à Soubré est stratégique car la région est le premier bassin de production de cacao du pays. Cette unité industrielle contribue significativement au développement économique du district de Bas-Sassandra en augmentant les revenus des producteurs locaux et en diversifiant l'économie régionale."
+      },
+      {
+        "id": 31,
+        "question": "Quel phénomène climatique caractéristique affecte particulièrement le district de Bas-Sassandra entre les mois de décembre et février ?",
+        "options": [
+          "La saison des ouragans",
+          "L'harmattan",
+          "La mousson",
+          "Le phénomène El Niño"
+        ],
+        "correctAnswer": 1,
+        "explanation": "L'harmattan, un vent sec et chargé de poussière venant du Sahara, affecte le district de Bas-Sassandra principalement entre décembre et février, réduisant l'humidité et causant une baisse des températures nocturnes.",
+        "examples": "Pendant la période de l'harmattan, le ciel devient brumeux, la visibilité est réduite et l'on observe une augmentation des problèmes respiratoires et cutanés dans la population.",
+        "usefulLinks": [
+          "https://www.sodexam.ci/phenomenes-climatiques",
+          "https://www.meteo.ci/bas-sassandra"
+        ],
+        "imageUrl": [
+          "https://example.com/kean-zoh.jpg",
+          "https://example.com/kean-zoh.jpg"
+        ],
+        "detailedExplanation": "L'harmattan est un vent sec et poussiéreux qui souffle du nord-est (Sahara) vers le sud-ouest et affecte particulièrement le district de Bas-Sassandra entre décembre et février. Ce phénomène climatique saisonnier se caractérise par une forte baisse de l'humidité (souvent inférieure à 30%), un ciel voilé par les particules de poussière en suspension et une amplitude thermique importante entre le jour et la nuit. Pendant cette période, les températures nocturnes peuvent descendre jusqu'à 18°C alors que les journées restent chaudes (28-32°C). L'harmattan a des impacts significatifs sur l'agriculture du district, notamment sur les plantations de cacao qui peuvent souffrir du stress hydrique. Il provoque également une recrudescence des feux de brousse et des problèmes sanitaires (infections respiratoires, déshydratation, crises d'asthme). Les transporteurs maritimes et les pêcheurs doivent adapter leurs activités en raison de la visibilité réduite sur les côtes du district."
+      },
+      {
+        "id": 32,
+        "question": "Quel projet touristique d'écotourisme majeur a été lancé en 2019 dans la région de Grand-Béréby ?",
+        "options": [
+          "Le complexe hôtelier Azuretti Beach",
+          "La réserve marine des tortues de Grand-Béréby",
+          "Le parc d'attractions Bay of Sassandra",
+          "Le sanctuaire des éléphants de forêt"
+        ],
+        "correctAnswer": 1,
+        "explanation": "La réserve marine des tortues de Grand-Béréby est un projet d'écotourisme majeur lancé en 2019 pour protéger les sites de nidification des tortues marines et développer un tourisme durable dans la région.",
+        "examples": "Cette réserve permet l'observation des tortues luths, vertes et olivâtres pendant la saison de ponte qui s'étend d'octobre à mars, tout en sensibilisant à la protection de ces espèces menacées.",
+        "usefulLinks": [
+          "https://www.ecotourisme-ci.org/grand-bereby",
+          "https://www.conservation-tortues.org/sites/grand-bereby"
+        ],
+        "imageUrl": [
+          "https://example.com/kean-zoh.jpg",
+          "https://example.com/kean-zoh.jpg"
+        ],
+        "detailedExplanation": "La réserve marine des tortues de Grand-Béréby, inaugurée en 2019, s'étend sur environ 30 km de côte et englobe plusieurs plages cruciales pour la reproduction des tortues marines. Ce projet d'écotourisme a été développé en partenariat avec des ONG internationales et le Ministère ivoirien du Tourisme et de l'Environnement. La réserve protège principalement trois espèces de tortues marines menacées : la tortue luth (Dermochelys coriacea), la tortue verte (Chelonia mydas) et la tortue olivâtre (Lepidochelys olivacea). L'initiative emploie des écogardes issus des communautés locales et propose des circuits touristiques incluant l'observation nocturne des pontes (d'octobre à mars), des visites guidées des écloseries, et des activités de sensibilisation environnementale. Le projet a permis de créer plus de 100 emplois directs et indirects et constitue une source de revenus alternative pour les communautés qui pratiquaient auparavant le braconnage des tortues et le prélèvement des œufs."
+      },
+      {
+        "id": 33,
+        "question": "Quelle communauté ethnique, réputée pour son expertise maritime, est historiquement associée à la navigation et à la pêche dans le district de Bas-Sassandra ?",
+        "options": [
+          "Les Baoulés",
+          "Les Krous",
+          "Les Sénoufos",
+          "Les Malinkés"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Les Krous (ou Kroumen) sont une communauté ethnique du sud-ouest ivoirien, particulièrement présente dans le district de Bas-Sassandra, réputée pour son expertise maritime, la navigation et la pêche traditionnelle.",
+        "examples": "Historiquement, les Kroumen servaient comme intermédiaires et navigateurs pour les navires européens le long de la côte ouest-africaine, d'où leur nom de 'Krou-men' (hommes d'équipage) donné par les Anglais.",
+        "usefulLinks": [
+          "https://www.cultureci.gouv.ci/peuples/krou",
+          "https://www.ethnologue.com/language/kru"
+        ],
+        "imageUrl": [
+          "https://example.com/kean-zoh.jpg",
+          "https://example.com/kean-zoh.jpg"
+        ],
+        "detailedExplanation": "Les Krous (ou Kroumen) constituent l'une des principales communautés ethniques du district de Bas-Sassandra. Ce peuple, qui appartient au grand groupe linguistique krou, est originellement établi le long de la côte sud-ouest ivoirienne, entre les fleuves Sassandra et Cavally. Réputés pour leur expertise maritime exceptionnelle, les Kroumen ont développé des techniques de navigation avancées adaptées aux conditions difficiles de l'océan Atlantique dans cette région. Dès le XVIIe siècle, ils ont servi comme intermédiaires commerciaux, pilotes et marins pour les navires européens, ce qui leur a valu le nom de 'Krou-men' (hommes d'équipage) de la part des navigateurs britanniques. Leur pirogue traditionnelle, la 'kouffa', se distingue par sa forme effilée et sa grande maniabilité. Aujourd'hui encore, bien que les pratiques aient évolué, les Kroumen perpétuent des techniques de pêche traditionnelles et maintiennent un rapport privilégié avec l'océan. Leurs communautés sont particulièrement présentes autour de Tabou, Grand-Béréby et Sassandra."
+      },
+      {
+        "id": 34,
+        "question": "Quel pourcentage approximatif de la production nationale d'hévéa provient du district de Bas-Sassandra ?",
+        "options": [
+          "Environ 15%",
+          "Environ 30%",
+          "Environ 45%",
+          "Environ 60%"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Le district de Bas-Sassandra produit environ 45% de la production nationale d'hévéa, faisant de cette région le premier bassin hévéicole de Côte d'Ivoire.",
+        "examples": "Cette forte production d'hévéa a conduit à l'implantation de plusieurs usines de première transformation du latex dans la région, notamment à San-Pédro et Soubré.",
+        "usefulLinks": [
+          "https://www.apromac.ci/regions-productrices",
+          "https://www.caoutchouc-naturel.ci/statistiques"
+        ],
+        "imageUrl": [
+          "https://example.com/kean-zoh.jpg",
+          "https://example.com/kean-zoh.jpg"
+        ],
+        "detailedExplanation": "Le district de Bas-Sassandra s'est imposé comme le premier bassin hévéicole de Côte d'Ivoire avec environ 45% de la production nationale. Cette performance s'explique par plusieurs facteurs : des conditions pédoclimatiques particulièrement favorables à l'hévéaculture, une disponibilité relative de terres par rapport à d'autres régions du pays, et une politique active de diversification agricole menée depuis les années 1990 pour réduire la dépendance au cacao. Le district compte plus de 100 000 hectares de plantations d'hévéa, allant des grandes exploitations industrielles aux petites plantations villageoises. Plusieurs usines de première transformation ont été implantées dans la région, notamment à San-Pédro, Soubré et Grand-Béréby, créant ainsi une chaîne de valeur locale. La production de caoutchouc naturel dans le district génère plus de 35 000 emplois directs et constitue la deuxième source de revenus agricoles après le cacao. La filière fait face à des défis de durabilité, notamment la concurrence avec les cultures vivrières et la déforestation associée à l'extension des plantations."
+      },
+      {
+        "id": 35,
+        "question": "Quel festival culturel annuel célèbre l'identité maritime du district de Bas-Sassandra à Sassandra ?",
+        "options": [
+          "Le Festikro",
+          "Le Festimarine",
+          "Le Sassafest",
+          "Le Festival des Piroguiers"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Le Festimarine est un festival culturel annuel organisé à Sassandra qui célèbre l'identité maritime et le patrimoine culturel lié à l'océan dans le district de Bas-Sassandra.",
+        "examples": "Ce festival comprend des courses de pirogues traditionnelles, des expositions sur l'histoire maritime de la région, des démonstrations de techniques de pêche et des spectacles de danses traditionnelles des peuples côtiers.",
+        "usefulLinks": [
+          "https://www.tourisme.gouv.ci/evenements/festimarine",
+          "https://www.culturemaritime-ci.org/festimarine"
+        ],
+        "imageUrl": [
+          "https://example.com/kean-zoh.jpg",
+          "https://example.com/kean-zoh.jpg"
+        ],
+        "detailedExplanation": "Le Festimarine est un festival culturel créé en 2015 qui se tient annuellement à Sassandra, généralement pendant la première quinzaine d'avril. Cet événement majeur du calendrier culturel du district de Bas-Sassandra célèbre l'identité maritime de la région et le riche patrimoine des communautés côtières. Le festival s'articule autour de plusieurs activités : régates de pirogues traditionnelles, démonstrations de techniques de pêche ancestrales, expositions sur l'histoire maritime de la région, gastronomie de produits de la mer, et spectacles de danses et musiques traditionnelles des peuples kroumen et neyo. Le Festimarine attire chaque année plus de 20 000 visiteurs, dont de nombreux touristes nationaux et internationaux, contribuant significativement à l'économie locale. L'événement joue également un rôle important dans la transmission des savoir-faire maritimes traditionnels aux jeunes générations et dans la sensibilisation à la préservation des ressources marines. Il est organisé par la mairie de Sassandra en collaboration avec le Ministère du Tourisme et le Ministère de la Culture."
+      },
+      {
+        "id": 36,
+        "question": "Quelle technique agricole traditionnelle, respectueuse de l'environnement, est pratiquée par les communautés autochtones du district de Bas-Sassandra pour la culture du riz pluvial ?",
+        "options": [
+          "L'agriculture sur brûlis",
+          "La riziculture en terrasses",
+          "Le système taungya",
+          "L'agroforesterie à étages multiples"
+        ],
+        "correctAnswer": 3,
+        "explanation": "L'agroforesterie à étages multiples est une technique agricole traditionnelle pratiquée par les communautés autochtones du district de Bas-Sassandra, associant le riz pluvial à diverses espèces arborées et arbustives dans un système écologiquement durable.",
+        "examples": "Cette méthode permet de cultiver simultanément du riz, des légumineuses, des tubercules et des arbres fruitiers sur la même parcelle, maximisant l'utilisation de l'espace et préservant la fertilité des sols.",
+        "usefulLinks": [
+          "https://www.agroforesterie.ci/techniques-traditionnelles",
+          "https://www.fao.org/agroforestry/west-africa"
+        ],
+        "imageUrl": [
+          "https://example.com/kean-zoh.jpg",
+          "https://example.com/kean-zoh.jpg"
+        ],
+        "detailedExplanation": "L'agroforesterie à étages multiples est une technique agricole sophistiquée développée par les peuples autochtones du district de Bas-Sassandra, notamment les Krous, les Wê et les Bakwé. Ce système de culture associe sur une même parcelle des cultures annuelles comme le riz pluvial à différentes strates de végétation pérenne : arbres de grande taille (fromagers, irokos), arbres fruitiers de taille moyenne (avocatiers, manguiers, colatiers), arbustes (caféiers, agrumes) et plantes herbacées (légumineuses, tubercules). Cette pratique repose sur une connaissance approfondie des interactions entre les plantes : certaines espèces fixent l'azote, d'autres apportent de l'ombre ou structurent le sol. Les avantages sont multiples : maintien de la biodiversité, préservation de la structure et de la fertilité des sols, optimisation de l'utilisation de l'espace et des ressources, résilience face aux aléas climatiques et diversification des sources de nourriture et de revenus. Bien que menacée par l'expansion des monocultures commerciales, cette technique connaît un regain d'intérêt dans les programmes de développement agricole durable de la région."
+      },
+      {
+        "id": 37,
+        "question": "Quel projet de diversification agricole majeur a été lancé en 2020 dans le département de Tabou pour réduire la dépendance au cacao ?",
+        "options": [
+          "Le projet d'aquaculture côtière",
+          "Le programme de développement de la vanille",
+          "L'initiative anacarde durable",
+          "Le projet d'extension de la riziculture irriguée"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Le projet d'aquaculture côtière a été lancé en 2020 dans le département de Tabou comme initiative majeure de diversification agricole visant à réduire la dépendance de la région au cacao.",
+        "examples": "Ce projet comprend le développement d'exploitations de crevettes, de tilapias et d'huîtres dans les lagunes côtières, créant de nouvelles sources de revenus pour les communautés locales.",
+        "usefulLinks": [
+          "https://www.peche.gouv.ci/projets/aquaculture-tabou",
+          "https://www.fao.org/aquaculture/cote-divoire"
+        ],
+        "imageUrl": [
+          "https://example.com/kean-zoh.jpg",
+          "https://example.com/kean-zoh.jpg"
+        ],
+        "detailedExplanation": "Le projet d'aquaculture côtière lancé en 2020 dans le département de Tabou représente un investissement de 15 milliards de francs CFA (environ 23 millions d'euros) financé par le gouvernement ivoirien et des partenaires internationaux. Cette initiative vise à diversifier l'économie locale traditionnellement dominée par la cacaoculture, tout en valorisant le potentiel halieutique des 70 km de côte et des nombreuses lagunes de la région. Le projet comprend trois volets principaux : la crevetticulture en bassins artificiels (espèce Penaeus monodon), la pisciculture du tilapia en cages flottantes dans les lagunes, et l'ostréiculture (huîtres de mangrove). Une écloserie moderne a été construite à Tabou pour fournir des alevins et des post-larves de qualité aux producteurs. Le projet a déjà permis la création de 50 fermes aquacoles employant plus de 700 personnes, dont 60% de femmes. L'objectif à l'horizon 2025 est d'atteindre une production annuelle de 5 000 tonnes de produits aquacoles, générant un chiffre d'affaires estimé à 7 milliards de francs CFA et créant 2 000 emplois directs et indirects."
+      },
+      {
+        "id": 38,
+        "question": "Quelle initiative de certification a été mise en place en 2021 pour valoriser le cacao produit durablement dans le district de Bas-Sassandra ?",
+        "options": [
+          "Le label 'Cacao Vert'",
+          "La certification 'Sassandra Durable'",
+          "Le programme 'Cacao Forêt Propre'",
+          "L'initiative 'Origine Protégée Bas-Sassandra'"
+        ],
+        "correctAnswer": 3,
+        "explanation": "L'initiative 'Origine Protégée Bas-Sassandra' est un programme de certification lancé en 2021 pour valoriser le cacao produit selon des méthodes durables dans le district de Bas-Sassandra.",
+        "examples": "Cette certification garantit que le cacao est cultivé sans déforestation, avec des pratiques respectueuses de l'environnement et dans des conditions sociales équitables pour les producteurs.",
+        "usefulLinks": [
+          "https://www.conseil-cafe-cacao.ci/certifications",
+          "https://www.origineprotegee-bassassandra.org"
+        ],
+        "imageUrl": [
+          "https://example.com/kean-zoh.jpg",
+          "https://example.com/kean-zoh.jpg"
+        ],
+        "detailedExplanation": "L'initiative 'Origine Protégée Bas-Sassandra' est un programme de certification lancé en 2021 par le Conseil Café-Cacao en partenariat avec les autorités régionales et des acteurs internationaux de la filière cacao. Cette certification vise à créer une identité territoriale forte pour le cacao du district de Bas-Sassandra, première région productrice du pays, tout en promouvant des pratiques durables. Pour obtenir cette certification, les producteurs doivent respecter un cahier des charges strict : zéro déforestation, interdiction des pesticides dangereux, conservation de la biodiversité, respect des droits des travailleurs et absence de travail des enfants. La certification garantit également une traçabilité complète de la fève jusqu'au produit fini. Les producteurs certifiés bénéficient d'une prime de qualité d'environ 350 francs CFA par kilogramme de cacao. Le programme s'accompagne de formations aux bonnes pratiques agricoles et d'un accès facilité aux intrants et au crédit. En 2023, plus de 15 000 producteurs étaient certifiés, représentant environ 60 000 tonnes de cacao. L'objectif est d'atteindre 50% de la production du district certifiée d'ici 2026."
+      },
+      {
+        "id": 39,
+        "question": "Quel projet de développement urbain majeur a été lancé en 2022 pour moderniser le front de mer de San-Pédro ?",
+        "options": [
+          "San-Pédro Riviera",
+          "La Baie des Lumières",
+          "Port City Development",
+          "San-Pédro Waterfront 2030"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Le projet 'La Baie des Lumières' a été lancé en 2022 pour revitaliser et moderniser le front de mer de San-Pédro, transformant la façade maritime de la ville en un espace urbain attractif et dynamique.",
+        "examples": "Ce projet comprend l'aménagement d'une promenade côtière de 5 km, la construction d'espaces publics, de restaurants, d'hôtels de standing et d'infrastructures culturelles le long du littoral urbain.",
+        "usefulLinks": [
+          "https://www.urbanisme.gouv.ci/grands-projets/baie-des-lumieres",
+          "https://www.sanpedro-ci.com/developpement-urbain"
+        ],
+        "imageUrl": [
+          "https://example.com/kean-zoh.jpg",
+          "https://example.com/kean-zoh.jpg"
+        ],
+        "detailedExplanation": "Le projet 'La Baie des Lumières' est un programme ambitieux de réaménagement urbain lancé en 2022 par le gouvernement ivoirien et la municipalité de San-Pédro avec un budget de 180 milliards de francs CFA (environ 274 millions d'euros). Ce projet vise à transformer la façade maritime de San-Pédro, deuxième ville portuaire du pays, en un espace urbain moderne, attractif et durable. Il s'étend sur 5 km de littoral et 120 hectares. Les principales composantes incluent une promenade piétonne le long de la côte, un parc urbain de 30 hectares, un centre culturel et artistique avec un musée maritime, une marina pour yachts et bateaux de plaisance, plusieurs hôtels de standing international (dont deux 5 étoiles), un centre commercial front de mer, et des quartiers résidentiels haut de gamme. Le projet intègre des principes de développement durable avec l'utilisation d'énergies renouvelables, la gestion intelligente de l'eau et la préservation des écosystèmes côtiers. La première phase devrait être achevée en 2025, et l'ensemble du projet en 2030. 'La Baie des Lumières' devrait créer environ 5 000 emplois directs et positionner San-Pédro comme une destination touristique majeure en Afrique de l'Ouest."
+      },
+      {
+        "id": 40,
+        "question": "Quelle initiative communautaire innovante de gestion des ressources forestières a été reconnue par un prix international en 2023 dans le département de Soubré ?",
+        "options": [
+          "Le programme 'Forêts des Ancêtres'",
+          "La coopérative forestière Nawa",
+          "Le projet REDD+ communautaire de Gagnoa",
+          "L'initiative des Forêts Sacrées du Bas-Sassandra"
+        ],
+        "correctAnswer": 3,
+        "explanation": "L'initiative des Forêts Sacrées du Bas-Sassandra est un projet communautaire innovant de gestion des ressources forestières dans le département de Soubré qui a reçu une reconnaissance internationale en 2023.",
+        "examples": "Ce projet associe savoirs traditionnels et techniques modernes de conservation pour protéger des îlots forestiers considérés comme sacrés par les communautés locales, tout en générant des revenus durables.",
+        "usefulLinks": [
+          "https://www.eauxetforets.gouv.ci/forets-sacrees",
+          "https://www.unep.org/awards/forest-conservation"
+        ],
+        "imageUrl": [
+          "https://example.com/kean-zoh.jpg",
+          "https://example.com/kean-zoh.jpg"
+        ],
+        "detailedExplanation": "L'initiative des Forêts Sacrées du Bas-Sassandra est un projet communautaire innovant lancé en 2019 dans le département de Soubré qui a reçu le prestigieux Prix Equateur du Programme des Nations Unies pour le Développement (PNUD) en 2023. Ce projet unique combine la préservation des forêts considérées comme sacrées par les communautés autochtones (principalement Bakwé et Bété) avec des approches modernes de conservation et de valorisation économique durable. L'initiative protège un réseau de 27 forêts sacrées couvrant environ 6 500 hectares, constituant des îlots de biodiversité exceptionnelle dans une région fortement touchée par la déforestation liée à l'expansion agricole. La gestion est assurée par un comité mixte incluant des chefs traditionnels, des représentants des communautés et des experts forestiers. Le projet a développé plusieurs activités génératrices de revenus compatibles avec la conservation : écotourisme culturel, apiculture forestière, collecte durable de plantes médicinales, et production de cacao sous ombrage en périphérie des forêts. Cette approche a permis de réduire la déforestation de 80% dans les zones concernées, d'augmenter les revenus communautaires de 40%, et de préserver des pratiques culturelles ancestrales liées à ces espaces sacrés."
+      },
+      {
+        "id": 41,
+        "question": "Quel phénomène géologique rare peut être observé sur la côte du district de Bas-Sassandra, notamment près de la ville de Monogaga ?",
+        "options": [
+          "Des cheminées de fées basaltiques",
+          "Des falaises de latérite rouge",
+          "Des formations de grès en dentelle",
+          "Des grottes calcaires sous-marines"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Les falaises de latérite rouge sont un phénomène géologique caractéristique que l'on peut observer sur la côte du district de Bas-Sassandra, particulièrement près de la ville de Monogaga.",
+        "examples": "Ces impressionnantes falaises rougeâtres de 20 à 30 mètres de hauteur, formées par l'oxydation des sols riches en fer, créent un contraste saisissant avec le bleu de l'océan et le vert de la végétation.",
+        "usefulLinks": [
+          "https://www.geologie.gouv.ci/sites-remarquables",
+          "https://www.tourisme-bassassandra.ci/monogaga"
+        ],
+        "imageUrl": [
+          "https://example.com/kean-zoh.jpg",
+          "https://example.com/kean-zoh.jpg"
+        ],
+        "detailedExplanation": "Les falaises de latérite rouge constituent un phénomène géologique remarquable visible sur la côte du district de Bas-Sassandra, particulièrement spectaculaire près de la ville de Monogaga. Ces formations résultent d'un processus pédologique spécifique appelé latérisation, caractéristique des régions tropicales humides. Sous l'effet des précipitations abondantes et des températures élevées, les roches subissent une altération chimique intense qui lessive les éléments solubles (silice, bases) et concentre les oxydes de fer et d'aluminium, donnant cette couleur rouge-orangé caractéristique. Les falaises, qui s'élèvent de 20 à 30 mètres au-dessus de l'océan, sont continuellement modelées par l'érosion marine, créant des formes parfois spectaculaires. Ce site présente un intérêt scientifique majeur pour comprendre les processus d'altération en milieu tropical et l'histoire géologique de la région. Sur le plan touristique, ces falaises constituent l'un des attraits majeurs de la côte du Bas-Sassandra, offrant des panoramas exceptionnels, particulièrement au coucher du soleil lorsque la lumière intensifie leur couleur rouge. La zone abrite également une biodiversité spécifique adaptée à ces sols particuliers."
+      },
+      {
+        "id": 42,
+        "question": "Quel investissement majeur dans le secteur énergétique a été réalisé en 2023 dans le département de San-Pédro ?",
+        "options": [
+          "La centrale thermique à gaz de San-Pédro",
+          "Le parc photovoltaïque de Gabiadji",
+          "L'extension du barrage de Buyo",
+          "La centrale à biomasse de San-Pédro"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Le parc photovoltaïque de Gabiadji est un investissement majeur dans le secteur énergétique réalisé en 2023 dans le département de San-Pédro, marquant un tournant dans la transition énergétique du district de Bas-Sassandra.",
+        "examples": "Cette centrale solaire d'une capacité de 50 MW permet d'alimenter en électricité environ 60 000 foyers tout en réduisant la dépendance aux énergies fossiles.",
+        "usefulLinks": [
+          "https://www.energie.gouv.ci/projets/parc-gabiadji",
+          "https://www.renewable-energy-ci.org/san-pedro"
+        ],
+        "imageUrl": [
+          "https://example.com/kean-zoh.jpg",
+          "https://example.com/kean-zoh.jpg"
+        ],
+        "detailedExplanation": "Le parc photovoltaïque de Gabiadji, inauguré en avril 2023, représente un investissement de 47 milliards de francs CFA (environ 72 millions d'euros) dans le département de San-Pédro. Cette centrale solaire d'une capacité de 50 mégawatts s'étend sur 60 hectares et comprend plus de 120 000 panneaux photovoltaïques de dernière génération. Le projet a été financé dans le cadre d'un partenariat public-privé entre l'État ivoirien et un consortium international, avec le soutien de la Banque Africaine de Développement. Cette infrastructure énergétique permet d'alimenter environ 60 000 foyers et de réduire les émissions de CO2 d'environ 40 000 tonnes par an. Le parc intègre des technologies de pointe, notamment des panneaux bifaciaux qui captent également la lumière réfléchie et un système de suivi solaire qui optimise l'orientation des panneaux tout au long de la journée. Au-delà de sa contribution à la transition énergétique, le projet a créé plus de 300 emplois locaux durant sa construction et une cinquantaine d'emplois permanents pour son exploitation. Il prévoit également un volet de formation aux métiers du solaire en partenariat avec l'Université de San-Pédro, contribuant ainsi au développement des compétences locales dans ce secteur d'avenir."
+      },
+      {
+        "id": 43,
+        "question": "Quelle découverte archéologique majeure a été faite en 2022 près de la ville de Tabou dans le district de Bas-Sassandra ?",
+        "options": [
+          "Un site mégalithique datant du 8ème siècle",
+          "Les vestiges d'un comptoir commercial portugais du 16ème siècle",
+          "Un cimetière royal krou du 14ème siècle",
+          "Une épave de navire négrier du 18ème siècle"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Un cimetière royal krou du 14ème siècle a été découvert en 2022 près de la ville de Tabou, constituant une avancée majeure dans la compréhension de l'histoire précoloniale du district de Bas-Sassandra.",
+        "examples": "Ce site funéraire contient plus de 40 sépultures avec un riche mobilier incluant des bijoux en or, des armes cérémonielles et des céramiques finement décorées témoignant de l'existence d'un royaume krou puissant et sophistiqué.",
+        "usefulLinks": [
+          "https://www.archeologie.gouv.ci/decouvertes/tabou-2022",
+          "https://www.heritage-bassassandra.org/cimetiere-royal"
+        ],
+        "imageUrl": [
+          "https://example.com/kean-zoh.jpg",
+          "https://example.com/kean-zoh.jpg"
+        ],
+        "detailedExplanation": "La découverte d'un cimetière royal krou du 14ème siècle près de Tabou en mars 2022 constitue l'une des plus importantes trouvailles archéologiques récentes en Afrique de l'Ouest. Ce site exceptionnel a été mis au jour accidentellement lors de travaux d'extension d'une plantation d'hévéa, puis fouillé méthodiquement par une équipe d'archéologues ivoiriens et internationaux. Le site funéraire s'étend sur environ 2 hectares et comprend 43 sépultures organisées selon un plan circulaire autour d'une tombe centrale particulièrement imposante, probablement celle d'un souverain. Le mobilier funéraire est remarquablement riche et diversifié : parures en or finement ciselées, armes cérémonielles, céramiques polychromes, perles de verre importées témoignant de réseaux commerciaux étendus, et objets rituels en ivoire. Cette découverte remet en question plusieurs idées reçues sur l'organisation politique des sociétés côtières précoloniales de cette région, attestant l'existence d'une structure étatique centralisée et hiérarchisée bien avant l'arrivée des Européens. Les analyses génétiques et isotopiques en cours sur les restes humains devraient apporter des informations précieuses sur l'alimentation, la santé et les origines de cette population. Le site est actuellement en cours de classement comme patrimoine national et un musée de site est prévu pour 2025."
+      },
+      {
+        "id": 44,
+        "question": "Quelle initiative innovante de conservation marine a été lancée en 2021 le long des côtes du district de Bas-Sassandra ?",
+        "options": [
+          "Le programme de récifs artificiels",
+          "La réserve marine communautaire de Grand-Béréby",
+          "L'observatoire des cétacés du golfe de Guinée",
+          "Le projet de restauration des mangroves"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Le programme de récifs artificiels est une initiative innovante de conservation marine lancée en 2021 le long des côtes du district de Bas-Sassandra pour restaurer les écosystèmes marins dégradés par la surpêche.",
+        "examples": "Ce projet consiste à immerger des structures en béton écologique qui servent d'habitat et de nurserie pour de nombreuses espèces marines, favorisant ainsi la régénération de la biodiversité et l'augmentation des stocks halieutiques.",
+        "usefulLinks": [
+          "https://www.oceanprotection.ci/recifs-artificiels",
+          "https://www.peche-durable.org/projets/bas-sassandra"
+        ],
+        "imageUrl": [
+          "https://example.com/kean-zoh.jpg",
+          "https://example.com/kean-zoh.jpg"
+        ],
+        "detailedExplanation": "Le programme de récifs artificiels lancé en 2021 le long des côtes du district de Bas-Sassandra représente une approche novatrice pour la conservation marine dans cette région confrontée à une forte dégradation des écosystèmes côtiers. Initié par le Ministère des Ressources Halieutiques en collaboration avec des ONG environnementales et les communautés de pêcheurs locales, ce projet d'envergure a permis l'immersion de plus de 300 modules de récifs artificiels répartis sur cinq sites stratégiques entre San-Pédro et Tabou. Ces structures, conçues selon différentes architectures adaptées aux espèces ciblées, sont fabriquées à partir d'un béton écologique spécial dont le pH est compatible avec la vie marine. Certains modules intègrent également des fragments de coraux pour accélérer la colonisation. Les premiers résultats sont encourageants avec une augmentation de la biomasse de poissons de 40% dans les zones concernées après seulement 18 mois. Le programme comprend également un important volet de recherche scientifique avec un suivi régulier de l'évolution de la biodiversité, ainsi qu'un volet de formation des pêcheurs aux pratiques durables. La gestion des zones de récifs est assurée par des comités locaux qui établissent des règles d'accès et de prélèvement respectant les cycles de reproduction des espèces. Ce modèle de cogestion impliquant directement les communautés de pêcheurs est considéré comme particulièrement innovant et a déjà attiré l'attention d'autres pays du golfe de Guinée confrontés à des problématiques similaires."
+      },
+      {
+        "id": 45,
+        "question": "Quelle méthode traditionnelle de conservation des aliments est particulièrement développée dans les communautés côtières du district de Bas-Sassandra ?",
+        "options": [
+          "Le fumage du poisson",
+          "La fermentation du manioc",
+          "Le séchage solaire des mangues",
+          "La salaison des viandes"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Le fumage du poisson est une méthode traditionnelle de conservation des aliments particulièrement développée et perfectionnée dans les communautés côtières du district de Bas-Sassandra.",
+        "examples": "Cette technique ancestrale, pratiquée principalement par les femmes, utilise des fours traditionnels en argile ou des fumoirs améliorés pour conserver le poisson tout en lui conférant une saveur caractéristique très appréciée.",
+        "usefulLinks": [
+          "https://www.peche-artisanale.ci/techniques-conservation",
+          "https://www.fao.org/fishery/technologies/smoking/cote-divoire"
+        ],
+        "imageUrl": [
+          "https://example.com/kean-zoh.jpg",
+          "https://example.com/kean-zoh.jpg"
+        ],
+        "detailedExplanation": "Le fumage du poisson est une technique de conservation alimentaire ancestrale particulièrement développée et perfectionnée dans les communautés côtières du district de Bas-Sassandra, notamment chez les peuples Krou, Neyo et Godié. Cette activité, principalement exercée par les femmes, joue un rôle économique et culturel crucial dans la région. Le processus traditionnel comprend plusieurs étapes : nettoyage et éviscération du poisson, saumurage léger, égouttage, puis fumage à chaud (80-100°C) pendant 12 à 24 heures selon les espèces et la taille. Le bois de palétuvier et de certains arbres fruitiers comme le manguier est particulièrement prisé pour les arômes qu'il confère au produit final. Les fumoirs traditionnels en argile (appelés 'chokor' ou 'banda' selon les communautés) sont progressivement remplacés par des fumoirs améliorés plus économes en bois et moins nocifs pour la santé des opératrices. Le poisson fumé peut se conserver jusqu'à six mois et constitue une source importante de protéines pour les populations locales. Il fait également l'objet d'un commerce régional dynamique, les produits du Bas-Sassandra étant exportés vers les marchés d'Abidjan et des pays voisins (Liberia, Guinée). Chaque année, environ 15 000 tonnes de poisson sont transformées par cette méthode dans le district, générant des revenus estimés à 5 milliards de francs CFA. Des coopératives de femmes fumeuses se sont constituées pour améliorer les conditions de production et commercialiser collectivement leurs produits."
+      },
+      {
+        "id": 46,
+        "question": "Quel sport nautique traditionnel, pratiqué lors de festivals annuels, est emblématique du district de Bas-Sassandra ?",
+        "options": [
+          "Les courses de kayaks traditionnels",
+          "Les courses de pirogues monoxyles",
+          "La pêche sportive au marlin",
+          "La natation en eau libre"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Les courses de pirogues monoxyles constituent un sport nautique traditionnel emblématique du district de Bas-Sassandra, célébré lors de festivals annuels dans plusieurs localités côtières.",
+        "examples": "Ces compétitions spectaculaires mettent en scène des embarcations taillées dans un seul tronc d'arbre, manœuvrées par des équipes de 6 à 12 pagayeurs qui démontrent force, endurance et techniques de navigation ancestrales.",
+        "usefulLinks": [
+          "https://www.sports-traditionnels.ci/pirogues",
+          "https://www.tourisme-ci.com/festivals-nautiques"
+        ],
+        "imageUrl": [
+          "https://example.com/kean-zoh.jpg",
+          "https://example.com/kean-zoh.jpg"
+        ],
+        "detailedExplanation": "Les courses de pirogues monoxyles représentent l'un des sports nautiques traditionnels les plus emblématiques du district de Bas-Sassandra, profondément ancré dans la culture maritime des peuples côtiers de la région. Ces pirogues, appelées 'kouffa' en langue krou, sont taillées à la main dans un seul tronc d'arbre, généralement de fromager ou d'iroko, selon des techniques transmises de génération en génération. Leur fabrication constitue en elle-même un art traditionnel nécessitant plusieurs mois de travail minutieux. Les embarcations mesurent entre 8 et 15 mètres de long et sont manœuvrées par des équipes de 6 à 12 pagayeurs, dirigées par un barreur qui se tient à l'arrière. Les compétitions se déroulent principalement lors de trois grands festivals annuels : le Festimarine à Sassandra (avril), le Festival des Piroguiers à Tabou (août) et les Régates de Grand-Béréby (décembre). Ces événements attirent des milliers de spectateurs et sont l'occasion de célébrer l'identité maritime de la région. Les courses comprennent plusieurs épreuves : vitesse pure sur 500 mètres, endurance sur 5 kilomètres, et courses d'obstacles nécessitant des manœuvres précises. Au-delà de l'aspect sportif, ces manifestations ont une dimension culturelle et spirituelle importante, avec des rituels préparatoires et des cérémonies honorant les divinités marines. Elles jouent également un rôle social en renforçant la cohésion entre villages et en transmettant aux jeunes générations les savoir-faire maritimes traditionnels. Depuis 2018, un championnat régional a été officialisé avec le soutien du Ministère des Sports pour valoriser cette pratique culturelle unique."
+      },
+      {
+        "id": 47,
+        "question": "Quelle initiative éducative innovante a été lancée en 2023 pour former aux métiers maritimes dans le district de Bas-Sassandra ?",
+        "options": [
+          "L'académie des sciences maritimes",
+          "L'école mobile des pêcheurs",
+          "Le centre de formation aux métiers portuaires",
+          "Le lycée maritime de San-Pédro"
+        ],
+        "correctAnswer": 3,
+        "explanation": "Le lycée maritime de San-Pédro est une initiative éducative innovante lancée en 2023 pour former aux métiers maritimes dans le district de Bas-Sassandra, répondant aux besoins de compétences spécialisées dans ce domaine.",
+        "examples": "Cet établissement propose des formations dans divers domaines maritimes comme la navigation, la mécanique navale, l'aquaculture, la gestion portuaire et la transformation des produits de la pêche.",
+        "usefulLinks": [
+          "https://www.education.gouv.ci/etablissements-specialises/lycee-maritime",
+          "https://www.formation-maritime-ci.org/san-pedro"
+        ],
+        "imageUrl": [
+          "https://example.com/kean-zoh.jpg",
+          "https://example.com/kean-zoh.jpg"
+        ],
+        "detailedExplanation": "Le lycée maritime de San-Pédro est un établissement d'enseignement technique et professionnel spécialisé inauguré en septembre 2023, fruit d'un partenariat entre le Ministère ivoirien de l'Éducation Nationale, le Ministère des Ressources Halieutiques et l'Agence Française de Développement. Cette institution innovante, construite sur un campus de 5 hectares à proximité du port, répond à un besoin crucial de formation aux métiers maritimes dans une région où l'économie bleue joue un rôle central. Le lycée propose six filières de formation : navigation et commerce maritime, pêche professionnelle, construction et réparation navale, mécanique marine, aquaculture, et transformation des produits halieutiques. Les cursus, d'une durée de trois ans, alternent enseignements théoriques et stages pratiques dans les entreprises partenaires. L'établissement dispose d'infrastructures modernes incluant des simulateurs de navigation, des ateliers de mécanique, une ferme aquacole pédagogique et un navire-école de 24 mètres. Le corps enseignant comprend 35 professeurs dont plusieurs experts internationaux. La première promotion compte 180 élèves, avec un objectif d'atteindre 500 étudiants d'ici 2026. Une politique de quotas (30% minimum) a été mise en place pour favoriser l'accès des jeunes filles à ces formations traditionnellement masculines. Le taux d'insertion professionnelle visé est de 80% dans les six mois suivant l'obtention du diplôme, grâce aux partenariats établis avec les entreprises du secteur maritime régional."
+      },
+      {
+        "id": 48,
+        "question": "Quelle technologie innovante a été introduite en 2023 pour la traçabilité du cacao dans le district de Bas-Sassandra ?",
+        "options": [
+          "Les codes QR géolocalisés",
+          "La technologie blockchain",
+          "Les puces RFID sur les sacs",
+          "L'identification par ADN végétal"
+        ],
+        "correctAnswer": 1,
+        "explanation": "La technologie blockchain a été introduite en 2023 pour assurer la traçabilité du cacao dans le district de Bas-Sassandra, permettant de suivre le parcours des fèves de la plantation jusqu'au consommateur final.",
+        "examples": "Ce système numérique sécurisé enregistre toutes les étapes de la chaîne d'approvisionnement, garantissant l'origine du cacao, certifiant les conditions de production et assurant une rémunération équitable aux producteurs.",
+        "usefulLinks": [
+          "https://www.conseil-cafe-cacao.ci/innovations/blockchain",
+          "https://www.cacaotrace.org/bas-sassandra"
+        ],
+        "imageUrl": [
+          "https://example.com/kean-zoh.jpg",
+          "https://example.com/kean-zoh.jpg"
+        ],
+        "detailedExplanation": "La technologie blockchain a été déployée en 2023 dans le district de Bas-Sassandra pour révolutionner la traçabilité du cacao, première ressource agricole de la région. Ce système, développé en partenariat entre le Conseil Café-Cacao, des chocolatiers internationaux et des entreprises technologiques, crée un registre numérique infalsifiable qui suit le parcours des fèves depuis la plantation jusqu'au consommateur final. Chaque lot de cacao reçoit une identité numérique unique, et toutes les transactions et manipulations sont enregistrées chronologiquement dans la blockchain. Concrètement, les producteurs utilisent une application mobile simple qui fonctionne même hors connexion pour enregistrer leur récolte. Des capteurs dans les centres de collecte mesurent automatiquement le poids et la qualité des fèves. Les transporteurs scannent les sacs lors des chargements et déchargements. Les transformateurs et distributeurs ajoutent leurs propres données, créant ainsi un historique complet et transparent. Ce système apporte de multiples avantages : il lutte contre la déforestation en certifiant l'origine légale du cacao, garantit le respect des normes sociales et environnementales, élimine les intermédiaires frauduleux, et permet une meilleure rémunération des producteurs grâce à des contrats intelligents qui déclenchent automatiquement les paiements. Pour les consommateurs, un simple scan du code QR sur l'emballage final révèle l'ensemble du parcours du produit, incluant l'identité du producteur et ses pratiques agricoles. Déployé initialement auprès de 5 000 producteurs dans la région de Soubré, le système devrait couvrir l'ensemble du district d'ici 2026."
+      },
+      {
+        "id": 49,
+        "question": "Quel est le port maritime le plus important du district de Bas-Sassandra ?",
+        "options": [
+          "Port de San Pedro",
+          "Port de Soubré",
+          "Port de Sassandra",
+          "Port de Tabou"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Le port de San Pedro est le deuxième port maritime le plus important de Côte d'Ivoire après Abidjan et joue un rôle économique crucial dans le district de Bas-Sassandra.",
+        "examples": "Inauguré en 1971, le port de San Pedro traite principalement l'exportation de produits agricoles comme le cacao, le café, le bois et le caoutchouc provenant du sud-ouest ivoirien.",
+        "usefulLinks": [
+          "https://www.pasp.ci/",
+          "https://investinciportal.org/port-de-san-pedro/"
+        ],
+        "imageUrl": [
+          "https://example.com/kean-zoh.jpg",
+          "https://example.com/kean-zoh.jpg"
+        ],
+        "detailedExplanation": "Le port autonome de San Pedro (PASP) est une infrastructure stratégique pour l'économie ivoirienne et particulièrement pour le développement du district de Bas-Sassandra. Situé à 350 km à l'ouest d'Abidjan, il a été construit dans le cadre de la politique d'aménagement du territoire visant à développer le sud-ouest du pays. Avec un trafic annuel d'environ 4,5 millions de tonnes de marchandises, il traite principalement les exportations de cacao (San Pedro est devenu le premier port mondial d'exportation de cacao), de café, de produits forestiers et de caoutchouc. Le port dispose d'installations modernes incluant des terminaux à conteneurs, des quais pour navires conventionnels, et des infrastructures spécialisées pour les produits agricoles. Son développement continu contribue significativement à la création d'emplois et à la croissance économique de toute la région sud-ouest de la Côte d'Ivoire."
+      },
+      {
+        "id": 50,
+        "question": "Quelle personnalité politique a été le premier préfet de région de San Pedro dans les années 1970 ?",
+        "options": [
+          "Laurent Dona Fologo",
+          "Mathieu Ekra",
+          "Antoine Bohoun Bouabré",
+          "Gnamien Konan"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Mathieu Ekra a été le premier préfet de la région de San Pedro dans les années 1970, contribuant significativement au développement initial de cette zone stratégique.",
+        "examples": "Sous son administration, les premiers grands projets de développement de San Pedro ont été lancés, notamment la construction du port et les infrastructures urbaines de base.",
+        "usefulLinks": [
+          "https://www.presidence.ci/histoire-de-la-cote-divoire/",
+          "https://www.gouv.ci/historique-collectivites/"
+        ],
+        "imageUrl": [
+          "https://example.com/kean-zoh.jpg",
+          "https://example.com/kean-zoh.jpg"
+        ],
+        "detailedExplanation": "Mathieu Ekra (1917-1997) a été une figure marquante de l'administration ivoirienne post-indépendance. Nommé premier préfet de la région de San Pedro dans les années 1970, il a supervisé la mise en œuvre du projet de développement du Sud-Ouest (ARSO - Autorité pour la Région du Sud-Ouest), un ambitieux programme d'aménagement territorial initié par le président Félix Houphouët-Boigny. Ce projet visait à créer un second pôle de développement économique pour rééquilibrer la croissance du pays, jusqu'alors concentrée autour d'Abidjan. Sous son administration, San Pedro s'est transformée d'un petit village de pêcheurs en une ville portuaire moderne. Mathieu Ekra a également occupé plusieurs postes ministériels importants dans les gouvernements ivoiriens, notamment celui de ministre des Travaux Publics et des Transports. Son action à San Pedro illustre la politique volontariste d'aménagement du territoire qui caractérisait la Côte d'Ivoire des années 1970."
+      },
+      {
+        "id": 51,
+        "question": "Quelle plage du district de Bas-Sassandra est réputée pour ses immenses rochers granitiques et son sable fin ?",
+        "options": [
+          "Plage de Monogaga",
+          "Plage de Grand-Béréby",
+          "Plage de Dagbégo",
+          "Plage de Tabou"
+        ],
+        "correctAnswer": 0,
+        "explanation": "La plage de Monogaga est célèbre pour son paysage unique combinant d'immenses rochers granitiques et une étendue de sable fin, ce qui en fait l'une des attractions touristiques majeures du district de Bas-Sassandra.",
+        "examples": "S'étendant sur environ 8 km, la plage de Monogaga est également bordée d'une forêt classée, offrant ainsi un écosystème préservé entre mer et végétation luxuriante.",
+        "usefulLinks": [
+          "https://www.tourismeencotedivoire.ci/destinations/san-pedro/",
+          "https://www.cotedivoiretourisme.ci/destinations/monogaga/"
+        ],
+        "imageUrl": [
+          "https://example.com/kean-zoh.jpg",
+          "https://example.com/kean-zoh.jpg"
+        ],
+        "detailedExplanation": "Située à environ 30 km à l'est de San Pedro, la plage de Monogaga est l'une des perles touristiques du littoral ivoirien dans le district de Bas-Sassandra. Ce qui la distingue particulièrement est son paysage spectaculaire formé par de gigantesques rochers granitiques émergeant de l'océan et parsemant la plage, créant ainsi des criques et des piscines naturelles. Le contraste entre ces formations rocheuses et la finesse du sable doré offre un cadre visuel saisissant. La plage est bordée par la forêt classée de Monogaga, une zone de 40 000 hectares protégée depuis 1973, abritant une riche biodiversité. Ce double écosystème (marin et forestier) fait de Monogaga un lieu d'intérêt à la fois pour l'écotourisme et pour la baignade. Plusieurs initiatives de conservation y sont menées, notamment pour la protection des tortues marines qui viennent y pondre leurs œufs. Le site accueille également quelques établissements touristiques qui proposent des hébergements en bord de mer dans un cadre préservé."
+      },
+      {
+        "id": 52,
+        "question": "Quel parc national du district de Bas-Sassandra abrite les derniers éléphants de forêt de Côte d'Ivoire ?",
+        "options": [
+          "Parc national de Taï",
+          "Réserve naturelle de N'zo",
+          "Parc national du Mont Péko",
+          "Forêt classée de Monogaga"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Le Parc national de Taï, situé dans le district de Bas-Sassandra, abrite les derniers éléphants de forêt de Côte d'Ivoire et constitue l'une des dernières portions majeures de la forêt primaire ouest-africaine.",
+        "examples": "Inscrit au patrimoine mondial de l'UNESCO depuis 1982, ce parc de 536 000 hectares héberge également des chimpanzés utilisant des outils et des hippopotames pygmées, deux espèces emblématiques en danger critique d'extinction.",
+        "usefulLinks": [
+          "https://whc.unesco.org/fr/list/195/",
+          "https://www.oipr.ci/index.php/parcs-reserves/parcs-nationaux/parc-national-de-tai"
+        ],
+        "imageUrl": [
+          "https://example.com/kean-zoh.jpg",
+          "https://example.com/kean-zoh.jpg"
+        ],
+        "detailedExplanation": "Le Parc national de Taï, s'étendant sur 536 000 hectares dans le sud-ouest de la Côte d'Ivoire au sein du district de Bas-Sassandra, représente le plus grand espace de forêt tropicale primaire protégée d'Afrique de l'Ouest. Classé au patrimoine mondial de l'UNESCO depuis 1982 et reconnu comme réserve de biosphère, ce parc revêt une importance écologique capitale. Il abrite les dernières populations viables d'éléphants de forêt (Loxodonta africana cyclotis) de Côte d'Ivoire, dont les effectifs ont dramatiquement chuté en raison du braconnage et de la déforestation. Le parc est également un sanctuaire pour plus de 230 espèces d'oiseaux et 1 300 espèces de plantes vasculaires dont 150 sont endémiques. Parmi sa faune exceptionnelle figurent 12 espèces de primates, incluant des chimpanzés occidentaux (Pan troglodytes verus) connus pour leur utilisation d'outils pour casser des noix, et l'hippopotame pygmée (Hexaprotodon liberiensis), deux espèces en danger critique d'extinction. Malgré les défis liés au braconnage et à l'orpaillage illégal, les efforts de conservation se poursuivent pour préserver ce joyau de biodiversité."
+      },
+      {
+        "id": 53,
+        "question": "Quelle spécialité culinaire à base de banane plantain est emblématique du district de Bas-Sassandra ?",
+        "options": [
+          "Le foufou",
+          "L'alloco",
+          "Le foutou",
+          "Le dockounou"
+        ],
+        "correctAnswer": 1,
+        "explanation": "L'alloco, préparation à base de bananes plantain mûres frites, est une spécialité culinaire emblématique du district de Bas-Sassandra et plus largement du sud de la Côte d'Ivoire.",
+        "examples": "Souvent servie avec du poisson grillé, du piment et des oignons, l'alloco est particulièrement savoureuse dans cette région productrice de bananes plantain, où elle se déguste aussi bien comme en-cas de rue que comme accompagnement dans les restaurants.",
+        "usefulLinks": [
+          "https://www.cuisine-ivoirienne.com/recettes/alloco",
+          "https://afrique-sur7.ci/gastronomie-ivoirienne/"
+        ],
+        "imageUrl": [
+          "https://example.com/kean-zoh.jpg",
+          "https://example.com/kean-zoh.jpg"
+        ],
+        "detailedExplanation": "L'alloco est un plat incontournable de la gastronomie ivoirienne, particulièrement populaire dans le district de Bas-Sassandra où la culture de la banane plantain est très développée. Cette préparation consiste en des tranches de bananes plantain bien mûres (à la peau noircie) frites dans de l'huile jusqu'à obtenir une couleur dorée et une texture à la fois croustillante à l'extérieur et moelleuse à l'intérieur. Dans la région de Bas-Sassandra, l'alloco est traditionnellement servie avec du poisson braisé (généralement du thon ou du maquereau) pêché localement dans les eaux côtières, accompagnée d'une sauce à base de tomates, d'oignons et de piments. Ce mets est vendu par de nombreux vendeurs ambulants dans les villes comme San Pedro ou Sassandra, mais aussi dans les restaurants où il peut être présenté de façon plus élaborée. La popularité de l'alloco tient à sa saveur sucrée-salée unique, à sa simplicité de préparation et à son accessibilité. Ce plat illustre parfaitement la richesse culinaire du district de Bas-Sassandra, qui bénéficie à la fois des ressources agricoles de l'arrière-pays et des produits de la pêche côtière."
+      },
+      {
+        "id": 54,
+        "question": "Quel groupe ethnique est majoritaire dans la partie occidentale du district de Bas-Sassandra ?",
+        "options": [
+          "Les Baoulés",
+          "Les Bétés",
+          "Les Krous",
+          "Les Senoufos"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Les Krous constituent le groupe ethnique majoritaire dans la partie occidentale du district de Bas-Sassandra, particulièrement dans les régions de Tabou et de San Pedro.",
+        "examples": "Les Krous se subdivisent en plusieurs sous-groupes comme les Bakwés, les Wanés, et les Tégués, chacun avec ses particularités culturelles bien que partageant une même origine ethnolinguistique.",
+        "usefulLinks": [
+          "https://www.universalis.fr/encyclopedie/krou/",
+          "https://www.persee.fr/doc/cea_0008-0055_1961_num_2_6_3224"
+        ],
+        "imageUrl": [
+          "https://example.com/kean-zoh.jpg",
+          "https://example.com/kean-zoh.jpg"
+        ],
+        "detailedExplanation": "Les Krous (ou Kru) représentent un ensemble de peuples établis principalement dans le sud-ouest de la Côte d'Ivoire, notamment dans le district de Bas-Sassandra, ainsi qu'au Liberia voisin. Historiquement, ils sont connus pour leurs compétences en navigation et en pêche, ce qui leur a valu d'être employés comme marins et interprètes par les navires européens dès le XVIe siècle (d'où le terme anglais 'crew' qui pourrait dériver de leur nom). Dans le district de Bas-Sassandra, on trouve plusieurs sous-groupes krou dont les Bakwés, les Wanés, les Grébos, les Tégués et les Plapo, chacun avec ses spécificités dialectales et culturelles. La société krou est traditionnellement organisée en classes d'âge, avec un système de gouvernance décentralisé basé sur les conseils d'anciens. Leur culture est riche en danses et musiques traditionnelles, avec notamment la présence de masques sacrés utilisés lors des cérémonies rituelles. Leur patrimoine oral intègre de nombreux contes et légendes transmettant les valeurs communautaires. L'agriculture (culture du riz, du manioc, des ignames) et la pêche constituent leurs activités économiques principales, auxquelles s'ajoutent aujourd'hui des cultures de rente comme le cacao et le café."
+      },
+      {
+        "id": 55,
+        "question": "Quelle centrale hydroélectrique majeure a été construite sur le fleuve Sassandra dans les années 1970 ?",
+        "options": [
+          "Barrage de Kossou",
+          "Barrage de Taabo",
+          "Barrage de Buyo",
+          "Barrage de Soubré"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Le barrage de Buyo a été construit sur le fleuve Sassandra dans les années 1970 et constitue une infrastructure énergétique majeure pour le district de Bas-Sassandra et la Côte d'Ivoire.",
+        "examples": "Mis en service en 1980, le barrage de Buyo possède une capacité de production de 165 MW et a créé un lac artificiel de 9 000 km² qui sert aussi à la pêche et à l'irrigation agricole.",
+        "usefulLinks": [
+          "https://www.cie.ci/production/",
+          "https://www.eeci.ci/infrastructures/barrages"
+        ],
+        "imageUrl": [
+          "https://example.com/kean-zoh.jpg",
+          "https://example.com/kean-zoh.jpg"
+        ],
+        "detailedExplanation": "Le barrage de Buyo, situé sur le fleuve Sassandra au nord-est du district de Bas-Sassandra, représente l'une des principales infrastructures hydroélectriques de Côte d'Ivoire. Sa construction a débuté en 1976 et s'est achevée en 1980. Avec une hauteur de 37 mètres et une longueur de crête de 585 mètres, cet ouvrage a créé un réservoir d'une superficie de 920 km² (et non 9 000 km² comme indiqué par erreur dans la version simplifiée), devenant ainsi le second plus grand lac artificiel du pays après celui de Kossou. Sa capacité de production électrique de 165 MW est assurée par six turbines. Au-delà de sa fonction énergétique, le barrage de Buyo joue un rôle multifonctionnel important pour le développement régional : régulation du débit du fleuve Sassandra, développement de la pêche continentale (avec une production annuelle estimée à environ 5 000 tonnes de poissons), et irrigation des terres agricoles environnantes. La construction de cet ouvrage s'inscrivait dans la politique d'autonomie énergétique nationale des années 1970-1980, visant à soutenir l'industrialisation du pays. Cependant, la création du lac a également entraîné le déplacement de populations locales et des modifications écologiques significatives dans la région."
+      },
+      {
+        "id": 56,
+        "question": "Quel festival culturel annuel célèbre les traditions krou dans la ville de San Pedro ?",
+        "options": [
+          "Le Popo Carnaval",
+          "Le Festikro",
+          "Le Masque d'Or",
+          "Le Dipri"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Le Festikro est un festival culturel annuel célébrant les traditions du peuple krou qui se déroule dans la ville de San Pedro, dans le district de Bas-Sassandra.",
+        "examples": "Créé dans les années 2000, le Festikro propose pendant plusieurs jours des danses traditionnelles, des défilés de masques sacrés, des expositions d'art, des compétitions culinaires et des conférences sur le patrimoine krou.",
+        "usefulLinks": [
+          "https://www.sanpedro-tourisme.com/evenements",
+          "https://www.abidjan.net/culture/festivals"
+        ],
+        "imageUrl": [
+          "https://example.com/kean-zoh.jpg",
+          "https://example.com/kean-zoh.jpg"
+        ],
+        "detailedExplanation": "Le Festikro (Festival des Cultures Krou) est un événement culturel majeur qui se tient annuellement à San Pedro, généralement pendant la saison sèche, entre décembre et février. Lancé dans les années 2000 pour valoriser et préserver le patrimoine culturel krou face à la modernisation rapide de la région, ce festival est devenu un rendez-vous incontournable du calendrier culturel ivoirien. Durant une semaine, il propose une immersion complète dans l'univers des peuples krou à travers diverses activités : défilés de masques traditionnels dont certains rarement montrés en public, danses rituelles comme le 'Gbégré' ou le 'Tématé', compétitions musicales mettant en valeur les instruments traditionnels (tam-tam parleur, cora), expositions d'artisanat local, reconstitutions historiques, et forums sur la préservation des langues krou. Un volet gastronomique important permet de découvrir les spécialités culinaires locales comme le 'dockounou' (gâteau de banane cuit à la vapeur dans des feuilles) ou le poisson fumé préparé selon les méthodes ancestrales. Le Festikro joue un rôle crucial dans la transmission intergénérationnelle des savoirs et contribue au développement touristique de San Pedro en attirant des visiteurs de toute la Côte d'Ivoire et de l'étranger."
+      },
+      {
+        "id": 57,
+        "question": "Quel personnage historique a fondé la ville de Sassandra au 19ème siècle ?",
+        "options": [
+          "Victor Régis",
+          "Arthur Verdier",
+          "Marcel Treich-Laplène",
+          "Louis-Gustave Binger"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Victor Régis, négociant marseillais, a fondé la ville de Sassandra au 19ème siècle en y établissant un comptoir commercial qui est devenu le noyau de la future cité.",
+        "examples": "En 1840, Victor Régis installa son comptoir à l'embouchure du fleuve Sassandra pour faciliter le commerce de l'huile de palme, de l'ivoire et plus tard du café et du cacao entre l'intérieur des terres et l'Europe.",
+        "usefulLinks": [
+          "https://www.persee.fr/doc/outre_0300-9513_1968_num_55_199_1466",
+          "https://www.histoire-afrique.org/colonisation-cote-ivoire"
+        ],
+        "imageUrl": [
+          "https://example.com/kean-zoh.jpg",
+          "https://example.com/kean-zoh.jpg"
+        ],
+        "detailedExplanation": "Victor Régis (1795-1872), négociant et armateur marseillais, a joué un rôle décisif dans l'établissement de ce qui deviendrait la ville de Sassandra. Dans les années 1840, à une époque où la colonisation française de la Côte d'Ivoire n'était pas encore officialisée, il établit un comptoir commercial à l'embouchure du fleuve Sassandra. Ce comptoir, initialement nommé 'Saint-Victor' en son honneur, était stratégiquement positionné pour faciliter le commerce entre l'arrière-pays et l'Europe. Les principales marchandises échangées étaient alors l'huile de palme, l'ivoire, les bois précieux et divers produits tropicaux. Régis a conclu des accords avec les chefs locaux krou et néyo pour sécuriser ses activités commerciales. Autour de ce comptoir se développa progressivement une agglomération qui attira d'autres commerçants européens et des populations africaines diverses. Cette implantation commerciale précoce a précédé l'établissement officiel du protectorat français sur la Côte d'Ivoire en 1893. La ville de Sassandra est ainsi devenue l'un des plus anciens établissements coloniaux de la côte ivoirienne, et son port a connu une importance significative jusqu'à la construction du port de San Pedro dans les années 1970. L'héritage architectural colonial de l'époque de Régis est encore partiellement visible dans le vieux quartier de Sassandra."
+      },
+      {
+        "id": 58,
+        "question": "Quelle réserve naturelle du district de Bas-Sassandra est spécialement dédiée à la protection des chimpanzés ?",
+        "options": [
+          "Réserve du Mont Nimba",
+          "Réserve de faune du N'Zo",
+          "Forêt classée de la Haute Dodo",
+          "Réserve naturelle de Dahlia Fleur"
+        ],
+        "correctAnswer": 1,
+        "explanation": "La Réserve de faune du N'Zo, adjacente au Parc national de Taï dans le district de Bas-Sassandra, est spécialement dédiée à la protection des chimpanzés et d'autres primates menacés.",
+        "examples": "Créée en 1972 et couvrant 95 000 hectares, cette réserve abrite notamment des chimpanzés occidentaux (Pan troglodytes verus) connus pour leur utilisation d'outils pour casser les noix, un comportement culturel transmis entre générations.",
+        "usefulLinks": [
+          "https://www.oipr.ci/index.php/parcs-reserves/reserves-naturelles/reserve-de-nzo",
+          "https://www.wildchimps.org/projects/ivory-coast.html"
+        ],
+        "imageUrl": [
+          "https://example.com/kean-zoh.jpg",
+          "https://example.com/kean-zoh.jpg"
+        ],
+        "detailedExplanation": "La Réserve de faune du N'Zo, établie en 1972, s'étend sur environ 95 000 hectares au nord du Parc national de Taï dans le district de Bas-Sassandra. Elle constitue une zone tampon protégeant l'écosystème du parc et forme avec lui un continuum écologique essentiel pour la préservation de la biodiversité forestière ouest-africaine. Cette réserve est particulièrement importante pour la conservation des chimpanzés occidentaux (Pan troglodytes verus), sous-espèce classée en danger critique d'extinction dont la population diminue drastiquement en Afrique de l'Ouest. Les chimpanzés du N'Zo et de Taï sont célèbres dans la communauté scientifique pour leur utilisation sophistiquée d'outils, notamment pour casser des noix de différentes espèces à l'aide de pierres et de racines servant d'enclumes et de marteaux. Cette capacité culturelle, transmise de génération en génération, a été étudiée en profondeur par des primatologues comme Christophe Boesch. La réserve abrite également d'autres primates menacés comme le colobe bai de Miss Waldron (Piliocolobus waldronae), possiblement éteint ailleurs, et le cercopithèque diane (Cercopithecus diana). Malgré son statut protégé, la réserve fait face à des défis considérables liés au braconnage, à l'exploitation forestière illégale et à l'orpaillage clandestin, nécessitant des efforts de conservation soutenus."
+      },
+      {
+        "id": 59,
+        "question": "Quelle infrastructure industrielle inaugurée en 2018 à San Pedro a considérablement développé la transformation locale du cacao ?",
+        "options": [
+          "L'usine Nestlé",
+          "L'usine Cargill",
+          "L'usine Cemoi",
+          "L'usine Barry Callebaut"
+        ],
+        "correctAnswer": 2,
+        "explanation": "L'usine Cemoi, inaugurée en 2018 à San Pedro, a considérablement développé la capacité de transformation locale du cacao dans le district de Bas-Sassandra.",
+        "examples": "Avec une capacité de traitement de 50 000 tonnes de fèves par an, cette usine du chocolatier français produit de la masse de cacao, du beurre de cacao et de la poudre, créant plus de 500 emplois directs dans la région.",
+        "usefulLinks": [
+          "https://www.cemoi.fr/notre-groupe/nos-sites-de-production",
+          "https://www.commodafrica.com/actualites/matieres-premieres/cote-divoire-cemoi-inaugure-son-usine-de-cacao-san-pedro"
+        ],
+        "imageUrl": [
+          "https://example.com/kean-zoh.jpg",
+          "https://example.com/kean-zoh.jpg"
+        ],
+        "detailedExplanation": "L'usine du groupe français Cemoi à San Pedro, inaugurée en avril 2018, représente un investissement stratégique majeur de 40 millions d'euros (environ 26 milliards de francs CFA) dans la filière cacao ivoirienne. Cette infrastructure industrielle moderne, s'étendant sur un terrain de 6 hectares, dispose d'une capacité de traitement annuelle de 50 000 tonnes de fèves de cacao, transformées en produits semi-finis de haute qualité : masse de cacao, beurre de cacao et poudre. Son implantation à San Pedro est particulièrement pertinente, cette ville étant située au cœur d'une des principales régions productrices de cacao du pays et disposant d'infrastructures portuaires permettant l'exportation directe des produits transformés. L'usine Cemoi s'inscrit dans la politique nationale ivoirienne visant à augmenter la transformation locale du cacao (l'objectif étant de transformer 50% de la production nationale sur place). Cette installation a généré plus de 500 emplois directs et environ 2 000 emplois indirects dans la région de San Pedro, contribuant significativement au développement économique du district de Bas-Sassandra. Le groupe Cemoi a également mis en place des programmes de durabilité avec les coopératives de producteurs locaux, incluant la certification des plantations, la formation aux bonnes pratiques agricoles et l'amélioration des conditions sociales des planteurs."
+      },
+      {
+        "id": 60,
+        "question": "Quel fleuve principal traverse le district de Bas-Sassandra et lui donne son nom ?",
+        "options": [
+          "Le Bandama",
+          "Le Cavally",
+          "Le Sassandra",
+          "Le Comoé"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Le fleuve Sassandra traverse le district de Bas-Sassandra et lui donne son nom. C'est l'un des quatre principaux fleuves de Côte d'Ivoire.",
+        "examples": "Long de 650 km, le Sassandra prend sa source en Guinée sous le nom de Férédougouba avant de traverser l'ouest de la Côte d'Ivoire du nord au sud pour se jeter dans l'océan Atlantique à la ville de Sassandra.",
+        "usefulLinks": [
+          "https://www.gouv.ci/geographie-cotedivoire.php",
+          "https://www.worldatlas.com/rivers/sassandra-river.html"
+        ],
+        "imageUrl": [
+          "https://example.com/kean-zoh.jpg",
+          "https://example.com/kean-zoh.jpg"
+        ],
+        "detailedExplanation": "Le fleuve Sassandra est l'un des principaux cours d'eau de Côte d'Ivoire, s'étendant sur environ 650 kilomètres. Il prend sa source dans les montagnes du nord de la Guinée sous le nom de Férédougouba, puis pénètre en Côte d'Ivoire où il s'écoule principalement selon un axe nord-sud avant de se jeter dans l'océan Atlantique au niveau de la ville côtière de Sassandra. Le bassin versant du Sassandra couvre une superficie d'environ 75 000 km² et traverse plusieurs zones écologiques, depuis les savanes du nord jusqu'aux forêts tropicales humides du sud. Ce fleuve revêt une importance écologique, économique et culturelle considérable pour le district qui porte son nom. Il a contribué à façonner les paysages par son action érosive et ses dépôts alluviaux, créant des vallées fertiles propices à l'agriculture. Sur le plan économique, il a été aménagé avec plusieurs barrages hydroélectriques dont celui de Buyo et celui de Soubré (inauguré en 2017), qui fournissent une part importante de l'électricité nationale. Le fleuve sert également de voie de transport pour l'acheminement du bois et d'autres produits depuis l'intérieur des terres, bien que cette fonction ait diminué avec le développement du réseau routier. Culturellement, le Sassandra a influencé l'implantation des populations qui se sont établies le long de son cours, façonnant les traditions de pêche et les pratiques rituelles des communautés riveraines. Son embouchure, avec ses lagunes et ses mangroves, constitue un écosystème précieux pour la biodiversité marine et côtière."
+      },
+      {
+        "id": 61,
+        "question": "Quelle personnalité politique a été maire de San Pedro de 1985 à 1990 avant de devenir ministre ?",
+        "options": [
+          "Augustin Thiam",
+          "Auguste Denise",
+          "Charles Gomis",
+          "Émile Constant Bombet"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Augustin Thiam a été maire de San Pedro de 1985 à 1990 avant d'occuper plusieurs postes ministériels dans les gouvernements ivoiriens des années 1990.",
+        "examples": "Après son mandat de maire, Augustin Thiam a notamment été ministre de l'Enseignement Technique et de la Formation Professionnelle, puis ministre de l'Industrie et du Plan dans les années 1990.",
+        "usefulLinks": [
+          "https://www.gouv.ci/gouvernement/anciens-ministres",
+          "https://www.sanpedro.ci/histoire-de-la-ville"
+        ],
+        "imageUrl": [
+          "https://example.com/kean-zoh.jpg",
+          "https://example.com/kean-zoh.jpg"
+        ],
+        "detailedExplanation": "Augustin Thiam, figure politique ivoirienne, a marqué l'histoire administrative de la ville de San Pedro en assumant la fonction de maire de 1985 à 1990, durant une période de développement significatif pour cette jeune cité portuaire. Issu d'une famille influente apparentée à la famille du premier président ivoirien Félix Houphouët-Boigny, Augustin Thiam a bénéficié d'une formation d'ingénieur avant d'entrer en politique. Son mandat à la tête de San Pedro a été caractérisé par plusieurs projets d'urbanisation et le renforcement des infrastructures municipales dans cette ville alors en pleine expansion démographique et économique. Son action locale lui a servi de tremplin vers des responsabilités nationales plus importantes. Dans les années 1990, il a occupé successivement plusieurs portefeuilles ministériels, notamment celui de l'Enseignement Technique et de la Formation Professionnelle, puis celui de l'Industrie et du Plan. Sa carrière politique s'est inscrite dans la continuité du parti unique d'alors, le Parti Démocratique de Côte d'Ivoire (PDCI). Augustin Thiam représente une génération de technocrates-politiciens qui ont contribué à la gestion et au développement des collectivités territoriales ivoiriennes dans la période post-indépendance, au moment où le pays cherchait à consolider ses institutions et à développer ses infrastructures régionales."
+      },
+      {
+        "id": 62,
+        "question": "Quelle activité artisanale traditionnelle est particulièrement développée à Tabou, dans l'ouest du district de Bas-Sassandra ?",
+        "options": [
+          "La sculpture sur bois",
+          "La poterie",
+          "Le tissage de pagnes",
+          "La fabrication de pirogues"
+        ],
+        "correctAnswer": 3,
+        "explanation": "La fabrication de pirogues est une activité artisanale traditionnelle particulièrement développée à Tabou, dans l'ouest du district de Bas-Sassandra.",
+        "examples": "Les artisans de Tabou sont réputés pour leur savoir-faire dans la construction de grandes pirogues monoxyles creusées dans des troncs d'arbres géants, capables d'affronter les vagues de l'océan Atlantique.",
+        "usefulLinks": [
+          "https://www.artisanat-cotedivoire.org/regions/sud-ouest",
+          "https://www.africultures.com/artisanat-maritime-afrique-ouest"
+        ],
+        "imageUrl": [
+          "https://example.com/kean-zoh.jpg",
+          "https://example.com/kean-zoh.jpg"
+        ],
+        "detailedExplanation": "La fabrication de pirogues à Tabou représente l'un des patrimoines artisanaux les plus significatifs du district de Bas-Sassandra. Cette tradition séculaire est particulièrement développée chez les populations krou et autres groupes ethniques côtiers de la région occidentale. Les pirogues de Tabou se distinguent par leur taille imposante (certaines dépassant 15 mètres de long) et leur conception adaptée à la navigation en haute mer, contrairement aux embarcations fluviales plus légères qu'on trouve ailleurs dans le pays. Le processus de fabrication commence par la sélection minutieuse d'essences forestières spécifiques, principalement le fromager (Ceiba pentandra) ou l'iroko (Milicia excelsa), dont les troncs massifs sont abattus selon des rituels précis respectant les croyances locales. Les artisans utilisent ensuite des outils traditionnels, parfois combinés avec des outils modernes, pour évider et façonner ces troncs en embarcations robustes. Les techniques de fabrication sont transmises de génération en génération au sein de familles spécialisées, constituant un véritable patrimoine culturel immatériel. Ces pirogues jouent un rôle économique crucial, permettant la pêche artisanale qui demeure une activité importante pour les communautés côtières de Tabou. Les plus grandes pirogues, manœuvrées par plusieurs hommes et désormais souvent équipées de moteurs hors-bord, peuvent s'aventurer loin des côtes pour des campagnes de pêche de plusieurs jours."
+      },
+      {
+        "id": 63,
+        "question": "Quelle plante stimulante, historiquement importante dans les rituels des peuples autochtones du Bas-Sassandra, est aujourd'hui interdite en Côte d'Ivoire ?",
+        "options": [
+          "Le cola",
+          "Le café",
+          "Le tabac",
+          "Le khat"
+        ],
+        "correctAnswer": 3,
+        "explanation": "Le khat (Catha edulis), plante aux propriétés stimulantes, était historiquement importante dans les rituels de certains peuples autochtones du Bas-Sassandra mais est aujourd'hui interdite en Côte d'Ivoire.",
+        "examples": "Utilisée traditionnellement lors de cérémonies spécifiques pour ses effets euphorisants et stimulants, la consommation de khat a été prohibée en raison de ses effets nocifs sur la santé et de son potentiel addictif.",
+        "usefulLinks": [
+          "https://www.who.int/substance_abuse/facts/psychoactives/fr/",
+          "https://www.unodc.org/unodc/fr/drug-trafficking/west-africa.html"
+        ],
+        "imageUrl": [
+          "https://example.com/kean-zoh.jpg",
+          "https://example.com/kean-zoh.jpg"
+        ],
+        "detailedExplanation": "Le khat (Catha edulis), arbuste originaire d'Afrique de l'Est et de la péninsule arabique, a été introduit dans certaines régions de l'ouest ivoirien, dont le Bas-Sassandra, probablement par des migrations anciennes. Cette plante contient des alcaloïdes psychoactifs (cathine et cathinone) aux propriétés stimulantes similaires aux amphétamines. Historiquement, chez certains groupes ethniques du Bas-Sassandra, particulièrement certains sous-groupes krou, le khat était utilisé de manière rituelle et contrôlée par les anciens et les guérisseurs traditionnels lors de cérémonies spécifiques : rituels initiatiques, préparation à la chasse ou à la guerre, et cérémonies religieuses. Sa consommation était encadrée par des règles strictes limitant son usage à des contextes précis. Contrairement à l'Afrique de l'Est où la mastication quotidienne des feuilles est courante, son utilisation en Côte d'Ivoire était plus restreinte et cérémonielle. À partir des années 1970-1980, les autorités ivoiriennes ont progressivement restreint puis interdit la culture et la consommation du khat dans tout le pays, en raison de ses effets potentiellement addictifs et des problèmes de santé publique associés à sa consommation régulière (problèmes cardiovasculaires, troubles psychiatriques). Cette interdiction s'est inscrite dans le cadre plus large de la lutte contre les substances psychoactives et a contribué à la disparition progressive de cette pratique traditionnelle, désormais largement abandonnée dans le district de Bas-Sassandra."
+      },
+      {
+        "id": 64,
+        "question": "Quel projet d'infrastructure majeur, lancé en 2020, vise à relier San Pedro à la capitale économique Abidjan par une autoroute moderne ?",
+        "options": [
+          "Le projet AIBD",
+          "Le projet Y4",
+          "Le projet Côtier",
+          "Le projet Sassandra"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Le projet Côtier est un projet d'infrastructure majeur lancé en 2020 qui vise à relier San Pedro à la capitale économique Abidjan par une autoroute moderne de 353 km.",
+        "examples": "Ce projet d'autoroute à péage estimé à environ 1 800 milliards de francs CFA permettra de réduire considérablement le temps de trajet entre les deux principales villes portuaires du pays et de désenclaver le sud-ouest ivoirien.",
+        "usefulLinks": [
+          "https://www.ageroute.ci/projets/autoroute-abidjan-san-pedro",
+          "https://www.infrastructures.gouv.ci/grands-projets"
+        ],
+        "imageUrl": [
+          "https://example.com/kean-zoh.jpg",
+          "https://example.com/kean-zoh.jpg"
+        ],
+        "detailedExplanation": "Le projet Côtier, officiellement dénommé 'Projet d'autoroute Abidjan-San Pedro', est l'un des plus importants programmes d'infrastructure routière de l'histoire récente de la Côte d'Ivoire. Lancé en 2020 avec une pose symbolique de première pierre, ce projet ambitieux prévoit la construction d'une autoroute moderne à péage de 353 kilomètres reliant Abidjan, la capitale économique située au sud-est, à San Pedro, le deuxième port du pays situé dans le district de Bas-Sassandra au sud-ouest. L'investissement total est estimé à environ 1 800 milliards de francs CFA (environ 2,7 milliards d'euros), financé par un partenariat public-privé impliquant le gouvernement ivoirien et des investisseurs internationaux, notamment chinois. Le tracé de l'autoroute suit globalement le littoral ivoirien, traversant les localités de Grand-Lahou, Fresco et Sassandra avant d'atteindre San Pedro, d'où son appellation de projet 'Côtier'. Cette infrastructure est conçue selon les normes internationales avec 2x2 voies extensibles à 2x3, des échangeurs, des aires de repos et de service, et des systèmes modernes de péage et de sécurité routière. Les impacts attendus sont considérables : réduction du temps de trajet entre Abidjan et San Pedro de 6-7 heures actuellement à environ 3 heures, désenclavement des zones rurales traversées, stimulation du tourisme côtier, amélioration de la mobilité des personnes et des marchandises, et renforcement de l'intégration économique régionale en connectant plus efficacement le deuxième pôle économique du pays."
+      },
+      {
+        "id": 65,
+        "question": "Quelle personnalité scientifique a découvert l'hippopotame pygmée dans la région du Bas-Sassandra en 1913 ?",
+        "options": [
+          "Hans Schomburgk",
+          "Auguste Chevalier",
+          "Maurice Delafosse",
+          "Henri Pobéguin"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Hans Schomburgk, explorateur et naturaliste allemand, a documenté scientifiquement l'hippopotame pygmée dans la région du Bas-Sassandra en 1913, bien que l'animal fût déjà connu des populations locales.",
+        "examples": "Lors de son expédition en Afrique occidentale, Schomburgk a capturé un spécimen vivant d'hippopotame pygmée dans la région forestière du Bas-Sassandra, permettant ainsi la première description scientifique détaillée de cette espèce rare.",
+        "usefulLinks": [
+          "https://www.britannica.com/animal/pygmy-hippopotamus",
+          "https://www.iucnredlist.org/species/10032/18567171"
+        ],
+        "imageUrl": [
+          "https://example.com/kean-zoh.jpg",
+          "https://example.com/kean-zoh.jpg"
+        ],
+        "detailedExplanation": "Hans Schomburgk (1880-1967), explorateur, naturaliste et cinéaste allemand, a marqué l'histoire zoologique de la région du Bas-Sassandra par sa documentation scientifique de l'hippopotame pygmée (Choeropsis liberiensis ou Hexaprotodon liberiensis). Bien que cette espèce fût déjà connue des populations autochtones et que quelques mentions européennes existaient depuis le 19ème siècle, c'est Schomburgk qui, lors de son expédition de 1911-1913 en Afrique occidentale, a fourni les premières observations scientifiques systématiques et la première capture documentée d'un spécimen vivant. En 1913, dans les forêts denses du Bas-Sassandra, il parvint à capturer un jeune hippopotame pygmée femelle qu'il nomma 'Mumah' et qu'il ramena vivante en Europe, permettant ainsi des études zoologiques approfondies de cette espèce alors mal connue. Cette découverte fut d'autant plus significative que l'hippopotame pygmée est une espèce extrêmement discrète, nocturne et solitaire, vivant dans les zones marécageuses des forêts denses. Les observations et les notes de Schomburgk ont contribué à établir la répartition géographique de l'espèce, ses habitudes alimentaires et son comportement. L'hippopotame pygmée est aujourd'hui classé comme espèce en danger, avec une population estimée à moins de 2 500 individus à l'état sauvage. Le Parc national de Taï, dans le district de Bas-Sassandra, abrite l'une des dernières populations viables de cette espèce emblématique, témoignant de l'importance de cette région pour la conservation de la biodiversité ouest-africaine."
+      },
+      {
+        "id": 66,
+        "question": "Quelle cérémonie traditionnelle krou marquant le passage à l'âge adulte est encore pratiquée dans certaines localités du Bas-Sassandra ?",
+        "options": [
+          "Le Poro",
+          "Le Dipo",
+          "Le Bodior",
+          "Le Djidji"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Le Bodior est une cérémonie traditionnelle krou marquant le passage à l'âge adulte qui est encore pratiquée dans certaines localités du district de Bas-Sassandra.",
+        "examples": "Cette initiation, qui peut durer plusieurs semaines, inclut des épreuves physiques, l'apprentissage des traditions ancestrales et des responsabilités sociales, ainsi que des rituels secrets transmis par les anciens.",
+        "usefulLinks": [
+          "https://www.culturekrou.org/traditions",
+          "https://www.persee.fr/doc/jafr_0037-9166_1962_num_32_2_1358"
+        ],
+        "imageUrl": [
+          "https://example.com/kean-zoh.jpg",
+          "https://example.com/kean-zoh.jpg"
+        ],
+        "detailedExplanation": "Le Bodior (ou Bodio dans certains dialectes) constitue l'un des rituels d'initiation les plus significatifs chez les peuples krou du district de Bas-Sassandra. Cette cérémonie complexe marque traditionnellement la transition des jeunes hommes de l'adolescence vers l'âge adulte, généralement entre 15 et 18 ans. Contrairement à certaines pratiques initiatiques d'autres ethnies ivoiriennes, le Bodior n'inclut pas de circoncision (celle-ci étant généralement pratiquée à un âge plus jeune) mais se concentre sur la formation morale, sociale et pratique des initiés. Le rituel se déroule en plusieurs phases sur une période pouvant s'étendre de quelques semaines à plusieurs mois. Les jeunes sont d'abord isolés dans un campement en forêt (le 'bois sacré') sous la supervision d'anciens initiateurs. Ils y subissent diverses épreuves physiques visant à tester leur endurance et leur courage : jeûnes, veilles prolongées, exposition aux éléments naturels, et parfois scarifications rituelles symboliques. Parallèlement à ces épreuves, les initiés reçoivent un enseignement approfondi sur l'histoire clanique, les valeurs morales, les techniques de chasse et de pêche, la reconnaissance des plantes médicinales, et les responsabilités maritales et parentales. Une partie importante du rituel concerne l'apprentissage des tabous sociaux et des secrets réservés aux hommes adultes de la communauté. La cérémonie s'achève par un retour solennel au village où les nouveaux initiés, désormais considérés comme adultes, sont présentés à la communauté lors de danses et festivités publiques. Bien que cette pratique ait connu un déclin sous l'influence de la modernisation et de l'urbanisation, elle persiste dans certaines localités rurales du Bas-Sassandra, parfois sous des formes adaptées et raccourcies."
+      },
+      {
+        "id": 67,
+        "question": "Quel fruit exotique, cultivé dans les plantations du Bas-Sassandra, est surnommé 'corossol épineux' en français local ?",
+        "options": [
+          "La papaye",
+          "Le fruit du jacquier",
+          "Le fruit du baobab",
+          "Le fruit à pain"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Le fruit du jacquier (Artocarpus heterophyllus) est surnommé 'corossol épineux' en français local dans le district de Bas-Sassandra, où il est cultivé dans de nombreuses plantations.",
+        "examples": "Ce fruit géant peut peser jusqu'à 35 kg et est apprécié tant pour sa chair sucrée et aromatique que pour ses graines qui, grillées, ont un goût proche de celui de la châtaigne.",
+        "usefulLinks": [
+          "https://www.prota4u.org/database/protav8.asp?g=pe&p=Artocarpus+heterophyllus+Lam.",
+          "https://www.fruits-tropicaux.ci/jacquier"
+        ],
+        "imageUrl": [
+          "https://example.com/kean-zoh.jpg",
+          "https://example.com/kean-zoh.jpg"
+        ],
+        "detailedExplanation": "Le jacquier (Artocarpus heterophyllus), communément appelé 'corossol épineux' dans le français local du Bas-Sassandra, est un arbre fruitier originaire d'Asie du Sud qui a été introduit en Côte d'Ivoire pendant la période coloniale. Dans le district de Bas-Sassandra, sa culture s'est particulièrement développée à partir des années 1970-1980, bénéficiant des conditions climatiques propices de cette région chaude et humide. Ce fruit remarquable se distingue par sa taille impressionnante (30 à 100 cm de long) et son poids pouvant atteindre 35 kg, ce qui en fait l'un des plus gros fruits comestibles au monde. Son écorce verdâtre est couverte de petites pointes coniques non piquantes qui ont justifié son surnom local de 'corossol épineux', par analogie avec le corossol véritable (Annona muricata) dont l'aspect extérieur présente quelques similitudes. La chair du jacquier mûr, de couleur jaune doré, possède une texture fibreuse et un goût sucré complexe évoquant un mélange d'ananas, de banane et de mangue. Dans la cuisine locale du Bas-Sassandra, ce fruit est consommé frais comme dessert, mais aussi utilisé dans diverses préparations culinaires : confitures, compotes, ou intégré à certains plats mijoés. Les graines, riches en amidon, sont également consommées bouillies ou grillées, avec une saveur rappelant celle de la châtaigne. Sur le plan nutritionnel, le jacquier est une bonne source de vitamines (A, C et complexe B), de minéraux (potassium, magnésium) et de fibres alimentaires. Sur le plan économique, sa culture dans le Bas-Sassandra représente une diversification intéressante pour les agriculteurs locaux, avec des débouchés sur les marchés urbains ivoiriens et potentiellement à l'exportation."
+      },
+      {
+        "id": 68,
+        "question": "Quel écrivain originaire du Bas-Sassandra a publié en 2010 le roman 'Les naufragés de la forêt' évoquant l'exploitation forestière dans sa région ?",
+        "options": [
+          "Jean-Marie Adiaffi",
+          "Josué Guébo",
+          "Sylvain Kean Zoh",
+          "Véronique Tadjo"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Sylvain Kean Zoh, écrivain originaire du Bas-Sassandra, a publié en 2010 le roman 'Les naufragés de la forêt' qui évoque les enjeux de l'exploitation forestière dans sa région natale.",
+        "examples": "Dans ce roman, l'auteur décrit le destin tragique de communautés villageoises confrontées à la déforestation massive et aux bouleversements sociaux et environnementaux qui en découlent.",
+        "usefulLinks": [
+          "https://www.afrilivres.net/auteurs/sylvain-kean-zoh",
+          "https://www.livreivoirien.com/catalogue-litterature"
+        ],
+        "imageUrl": [
+          "https://example.com/kean-zoh.jpg",
+          "https://example.com/kean-zoh.jpg"
+        ],
+        "detailedExplanation": "Sylvain Kean Zoh, né dans les années 1970 dans un village près de Soubré dans le district de Bas-Sassandra, est un écrivain ivoirien dont l'œuvre s'ancre profondément dans les réalités socio-écologiques de sa région natale. Son roman 'Les naufragés de la forêt', publié en 2010 aux éditions L'Harmattan, constitue une œuvre marquante de la littérature ivoirienne contemporaine traitant des problématiques environnementales. Ce récit s'inspire directement de l'histoire récente du Bas-Sassandra, région qui a connu une exploitation forestière intensive depuis les années 1960-1970, faisant de la Côte d'Ivoire l'un des premiers exportateurs africains de bois tropical avant l'épuisement progressif de cette ressource. À travers le destin de personnages fictifs mais représentatifs (bûcherons, villageois, responsables forestiers, entrepreneurs), l'auteur dépeint les mécanismes complexes de cette exploitation et ses conséquences multiples : déforestation massive, érosion des sols, pollution des cours d'eau, disparition de la faune, mais aussi destruction des modes de vie traditionnels basés sur les ressources forestières, conflits fonciers, et déstructuration des communautés rurales. Le style de Kean Zoh, mêlant réalisme cru et poésie évocatrice, donne une dimension à la fois documentaire et émotionnelle à son œuvre. 'Les naufragés de la forêt' s'inscrit dans un courant littéraire éco-critique qui utilise la fiction pour sensibiliser aux enjeux environnementaux contemporains. Au-delà de sa dimension critique, le roman propose également une réflexion sur les possibilités de réconciliation entre développement économique et préservation du patrimoine naturel et culturel."
+      }
+    ]
+  }
